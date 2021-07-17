@@ -576,7 +576,7 @@
 			<image:loc>https://enrictorrents.com/wp-content/uploads/2020/02/1433429_dp67l3-scaled.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>http://enrictorrents.com/wp-content/uploads/2019/01/1433438-1024x683.jpg</image:loc>
+			<image:loc>http://localhost:8000/wp-content/uploads/2019/01/1433438-1024x683.jpg</image:loc>
 		</image:image>
 		<image:image>
 			<image:loc>https://enrictorrents.com/wp-content/uploads/2020/02/1433441_ymqnci-scaled.jpg</image:loc>

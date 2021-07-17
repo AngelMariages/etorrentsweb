@@ -1,2 +1,0 @@
-# etorrentsweb
-https://enrictorrents.com
