@@ -1,0 +1,15 @@
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Cache-Control = "public, s-max-age=31536000"
+
+[[plugins]]
+  package = "@netlify/plugin-sitemap"
+  
+  [plugins.inputs]
+    exclude = [
+      'category/**',
+      'portfolio/*',
+      'project/*',
+      'about/*'
+    ]
