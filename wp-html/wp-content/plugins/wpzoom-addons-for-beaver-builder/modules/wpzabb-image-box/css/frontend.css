@@ -1,0 +1,56 @@
+.wpzabb-image-box-wrap .wpzabb-image {
+	position: relative;
+	margin-bottom: 30px;
+	width: 100%;
+	display: inline-block;
+	vertical-align: top;
+	padding: 50px 30px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-align: center;
+}
+.wpzabb-image-box-wrap .wpzabb-image::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+	pointer-events: none;
+	transition: background-color 0.2s ease;
+}
+.wpzabb-image-box-wrap .wpzabb-image .hidden {
+	display: none !important;
+}
+.wpzabb-image-box-wrap .wpzabb-image-overlay-link {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	display: block;
+}
+.wpzabb-image-box-wrap .wpzabb-image-heading {
+	font-size: 26px;
+	line-height: 1.1em;
+}
+.wpzabb-image-box-wrap .wpzabb-image-subheading {
+	display: block;
+	font-size: 14px;
+	line-height: 1.8em;
+}
+.wpzabb-image-box-wrap .wpzabb-image-description {
+	font-size: 16px;
+	line-height: 1.8em;
+}
+.wpzabb-image-box-wrap .wpzabb-image-caption {
+	position: relative;
+}
+.wpzabb-image-box-wrap .wpzabb-image-button {
+	position: relative;
+	z-index: 2;
+	font-size: 14px;
+	line-height: 1.4em;
+}

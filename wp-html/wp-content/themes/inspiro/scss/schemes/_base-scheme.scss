@@ -1,0 +1,12 @@
+@import "../variables-site/colors";
+
+/* Default Color Scheme */
+
+
+a {
+    color: $color__link;
+}
+
+a:hover {
+    color: $primary_color;
+}

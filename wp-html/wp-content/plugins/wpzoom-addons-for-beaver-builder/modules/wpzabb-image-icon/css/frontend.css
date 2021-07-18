@@ -1,0 +1,44 @@
+/* Photo */
+
+
+.wpzabb-imgicon-wrap .wpzabb-image {
+	line-height: 0;
+	position: relative;
+}
+.wpzabb-imgicon-wrap .wpzabb-image-align-left {
+	text-align: left;
+}
+.wpzabb-imgicon-wrap .wpzabb-image-align-center {
+	text-align: center;
+}
+.wpzabb-imgicon-wrap .wpzabb-image-align-right {
+	text-align: right;
+}
+.wpzabb-imgicon-wrap .wpzabb-image-content {
+	border-radius: 0;
+	display: inline-block;
+	line-height: 0;
+	position: relative;
+	max-width: 100%;
+	overflow: hidden;
+}
+.wpzabb-imgicon-wrap .wpzabb-image-content img {
+	display: inline;
+	height: auto !important;
+	max-width: 100%;
+	width: auto;
+	box-sizing: content-box;
+	border-radius: inherit;
+}
+.fl-builder-content .wpzabb-imgicon-wrap .wpzabb-image-crop-circle img {
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+}
+.fl-builder-content .wpzabb-imgicon-wrap .wpzabb-image-crop-square img {
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+
+

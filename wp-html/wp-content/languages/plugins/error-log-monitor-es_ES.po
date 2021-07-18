@@ -1,0 +1,512 @@
+# Translation of Plugins - Error Log Monitor - Stable (latest release) in Spanish (Spain)
+# This file is distributed under the same license as the Plugins - Error Log Monitor - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2020-05-19 15:53:19+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"Language: es\n"
+"Project-Id-Version: Plugins - Error Log Monitor - Stable (latest release)\n"
+
+#: Elm/SetupWizard.php:389
+msgid "The log file will be empty at first. This is normal. When any PHP errors happen, they should show up in the log."
+msgstr "El archivo de registro estará vacío al principio. Esto es normal. Cuando se producen errores de PHP, deben aparecer en el registro."
+
+#: Elm/SetupWizard.php:327
+msgid "The log file already exists but it is not writable: <code>%s</code>."
+msgstr "El archivo de registro ya existe, pero no tiene permisos de escritura: <code>%s</code>."
+
+#: Elm/SetupWizard.php:317
+msgid "Could not create a log file in directory <code>%s</code>."
+msgstr "No se ha podido crear un archivo de registro en el directorio <code>%s</code>."
+
+#: Elm/SetupWizard.php:306
+msgid "Could not find a suitable location for the log file."
+msgstr "No se ha podido encontrar una ubicación adecuada para el archivo de registro."
+
+#: Elm/SetupWizard.php:248
+msgid ""
+"When that's done, please go to the Dashboard. You should see a message like \n"
+"\t\t\t\"Log is empty\" in the \"PHP Error Log\" widget. This is normal - the log will stay empty \n"
+"\t\t\tuntil an error actually happens."
+msgstr ""
+"Cuando termine, por favor, ve al escritorio. Deberías ver un mensaje como: \n"
+"\t\t\t«El registro está vacío» en el widget «Registro de errores de PHP». Esto es normal - el registro permanecerá vacío \n"
+"\t\t\thasta que realmente ocurra un error."
+
+#: Elm/SetupWizard.php:244
+msgid "More information about WP_DEBUG."
+msgstr "Más información acerca de `WP_DEBUG`"
+
+#: Elm/SetupWizard.php:231
+msgid ""
+"Also, find the line %1$s and change it to %2$s. This code enables \"debug\" mode in WordPress. \n"
+"\t\t\t\tThis is makes it possible to log everything including PHP notices and other minor errors. \n"
+"\t\t\t\tIf debugging is disabled, WordPress will automatically change error reporting settings to log \n"
+"\t\t\t\tonly fatal errors and warnings."
+msgstr ""
+"También, busca la línea %1$s y cámbiala a %2$s. Este código activa el modo de «depuración» en WordPress. \n"
+"\t\t\t\tEsto permite registrar todo, incluyendo los avisos de PHP y otros errores menores. \n"
+"\t\t\t\tSi la depuración está desactivada, WordPress cambiará automáticamente los ajustes del informe de errores para registrar\n"
+"\t\t\t\tsolo errores fatales y advertencias."
+
+#: Elm/SetupWizard.php:217
+msgid "Next, please add this code to %1$s and replace the placeholder %2$s with the actual path to the new log file:"
+msgstr "A continuación, por favor, añade este código a %1$s y reemplaza el marcador de posición %2$s con la ruta actual al nuevo archivo de registro:"
+
+#: Elm/SetupWizard.php:214
+msgid "Changing the PHP Configuration"
+msgstr "Cambiando la configuración de PHP"
+
+#: Elm/SetupWizard.php:205
+msgid ""
+"Change the file permissions to allow PHP to write to the file. This step will vary depending on \n"
+"\t\t\t\tthe server configuration. If you're unsure what permissions to use, try using the same settings as\n"
+"\t\t\t\tfor the files in %s, or refer to the documentation provided by your hosting provider."
+msgstr ""
+"Cambia los permisos del archivo para permitir que PHP escriba en él. Este paso variará dependiendo de \n"
+"\t\t\t\tla configuración del servidor. Si no estás seguro de qué permisos usar, intenta usar los mismos ajustes de\n"
+"\t\t\t\tlos archivos en %s o consulta la documentación proporcionada por tu proveedor de alojamiento."
+
+#: Elm/SetupWizard.php:196
+msgid ""
+"Create an empty text file and upload it to your selected directory. The file name doesn't matter. \n"
+"\t\t\t\tHere are some suggestions: %s"
+msgstr ""
+"Crea un archivo de texto vacío y súbelo en el directorio seleccionado. El nombre del archivo no importa. \n"
+"\t\t\t\tAquí hay algunas sugerencias: %s"
+
+#: Elm/SetupWizard.php:186
+msgid ""
+"First, decide where you want to put the log file on your server. \n"
+"\t\t\tFor security purposes, it should usually be in a directory that can't be accessed by site visitors \n"
+"\t\t\tand non-admin users. For example, you could create a \"php-logs\" directory above the web root and \n"
+"\t\t\tplace the file there."
+msgstr ""
+"Primero, decide dónde deseas colocar el archivo de registro en tu servidor.\n"
+"\t\t\tPor razones de seguridad, generalmente debe estar en un directorio al que no puedan acceder los visitantes del sitio \n"
+"\t\t\ty usuarios no administradores. Por ejemplo, puedes crear un directorio «php-logs» encima del directorio raíz de la web y\n"
+"\t\t\tcolocar el archivo allí."
+
+#: Elm/SetupWizard.php:184
+msgid "Creating a Log File"
+msgstr "Crear un archivo de registro"
+
+#: Elm/SetupWizard.php:181
+msgid "Configure PHP to write all errors to that file."
+msgstr "Configura PHP para escribir todos los errores en ese archivo."
+
+#: Elm/SetupWizard.php:180
+msgid "Create a log file."
+msgstr "Crear un archivo de registro."
+
+#: Elm/SetupWizard.php:176
+msgid "To get started you need to do two things:"
+msgstr "Para comenzar, debes hacer dos cosas:"
+
+#: Elm/SetupWizard.php:173
+msgid "Manual Configuration Instructions"
+msgstr "Instrucciones de configuración manual"
+
+#: Elm/SetupWizard.php:161
+msgid "Please follow the manual configuration instructions instead."
+msgstr "Por favor, en su lugar, sigue las instrucciones de configuración manual."
+
+#: Elm/SetupWizard.php:157
+msgctxt "setup wizard error prefix"
+msgid "There was an error:"
+msgstr "Ha habido un error:"
+
+#: Elm/SetupWizard.php:149
+msgid "Setup complete!"
+msgstr "¡Configuración completada!"
+
+#: Elm/SetupWizard.php:143
+msgid "Checking configuration..."
+msgstr "Comprobando la configuración..."
+
+#: Elm/SetupWizard.php:130
+msgctxt "setup wizard button"
+msgid "Done"
+msgstr "Hecho"
+
+#. translators: A link to English-language documentation about editing
+#. wp-config.php.
+#: Elm/SetupWizard.php:123
+msgid "Documentation: %s"
+msgstr "Documentación: %s"
+
+#: Elm/SetupWizard.php:110
+msgid "Recommended: To log all types of errors instead of only fatal errors and warnings, also find the line %1$s and change it to %2$s."
+msgstr "Recomendado: para registrar todo tipo de errores en lugar de solo los errores fatales y advertencias, busca la línea %1$s y cámbiala a %2$s."
+
+#: Elm/SetupWizard.php:98
+msgid "Please add this code to your %s and then click \"Done\":"
+msgstr "Por favor, añade este código a tu %s y luego haz clic en «Hecho»:"
+
+#: Elm/SetupWizard.php:92
+msgid "Creating a log file..."
+msgstr "Creando un archivo de registro..."
+
+#: Elm/SetupWizard.php:82
+msgctxt "setup wizard button"
+msgid "Hide Manual Instructions"
+msgstr "Ocultar las instrucciones manuales"
+
+#: Elm/SetupWizard.php:73
+msgctxt "setup wizard button"
+msgid "Manual Configuration"
+msgstr "Configuración manual"
+
+#: Elm/SetupWizard.php:62
+msgid "Use Recommended Settings"
+msgstr "Usar los ajustes recomendados"
+
+#: Elm/SetupWizard.php:54
+msgid "To start logging errors you'll need to make a few changes to the WordPress configuration."
+msgstr "Para comenzar a registrar errores, debes realizar algunos cambios en la configuración de WordPress."
+
+#: Elm/SetupWizard.php:48
+msgid "Error Log Monitor setup"
+msgstr "Configuración de Error Log Monitor"
+
+#: Elm/DashboardWidget.php:137 Elm/DashboardWidget.php:1071
+msgctxt "a link to Pro version information"
+msgid "Details"
+msgstr "Detalles"
+
+#: Elm/DashboardWidget.php:1054
+msgctxt "Freemius account link"
+msgid "Account"
+msgstr "Cuenta"
+
+#: Elm/DashboardWidget.php:1079
+msgid "Upgrade to Pro"
+msgstr "Actualizar a Pro"
+
+#: Elm/DashboardWidget.php:915
+msgctxt "the heading of the upgrade-to-pro section in widget settings"
+msgid "Pro Version"
+msgstr "Versión Pro"
+
+#: Elm/DashboardWidget.php:780
+msgid "How often to check the log for new messages:"
+msgstr "Frecuencia de comprobación del log para mensajes nuevos:"
+
+#: Elm/DashboardWidget.php:769
+msgid "Every 5 minutes"
+msgstr "Cada 5 minutos"
+
+#: Elm/DashboardWidget.php:768
+msgid "Every 2 minutes"
+msgstr "Cada 2 minutos"
+
+#: Elm/DashboardWidget.php:606
+msgid "Sorry, you are not allowed to change these settings."
+msgstr "Lo siento, no tienes permiso para cambiar estos ajustes."
+
+#: Elm/DashboardWidget.php:573
+msgid ""
+"By default, only fatal errors and warnings will be logged. To also log notices\n"
+"                and other messages, enable the <code>WP_DEBUG</code> option by adding this code:"
+msgstr "Por defecto, sólo errores fatales y advertencias serán incluidos. Para incluir también avisos y otros mensajes, activa la opción <code>WP_DEBUG</code> agregando este código:"
+
+#: Elm/DashboardWidget.php:432
+msgctxt "show hidden stack trace items"
+msgid "Show %d more"
+msgstr "Mostrar %d más"
+
+#: Elm/DashboardWidget.php:376
+msgid "Stack Trace"
+msgstr "Seguimiento de la pila"
+
+#: Elm/DashboardWidget.php:149
+msgctxt "a link that hides the \"Upgrade to Pro\" notice"
+msgid "Hide"
+msgstr "Ocultar"
+
+#: Elm/DashboardWidget.php:143
+msgid "View Pricing"
+msgstr "Ver precios"
+
+#: Elm/DashboardWidget.php:131
+msgid "Upgrade to Pro for more detailed logs and a summary view."
+msgstr "Actualizar a pro para logs más detallados y una vista resumen."
+
+#: Elm/DashboardWidget.php:760
+msgctxt "tooltip for the email field"
+msgid "You can enter multiple emails by separating them with a comma."
+msgstr "Puedes incluir varios correos electrónicos seprándolos con coma."
+
+#: Elm/DashboardWidget.php:904
+msgctxt "action link"
+msgid "Unignore"
+msgstr "Dejar de ignorar"
+
+#: Elm/DashboardWidget.php:896
+msgid "There are no ignored messages."
+msgstr "No hay mensajes ignorados."
+
+#: Elm/DashboardWidget.php:892
+msgid "Ignored messages"
+msgstr "Mensajes ignorados"
+
+#: Elm/DashboardWidget.php:869
+msgid "Email notification filter"
+msgstr "Filtro de avisos por correo electrónico"
+
+#: Elm/DashboardWidget.php:847
+msgid "Dashboard widget filter"
+msgstr "Filtro del widget del escritorio"
+
+#: Elm/DashboardWidget.php:844
+msgctxt "configuration section heading"
+msgid "Filters"
+msgstr "Filtros"
+
+#: Elm/DashboardWidget.php:743
+msgctxt "configuration section heading"
+msgid "Notifications"
+msgstr "Avisos"
+
+#: Elm/DashboardWidget.php:728
+msgctxt "widget layout option"
+msgid "List"
+msgstr "Lista"
+
+#: Elm/DashboardWidget.php:727
+msgctxt "widget layout option"
+msgid "Table"
+msgstr "Tabla"
+
+#: Elm/DashboardWidget.php:725
+msgid "Widget layout:"
+msgstr "Diseño del widget:"
+
+#: Elm/DashboardWidget.php:701
+msgctxt "configuration section heading"
+msgid "General"
+msgstr "General"
+
+#: Elm/DashboardWidget.php:238
+msgctxt "action link"
+msgid "Ignore"
+msgstr "Ignorar"
+
+#: Elm/DashboardWidget.php:234
+msgid "Ignored messages stay in the log file but they don't show up in the widget and don't generate email notifications."
+msgstr "Los mensajes ignorados permanecen en el archivo de registro, pero no se muestran en el widget y no generan avisos por correo electrónico."
+
+#: Elm/SeverityFilter.php:117
+msgid "%d entry was filtered out."
+msgid_plural "%d entries were filtered out."
+msgstr[0] "%d entrada ha sido filtrada."
+msgstr[1] "%d entradas han sido filtradas."
+
+#: Elm/DashboardWidget.php:955
+msgctxt "error type"
+msgid "Other"
+msgstr "Otro"
+
+#: Elm/DashboardWidget.php:883
+msgid "Notify only about selected types"
+msgstr "Avisar solo sobre los tipos seleccionados"
+
+#: Elm/DashboardWidget.php:876
+msgid "Same as the dashboard widget"
+msgstr "Igual que el widget del escritorio"
+
+#: Elm/DashboardWidget.php:861
+msgid "Show only selected types"
+msgstr "Solo mostrar los tipos seleccionados"
+
+#: Elm/DashboardWidget.php:854
+msgid "Show all messages"
+msgstr "Mostrar todos los mensajes"
+
+#: Elm/DashboardWidget.php:184
+msgid "There are no recent log entries that match the filter settings."
+msgstr "No hay entradas de registro recientes que coincidan con los ajustes del filtro."
+
+#. translators: 1: Site URL, 2: Log file name, 3: Log file size
+#: Elm/Plugin.php:407
+msgid ""
+"Site URL: %1$s\n"
+"Log file: %2$s\n"
+"Size: %3$s\n"
+msgstr ""
+"URL del sitio: %1$s\n"
+"Archivo de registro: %2$s\n"
+"Tamaño: %3$s\n"
+"\n"
+
+#. translators: 1: File size limit, 2: Site URL
+#: Elm/Plugin.php:401
+msgid "PHP error log file size has exceeded %1$s on %2$s"
+msgstr "El tamaño del archivo de registro de errores de PHP ha superado %1$s en %2$s"
+
+#: Elm/DashboardWidget.php:816
+msgid "Send an email notification when the log file size exceeds this limit:"
+msgstr "Enviar un aviso por correo electrónico cuando el tamaño del archivo de registro supere este límite:"
+
+#: Elm/DashboardWidget.php:589
+msgid "For reference, the full path of the WordPress directory is:<br>%s"
+msgstr "Para referencia, la ruta completa del directorio de WordPress es: <br>%s"
+
+#. translators: Dashboard widget name
+#: Elm/DashboardWidget.php:48
+msgid "PHP Error Log"
+msgstr "Registro de errores de PHP"
+
+#. Author URI of the plugin
+msgid "http://w-shadow.com/"
+msgstr "http://w-shadow.com/"
+
+#. Author of the plugin
+msgid "Janis Elsts"
+msgstr "Janis Elsts"
+
+#. Description of the plugin
+msgid "Adds a Dashboard widget that displays the last X lines from your PHP error log, and can also send you email notifications about newly logged errors."
+msgstr "Añade un widget de escritorio que muestra las últimas X líneas del registro de errores de PHP y también puede enviarte avisos por correo electrónico acerca de los errores recién registrados."
+
+#. Plugin URI of the plugin
+msgid "http://w-shadow.com/blog/2012/07/25/error-log-monitor-plugin/"
+msgstr "http://w-shadow.com/blog/2012/07/25/error-log-monitor-plugin/"
+
+#. Plugin Name of the plugin
+msgid "Error Log Monitor"
+msgstr "Error Log Monitor"
+
+#: scb/AdminPage.php:514
+msgid "Settings"
+msgstr "Ajustes"
+
+#: scb/AdminPage.php:257
+msgid "Settings <strong>saved</strong>."
+msgstr "Ajustes <strong>guardados</strong>."
+
+#. translators: 1: Site URL, 2: Number of log entries, 3: Log file name
+#: Elm/Plugin.php:208
+msgid ""
+"New PHP errors have been logged on %1$s\n"
+"Here are the last %2$d entries from %3$s:\n"
+"\n"
+msgstr ""
+"Se han registrado nuevos errores de PHP en %1$s\n"
+"Estos son los últimos %2$d registros desde %3$s:\n"
+"\n"
+
+#: Elm/Plugin.php:152
+msgid "PHP errors logged on %s"
+msgstr "Errores de PHP registrados en %s"
+
+#: Elm/ReverseLineIterator.php:80
+msgid "Could not open the log file \"%s\"."
+msgstr "No se ha podido abrir el archivo de registro «%s»."
+
+#: Elm/PhpErrorLog.php:54
+msgid "The log file <code>%s</code> does not exist or is inaccessible."
+msgstr "El archivo de registro <code>%s</code> no existe o es inaccesible."
+
+#: Elm/PhpErrorLog.php:46
+msgid "The log file <code>%s</code> exists, but is not accessible. Please check file permissions."
+msgstr "El archivo de registro <code>%s</code> existe, pero no es accesible. Por favor, revisa los permisos del archivo."
+
+#: Elm/PhpErrorLog.php:37
+msgid "The current error_log value <code>%s</code> is not supported. Please change it to an absolute path."
+msgstr "El valor actual de `error_log` <code>%s</code> no es compatible. Por favor, cámbialo a una ruta absoluta."
+
+#: Elm/PhpErrorLog.php:31
+msgid "Error log filename is not set."
+msgstr "El archivo de registro de errores no está configurado."
+
+#: Elm/PhpErrorLog.php:26
+msgid "Error logging is disabled."
+msgstr "El registro de errores está desactivado."
+
+#: Elm/DashboardWidget.php:775
+msgid "Weekly"
+msgstr "Semanal"
+
+#: Elm/DashboardWidget.php:774
+msgid "Daily"
+msgstr "Diario"
+
+#: Elm/DashboardWidget.php:773
+msgid "Hourly"
+msgstr "Cada hora"
+
+#: Elm/DashboardWidget.php:772
+msgid "Every 30 minutes"
+msgstr "Cada 30 minutos"
+
+#: Elm/DashboardWidget.php:771
+msgid "Every 15 minutes"
+msgstr "Cada 15 minutos"
+
+#: Elm/DashboardWidget.php:770
+msgid "Every 10 minutes"
+msgstr "Cada 10 minutos"
+
+#: Elm/DashboardWidget.php:796
+msgid "How often to send email (max):"
+msgstr "Con qué frecuencia enviar el correo electrónico (máximo):"
+
+#: Elm/DashboardWidget.php:758
+msgid "Periodically email logged errors to:"
+msgstr "Envíar correos electrónicos de forma periódica con los errores registrados a:"
+
+#: Elm/DashboardWidget.php:722
+msgid "Reverse line order (most recent on top)"
+msgstr "Orden inverso de líneas (la más reciente en la parte superior)"
+
+#: Elm/DashboardWidget.php:715
+msgid "Strip WordPress root directory from log messages"
+msgstr "Quitar el directorio raíz de WordPress de los mensajes de registro"
+
+#: Elm/DashboardWidget.php:706
+msgid "Number of entries to show:"
+msgstr "Número de entradas a mostrar:"
+
+#. translators: Links to English-language articles about configuring error
+#. logging.
+#: Elm/DashboardWidget.php:597
+msgid "See also: %s"
+msgstr "Ver también: %s"
+
+#: Elm/DashboardWidget.php:561
+msgid ""
+"To enable error logging, create an empty file named \"php-errors.log\".\n"
+"\t\t\tPlace it in a directory that is not publicly accessible (preferably outside\n"
+"\t\t\tyour web root) and ensure it is writable by the web server.\n"
+"\t\t\tThen add the following code to <code>wp-config.php</code>:"
+msgstr ""
+"Para activar el registro de errores, crea un archivo vacío llamado «php-errors.log».\n"
+"\t\t\tColócalo en un directorio que no sea de acceso público (preferiblemente fuera \n"
+"de la raíz de tu web) y asegúrate de que el servidor web tenga permisos de escritura.\n"
+"\t\t\tLuego, añade el siguiente código a <code>wp-config.php</code>:"
+
+#: Elm/DashboardWidget.php:115
+msgid "Clear Log"
+msgstr "Vaciar el registro"
+
+#: Elm/DashboardWidget.php:114
+msgid "Are you sure you want to clear the error log?"
+msgstr "¿Seguro que quieres vaciar este registro?"
+
+#. translators: 1: Log file name, 2: Log file size
+#: Elm/DashboardWidget.php:105
+msgid "Log file: %1$s (%2$s)"
+msgstr "Archivo de registro: %1$s (%2$s)"
+
+#: Elm/DashboardWidget.php:189
+msgid "The log file is empty."
+msgstr "El archivo de registro está vacío."
+
+#: Elm/DashboardWidget.php:96
+msgid "Log cleared."
+msgstr "Registro vaciado."

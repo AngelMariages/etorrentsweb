@@ -1,0 +1,685 @@
+0000.000 (0) Opened log file at time: Tue, 11 Feb 2020 20:38:26 +0000 on https://enrictorrents.com
+0000.029 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.21 WP: 5.3.2 PHP: 7.2.22 (litespeed, Linux lhcp2040.webapps.net 2.6.32-954.3.5.lve1.4.71.el6.x86_64 #1 SMP Fri Sep 6 06:22:16 EDT 2019 x86_64) MySQL: 5.6.43-cll-lve WPLANG: es_ES Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 77.5M | 78.5M) multisite: N openssl: OpenSSL 1.0.2k  26 Jan 2017 mcrypt: N LANG:  ZipArchive::addFile: N
+0000.088 (0) Free space on disk containing Updraft's temporary directory: 234348.5 MB
+0000.093 (0) Tasks: Backup files: 1 (schedule: unset) Backup DB: 1 (schedule: unset)
+0000.096 (0) Semaphore (fd, wp_options) being initialised
+0000.098 (0) Requesting semaphore lock (fd) (apparently not via scheduler)
+0000.101 (0) Set semaphore last lock (fd) time to 2020-02-11 20:38:26
+0000.101 (0) Semaphore lock (fd) complete
+0000.107 (0) Backup run: resumption=0, nonce=9b61cd1a7b0c, file_nonce=9b61cd1a7b0c begun at=1581453506 (0s ago), job type=backup
+0000.108 (0) Scheduling a resumption (1) after 300 seconds (1581453806) in case this run gets aborted
+0000.118 (0) Checking if we have a zip executable available
+0000.119 (0) Testing: /usr/bin/zip
+0000.126 (0) Output: zip warning: binziptest/test.zip not found or empty
+0000.128 (0) Output: adding: binziptest/subdir1/	(in=0) (out=0) (stored 0%)
+0000.129 (0) Output: adding: binziptest/subdir1/subdir2/	(in=0) (out=0) (stored 0%)
+0000.130 (0) Output: adding: binziptest/subdir1/subdir2/test.html	(in=131) (out=107) (deflated 18%)
+0000.130 (0) Output: total bytes=131, compressed=107 -> 18% savings
+0000.138 (0) Output: adding: binziptest/subdir1/subdir2/test2.html	(in=138) (out=113) (deflated 18%)
+0000.139 (0) Output: total bytes=269, compressed=220 -> 18% savings
+0000.147 (0) Working binary zip found: /usr/bin/zip
+0000.148 (0) Zip engine: found/will use a binary zip: /usr/bin/zip
+0000.149 (0) Creation of backups of directories: beginning
+0000.152 (0) Beginning creation of dump of plugins (split every: 400 MB)
+0002.367 (0) Total entities for the zip file: 1120 directories, 6121 files (0 skipped as non-modified), 98.2 MB
+0002.370 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-plugins.zip.tmp: 100 files added (on-disk size: 0 KB)
+0002.373 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-plugins.zip.tmp: 200 files added (on-disk size: 0 KB)
+0002.375 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-plugins.zip.tmp: 300 files added (on-disk size: 0 KB)
+0002.379 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-plugins.zip.tmp: 400 files added (on-disk size: 0 KB)
+0002.382 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-plugins.zip.tmp: 500 files added (on-disk size: 0 KB)
+0002.383 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (6.5 MB, 6121 files batched, 501 (501) added so far); re-opening (prior size: 0 KB)
+0009.403 (0) backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-plugins.zip.tmp: size is now: 2.80 MB
+0009.406 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-plugins.zip.tmp: 600 files added (on-disk size: 2891.4 KB)
+0009.409 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-plugins.zip.tmp: 700 files added (on-disk size: 2891.4 KB)
+0009.410 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-plugins.zip.tmp: 800 files added (on-disk size: 2891.4 KB)
+0009.413 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-plugins.zip.tmp: 900 files added (on-disk size: 2891.4 KB)
+0009.416 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-plugins.zip.tmp: 1000 files added (on-disk size: 2891.4 KB)
+0009.418 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (12.4 MB, 6121 files batched, 501 (1002) added so far); re-opening (prior size: 2891.4 KB)
+0016.471 (0) backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-plugins.zip.tmp: size is now: 6.70 MB
+0016.476 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-plugins.zip.tmp: 1100 files added (on-disk size: 6839 KB)
+0016.478 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-plugins.zip.tmp: 1200 files added (on-disk size: 6839 KB)
+0016.480 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-plugins.zip.tmp: 1300 files added (on-disk size: 6839 KB)
+0016.483 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-plugins.zip.tmp: 1400 files added (on-disk size: 6839 KB)
+0016.486 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-plugins.zip.tmp: 1500 files added (on-disk size: 6839 KB)
+0016.487 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (20 MB, 6121 files batched, 501 (1503) added so far); re-opening (prior size: 6839 KB)
+0029.548 (0) backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-plugins.zip.tmp: size is now: 12.60 MB
+0029.553 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-plugins.zip.tmp: 1600 files added (on-disk size: 12878.3 KB)
+0029.556 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-plugins.zip.tmp: 1700 files added (on-disk size: 12878.3 KB)
+0029.558 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-plugins.zip.tmp: 1800 files added (on-disk size: 12878.3 KB)
+0029.561 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-plugins.zip.tmp: 1900 files added (on-disk size: 12878.3 KB)
+0029.563 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-plugins.zip.tmp: 2000 files added (on-disk size: 12878.3 KB)
+0029.563 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (1.5 MB, 6121 files batched, 501 (2004) added so far); re-opening (prior size: 12878.3 KB)
+0041.101 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-plugins.zip.tmp: 2100 files added (on-disk size: 13589.4 KB)
+0041.104 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-plugins.zip.tmp: 2200 files added (on-disk size: 13589.4 KB)
+0041.106 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-plugins.zip.tmp: 2300 files added (on-disk size: 13589.4 KB)
+0041.108 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-plugins.zip.tmp: 2400 files added (on-disk size: 13589.4 KB)
+0041.110 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-plugins.zip.tmp: 2500 files added (on-disk size: 13589.4 KB)
+0041.111 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (5.3 MB, 6121 files batched, 501 (2505) added so far); re-opening (prior size: 13589.4 KB)
+0051.381 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-plugins.zip.tmp: 2600 files added (on-disk size: 15125.2 KB)
+0051.386 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-plugins.zip.tmp: 2700 files added (on-disk size: 15125.2 KB)
+0051.391 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-plugins.zip.tmp: 2800 files added (on-disk size: 15125.2 KB)
+0051.396 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-plugins.zip.tmp: 2900 files added (on-disk size: 15125.2 KB)
+0051.400 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-plugins.zip.tmp: 3000 files added (on-disk size: 15125.2 KB)
+0051.403 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (8.3 MB, 6121 files batched, 501 (3006) added so far); re-opening (prior size: 15125.2 KB)
+0056.029 (0) backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-plugins.zip.tmp: size is now: 17.80 MB
+0056.036 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-plugins.zip.tmp: 3100 files added (on-disk size: 18211.1 KB)
+0056.038 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-plugins.zip.tmp: 3200 files added (on-disk size: 18211.1 KB)
+0056.040 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-plugins.zip.tmp: 3300 files added (on-disk size: 18211.1 KB)
+0056.043 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-plugins.zip.tmp: 3400 files added (on-disk size: 18211.1 KB)
+0056.047 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-plugins.zip.tmp: 3500 files added (on-disk size: 18211.1 KB)
+0056.048 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (3.7 MB, 6121 files batched, 501 (3507) added so far); re-opening (prior size: 18211.1 KB)
+0060.499 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-plugins.zip.tmp: 3600 files added (on-disk size: 19525 KB)
+0060.511 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-plugins.zip.tmp: 3700 files added (on-disk size: 19525 KB)
+0060.513 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-plugins.zip.tmp: 3800 files added (on-disk size: 19525 KB)
+0060.516 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-plugins.zip.tmp: 3900 files added (on-disk size: 19525 KB)
+0060.526 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-plugins.zip.tmp: 4000 files added (on-disk size: 19525 KB)
+0060.527 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (10 MB, 6121 files batched, 501 (4008) added so far); re-opening (prior size: 19525 KB)
+0065.491 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-plugins.zip.tmp: 4100 files added (on-disk size: 22994.8 KB)
+0065.499 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-plugins.zip.tmp: 4200 files added (on-disk size: 22994.8 KB)
+0065.501 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-plugins.zip.tmp: 4300 files added (on-disk size: 22994.8 KB)
+0065.504 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-plugins.zip.tmp: 4400 files added (on-disk size: 22994.8 KB)
+0065.506 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-plugins.zip.tmp: 4500 files added (on-disk size: 22994.8 KB)
+0065.506 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (8.3 MB, 6121 files batched, 501 (4509) added so far); re-opening (prior size: 22994.8 KB)
+0076.220 (0) backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-plugins.zip.tmp: size is now: 27.10 MB
+0076.230 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-plugins.zip.tmp: 4600 files added (on-disk size: 27787.7 KB)
+0076.233 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-plugins.zip.tmp: 4700 files added (on-disk size: 27787.7 KB)
+0076.236 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-plugins.zip.tmp: 4800 files added (on-disk size: 27787.7 KB)
+0076.240 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-plugins.zip.tmp: 4900 files added (on-disk size: 27787.7 KB)
+0076.242 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-plugins.zip.tmp: 5000 files added (on-disk size: 27787.7 KB)
+0076.243 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (3.7 MB, 6121 files batched, 501 (5010) added so far); re-opening (prior size: 27787.7 KB)
+0096.274 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-plugins.zip.tmp: 5100 files added (on-disk size: 29024.7 KB)
+0096.288 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-plugins.zip.tmp: 5200 files added (on-disk size: 29024.7 KB)
+0096.302 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-plugins.zip.tmp: 5300 files added (on-disk size: 29024.7 KB)
+0096.315 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-plugins.zip.tmp: 5400 files added (on-disk size: 29024.7 KB)
+0096.321 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-plugins.zip.tmp: 5500 files added (on-disk size: 29024.7 KB)
+0096.322 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (7.3 MB, 6121 files batched, 501 (5511) added so far); re-opening (prior size: 29024.7 KB)
+0135.045 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-plugins.zip.tmp: 5600 files added (on-disk size: 31176.1 KB)
+0135.049 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-plugins.zip.tmp: 5700 files added (on-disk size: 31176.1 KB)
+0135.060 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-plugins.zip.tmp: 5800 files added (on-disk size: 31176.1 KB)
+0135.063 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-plugins.zip.tmp: 5900 files added (on-disk size: 31176.1 KB)
+0135.065 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-plugins.zip.tmp: 6000 files added (on-disk size: 31176.1 KB)
+0135.066 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (10.4 MB, 6121 files batched, 501 (6012) added so far); re-opening (prior size: 31176.1 KB)
+0220.567 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-plugins.zip.tmp: 6100 files added (on-disk size: 36062 KB)
+0285.215 (0) The time we have been running (285.2) is approaching the resumption interval (300) - increasing resumption interval to 316
+0290.872 (0) The time we have been running (290.9) is approaching the resumption interval (316) - increasing resumption interval to 321
+0292.084 (0) The time we have been running (292.1) is approaching the resumption interval (321) - increasing resumption interval to 323
+0292.088 (0) The scheduled resumption is within 45 seconds - will reschedule
+0292.097 (0) Rescheduling resumption 1: moving to 368 seconds from now (1581454166)
+0292.107 (0) To decrease the likelihood of overlaps, increasing resumption interval to: 323 + 45 = 368
+0292.885 (0) Created plugins zip (0) - 36233.7 KB in 292.7 s (123.8 KB/s) (sha1: d6eee87f2ed45574f21c18c34435728e5862e43e, sha256: a18fbd16d3305a86f26400fe6860ae4c309fce062e48eac10f2a064169a55ff9)
+0293.053 (0) Beginning creation of dump of themes (split every: 400 MB)
+0296.052 (0) Total entities for the zip file: 211 directories, 702 files (0 skipped as non-modified), 13.5 MB
+0296.054 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 2.0 seconds have passed since the last write (0 MB, 1 (1) files added so far); re-opening (prior size: 0 KB)
+0296.283 (0) backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-themes.zip.tmp: size is now: 0.00 MB
+0296.289 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-themes.zip.tmp: 100 files added (on-disk size: 49.6 KB)
+0296.292 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-themes.zip.tmp: 200 files added (on-disk size: 49.6 KB)
+0296.299 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-themes.zip.tmp: 300 files added (on-disk size: 49.6 KB)
+0296.306 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-themes.zip.tmp: 400 files added (on-disk size: 49.6 KB)
+0296.315 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-themes.zip.tmp: 500 files added (on-disk size: 49.6 KB)
+0296.319 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (11.1 MB, 702 files batched, 501 (502) added so far); re-opening (prior size: 49.6 KB)
+0314.324 (0) backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-themes.zip.tmp: size is now: 6.50 MB
+0314.328 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-themes.zip.tmp: 600 files added (on-disk size: 6669.8 KB)
+0314.330 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-themes.zip.tmp: 700 files added (on-disk size: 6669.8 KB)
+0323.220 (0) Created themes zip (0) - 7403 KB in 29.9 s (247.7 KB/s) (sha1: 79462862916616a7335509833a6776eff7887332, sha256: 15c32edea8ab9e5a1831f820be455b7602ebb64d491e2992a487f838eee5219d)
+0323.223 (0) Exclusion option setting (uploads): backup*,*backups,backwpup*,wp-clone,snapshots
+0323.224 (0) Looking for candidates to backup in: /home/sl3856ae/public_html/wp-content/uploads
+0323.225 (0) finding files: 2015: adding to list (1)
+0323.226 (0) finding files: 2016: adding to list (2)
+0323.226 (0) finding files: bb-plugin: adding to list (3)
+0323.227 (0) finding files: 2014: adding to list (4)
+0323.227 (0) finding files: cache: adding to list (5)
+0323.228 (0) finding files: 2018: adding to list (6)
+0323.228 (0) finding files: 2019: adding to list (7)
+0323.229 (0) finding files: 2011: adding to list (8)
+0323.230 (0) finding files: 2012: adding to list (9)
+0323.230 (0) finding files: 2009: adding to list (10)
+0323.231 (0) finding files: 2020: adding to list (11)
+0323.231 (0) Beginning creation of dump of uploads (split every: 400 MB)
+0324.770 (0) Total entities for the zip file: 53 directories, 6530 files (0 skipped as non-modified), 1324.6 MB
+0324.773 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads.zip.tmp: 100 files added (on-disk size: 0 KB)
+0324.775 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 25 MB added on this batch (25.1 MB, 6530 files batched, 185 (185) added so far); re-opening (prior size: 0 KB)
+0339.229 (0) The time we have been running (339.2) is approaching the resumption interval (368) - increasing resumption interval to 370
+0350.874 (0) The time we have been running (350.9) is approaching the resumption interval (370) - increasing resumption interval to 381
+0361.068 (0) The time we have been running (361.1) is approaching the resumption interval (381) - increasing resumption interval to 392
+0361.458 (0) backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads.zip.tmp: size is now: 25.00 MB
+0361.460 (0) A useful amount of data was added after this amount of zip processing: 38.6 s (normalised: 38.5 s, rate: 664.9 KB/s)
+0361.462 (0) Performance is good - will increase the amount of data we attempt to batch (time=38.593158006668, normalised_time=38.499388591279, max_time=361.46076893806, data points known=1, old_max_bytes=26214400, new_max_bytes=147672119)
+0361.464 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads.zip.tmp: 200 files added (on-disk size: 25554.8 KB)
+0361.467 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads.zip.tmp: 300 files added (on-disk size: 25554.8 KB)
+0361.470 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads.zip.tmp: 400 files added (on-disk size: 25554.8 KB)
+0361.473 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads.zip.tmp: 500 files added (on-disk size: 25554.8 KB)
+0361.475 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads.zip.tmp: 600 files added (on-disk size: 25554.8 KB)
+0361.478 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (121.2 MB, 6530 files batched, 501 (686) added so far); re-opening (prior size: 25554.8 KB)
+0384.943 (0) The time we have been running (384.9) is approaching the resumption interval (392) - increasing resumption interval to 415
+0392.831 (0) The time we have been running (392.8) is approaching the resumption interval (415) - increasing resumption interval to 423
+0405.475 (0) The time we have been running (405.5) is approaching the resumption interval (423) - increasing resumption interval to 436
+0413.031 (0) The time we have been running (413) is approaching the resumption interval (436) - increasing resumption interval to 444
+0419.855 (0) The time we have been running (419.9) is approaching the resumption interval (444) - increasing resumption interval to 450
+0431.090 (0) The time we have been running (431.1) is approaching the resumption interval (450) - increasing resumption interval to 462
+0437.917 (0) The time we have been running (437.9) is approaching the resumption interval (462) - increasing resumption interval to 468
+0448.751 (0) The time we have been running (448.7) is approaching the resumption interval (468) - increasing resumption interval to 479
+0461.109 (0) The time we have been running (461.1) is approaching the resumption interval (479) - increasing resumption interval to 492
+0467.552 (0) The time we have been running (467.5) is approaching the resumption interval (492) - increasing resumption interval to 498
+0472.876 (0) The time we have been running (472.9) is approaching the resumption interval (498) - increasing resumption interval to 503
+0481.294 (0) The time we have been running (481.3) is approaching the resumption interval (503) - increasing resumption interval to 512
+0499.178 (0) The time we have been running (499.2) is approaching the resumption interval (512) - increasing resumption interval to 530
+0505.065 (0) The time we have been running (505.1) is approaching the resumption interval (530) - increasing resumption interval to 536
+0514.667 (0) The time we have been running (514.7) is approaching the resumption interval (536) - increasing resumption interval to 545
+0521.253 (0) The time we have been running (521.3) is approaching the resumption interval (545) - increasing resumption interval to 552
+0527.368 (0) The time we have been running (527.4) is approaching the resumption interval (552) - increasing resumption interval to 558
+0533.003 (0) The time we have been running (533) is approaching the resumption interval (558) - increasing resumption interval to 563
+0539.277 (0) The time we have been running (539.3) is approaching the resumption interval (563) - increasing resumption interval to 570
+0543.875 (0) backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads.zip.tmp: size is now: 145.60 MB
+0543.880 (0) The time we have been running (543.9) is approaching the resumption interval (570) - increasing resumption interval to 574
+0543.892 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads.zip.tmp: 700 files added (on-disk size: 149144.6 KB)
+0543.902 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads.zip.tmp: 800 files added (on-disk size: 149144.6 KB)
+0543.908 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads.zip.tmp: 900 files added (on-disk size: 149144.6 KB)
+0543.912 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads.zip.tmp: 1000 files added (on-disk size: 149144.6 KB)
+0543.917 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads.zip.tmp: 1100 files added (on-disk size: 149144.6 KB)
+0543.922 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 140.8 MB added on this batch (141.1 MB, 6530 files batched, 500 (1186) added so far); re-opening (prior size: 149144.6 KB)
+0684.388 (1) Opened log file at time: Tue, 11 Feb 2020 20:49:50 +0000 on https://enrictorrents.com
+0684.511 (1) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.21 WP: 5.3.2 PHP: 7.2.22 (litespeed, Linux lhcp2040.webapps.net 2.6.32-954.3.5.lve1.4.71.el6.x86_64 #1 SMP Fri Sep 6 06:22:16 EDT 2019 x86_64) MySQL: 5.6.43-cll-lve WPLANG: es_ES Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 66.4M | 68.3M) multisite: N openssl: OpenSSL 1.0.2k  26 Jan 2017 mcrypt: N LANG:  ZipArchive::addFile: N
+0685.943 (1) Free space on disk containing Updraft's temporary directory: 234035.5 MB
+0686.074 (1) Backup run: resumption=1, nonce=9b61cd1a7b0c, file_nonce=9b61cd1a7b0c begun at=1581453506 (686s ago), job type=backup, previous check-in=543.9s
+0686.190 (1) Scheduling a resumption (2) after 574 seconds (1581454766) in case this run gets aborted
+0690.225 (1) Checking if we have a zip executable available
+0690.255 (1) Zip engine: found/will use a binary zip: /usr/bin/zip
+0690.361 (1) Creation of backups of directories: had begun; will resume
+0690.818 (1) Beginning creation of dump of plugins (split every: 400 MB)
+0690.939 (1) backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-plugins.zip: this file has already been created (age: 399 s)
+0693.689 (1) Terminate: zig6xAhs exists with activity within the last 30 seconds (time_mod=1581454199, time_now=1581454197, diff=-2, size=126480KB). This likely means that another UpdraftPlus run is at work; so we will exit.
+0693.711 (1) Rescheduling resumption 2: moving to 694 seconds from now (1581454893)
+0693.736 (1) To decrease the likelihood of overlaps, increasing resumption interval to: 574 + 120 = 694
+0723.230 (0) The time we have been running (723.2) is approaching the resumption interval (574) - increasing resumption interval to 754
+0733.670 (0) The time we have been running (733.7) is approaching the resumption interval (754) - increasing resumption interval to 764
+0740.629 (0) The time we have been running (740.6) is approaching the resumption interval (764) - increasing resumption interval to 771
+0746.575 (0) The time we have been running (746.6) is approaching the resumption interval (771) - increasing resumption interval to 777
+0752.397 (0) The time we have been running (752.4) is approaching the resumption interval (777) - increasing resumption interval to 783
+0761.581 (0) The time we have been running (761.6) is approaching the resumption interval (783) - increasing resumption interval to 792
+0768.854 (0) The time we have been running (768.9) is approaching the resumption interval (792) - increasing resumption interval to 799
+0775.646 (0) The time we have been running (775.6) is approaching the resumption interval (799) - increasing resumption interval to 806
+0782.189 (0) The time we have been running (782.2) is approaching the resumption interval (806) - increasing resumption interval to 813
+0791.404 (0) The time we have been running (791.4) is approaching the resumption interval (813) - increasing resumption interval to 822
+0797.498 (0) The time we have been running (797.5) is approaching the resumption interval (822) - increasing resumption interval to 828
+0802.962 (0) The time we have been running (803) is approaching the resumption interval (828) - increasing resumption interval to 833
+0809.273 (0) The time we have been running (809.3) is approaching the resumption interval (833) - increasing resumption interval to 840
+0824.214 (0) The time we have been running (824.2) is approaching the resumption interval (840) - increasing resumption interval to 855
+0831.122 (0) The time we have been running (831.1) is approaching the resumption interval (855) - increasing resumption interval to 862
+0837.592 (0) The time we have been running (837.6) is approaching the resumption interval (862) - increasing resumption interval to 868
+0857.989 (0) The time we have been running (858) is approaching the resumption interval (868) - increasing resumption interval to 888
+0866.733 (0) The time we have been running (866.7) is approaching the resumption interval (888) - increasing resumption interval to 897
+0875.493 (0) The time we have been running (875.5) is approaching the resumption interval (897) - increasing resumption interval to 906
+0882.721 (0) The time we have been running (882.7) is approaching the resumption interval (906) - increasing resumption interval to 913
+0894.139 (0) The time we have been running (894.1) is approaching the resumption interval (913) - increasing resumption interval to 925
+0903.053 (0) The time we have been running (903.1) is approaching the resumption interval (925) - increasing resumption interval to 934
+0912.059 (0) The time we have been running (912.1) is approaching the resumption interval (934) - increasing resumption interval to 943
+0914.698 (0) backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads.zip.tmp: size is now: 286.90 MB
+0914.715 (0) The time we have been running (914.7) is approaching the resumption interval (943) - increasing resumption interval to 945
+0914.717 (0) A useful amount of data was added after this amount of zip processing: 370.8 s (normalised: 370.1 s, rate: 389.6 KB/s)
+0914.718 (0) Performance is good - will increase the amount of data we attempt to batch (time=370.84985303879, normalised_time=370.10776841312, max_time=914.71746087074, data points known=1, old_max_bytes=147672119, new_max_bytes=209715200)
+0914.720 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads.zip.tmp: 1200 files added (on-disk size: 293743.4 KB)
+0914.723 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads.zip.tmp: 1300 files added (on-disk size: 293743.4 KB)
+0914.725 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads.zip.tmp: 1400 files added (on-disk size: 293743.4 KB)
+0914.727 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads.zip.tmp: 1500 files added (on-disk size: 293743.4 KB)
+0914.729 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads.zip.tmp: 1600 files added (on-disk size: 293743.4 KB)
+0914.729 (0) Adding batch to zip file (UpdraftPlus_BinZip): possibly approaching split limit (102.9 MB, 419 (1605) files added so far); last ratio: 1; re-opening (prior size: 293743.4 KB)
+1286.849 (0) The time we have been running (1286.8) is approaching the resumption interval (945) - increasing resumption interval to 1317
+1291.931 (0) The time we have been running (1291.9) is approaching the resumption interval (1317) - increasing resumption interval to 1322
+1302.497 (0) The time we have been running (1302.5) is approaching the resumption interval (1322) - increasing resumption interval to 1333
+1312.469 (0) The time we have been running (1312.5) is approaching the resumption interval (1333) - increasing resumption interval to 1343
+1318.682 (0) The time we have been running (1318.7) is approaching the resumption interval (1343) - increasing resumption interval to 1349
+1325.960 (0) The time we have been running (1326) is approaching the resumption interval (1349) - increasing resumption interval to 1356
+1333.918 (0) The time we have been running (1333.9) is approaching the resumption interval (1356) - increasing resumption interval to 1364
+1348.305 (0) The time we have been running (1348.3) is approaching the resumption interval (1364) - increasing resumption interval to 1379
+1354.056 (0) The time we have been running (1354.1) is approaching the resumption interval (1379) - increasing resumption interval to 1385
+1361.428 (0) The time we have been running (1361.4) is approaching the resumption interval (1385) - increasing resumption interval to 1392
+1366.878 (0) The time we have been running (1366.9) is approaching the resumption interval (1392) - increasing resumption interval to 1397
+1375.097 (0) The time we have been running (1375.1) is approaching the resumption interval (1397) - increasing resumption interval to 1406
+1382.306 (0) The time we have been running (1382.3) is approaching the resumption interval (1406) - increasing resumption interval to 1413
+1391.347 (0) The time we have been running (1391.3) is approaching the resumption interval (1413) - increasing resumption interval to 1422
+1396.363 (2) Opened log file at time: Tue, 11 Feb 2020 21:01:42 +0000 on https://enrictorrents.com
+1396.399 (2) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.21 WP: 5.3.2 PHP: 7.2.22 (litespeed, Linux lhcp2040.webapps.net 2.6.32-954.3.5.lve1.4.71.el6.x86_64 #1 SMP Fri Sep 6 06:22:16 EDT 2019 x86_64) MySQL: 5.6.43-cll-lve WPLANG: es_ES Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 65.2M | 68.3M) multisite: N openssl: OpenSSL 1.0.2k  26 Jan 2017 mcrypt: N LANG:  ZipArchive::addFile: N
+1396.935 (2) Free space on disk containing Updraft's temporary directory: 233616.1 MB
+1396.942 (0) The time we have been running (1396.9) is approaching the resumption interval (1422) - increasing resumption interval to 1427
+1396.942 (2) Terminate: check-in exists with activity within the last 30 seconds (time_mod=1581454897.6, time_now=1581454902.5, diff=4, size=n/a). This likely means that another UpdraftPlus run is at work; so we will exit.
+1396.955 (2) A new resumption will be scheduled to prevent the job ending
+1396.984 (2) Rescheduling resumption 3: moving to 900 seconds from now (1581455803)
+1397.050 (2) To decrease the likelihood of overlaps, increasing resumption interval to: 1422 + 120 = 1542
+1405.439 (0) The time we have been running (1405.4) is approaching the resumption interval (1427) - increasing resumption interval to 1436
+1414.710 (0) The time we have been running (1414.7) is approaching the resumption interval (1436) - increasing resumption interval to 1445
+1419.556 (0) backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads.zip.tmp: size is now: 389.80 MB
+1419.559 (0) The time we have been running (1419.6) is approaching the resumption interval (1445) - increasing resumption interval to 1450
+1419.561 (0) Zip size is at/near split limit (389.8 MB / 400 MB) - bumping index (from: 0)
+2291.084 (0) The time we have been running (2291.1) is approaching the resumption interval (1450) - increasing resumption interval to 2322
+2291.086 (0) Created uploads zip (0) - 399162.5 KB in 1096.3 s (364.1 KB/s) (checksums: sha1: c6d70df16dabe5bfaae704735483428e17dd355c, sha256: 4cc6dbd7c746ffcf568a58f4b4b8e1ef0292b5d54b27d34038dc74c6ab1edc57)
+2291.091 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 2.0 seconds have passed since the last write (2.4 MB, 1 (1606) files added so far); re-opening (prior size: 0 KB)
+2293.596 (0) backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads2.zip.tmp: size is now: 2.40 MB
+2293.601 (0) The time we have been running (2293.6) is approaching the resumption interval (2322) - increasing resumption interval to 2324
+2293.604 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads2.zip.tmp: 1700 files added (on-disk size: 2439.9 KB)
+2293.606 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads2.zip.tmp: 1800 files added (on-disk size: 2439.9 KB)
+2293.612 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads2.zip.tmp: 1900 files added (on-disk size: 2439.9 KB)
+2293.621 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads2.zip.tmp: 2000 files added (on-disk size: 2439.9 KB)
+2293.623 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads2.zip.tmp: 2100 files added (on-disk size: 2439.9 KB)
+2293.624 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (94.5 MB, 6530 files batched, 501 (2107) added so far); re-opening (prior size: 2439.9 KB)
+2299.106 (0) The time we have been running (2299.1) is approaching the resumption interval (2324) - increasing resumption interval to 2330
+2305.113 (0) The time we have been running (2305.1) is approaching the resumption interval (2330) - increasing resumption interval to 2336
+2308.951 (3) Opened log file at time: Tue, 11 Feb 2020 21:16:55 +0000 on https://enrictorrents.com
+2309.013 (3) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.21 WP: 5.3.2 PHP: 7.2.22 (litespeed, Linux lhcp2040.webapps.net 2.6.32-954.3.5.lve1.4.71.el6.x86_64 #1 SMP Fri Sep 6 06:22:16 EDT 2019 x86_64) MySQL: 5.6.43-cll-lve WPLANG: es_ES Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 65.5M | 68.3M) multisite: N openssl: OpenSSL 1.0.2k  26 Jan 2017 mcrypt: N LANG:  ZipArchive::addFile: N
+2309.270 (3) Free space on disk containing Updraft's temporary directory: 233863 MB
+2309.405 (3) Terminate: check-in exists with activity within the last 30 seconds (time_mod=1581455811.3, time_now=1581455815.1, diff=3, size=n/a). This likely means that another UpdraftPlus run is at work; so we will exit.
+2309.466 (3) A new resumption will be scheduled to prevent the job ending
+2309.497 (3) Rescheduling resumption 4: moving to 900 seconds from now (1581456715)
+2309.562 (3) To decrease the likelihood of overlaps, increasing resumption interval to: 2336 + 120 = 2456
+2310.884 (0) The time we have been running (2310.9) is approaching the resumption interval (2336) - increasing resumption interval to 2341
+2317.221 (0) The time we have been running (2317.2) is approaching the resumption interval (2341) - increasing resumption interval to 2348
+2322.939 (0) The time we have been running (2322.9) is approaching the resumption interval (2348) - increasing resumption interval to 2353
+2335.885 (0) The time we have been running (2335.9) is approaching the resumption interval (2353) - increasing resumption interval to 2366
+2342.874 (0) The time we have been running (2342.9) is approaching the resumption interval (2366) - increasing resumption interval to 2373
+2349.775 (0) The time we have been running (2349.8) is approaching the resumption interval (2373) - increasing resumption interval to 2380
+2365.132 (0) The time we have been running (2365.1) is approaching the resumption interval (2380) - increasing resumption interval to 2396
+2370.909 (0) The time we have been running (2370.9) is approaching the resumption interval (2396) - increasing resumption interval to 2401
+2379.325 (0) The time we have been running (2379.3) is approaching the resumption interval (2401) - increasing resumption interval to 2410
+2395.599 (0) The time we have been running (2395.6) is approaching the resumption interval (2410) - increasing resumption interval to 2426
+2401.833 (0) The time we have been running (2401.8) is approaching the resumption interval (2426) - increasing resumption interval to 2432
+2413.062 (0) The time we have been running (2413.1) is approaching the resumption interval (2432) - increasing resumption interval to 2444
+2424.471 (0) The time we have been running (2424.5) is approaching the resumption interval (2444) - increasing resumption interval to 2455
+2425.942 (0) backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads2.zip.tmp: size is now: 97.00 MB
+2425.948 (0) The time we have been running (2425.9) is approaching the resumption interval (2455) - increasing resumption interval to 2456
+2425.954 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads2.zip.tmp: 2200 files added (on-disk size: 99315.2 KB)
+2425.956 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads2.zip.tmp: 2300 files added (on-disk size: 99315.2 KB)
+2425.959 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads2.zip.tmp: 2400 files added (on-disk size: 99315.2 KB)
+2425.962 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads2.zip.tmp: 2500 files added (on-disk size: 99315.2 KB)
+2425.968 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads2.zip.tmp: 2600 files added (on-disk size: 99315.2 KB)
+2425.971 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (69.3 MB, 6530 files batched, 501 (2608) added so far); re-opening (prior size: 99315.2 KB)
+2523.289 (0) The time we have been running (2523.3) is approaching the resumption interval (2456) - increasing resumption interval to 2554
+2528.871 (0) The time we have been running (2528.9) is approaching the resumption interval (2554) - increasing resumption interval to 2559
+2536.075 (0) The time we have been running (2536.1) is approaching the resumption interval (2559) - increasing resumption interval to 2567
+2543.170 (0) The time we have been running (2543.2) is approaching the resumption interval (2567) - increasing resumption interval to 2574
+2551.871 (0) The time we have been running (2551.9) is approaching the resumption interval (2574) - increasing resumption interval to 2582
+2560.036 (0) The time we have been running (2560) is approaching the resumption interval (2582) - increasing resumption interval to 2591
+2566.955 (0) The time we have been running (2567) is approaching the resumption interval (2591) - increasing resumption interval to 2597
+2573.611 (0) The time we have been running (2573.6) is approaching the resumption interval (2597) - increasing resumption interval to 2604
+2583.354 (0) The time we have been running (2583.3) is approaching the resumption interval (2604) - increasing resumption interval to 2614
+2592.245 (0) The time we have been running (2592.2) is approaching the resumption interval (2614) - increasing resumption interval to 2623
+2599.915 (0) The time we have been running (2599.9) is approaching the resumption interval (2623) - increasing resumption interval to 2630
+2611.501 (0) The time we have been running (2611.5) is approaching the resumption interval (2630) - increasing resumption interval to 2642
+2616.871 (0) The time we have been running (2616.9) is approaching the resumption interval (2642) - increasing resumption interval to 2647
+2618.397 (0) backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads2.zip.tmp: size is now: 166.40 MB
+2618.401 (0) The time we have been running (2618.4) is approaching the resumption interval (2647) - increasing resumption interval to 2649
+2618.406 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads2.zip.tmp: 2700 files added (on-disk size: 170384.2 KB)
+2618.409 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads2.zip.tmp: 2800 files added (on-disk size: 170384.2 KB)
+2618.412 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads2.zip.tmp: 2900 files added (on-disk size: 170384.2 KB)
+2618.415 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads2.zip.tmp: 3000 files added (on-disk size: 170384.2 KB)
+2618.418 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads2.zip.tmp: 3100 files added (on-disk size: 170384.2 KB)
+2618.419 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (91.1 MB, 6530 files batched, 501 (3109) added so far); re-opening (prior size: 170384.2 KB)
+2812.734 (0) The time we have been running (2812.7) is approaching the resumption interval (2649) - increasing resumption interval to 2843
+2819.560 (0) The time we have been running (2819.6) is approaching the resumption interval (2843) - increasing resumption interval to 2850
+2824.901 (0) The time we have been running (2824.9) is approaching the resumption interval (2850) - increasing resumption interval to 2855
+2831.388 (0) The time we have been running (2831.4) is approaching the resumption interval (2855) - increasing resumption interval to 2862
+2838.857 (0) The time we have been running (2838.9) is approaching the resumption interval (2862) - increasing resumption interval to 2869
+2843.875 (0) The time we have been running (2843.9) is approaching the resumption interval (2869) - increasing resumption interval to 2874
+2850.326 (0) The time we have been running (2850.3) is approaching the resumption interval (2874) - increasing resumption interval to 2881
+2858.604 (0) The time we have been running (2858.6) is approaching the resumption interval (2881) - increasing resumption interval to 2889
+2867.781 (0) The time we have been running (2867.8) is approaching the resumption interval (2889) - increasing resumption interval to 2898
+2873.616 (0) The time we have been running (2873.6) is approaching the resumption interval (2898) - increasing resumption interval to 2904
+2879.523 (0) The time we have been running (2879.5) is approaching the resumption interval (2904) - increasing resumption interval to 2910
+2886.355 (0) The time we have been running (2886.3) is approaching the resumption interval (2910) - increasing resumption interval to 2917
+2896.781 (0) The time we have been running (2896.8) is approaching the resumption interval (2917) - increasing resumption interval to 2927
+2901.872 (0) The time we have been running (2901.9) is approaching the resumption interval (2927) - increasing resumption interval to 2932
+2911.710 (0) The time we have been running (2911.7) is approaching the resumption interval (2932) - increasing resumption interval to 2942
+2916.903 (0) The time we have been running (2916.9) is approaching the resumption interval (2942) - increasing resumption interval to 2947
+2929.019 (0) The time we have been running (2929) is approaching the resumption interval (2947) - increasing resumption interval to 2960
+2929.722 (0) backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads2.zip.tmp: size is now: 257.60 MB
+2929.847 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads2.zip.tmp: 3200 files added (on-disk size: 263784.3 KB)
+2929.849 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads2.zip.tmp: 3300 files added (on-disk size: 263784.3 KB)
+2929.851 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads2.zip.tmp: 3400 files added (on-disk size: 263784.3 KB)
+2929.853 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads2.zip.tmp: 3500 files added (on-disk size: 263784.3 KB)
+2929.859 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads2.zip.tmp: 3600 files added (on-disk size: 263784.3 KB)
+2929.867 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (94.8 MB, 6530 files batched, 501 (3610) added so far); re-opening (prior size: 263784.3 KB)
+3253.944 (0) The time we have been running (3253.9) is approaching the resumption interval (2960) - increasing resumption interval to 3284
+3259.909 (0) The time we have been running (3259.9) is approaching the resumption interval (3284) - increasing resumption interval to 3290
+3269.391 (0) The time we have been running (3269.4) is approaching the resumption interval (3290) - increasing resumption interval to 3300
+3275.720 (0) The time we have been running (3275.7) is approaching the resumption interval (3300) - increasing resumption interval to 3306
+3280.884 (0) The time we have been running (3280.9) is approaching the resumption interval (3306) - increasing resumption interval to 3311
+3290.849 (0) The time we have been running (3290.8) is approaching the resumption interval (3311) - increasing resumption interval to 3321
+3297.326 (0) The time we have been running (3297.3) is approaching the resumption interval (3321) - increasing resumption interval to 3328
+3302.988 (0) The time we have been running (3303) is approaching the resumption interval (3328) - increasing resumption interval to 3333
+3310.204 (0) The time we have been running (3310.2) is approaching the resumption interval (3333) - increasing resumption interval to 3341
+3316.856 (0) The time we have been running (3316.9) is approaching the resumption interval (3341) - increasing resumption interval to 3347
+3327.397 (0) The time we have been running (3327.4) is approaching the resumption interval (3347) - increasing resumption interval to 3358
+3340.258 (0) The time we have been running (3340.3) is approaching the resumption interval (3358) - increasing resumption interval to 3371
+3347.577 (0) The time we have been running (3347.6) is approaching the resumption interval (3371) - increasing resumption interval to 3378
+3360.427 (0) The time we have been running (3360.4) is approaching the resumption interval (3378) - increasing resumption interval to 3391
+3371.450 (0) The time we have been running (3371.4) is approaching the resumption interval (3391) - increasing resumption interval to 3402
+3377.516 (0) The time we have been running (3377.5) is approaching the resumption interval (3402) - increasing resumption interval to 3408
+3381.721 (0) backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads2.zip.tmp: size is now: 352.50 MB
+3381.726 (0) The time we have been running (3381.7) is approaching the resumption interval (3408) - increasing resumption interval to 3412
+3381.729 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads2.zip.tmp: 3700 files added (on-disk size: 360937.8 KB)
+3381.732 (0) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads2.zip.tmp: 3800 files added (on-disk size: 360937.8 KB)
+3381.737 (0) Adding batch to zip file (UpdraftPlus_BinZip): possibly approaching split limit (43.5 MB, 197 (3807) files added so far); last ratio: 1; re-opening (prior size: 360937.8 KB)
+5143.102 (4) Opened log file at time: Tue, 11 Feb 2020 22:04:09 +0000 on https://enrictorrents.com
+5143.114 (4) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.21 WP: 5.3.2 PHP: 7.2.22 (litespeed, Linux lhcp2040.webapps.net 2.6.32-954.3.5.lve1.4.71.el6.x86_64 #1 SMP Fri Sep 6 06:22:16 EDT 2019 x86_64) MySQL: 5.6.43-cll-lve WPLANG: es_ES Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 65.6M | 68.3M) multisite: N openssl: OpenSSL 1.0.2k  26 Jan 2017 mcrypt: N LANG:  ZipArchive::addFile: N
+5143.297 (4) Free space on disk containing Updraft's temporary directory: 233470.7 MB
+5143.307 (4) Backup run: resumption=4, nonce=9b61cd1a7b0c, file_nonce=9b61cd1a7b0c begun at=1581453506 (5143s ago), job type=backup
+5143.317 (4) Scheduling a resumption (5) after 3412 seconds (1581462061) in case this run gets aborted
+5143.754 (4) Checking if we have a zip executable available
+5143.763 (4) Zip engine: found/will use a binary zip: /usr/bin/zip
+5143.769 (4) Creation of backups of directories: had begun; will resume
+5143.790 (4) Beginning creation of dump of plugins (split every: 400 MB)
+5143.794 (4) backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-plugins.zip: this file has already been created (age: 4851 s)
+5143.860 (4) Beginning creation of dump of themes (split every: 400 MB)
+5143.864 (4) backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-themes.zip: this file has already been created (age: 4820 s)
+5143.919 (4) Exclusion option setting (uploads): backup*,*backups,backwpup*,wp-clone,snapshots
+5143.924 (4) Looking for candidates to backup in: /home/sl3856ae/public_html/wp-content/uploads
+5143.933 (4) finding files: 2015: adding to list (1)
+5143.944 (4) finding files: WP-STATIC-INITIAL-CRAWL-LIST.txt: adding to list (2)
+5143.949 (4) finding files: 2016: adding to list (3)
+5143.954 (4) finding files: bb-plugin: adding to list (4)
+5143.959 (4) finding files: 2014: adding to list (5)
+5143.966 (4) finding files: cache: adding to list (6)
+5143.969 (4) finding files: 2018: adding to list (7)
+5143.974 (4) finding files: 2019: adding to list (8)
+5143.979 (4) finding files: 2011: adding to list (9)
+5143.984 (4) finding files: 2012: adding to list (10)
+5143.989 (4) finding files: 2009: adding to list (11)
+5143.994 (4) finding files: 2020: adding to list (12)
+5143.999 (4) finding files: WP-STATIC-INITIAL-CRAWL-TOTAL.txt: adding to list (13)
+5144.008 (4) Beginning creation of dump of uploads (split every: 400 MB)
+5144.053 (4) File exists (/home/sl3856ae/public_html/wp-content/updraft/backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads2.zip.tmp), but was apparently not modified within the last 30 seconds, so we assume that any previous run has now terminated (time_mod=1581457408, time_now=1581458650, diff=1242)
+5144.740 (4) backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads.zip: Zip file already exists, with 1605 files
+5144.765 (4) backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads2.zip.tmp: Zip file already exists, with 3807 files
+5146.088 (4) Total entities for the zip file: 53 directories, 6532 files (0 skipped as non-modified), 1324.9 MB
+5146.095 (4) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads2.zip.tmp: 100 files added (on-disk size: 405521.5 KB)
+5146.099 (4) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads2.zip.tmp: 200 files added (on-disk size: 405521.5 KB)
+5146.108 (4) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads2.zip.tmp: 300 files added (on-disk size: 405521.5 KB)
+5146.110 (4) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads2.zip.tmp: 400 files added (on-disk size: 405521.5 KB)
+5146.115 (4) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads2.zip.tmp: 500 files added (on-disk size: 405521.5 KB)
+5146.121 (4) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads2.zip.tmp: 600 files added (on-disk size: 405521.5 KB)
+5146.125 (4) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads2.zip.tmp: 700 files added (on-disk size: 405521.5 KB)
+5146.130 (4) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads2.zip.tmp: 800 files added (on-disk size: 405521.5 KB)
+5146.136 (4) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads2.zip.tmp: 900 files added (on-disk size: 405521.5 KB)
+5146.140 (4) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads2.zip.tmp: 1000 files added (on-disk size: 405521.5 KB)
+5146.146 (4) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads2.zip.tmp: 1100 files added (on-disk size: 405521.5 KB)
+5146.150 (4) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads2.zip.tmp: 1200 files added (on-disk size: 405521.5 KB)
+5146.155 (4) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads2.zip.tmp: 1300 files added (on-disk size: 405521.5 KB)
+5146.160 (4) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads2.zip.tmp: 1400 files added (on-disk size: 405521.5 KB)
+5146.166 (4) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads2.zip.tmp: 1500 files added (on-disk size: 405521.5 KB)
+5146.172 (4) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads2.zip.tmp: 1600 files added (on-disk size: 405521.5 KB)
+5146.177 (4) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads2.zip.tmp: 1700 files added (on-disk size: 405521.5 KB)
+5146.182 (4) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads2.zip.tmp: 1800 files added (on-disk size: 405521.5 KB)
+5146.187 (4) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads2.zip.tmp: 1900 files added (on-disk size: 405521.5 KB)
+5146.192 (4) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads2.zip.tmp: 2000 files added (on-disk size: 405521.5 KB)
+5146.197 (4) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads2.zip.tmp: 2100 files added (on-disk size: 405521.5 KB)
+5146.202 (4) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads2.zip.tmp: 2200 files added (on-disk size: 405521.5 KB)
+5146.208 (4) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads2.zip.tmp: 2300 files added (on-disk size: 405521.5 KB)
+5146.220 (4) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads2.zip.tmp: 2400 files added (on-disk size: 405521.5 KB)
+5146.227 (4) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads2.zip.tmp: 2500 files added (on-disk size: 405521.5 KB)
+5146.229 (4) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads2.zip.tmp: 2600 files added (on-disk size: 405521.5 KB)
+5146.230 (4) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads2.zip.tmp: 2700 files added (on-disk size: 405521.5 KB)
+5146.231 (4) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads2.zip.tmp: 2800 files added (on-disk size: 405521.5 KB)
+5146.235 (4) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads2.zip.tmp: 2900 files added (on-disk size: 405521.5 KB)
+5146.236 (4) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads2.zip.tmp: 3000 files added (on-disk size: 405521.5 KB)
+5146.238 (4) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads2.zip.tmp: 3100 files added (on-disk size: 405521.5 KB)
+5146.240 (4) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads2.zip.tmp: 3200 files added (on-disk size: 405521.5 KB)
+5146.241 (4) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads2.zip.tmp: 3300 files added (on-disk size: 405521.5 KB)
+5146.249 (4) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads2.zip.tmp: 3400 files added (on-disk size: 405521.5 KB)
+5146.251 (4) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads2.zip.tmp: 3500 files added (on-disk size: 405521.5 KB)
+5146.253 (4) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads2.zip.tmp: 3600 files added (on-disk size: 405521.5 KB)
+5146.255 (4) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads2.zip.tmp: 3700 files added (on-disk size: 405521.5 KB)
+5146.256 (4) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads2.zip.tmp: 3800 files added (on-disk size: 405521.5 KB)
+5146.257 (4) Adding batch to zip file (UpdraftPlus_BinZip): possibly approaching split limit (4.3 MB, 18 (18) files added so far); last ratio: 1; re-opening (prior size: 405521.5 KB)
+5670.019 (4) Zip size is at/near split limit (400 MB / 400 MB) - bumping index (from: 1)
+6064.709 (4) Created uploads zip (1) - 409630.1 KB in 525.9 s (778.9 KB/s) (checksums: sha1: 8518735fdf8bc238faf75b30b26ec556e1bb4329, sha256: fa850b2985011da4f15a266d9dc3cdcd8c6d98c7ab38cab27663e3228068538c)
+6064.855 (4) Adding batch to zip file (UpdraftPlus_BinZip): over 2.0 seconds have passed since the last write (0.6 MB, 1 (19) files added so far); re-opening (prior size: 0 KB)
+6065.837 (4) backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads3.zip.tmp: size is now: 0.60 MB
+6065.841 (4) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads3.zip.tmp: 3900 files added (on-disk size: 623.9 KB)
+6065.844 (4) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads3.zip.tmp: 4000 files added (on-disk size: 623.9 KB)
+6065.846 (4) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads3.zip.tmp: 4100 files added (on-disk size: 623.9 KB)
+6065.848 (4) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads3.zip.tmp: 4200 files added (on-disk size: 623.9 KB)
+6065.850 (4) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads3.zip.tmp: 4300 files added (on-disk size: 623.9 KB)
+6065.851 (4) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (97 MB, 6532 files batched, 501 (520) added so far); re-opening (prior size: 623.9 KB)
+6201.440 (4) backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads3.zip.tmp: size is now: 97.70 MB
+6201.458 (4) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads3.zip.tmp: 4400 files added (on-disk size: 100080.3 KB)
+6201.461 (4) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads3.zip.tmp: 4500 files added (on-disk size: 100080.3 KB)
+6201.463 (4) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads3.zip.tmp: 4600 files added (on-disk size: 100080.3 KB)
+6201.465 (4) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads3.zip.tmp: 4700 files added (on-disk size: 100080.3 KB)
+6201.467 (4) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads3.zip.tmp: 4800 files added (on-disk size: 100080.3 KB)
+6201.468 (4) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (108.8 MB, 6532 files batched, 501 (1021) added so far); re-opening (prior size: 100080.3 KB)
+6432.443 (4) backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads3.zip.tmp: size is now: 206.60 MB
+6432.448 (4) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads3.zip.tmp: 4900 files added (on-disk size: 211607.4 KB)
+6432.450 (4) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads3.zip.tmp: 5000 files added (on-disk size: 211607.4 KB)
+6432.452 (4) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads3.zip.tmp: 5100 files added (on-disk size: 211607.4 KB)
+6432.454 (4) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads3.zip.tmp: 5200 files added (on-disk size: 211607.4 KB)
+6432.456 (4) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads3.zip.tmp: 5300 files added (on-disk size: 211607.4 KB)
+6432.457 (4) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (95.6 MB, 6532 files batched, 501 (1522) added so far); re-opening (prior size: 211607.4 KB)
+6814.150 (4) backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads3.zip.tmp: size is now: 302.40 MB
+6814.159 (4) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads3.zip.tmp: 5400 files added (on-disk size: 309647 KB)
+6814.161 (4) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads3.zip.tmp: 5500 files added (on-disk size: 309647 KB)
+6814.163 (4) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads3.zip.tmp: 5600 files added (on-disk size: 309647 KB)
+6814.166 (4) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads3.zip.tmp: 5700 files added (on-disk size: 309647 KB)
+6814.167 (4) Adding batch to zip file (UpdraftPlus_BinZip): possibly approaching split limit (88.9 MB, 445 (1967) files added so far); last ratio: 1; re-opening (prior size: 309647 KB)
+7337.596 (4) backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads3.zip.tmp: size is now: 391.40 MB
+7337.599 (4) Zip size is at/near split limit (391.4 MB / 400 MB) - bumping index (from: 2)
+7685.560 (4) Created uploads zip (2) - 400781.7 KB in 1272.8 s (314.9 KB/s) (checksums: sha1: 1c072c8b8323b99b76071034e8fa052f8c61bfdd, sha256: 24a286a5b0ca2fdaec03f633956906ad20eea126e8333499da7e9cd4755fa2b8)
+7685.570 (4) Adding batch to zip file (UpdraftPlus_BinZip): over 2.0 seconds have passed since the last write (0 MB, 1 (1968) files added so far); re-opening (prior size: 0 KB)
+7685.692 (4) backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads4.zip.tmp: size is now: 0.00 MB
+7685.705 (4) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads4.zip.tmp: 5800 files added (on-disk size: 6.9 KB)
+7685.707 (4) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads4.zip.tmp: 5900 files added (on-disk size: 6.9 KB)
+7685.709 (4) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads4.zip.tmp: 6000 files added (on-disk size: 6.9 KB)
+7685.712 (4) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads4.zip.tmp: 6100 files added (on-disk size: 6.9 KB)
+7685.714 (4) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads4.zip.tmp: 6200 files added (on-disk size: 6.9 KB)
+7685.716 (4) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (98.6 MB, 6532 files batched, 501 (2469) added so far); re-opening (prior size: 6.9 KB)
+7806.352 (4) backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads4.zip.tmp: size is now: 98.70 MB
+7806.378 (4) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads4.zip.tmp: 6300 files added (on-disk size: 101086.1 KB)
+7806.387 (4) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads4.zip.tmp: 6400 files added (on-disk size: 101086.1 KB)
+7806.390 (4) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads4.zip.tmp: 6500 files added (on-disk size: 101086.1 KB)
+7987.683 (4) backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads4.zip.tmp: size is now: 144.00 MB
+8012.170 (4) Created uploads zip (3) - 147447.2 KB in 326.6 s (451.4 KB/s) (sha1: cf7102709e451c3102edccfdd3337182d7479c56, sha256: b5b26201d47bf564f6b4db9b3649c75e3d623ba923d08fbd032c8ec2a63b0f24)
+8012.179 (4) Beginning backup of other directories found in the content directory (index: 0)
+8012.180 (4) Exclusion option setting (others): upgrade,cache,updraft,backup*,*backups,mysql.sql,debug.log
+8012.181 (4) Looking for candidates to backup in: /home/sl3856ae/public_html/wp-content
+8012.182 (4) finding files: ngg: adding to list (1)
+8012.308 (4) finding files: wp-cache-config.php: adding to list (2)
+8012.309 (4) finding files: uploads: skipping: this is the uploads directory
+8012.309 (4) finding files: cache: skipping: excluded by options
+8012.310 (4) finding files: themes: skipping: this is the themes directory
+8012.310 (4) finding files: upgrade: skipping: excluded by options
+8012.311 (4) finding files: index.php: adding to list (3)
+8012.311 (4) finding files: uploads.zip: adding to list (4)
+8012.312 (4) finding files: debug.log: skipping: excluded by options
+8012.312 (4) finding files: plugins: skipping: this is the plugins directory
+8012.313 (4) finding files: languages: adding to list (5)
+8012.314 (4) finding files: gallery: adding to list (6)
+8012.315 (4) finding files: advanced-cache.php: adding to list (7)
+8012.315 (4) finding files: updraft: skipping: this is the updraft directory
+8013.137 (4) Total entities for the zip file: 40 directories, 121 files (0 skipped as non-modified), 431 MB
+8013.141 (4) [Warning] Se ha encontrado un fichero muy grande: uploads.zip (tamaño: 411.4 MB)
+8013.141 (4) Adding batch to zip file (UpdraftPlus_BinZip): over 200 MB added on this batch (411.4 MB, 121 files batched, 3 (3) added so far); re-opening (prior size: 0 KB)
+8592.035 (4) The time we have been running (3448.9) is approaching the resumption interval (3412) - increasing resumption interval to 3479
+8592.222 (4) backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-others.zip.tmp: size is now: 411.40 MB
+8592.227 (4) The time we have been running (3449.1) is approaching the resumption interval (3479) - increasing resumption interval to 3480
+8592.229 (4) A useful amount of data was added after this amount of zip processing: 580.4 s (normalised: 282.2 s, rate: 725.8 KB/s)
+8592.229 (4) Performance is good - but we will not increase the amount of data we batch, as we are already at the present limit (time=580.36165904999, normalised_time=282.16697551198, max_time=3382, data points known=1, max_bytes=209715200)
+8592.231 (4) Zip size is at/near split limit (411.4 MB / 400 MB) - bumping index (from: 0)
+8657.645 (5) Opened log file at time: Tue, 11 Feb 2020 23:02:43 +0000 on https://enrictorrents.com
+8657.651 (5) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.21 WP: 5.3.2 PHP: 7.2.22 (litespeed, Linux lhcp2040.webapps.net 2.6.32-954.3.5.lve1.4.71.el6.x86_64 #1 SMP Fri Sep 6 06:22:16 EDT 2019 x86_64) MySQL: 5.6.43-cll-lve WPLANG: es_ES Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 66.8M | 68.3M) multisite: N openssl: OpenSSL 1.0.2k  26 Jan 2017 mcrypt: N LANG:  ZipArchive::addFile: N
+8657.745 (5) Free space on disk containing Updraft's temporary directory: 232439.2 MB
+8657.753 (5) Backup run: resumption=5, nonce=9b61cd1a7b0c, file_nonce=9b61cd1a7b0c begun at=1581453506 (8657s ago), job type=backup, previous check-in=3449.1s
+8657.756 (5) Scheduling a resumption (6) after 3480 seconds (1581465643) in case this run gets aborted
+8658.206 (5) Checking if we have a zip executable available
+8658.216 (5) Zip engine: found/will use a binary zip: /usr/bin/zip
+8658.223 (5) Creation of backups of directories: had begun; will resume
+8658.244 (5) Beginning creation of dump of plugins (split every: 400 MB)
+8658.249 (5) backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-plugins.zip: this file has already been created (age: 8366 s)
+8658.314 (5) Beginning creation of dump of themes (split every: 400 MB)
+8658.318 (5) backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-themes.zip: this file has already been created (age: 8335 s)
+8658.374 (5) Exclusion option setting (uploads): backup*,*backups,backwpup*,wp-clone,snapshots
+8658.379 (5) Looking for candidates to backup in: /home/sl3856ae/public_html/wp-content/uploads
+8658.388 (5) finding files: 2015: adding to list (1)
+8658.399 (5) finding files: WP-STATIC-INITIAL-CRAWL-LIST.txt: adding to list (2)
+8658.403 (5) finding files: 2016: adding to list (3)
+8658.408 (5) finding files: bb-plugin: adding to list (4)
+8658.413 (5) finding files: 2014: adding to list (5)
+8658.418 (5) finding files: cache: adding to list (6)
+8658.424 (5) finding files: 2018: adding to list (7)
+8658.428 (5) finding files: 2019: adding to list (8)
+8658.433 (5) finding files: 2011: adding to list (9)
+8658.438 (5) finding files: 2012: adding to list (10)
+8658.444 (5) finding files: 2009: adding to list (11)
+8658.448 (5) finding files: 2020: adding to list (12)
+8658.453 (5) finding files: WP-STATIC-INITIAL-CRAWL-TOTAL.txt: adding to list (13)
+8658.462 (5) Beginning creation of dump of uploads (split every: 400 MB)
+8658.468 (5) backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads4.zip: this file has already been created (age: 671 s)
+8658.524 (5) Beginning backup of other directories found in the content directory (index: 0)
+8658.528 (5) Exclusion option setting (others): upgrade,cache,updraft,backup*,*backups,mysql.sql,debug.log
+8658.533 (5) Looking for candidates to backup in: /home/sl3856ae/public_html/wp-content
+8658.542 (5) finding files: ngg: adding to list (1)
+8658.549 (5) finding files: wp-cache-config.php: adding to list (2)
+8658.553 (5) finding files: uploads: skipping: this is the uploads directory
+8658.559 (5) finding files: cache: skipping: excluded by options
+8658.563 (5) finding files: themes: skipping: this is the themes directory
+8658.568 (5) finding files: upgrade: skipping: excluded by options
+8658.574 (5) finding files: index.php: adding to list (3)
+8658.578 (5) finding files: uploads.zip: adding to list (4)
+8658.585 (5) finding files: debug.log: skipping: excluded by options
+8658.590 (5) finding files: plugins: skipping: this is the plugins directory
+8658.594 (5) finding files: languages: adding to list (5)
+8658.599 (5) finding files: gallery: adding to list (6)
+8658.605 (5) finding files: advanced-cache.php: adding to list (7)
+8658.609 (5) finding files: updraft: skipping: this is the updraft directory
+8658.659 (5) File exists (/home/sl3856ae/public_html/wp-content/updraft/backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-others.zip.tmp), but was apparently not modified within the last 30 seconds, so we assume that any previous run has now terminated (time_mod=1581462098, time_now=1581462164, diff=66)
+8658.720 (5) backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-others.zip.tmp: Zip file already exists, with 3 files
+8658.902 (5) Zip size is at/near split limit (431349430 MB / 400 MB) - bumping index (from: 0)
+9029.378 (5) Created others zip (0) - 421239.7 KB in 0.2 s (2189588.3 KB/s) (checksums: sha1: b9be9574b2be6bef1eaa002414a6ad7f1fa7b155, sha256: e4cafc131dbf0f4771807c3b14e55f72ad4f7f60d9d99cee96ad819414143d15)
+9029.565 (5) Total entities for the zip file: 40 directories, 121 files (0 skipped as non-modified), 431 MB
+9029.566 (5) [Warning] Se ha encontrado un fichero muy grande: uploads.zip (tamaño: 411.4 MB)
+9029.569 (5) Zip: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-others2.zip.tmp: 100 files added (on-disk size: 0 KB)
+9048.998 (5) backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-others2.zip.tmp: size is now: 13.80 MB
+9049.148 (5) Created others zip (1) - 14116.1 KB in 19.8 s (714 KB/s) (sha1: 375e4f9ccf73d17d529065d5a038ee67ed15b7f1, sha256: 72b24f068f3f6993dec6a90035dfc8ce4460ff974337e4af89b82960bcf41d12)
+9049.154 (5) Saving backup status to database (elements: 12)
+9049.156 (5) Resuming creation of database dump (WordPress DB)
+9049.158 (5) Testing potential mysqldump binary: /usr/bin/mysqldump
+9049.375 (5) Output: /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;\n/*!40103 SET TIME_ZONE='+00:00' */;\n/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;\n/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;\n/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;\n/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;\nDROP TABLE IF EXISTS `wp_options`;\n/*!40101 SET @saved_cs_client     = @@character_set_client */;\n/*!40101 SET character_set_client = utf8 */;\nCRE (truncated - 1226 bytes total)
+9049.405 (5) Working binary mysqldump found: /usr/bin/mysqldump
+9049.449 (5) Table wp_options: Total expected rows (approximate): 829
+9049.662 (5) Table wp_options: Total rows added: 830 in 0.21 seconds
+9049.668 (5) Table wp_options: finishing file (backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-db-table-wp_options.table.gz - 730.5 KB)
+9049.674 (5) Table wp_users: Total expected rows (approximate): 0
+9049.704 (5) Table wp_users: Total rows added: 1 in 0.03 seconds
+9049.706 (5) Table wp_users: finishing file (backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-db-table-wp_users.table.gz - 0.5 KB)
+9049.712 (5) Table wp_usermeta: Total expected rows (approximate): 50
+9049.742 (5) Table wp_usermeta: Total rows added: 50 in 0.03 seconds
+9049.743 (5) Table wp_usermeta: finishing file (backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-db-table-wp_usermeta.table.gz - 2.2 KB)
+9049.748 (5) Table wp_commentmeta: Total expected rows (approximate): 36
+9049.778 (5) Table wp_commentmeta: Total rows added: 41 in 0.03 seconds
+9049.779 (5) Table wp_commentmeta: finishing file (backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-db-table-wp_commentmeta.table.gz - 1.3 KB)
+9049.782 (5) Table wp_comments: Total expected rows (approximate): 17
+9049.811 (5) Table wp_comments: Total rows added: 17 in 0.03 seconds
+9049.812 (5) Table wp_comments: finishing file (backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-db-table-wp_comments.table.gz - 3.9 KB)
+9049.817 (5) Table wp_links: Total expected rows (approximate): 0
+9049.845 (5) Table wp_links: Total rows added: 0 in 0.03 seconds
+9049.846 (5) Table wp_links: finishing file (backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-db-table-wp_links.table.gz - 0.4 KB)
+9049.850 (5) Table wp_postmeta: Total expected rows (approximate): 2149
+9049.910 (5) Table wp_postmeta: Total rows added: 2296 in 0.06 seconds
+9049.912 (5) Table wp_postmeta: finishing file (backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-db-table-wp_postmeta.table.gz - 80.4 KB)
+9049.917 (5) Table wp_posts: Total expected rows (approximate): 382
+9049.974 (5) Table wp_posts: Total rows added: 445 in 0.06 seconds
+9049.976 (5) Table wp_posts: finishing file (backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-db-table-wp_posts.table.gz - 58.3 KB)
+9049.982 (5) Table wp_term_relationships: Total expected rows (approximate): 158
+9050.012 (5) Table wp_term_relationships: Total rows added: 158 in 0.03 seconds
+9050.013 (5) Table wp_term_relationships: finishing file (backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-db-table-wp_term_relationships.table.gz - 0.8 KB)
+9050.016 (5) Table wp_term_taxonomy: Total expected rows (approximate): 94
+9050.046 (5) Table wp_term_taxonomy: Total rows added: 94 in 0.03 seconds
+9050.047 (5) Table wp_term_taxonomy: finishing file (backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-db-table-wp_term_taxonomy.table.gz - 4.5 KB)
+9050.052 (5) Table wp_termmeta: Total expected rows (approximate): 52
+9050.081 (5) Table wp_termmeta: Total rows added: 52 in 0.03 seconds
+9050.082 (5) Table wp_termmeta: finishing file (backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-db-table-wp_termmeta.table.gz - 0.7 KB)
+9050.088 (5) Table wp_terms: Total expected rows (approximate): 94
+9050.118 (5) Table wp_terms: Total rows added: 94 in 0.03 seconds
+9050.119 (5) Table wp_terms: finishing file (backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-db-table-wp_terms.table.gz - 2.3 KB)
+9050.129 (5) Table wp_yoast_seo_links: Total expected rows (approximate): 13
+9050.160 (5) Table wp_yoast_seo_links: Total rows added: 13 in 0.03 seconds
+9050.162 (5) Table wp_yoast_seo_links: finishing file (backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-db-table-wp_yoast_seo_links.table.gz - 0.6 KB)
+9050.171 (5) Table wp_yoast_seo_meta: Total expected rows (approximate): 4
+9050.202 (5) Table wp_yoast_seo_meta: Total rows added: 4 in 0.03 seconds
+9050.203 (5) Table wp_yoast_seo_meta: finishing file (backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-db-table-wp_yoast_seo_meta.table.gz - 0.4 KB)
+9050.213 (5) Table wp_cpd_counter: Total expected rows (approximate): 94
+9050.241 (5) Table wp_cpd_counter: Total rows added: 94 in 0.03 seconds
+9050.243 (5) Table wp_cpd_counter: finishing file (backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-db-table-wp_cpd_counter.table.gz - 2.4 KB)
+9050.251 (5) Table wp_ngg_album: Total expected rows (approximate): 0
+9050.280 (5) Table wp_ngg_album: Total rows added: 0 in 0.03 seconds
+9050.281 (5) Table wp_ngg_album: finishing file (backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-db-table-wp_ngg_album.table.gz - 0.4 KB)
+9050.290 (5) Table wp_ngg_gallery: Total expected rows (approximate): 1
+9050.319 (5) Table wp_ngg_gallery: Total rows added: 1 in 0.03 seconds
+9050.319 (5) Table wp_ngg_gallery: finishing file (backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-db-table-wp_ngg_gallery.table.gz - 0.5 KB)
+9050.327 (5) Table wp_ngg_pictures: Total expected rows (approximate): 6
+9050.355 (5) Table wp_ngg_pictures: Total rows added: 6 in 0.03 seconds
+9050.356 (5) Table wp_ngg_pictures: finishing file (backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-db-table-wp_ngg_pictures.table.gz - 1.8 KB)
+9050.363 (5) Table wp_smush_dir_images: Total expected rows (approximate): 0
+9050.387 (5) Table wp_smush_dir_images: Total rows added: 0 in 0.02 seconds
+9050.389 (5) Table wp_smush_dir_images: finishing file (backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-db-table-wp_smush_dir_images.table.gz - 0.4 KB)
+9050.391 (5) backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-db-table-wp_options.table.gz (1/19): adding to final database dump
+9053.976 (5) backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-db-table-wp_users.table.gz (2/19): adding to final database dump
+9053.977 (5) backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-db-table-wp_usermeta.table.gz (3/19): adding to final database dump
+9053.978 (5) backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-db-table-wp_commentmeta.table.gz (4/19): adding to final database dump
+9053.979 (5) backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-db-table-wp_comments.table.gz (5/19): adding to final database dump
+9053.980 (5) backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-db-table-wp_links.table.gz (6/19): adding to final database dump
+9053.981 (5) backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-db-table-wp_postmeta.table.gz (7/19): adding to final database dump
+9054.003 (5) backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-db-table-wp_posts.table.gz (8/19): adding to final database dump
+9054.016 (5) backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-db-table-wp_term_relationships.table.gz (9/19): adding to final database dump
+9054.017 (5) backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-db-table-wp_term_taxonomy.table.gz (10/19): adding to final database dump
+9054.019 (5) backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-db-table-wp_termmeta.table.gz (11/19): adding to final database dump
+9054.020 (5) backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-db-table-wp_terms.table.gz (12/19): adding to final database dump
+9054.021 (5) backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-db-table-wp_yoast_seo_links.table.gz (13/19): adding to final database dump
+9054.021 (5) backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-db-table-wp_yoast_seo_meta.table.gz (14/19): adding to final database dump
+9054.022 (5) backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-db-table-wp_cpd_counter.table.gz (15/19): adding to final database dump
+9054.023 (5) backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-db-table-wp_ngg_album.table.gz (16/19): adding to final database dump
+9054.024 (5) backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-db-table-wp_ngg_gallery.table.gz (17/19): adding to final database dump
+9054.024 (5) backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-db-table-wp_ngg_pictures.table.gz (18/19): adding to final database dump
+9054.026 (5) backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-db-table-wp_smush_dir_images.table.gz (19/19): adding to final database dump
+9054.049 (5) backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-db.gz: finished writing out complete database file (864 KB)
+9054.063 (5) Total database tables backed up: 19 (backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-db.gz, size: 909013, sha1: f6241b055daac06dda9e9a74b07210226f8d9382, sha256: f845452e00065aad8a82ed32d51fe2e88f19bbfe1159672344b855245c6ed623)
+9054.071 (5) backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-plugins.zip: plugins: This file has not yet been successfully uploaded: will queue
+9054.071 (5) backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-themes.zip: themes: This file has not yet been successfully uploaded: will queue
+9054.072 (5) backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads.zip: uploads: This file has not yet been successfully uploaded: will queue
+9054.073 (5) backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads2.zip: uploads: This file has not yet been successfully uploaded: will queue
+9054.073 (5) backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads3.zip: uploads: This file has not yet been successfully uploaded: will queue
+9054.074 (5) backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads4.zip: uploads: This file has not yet been successfully uploaded: will queue
+9054.074 (5) backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-others.zip: others: This file has not yet been successfully uploaded: will queue
+9054.075 (5) backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-others2.zip: others: This file has not yet been successfully uploaded: will queue
+9054.076 (5) backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-db.gz: db: This file has not yet been successfully uploaded: will queue
+9054.077 (5) Saving backup history. Total backup size: 1.8 GB
+9054.080 (5) Requesting upload of the files that have not yet been successfully uploaded (9)
+9054.082 (5) Cloud backup selection (1/1): none with instance (1/1) (last)
+9054.083 (5) No remote despatch: user chose no remote backup service
+9054.085 (5) Recording as successfully uploaded: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-plugins.zip
+9054.090 (5) Recording as successfully uploaded: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-themes.zip
+9054.091 (5) Recording as successfully uploaded: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads.zip
+9054.094 (5) Recording as successfully uploaded: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads2.zip
+9054.096 (5) Recording as successfully uploaded: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads3.zip
+9054.098 (5) Recording as successfully uploaded: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-uploads4.zip
+9054.100 (5) Recording as successfully uploaded: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-others.zip
+9054.102 (5) Recording as successfully uploaded: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-others2.zip
+9054.105 (5) Recording as successfully uploaded: backup_2020-02-11-2138_Enric_Torrents_9b61cd1a7b0c-db.gz
+9054.108 (5) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+9054.110 (5) Number of backup sets in history: 2; groups (db): 1
+9054.111 (5) Examining (for databases) backup set with group_id=0, nonce=9b61cd1a7b0c, datestamp=1581453506 (Feb 11 2020 20:38:26)
+9054.112 (5) This backup set is the backup set just made, so will not be deleted.
+9054.112 (5) Examining (for databases) backup set with group_id=0, nonce=9b61cd1a7b0c, datestamp=1581453480 (Feb 11 2020 20:38:00)
+9054.112 (5) Number of backup sets in history: 2; groups (files): 1
+9054.112 (5) Examining (for files) backup set with nonce=9b61cd1a7b0c, datestamp=1581453506 (Feb 11 2020 20:38:26)
+9054.112 (5) This backup set is the backup set just made, so will not be deleted.
+9054.113 (5) This backup set is the backup set just made, so will not be deleted.
+9054.113 (5) This backup set is the backup set just made, so will not be deleted.
+9054.113 (5) This backup set is the backup set just made, so will not be deleted.
+9054.113 (5) This backup set remains non-empty (f=1/d=1); will retain in history
+9054.114 (5) Examining (for files) backup set with nonce=9b61cd1a7b0c, datestamp=1581453480 (Feb 11 2020 20:38:00)
+9054.114 (5) This backup set is the backup set just made, so will not be deleted.
+9054.114 (5) This backup set is the backup set just made, so will not be deleted.
+9054.115 (5) This backup set remains non-empty (f=1/d=0); will retain in history
+9054.116 (5) Retain: saving new backup history (sets now: 2) and finishing retain operation
+9054.120 (5) Resume backup (9b61cd1a7b0c, 5): finish run
+9054.123 (5) There were no errors in the uploads, so the 'resume' event (6) is being unscheduled
+9054.126 (5) The backup apparently succeeded (with warnings) and is now complete
+9054.127 (5) No email will/can be sent - the user has not configured an email address.
+9054.128 (5) El respaldo al parecer tuvo éxito (con advertencias) y se ha completado

@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'wpzoom-icon';
+    src:url('../fonts/wpzoom-icon.eot');
+    src:url('../fonts/wpzoom-icon.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/wpzoom-icon.woff') format('woff'),
+        url('../fonts/wpzoom-icon.ttf') format('truetype'),
+        url('../fonts/wpzoom-icon.svg#wpzoom-icon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#toplevel_page_wpzoom_options .wp-menu-image {
+    font-family: 'wpzoom-icon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#toplevel_page_wpzoom_options .wp-menu-image:before {
+    font-family: inherit !important;
+    content: "\e600";
+}
+
+.zoomfw-seo.update-nag + .clear + #zoomWrap {
+    margin-top: 20px;
+}
+
+#update-nag, .update-nag {
+    display: block;
+    margin-bottom: 10px;
+}

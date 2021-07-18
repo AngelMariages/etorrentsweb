@@ -1,0 +1,25 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0
+}
+
+body {
+	font-size: 12px;
+	line-height: 2;
+	color: #555;
+	padding: 8px 12px
+}
+
+pre {
+	white-space: pre-wrap
+}
+
+pre .emergency { font-weight: bold; color: #c00 }
+pre .alert { color: #f00 }
+pre .critical { font-weight: bold; color: #f00 }
+pre .error { color: #ffa500 }
+pre .warning { color: #aa0 }
+pre .notice { color: #ff0 }
+pre .info { color: #aaa }
+pre .debug { color: #00f }

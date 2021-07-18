@@ -1,0 +1,63 @@
+#fl-field-menu_button_label th,
+#fl-field-menu_button_label td,
+#fl-field-menu_button_url th,
+#fl-field-menu_button_url td {
+	background: #e7ebef !important;
+}
+
+#fl-field-menu_button_label th {
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+
+#fl-field-menu_button_label td,
+#fl-field-menu_button_url td {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#fl-field-menu_button_url td {
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+
+#fl-field-price .fl-unit-field-input {
+	border-right: 0 !important;
+}
+
+#fl-field-price .fl-unit-field-input input {
+	border-top-left-radius: 0 !important;
+	border-top-right-radius: 4px !important;
+	border-bottom-left-radius: 0 !important;
+	border-bottom-right-radius: 4px !important;
+}
+
+#fl-field-price .fl-unit-field-unit-select {
+	order: -1;
+	border-right: 1px solid #e6eaed !important;
+}
+
+#fl-field-price .fl-unit-field-unit-select select {
+	border-top-left-radius: 4px !important;
+	border-top-right-radius: 0 !important;
+	border-bottom-left-radius: 4px !important;
+	border-bottom-right-radius: 0 !important;
+}
+
+#fl-field-image_source td {
+	padding-bottom: 0;
+}
+
+#fl-field-image td,
+#fl-field-image_url td {
+	padding-top: 0;
+}
+
+#fl-field-item_image_align .fl-button-group-field-option {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#fl-field-item_image_align .fl-button-group-field-option img {
+	margin: 0 10px 0 0;
+}

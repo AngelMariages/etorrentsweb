@@ -1,0 +1,68 @@
+
+/* Equal Height
+------------------------------------------------------ */
+.wpzabb-clients-wrap .wpzabb-clients {
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	    	flex-wrap: wrap;
+}
+.wpzabb-clients-wrap .wpzabb-clients,
+.wpzabb-clients-wrap .wpzabb-clients .wpzabb-client {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+.wpzabb-clients-wrap .wpzabb-clients .wpzabb-client {
+	-webkit-box-flex: 1 1 auto;
+	   -moz-box-flex: 1 1 auto;
+		-webkit-flex: 1 1 auto;
+			-ms-flex: 1 1 auto;
+				flex: 1 1 auto;
+}
+
+.wpzabb-clients-wrap {
+    position: relative;
+}
+
+.wpzabb-clients-wrap .fl-slider-next,
+.wpzabb-clients-wrap .fl-slider-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -5%;
+}
+
+.wpzabb-clients-wrap .fl-slider-next {
+    left: auto;
+    right: -5%;
+}
+
+.wpzabb-clients-wrap .fa {
+    font-size: 50px;
+}
+
+.wpzabb-clients-wrap .fa {
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+.wpzabb-clients-wrap .fa:hover {
+    opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+
+    .wpzabb-clients-wrap {
+        padding: 0 4%;
+    }
+
+    .wpzabb-clients-wrap .fl-slider-prev {
+        left: -2%;
+    }
+
+    .wpzabb-clients-wrap .fl-slider-next {
+        right: -2%;
+    }
+
+
+}

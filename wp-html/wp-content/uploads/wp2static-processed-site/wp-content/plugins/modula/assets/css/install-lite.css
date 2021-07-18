@@ -1,0 +1,15 @@
+#modula-install-lite.notice {
+    background: #e9eff3;
+    padding: 60px;
+    border: 10px solid #fff;
+    text-align: center;
+}
+
+#modula-install-lite #install-modula-lite {
+    line-height: 23px;
+    padding: 12px 36px;
+}
+
+#modula-install-lite h1, #modula-install-lite h4 {
+    text-align: center
+}

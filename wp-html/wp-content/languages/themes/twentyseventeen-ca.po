@@ -1,0 +1,335 @@
+# Translation of Themes - Twenty Seventeen in Catalan
+# This file is distributed under the same license as the Themes - Twenty Seventeen package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2017-11-16 18:10:48+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: ca\n"
+"Project-Id-Version: Themes - Twenty Seventeen\n"
+
+#. Description of the plugin/theme
+msgid "Twenty Seventeen brings your site to life with header video and immersive featured images. With a focus on business sites, it features multiple sections on the front page as well as widgets, navigation and social menus, a logo, and more. Personalize its asymmetrical grid with a custom color scheme and showcase your multimedia content with post formats. Our default theme for 2017 works great in many languages, for any abilities, and on any device."
+msgstr "Twenty Seventeen porta al vostre lloc amb capçaleres de vídeo i imatges destacades immersives. Enfocat per a llocs web d'empreses, destaca múltiples seccions a la pàgina d'inici, així com ginys, navegació i menús socials, logo i més. Personalitzeu la graella asimètrica amb un esquema de colors personalitzat i mostreu el vostre contingut multimèdia amb formats d'entrades. El tema per defecte per al 2017 funciona bé en molts idiomes, per a qualsevol necessitat, i en qualsevol dispositiu."
+
+#. Theme Name of the plugin/theme
+msgid "Twenty Seventeen"
+msgstr "Twenty Seventeen"
+
+#: template-parts/footer/footer-widgets.php:18
+msgid "Footer"
+msgstr "Peu de pàgina"
+
+#: functions.php:326
+msgid "Add widgets here to appear in your sidebar on blog posts and archive pages."
+msgstr "Afegiu ginys aquí perquè apareguin a la barra lateral en les entrades del bloc i en les pàgines d'arxiu."
+
+#: functions.php:324 sidebar.php:18
+msgid "Blog Sidebar"
+msgstr "Barra lateral del bloc"
+
+#: template-parts/header/site-branding.php:34
+#: template-parts/navigation/navigation-top.php:31
+msgid "Scroll down to content"
+msgstr "Desplaça cap avall fins al contingut"
+
+#: functions.php:167
+msgctxt "Theme starter content"
+msgid "Coffee"
+msgstr "Cafè"
+
+#: functions.php:163
+msgctxt "Theme starter content"
+msgid "Sandwich"
+msgstr "Entrepà"
+
+#: functions.php:159
+msgctxt "Theme starter content"
+msgid "Espresso"
+msgstr "Espresso"
+
+#: inc/custom-header.php:126
+msgid "Pause background video"
+msgstr "Pausa el vídeo de fons"
+
+#: inc/custom-header.php:125
+msgid "Play background video"
+msgstr "Reprodueix el vídeo de fons"
+
+#: inc/template-tags.php:151
+msgid "Front Page Section %1$s Placeholder"
+msgstr "Espai reservat per a la secció %1$s de la pàgina principal"
+
+#: inc/customizer.php:99
+msgid "When the two-column layout is assigned, the page title is in one column and content is in the other."
+msgstr "Quan s'assigna la disposició de dues columnes, el títol de la pàgina està en una columna i el contingut en l'altra."
+
+#: single.php:34
+msgid "Next Post"
+msgstr "Entrada següent"
+
+#: index.php:27
+msgid "Posts"
+msgstr "Entrades"
+
+#: inc/template-tags.php:89
+msgid "Tags"
+msgstr "Etiquetes"
+
+#: inc/template-tags.php:85
+msgid "Categories"
+msgstr "Categories"
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:66
+msgid ", "
+msgstr ", "
+
+#. translators: %s: post date
+#: inc/template-tags.php:52
+msgid "<span class=\"screen-reader-text\">Posted on</span> %s"
+msgstr "<span class=\"screen-reader-text\">Publicat a</span> %s"
+
+#. translators: %s: post author
+#: inc/template-tags.php:21
+msgid "by %s"
+msgstr "per %s"
+
+#: inc/icon-functions.php:44
+msgid "Please define an SVG icon filename."
+msgstr "Definiu un fitxer per a la icona SVG."
+
+#: inc/icon-functions.php:39
+msgid "Please define default parameters in the form of an array."
+msgstr "Definiu els paràmetres per defecte en forma de vector."
+
+#: inc/customizer.php:131
+msgid "Select pages to feature in each area from the dropdowns. Add an image to a section by setting a featured image in the page editor. Empty sections will not be displayed."
+msgstr "Seleccioneu les pàgines que vulgueu destacar en cada àrea de les llistes desplegables. Afegiu una imatge a la secció definint una imatge destacada a l'editor de la pàgina. Les seccions buides no es mostraran."
+
+#. translators: %d is the front page section number
+#: inc/customizer.php:130
+msgid "Front Page Section %d Content"
+msgstr "Contingut de la secció %d de la pàgina d'inici"
+
+#: inc/customizer.php:102 inc/customizer.php:158
+msgid "Two Column"
+msgstr "Dues columnes"
+
+#: inc/customizer.php:101 inc/customizer.php:157
+msgid "One Column"
+msgstr "Una columna"
+
+#: inc/customizer.php:96
+msgid "Page Layout"
+msgstr "Disposició de la pàgina"
+
+#: inc/customizer.php:81
+msgid "Theme Options"
+msgstr "Opcions del tema"
+
+#: inc/customizer.php:59
+msgid "Custom"
+msgstr "Personalitzat"
+
+#: inc/customizer.php:57
+msgid "Light"
+msgstr "Clar"
+
+#: inc/customizer.php:55
+msgid "Color Scheme"
+msgstr "Esquema de colors"
+
+#: inc/custom-header.php:54
+msgid "Default Header Image"
+msgstr "Imatge de capçalera per defecte"
+
+#: functions.php:348
+msgid "Footer 2"
+msgstr "Peu de pàgina 2"
+
+#: functions.php:338 functions.php:350
+msgid "Add widgets here to appear in your footer."
+msgstr "Afegiu ginys aquí per a veure'ls al peu de pàgina."
+
+#: functions.php:336
+msgid "Footer 1"
+msgstr "Peu de pàgina 1"
+
+#. Translators: If there are characters in your language that are not supported
+#. by Libre Franklin, translate this to 'off'. Do not translate into your own
+#. language.
+#: functions.php:277
+msgctxt "Libre Franklin font: on or off"
+msgid "on"
+msgstr "on"
+
+#: functions.php:64 functions.php:191
+#: template-parts/navigation/navigation-top.php:12
+msgid "Top Menu"
+msgstr "Menú superior"
+
+#: comments.php:62
+msgid "Reply"
+msgstr "Respon"
+
+#: template-parts/post/content-none.php:28
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "Sembla que no hem trobat el que buscàveu. Potser hi ajudaria una cerca."
+
+#: search.php:54
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "No s'ha trobat res que coincideixi amb els termes cercats. Proveu de nou amb altres paraules clau diferents."
+
+#: template-parts/post/content-none.php:24
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "Preparats per publicar la primera entrada? <a href=\"%1$s\">Comenceu aquí</a>."
+
+#: search.php:21 template-parts/post/content-none.php:17
+msgid "Nothing Found"
+msgstr "No s'ha trobat res"
+
+#: single.php:33
+msgid "Previous Post"
+msgstr "Entrada prèvia"
+
+#: comments.php:71 single.php:33
+msgid "Previous"
+msgstr "Anterior"
+
+#: comments.php:72 single.php:34
+msgid "Next"
+msgstr "Següent"
+
+#: searchform.php:20
+msgctxt "submit button"
+msgid "Search"
+msgstr "Cerca"
+
+#: searchform.php:19
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr "Cerca &hellip;"
+
+#: searchform.php:17
+msgctxt "label"
+msgid "Search for:"
+msgstr "Cerca:"
+
+#: search.php:19
+msgid "Search Results for: %s"
+msgstr "Resultats de la cerca de: %s"
+
+#. translators: %s: Name of current post
+#: functions.php:378 template-parts/page/content-front-page-panels.php:45
+#: template-parts/page/content-front-page.php:42
+#: template-parts/post/content-audio.php:84
+#: template-parts/post/content-gallery.php:71
+#: template-parts/post/content-image.php:61
+#: template-parts/post/content-video.php:83 template-parts/post/content.php:57
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr "Continua llegint <span class=\"screen-reader-text\">«%s»</span>"
+
+#: inc/customizer.php:58
+msgid "Dark"
+msgstr "Fosc"
+
+#: inc/back-compat.php:39 inc/back-compat.php:52 inc/back-compat.php:68
+msgid "Twenty Seventeen requires at least WordPress version 4.7. You are running version %s. Please upgrade and try again."
+msgstr "Twenty Seventeen requereix com a mínim la versió 4.7 de WordPress. Esteu executant la versió %s. Actualitzeu i proveu de nou."
+
+#. translators: %s: Name of current post
+#: inc/template-tags.php:117
+msgid "Edit<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr "Edita <span class=\"screen-reader-text\">«%s»</span>"
+
+#: template-parts/page/content-page.php:26
+#: template-parts/post/content-audio.php:91
+#: template-parts/post/content-gallery.php:78
+#: template-parts/post/content-image.php:68
+#: template-parts/post/content-video.php:90 template-parts/post/content.php:64
+msgid "Pages:"
+msgstr "Pàgines:"
+
+#: template-parts/navigation/navigation-top.php:17
+msgid "Menu"
+msgstr "Menú"
+
+#: header.php:27
+msgid "Skip to content"
+msgstr "Vés al contingut"
+
+#: functions.php:467
+msgid "Collapse child menu"
+msgstr "Contrau el menú fill"
+
+#: functions.php:466
+msgid "Expand child menu"
+msgstr "Amplia el menú fill"
+
+#: functions.php:65 functions.php:202
+msgid "Social Links Menu"
+msgstr "Menú d'enllaços socials"
+
+#: template-parts/footer/site-info.php:19
+msgid "Proudly powered by %s"
+msgstr "Gràcies al %s"
+
+#. #-#-#-#-#  twentyseventeen.pot (Twenty Seventeen 1.7)  #-#-#-#-#
+#. Author URI of the plugin/theme
+#: template-parts/footer/site-info.php:18
+msgid "https://wordpress.org/"
+msgstr "https://wordpress.org/"
+
+#: footer.php:26
+msgid "Footer Social Links Menu"
+msgstr "Menú d'enllaços socials del peu de pàgina"
+
+#: comments.php:82
+msgid "Comments are closed."
+msgstr "Els comentaris estan tancats."
+
+#. translators: 1: number of comments, 2: post title
+#: comments.php:41
+msgctxt "comments title"
+msgid "%1$s Reply to &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s Replies to &ldquo;%2$s&rdquo;"
+msgstr[0] "%1$s resposta a «%2$s»"
+msgstr[1] "%1$s respostes a «%2$s»"
+
+#. translators: %s: post title
+#: comments.php:37
+msgctxt "comments title"
+msgid "One Reply to &ldquo;%s&rdquo;"
+msgstr "Una resposta a «%s»"
+
+#: archive.php:50 index.php:54 search.php:47
+msgid "Page"
+msgstr "Pàgina"
+
+#: 404.php:21
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Aquesta pàgina no es pot trobar."
+
+#: 404.php:24
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr "Sembla que no s'ha trobat res aquí. Voleu intentar una cerca?"
+
+#: archive.php:48 index.php:52 search.php:45
+msgid "Previous page"
+msgstr "Pàgina prèvia"
+
+#: archive.php:49 index.php:53 search.php:46
+msgid "Next page"
+msgstr "Pàgina següent"
+
+#. Author of the plugin/theme
+msgid "the WordPress team"
+msgstr "L'equip del WordPress"
+
+#. Theme URI of the plugin/theme
+msgid "https://wordpress.org/themes/twentyseventeen/"
+msgstr "https://wordpress.org/themes/twentyseventeen/"

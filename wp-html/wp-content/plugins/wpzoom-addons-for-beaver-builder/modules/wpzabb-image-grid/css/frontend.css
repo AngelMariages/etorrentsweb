@@ -1,0 +1,111 @@
+.wpzabb-image-grid,
+.wpzabb-image-grid .wpzabb-image-grid-items,
+.wpzabb-image-grid .wpzabb-image-grid-items .wpzabb-image-grid-item,
+.wpzabb-image-grid .wpzabb-image-grid-items .wpzabb-image-grid-item a,
+.wpzabb-image-grid .wpzabb-image-grid-items .wpzabb-image-grid-item .wpzabb-image-grid-item-image,
+.wpzabb-image-grid .wpzabb-image-grid-items .wpzabb-image-grid-item .wpzabb-image-grid-item-title,
+.wpzabb-image-grid .wpzabb-image-grid-items .wpzabb-image-grid-item .wpzabb-image-grid-item-color {
+	padding: 0;
+	margin: 0;
+}
+
+.wpzabb-image-grid .wpzabb-image-grid-items {
+	display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.wpzabb-image-grid .wpzabb-image-grid-items .wpzabb-image-grid-item {
+    position: relative;
+    flex-grow: 0;
+    flex-shrink: 0;
+    text-align: center;
+    list-style: none;
+    margin: 0 15px 30px !important;
+    float: none !important;
+}
+
+.wpzabb-image-grid .wpzabb-image-grid-items .wpzabb-image-grid-item a {
+	display: block;
+    position: relative;
+	height: 100%;
+	width: 100%;
+    transition: .3s ease all;
+
+}
+
+.wpzabb-image-grid .wpzabb-image-grid-items .wpzabb-image-grid-item a:hover,
+.wpzabb-image-grid .wpzabb-image-grid-items .wpzabb-image-grid-item a:active {
+	transform: scale(1.03);
+}
+
+.wpzabb-image-grid .wpzabb-image-grid-items .wpzabb-image-grid-item a:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom,rgba(0,0,0,.2) 30%,rgba(0,0,0,.3) 100%);
+    background-repeat: repeat-x;
+}
+
+.wpzabb-image-grid .wpzabb-image-grid-items .wpzabb-image-grid-item a:hover:after {
+    background-image: linear-gradient(to bottom,rgba(0,0,0,.4) 30%,rgba(0,0,0,.5) 100%);
+}
+
+.wpzabb-image-grid .wpzabb-image-grid-items .wpzabb-image-grid-item .wpzabb-image-grid-item-image {
+	object-fit: cover;
+	height: 100%;
+    position: relative;
+	width: 100%;
+}
+
+.wpzabb-image-grid .wpzabb-image-grid-items .wpzabb-image-grid-item .wpzabb-image-grid-item-title {
+	display: flex;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 20;
+	color: #fff;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+    padding-right: 2%;
+    padding-left: 2%;
+}
+
+.wpzabb-image-grid .wpzabb-image-grid-items .wpzabb-image-grid-item .wpzabb-image-grid-item-color {
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 3px;
+	width: 100%;
+    z-index: 25;
+}
+
+
+@media screen and (max-width: 900px) {
+
+    .wpzabb-image-grid .wpzabb-image-grid-items .wpzabb-image-grid-item .wpzabb-image-grid-item-title {
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 850px) {
+
+    .wpzabb-image-grid .wpzabb-image-grid-items .wpzabb-image-grid-item .wpzabb-image-grid-item-title {
+        font-size: 16px;
+    }
+
+}

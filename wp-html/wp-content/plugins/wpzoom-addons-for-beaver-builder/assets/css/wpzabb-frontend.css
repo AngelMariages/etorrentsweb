@@ -1,0 +1,264 @@
+/* Equal height Column Bottom Alignment */
+.fl-col-group-equal-height.fl-col-group-align-bottom .fl-col-content {
+    -webkit-justify-content: flex-end;
+            justify-content: flex-end;
+          -webkit-box-align: end;
+           -webkit-box-pack: end;
+              -ms-flex-pack: end;
+}
+
+/* H1-H6 Margin Reset in all Modules */
+.wpzabb-module-content h1,
+.wpzabb-module-content h2,
+.wpzabb-module-content h3,
+.wpzabb-module-content h4,
+.wpzabb-module-content h5,
+.wpzabb-module-content h6 {
+    margin: 0;
+    clear: both;
+}
+
+/* Anchor Tag Css */
+
+.fl-module-content a,
+.fl-module-content a:hover,
+.fl-module-content a:focus {
+    text-decoration: none;
+}
+
+/* Icons
+------------------------------------------------------ */
+
+.wpzabb-icon-wrap {
+    display: inline-block;
+}
+/*.wpzabb-icon {
+    display: table-cell;
+    vertical-align: middle;
+}*/
+.wpzabb-icon a {
+    text-decoration: none;
+}
+.wpzabb-icon i {
+    /*float: left;*/
+    display: block;
+}
+.wpzabb-icon i:before {
+    border: none !important;
+    background: none !important;
+}
+.wpzabb-icon-text {
+    display: table-cell;
+    text-align: left;
+    padding-left: 15px;
+    vertical-align: middle;
+}
+.wpzabb-icon-text *:last-child {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.wpzabb-icon-text a {
+    text-decoration: none;
+}
+
+/* Photos
+------------------------------------------------------ */
+
+.wpzabb-photo {
+    line-height: 0;
+    position: relative;
+}
+.wpzabb-photo-align-left {
+    text-align: left;
+}
+.wpzabb-photo-align-center {
+    text-align: center;
+}
+.wpzabb-photo-align-right {
+    text-align: right;
+}
+.wpzabb-photo-content {
+    border-radius: 0;
+    display: inline-block;
+    line-height: 0;
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+.wpzabb-photo-content img {
+    border-radius: inherit;
+    display: inline;
+    height: auto;
+    max-width: 100%;
+    width: auto;
+}
+.fl-builder-content .wpzabb-photo-crop-circle img {
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+}
+.fl-builder-content .wpzabb-photo-crop-square img {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+.wpzabb-photo-caption {
+    font-size: 13px;
+    line-height: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.wpzabb-photo-caption-below {
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+.wpzabb-photo-caption-hover {
+    background: rgba(0,0,0,0.7);
+    bottom: 0;
+    color: #fff;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    filter: alpha(opacity = 0);
+    padding: 10px 15px;
+    position: absolute;
+    right: 0;
+    -webkit-transition:visibility 200ms linear;
+    -moz-transition:visibility 200ms linear;
+    transition:visibility 200ms linear;
+}
+.wpzabb-photo-content:hover .wpzabb-photo-caption-hover {
+    opacity: 100;
+    visibility: visible;
+    /*filter: alpha(opacity = 100);*/
+}
+
+/* Panel & Buttons
+------------------------------------------------------ */
+.wpzabb-active-btn {
+    background: #1e8cbe;
+    border-color: #0074a2;
+    -webkit-box-shadow: inset 0 1px 0 rgba(120,200,230,.6);
+    box-shadow: inset 0 1px 0 rgba(120,200,230,.6);
+    color: white;
+}
+.fl-builder-bar .fl-builder-add-content-button {
+    display: block !important;
+    opacity: 1 !important;
+}
+
+/* Image Icon Object */
+.wpzabb-imgicon-wrap .wpzabb-icon {
+    display: block;
+}
+.wpzabb-imgicon-wrap .wpzabb-icon i{
+    float: none;
+}
+
+/* Photo */
+
+
+.wpzabb-imgicon-wrap .wpzabb-image {
+    line-height: 0;
+    position: relative;
+}
+.wpzabb-imgicon-wrap .wpzabb-image-align-left {
+    text-align: left;
+}
+.wpzabb-imgicon-wrap .wpzabb-image-align-center {
+    text-align: center;
+}
+.wpzabb-imgicon-wrap .wpzabb-image-align-right {
+    text-align: right;
+}
+.wpzabb-imgicon-wrap .wpzabb-image-content {
+    display: inline-block;
+    border-radius: 0;
+    line-height: 0;
+    position: relative;
+    max-width: 100%;
+}
+.wpzabb-imgicon-wrap .wpzabb-image-content img {
+    display: inline;
+    height: auto !important;
+    max-width: 100%;
+    width: auto;
+    border-radius: inherit;
+    box-shadow: none;
+    box-sizing: content-box;
+}
+.fl-builder-content .wpzabb-imgicon-wrap .wpzabb-image-crop-circle img {
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+}
+.fl-builder-content .wpzabb-imgicon-wrap .wpzabb-image-crop-square img {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+
+/* Media/Video CSS */
+.wpzabb-tab-acc-content .wp-video, 
+.wpzabb-tab-acc-content video.wp-video-shortcode, 
+.wpzabb-tab-acc-content .mejs-container, 
+.wpzabb-tab-acc-content .mejs-overlay.load,
+.wpzabb-adv-accordion-content .wp-video, 
+.wpzabb-adv-accordion-content video.wp-video-shortcode, 
+.wpzabb-adv-accordion-content .mejs-container, 
+.wpzabb-adv-accordion-content .mejs-overlay.load {
+    width: 100% !important;
+    height: 100% !important;
+}
+.wpzabb-tab-acc-content .mejs-container,
+.wpzabb-adv-accordion-content .mejs-container {
+    padding-top: 56.25%;
+}
+.wpzabb-tab-acc-content .wp-video, 
+.wpzabb-tab-acc-content video.wp-video-shortcode,
+.wpzabb-adv-accordion-content .wp-video, 
+.wpzabb-adv-accordion-content video.wp-video-shortcode {
+    max-width: 100% !important;
+}
+.wpzabb-tab-acc-content video.wp-video-shortcode,
+.wpzabb-adv-accordion-content video.wp-video-shortcode {
+    position: relative;
+}
+.wpzabb-tab-acc-content .mejs-mediaelement,
+.wpzabb-adv-accordion-content .mejs-mediaelement {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.wpzabb-tab-acc-content .mejs-overlay-play,
+.wpzabb-adv-accordion-content .mejs-overlay-play {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: auto !important;
+    height: auto !important;
+}
+
+
+/***********************************************************************************
+
+Animations
+
+************************************************************************************/
+.animated {
+  -webkit-animation-duration: .5s;
+  -o-animation-duration: .5s;
+  animation-duration: .5s;
+  -webkit-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+.animated.slow {
+  -webkit-animation-duration: 2s;
+  -o-animation-duration: 2s;
+  animation-duration: 2s; }

@@ -1,0 +1,3659 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Inspiro\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-12-05 13:47+0000\n"
+"PO-Revision-Date: Thu Apr 20 2017 19:37:57 GMT+0300 (EEST)\n"
+"Last-Translator: Pavel Ciorici <cioricip@gmail.com>\n"
+"Language-Team: \n"
+"Language: Romanian\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 :(((n%100>19)||(( n%100==0)&&(n!"
+"=0)))? 2 : 1))\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Loco - https://localise.biz/\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
+"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
+"_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
+"esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
+"esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
+"X-Loco-Target-Locale: ro_RO"
+
+#: ../comments.php:3
+msgid "This post is password protected. Enter the password to view any comments."
+msgstr ""
+
+#: ../content-none.php:15
+#, php-format
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: ../footer.php:53
+#, php-format
+msgid "Designed by %s"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/category-
+#: highlight/config.php:8
+msgid "Featured Content"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/category-
+#: highlight/config.php:9
+msgid "Feature a Category or a Page"
+msgstr ""
+
+#. Name of the theme
+#: ../framework-customizations/extensions/shortcodes/shortcodes/category-
+#: highlight/config.php:10 ../framework-
+#: customizations/extensions/shortcodes/shortcodes/portfolio-gallery/config.php:
+#: 10 ../framework-customizations/extensions/shortcodes/shortcodes/posts/config.
+#: php:10 ../framework-customizations/extensions/shortcodes/shortcodes/pricing-
+#: table/config.php:9
+msgid "Inspiro"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/category-
+#: highlight/options.php:7
+msgid "Background Image"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/category-
+#: highlight/options.php:8
+msgid "Either upload a new, or choose an existing image from your media library"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/category-
+#: highlight/options.php:12 ../framework-
+#: customizations/extensions/shortcodes/shortcodes/fw-tabs/options.php:15 ..
+#: framework-customizations/extensions/shortcodes/shortcodes/special-
+#: heading/options.php:10 ../functions/post-options.php:53
+msgid "Title"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/category-
+#: highlight/options.php:17 ../framework-
+#: customizations/extensions/shortcodes/shortcodes/special-heading/options.php:14
+msgid "Subtitle"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/category-
+#: highlight/options.php:22
+msgid "Description"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/category-
+#: highlight/options.php:23
+msgid "Enter a few words that describe this widget"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/category-
+#: highlight/options.php:30
+msgid ""
+"Enter the URL of a page or a Portfolio Category. You can view all Portfolio "
+"Categories <a href=\"edit-tags.php?"
+"taxonomy=portfolio&post_type=portfolio_item\" target=\"_blank\">here</a>."
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/category-
+#: highlight/options.php:38 ../framework-
+#: customizations/extensions/shortcodes/shortcodes/fw-button/options.php:20 ..
+#: framework-customizations/extensions/shortcodes/shortcodes/portfolio-
+#: gallery/options.php:116 ../framework-
+#: customizations/extensions/shortcodes/shortcodes/pricing-table/options.php:86
+msgid "Open Link in New Window"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/category-
+#: highlight/options.php:41 ../framework-
+#: customizations/extensions/shortcodes/shortcodes/column/options.php:154 ..
+#: framework-customizations/extensions/shortcodes/shortcodes/column/options.php:
+#: 173 ../framework-customizations/extensions/shortcodes/shortcodes/fw-
+#: button/options.php:24 ../framework-
+#: customizations/extensions/shortcodes/shortcodes/portfolio-gallery/options.php:
+#: 119 ../framework-customizations/extensions/shortcodes/shortcodes/pricing-
+#: table/options.php:90 ../framework-
+#: customizations/extensions/shortcodes/shortcodes/section/options.php:149 ..
+#: framework-customizations/extensions/shortcodes/shortcodes/section/options.php:
+#: 168
+msgid "Yes"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/category-
+#: highlight/options.php:45 ../framework-
+#: customizations/extensions/shortcodes/shortcodes/column/options.php:158 ..
+#: framework-customizations/extensions/shortcodes/shortcodes/column/options.php:
+#: 177 ../framework-customizations/extensions/shortcodes/shortcodes/fw-
+#: button/options.php:28 ../framework-
+#: customizations/extensions/shortcodes/shortcodes/portfolio-gallery/options.php:
+#: 123 ../framework-customizations/extensions/shortcodes/shortcodes/pricing-
+#: table/options.php:94 ../framework-
+#: customizations/extensions/shortcodes/shortcodes/section/options.php:153 ..
+#: framework-customizations/extensions/shortcodes/shortcodes/section/options.php:
+#: 172
+msgid "No"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/category-
+#: highlight/options.php:52 ../framework-
+#: customizations/extensions/shortcodes/shortcodes/fw-button/config.php:8
+msgid "Button"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/category-
+#: highlight/options.php:56 ../framework-
+#: customizations/extensions/shortcodes/shortcodes/portfolio-gallery/options.php:
+#: 57 ../framework-customizations/extensions/shortcodes/shortcodes/portfolio-
+#: gallery/options.php:71 ../framework-
+#: customizations/extensions/shortcodes/shortcodes/portfolio-gallery/options.php:
+#: 92 ../framework-customizations/extensions/shortcodes/shortcodes/posts/options.
+#: php:30 ../framework-
+#: customizations/extensions/shortcodes/shortcodes/posts/options.php:44 ..
+#: framework-customizations/extensions/shortcodes/shortcodes/posts/options.php:
+#: 59 ../framework-customizations/extensions/shortcodes/shortcodes/posts/options.
+#: php:73
+msgid "Show"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/category-
+#: highlight/options.php:60 ../framework-
+#: customizations/extensions/shortcodes/shortcodes/portfolio-gallery/options.php:
+#: 61 ../framework-customizations/extensions/shortcodes/shortcodes/portfolio-
+#: gallery/options.php:75 ../framework-
+#: customizations/extensions/shortcodes/shortcodes/portfolio-gallery/options.php:
+#: 96 ../framework-customizations/extensions/shortcodes/shortcodes/posts/options.
+#: php:34 ../framework-
+#: customizations/extensions/shortcodes/shortcodes/posts/options.php:48 ..
+#: framework-customizations/extensions/shortcodes/shortcodes/posts/options.php:
+#: 63 ../framework-customizations/extensions/shortcodes/shortcodes/posts/options.
+#: php:77
+msgid "Hide"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/column/config.php:
+#: 5 ../framework-customizations/extensions/shortcodes/shortcodes/section/config.
+#: php:7
+msgid "Layout Elements"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/column/config.php:6
+msgid "Column"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/column/options.
+#: php:23 ../framework-
+#: customizations/extensions/shortcodes/shortcodes/section/options.php:26
+msgid "Additional Spacing"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/column/options.
+#: php:28 ../framework-
+#: customizations/extensions/shortcodes/shortcodes/section/options.php:31
+msgid "top"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/column/options.
+#: php:34 ../framework-
+#: customizations/extensions/shortcodes/shortcodes/section/options.php:37
+msgid "right"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/column/options.
+#: php:40 ../framework-
+#: customizations/extensions/shortcodes/shortcodes/section/options.php:43
+msgid "bottom"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/column/options.
+#: php:46 ../framework-
+#: customizations/extensions/shortcodes/shortcodes/section/options.php:49
+msgid "left"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/column/options.
+#: php:58 ../framework-customizations/extensions/shortcodes/shortcodes/pricing-
+#: table/options.php:34 ../framework-
+#: customizations/extensions/shortcodes/shortcodes/section/options.php:62
+msgid "Background"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/column/options.
+#: php:59
+msgid "Select the background for your column"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/column/options.
+#: php:63 ../framework-customizations/extensions/shortcodes/shortcodes/pricing-
+#: table/options.php:39 ../framework-
+#: customizations/extensions/shortcodes/shortcodes/section/options.php:67 ..
+#: functions/wpzoom/components/customizer/helpers/helpers.php:757
+msgid "None"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/column/options.
+#: php:64 ../framework-
+#: customizations/extensions/shortcodes/shortcodes/section/options.php:68 ..
+#: functions/wpzoom/components/post-slider/post-slider.php:74
+msgid "Image"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/column/options.
+#: php:65 ../framework-customizations/extensions/shortcodes/shortcodes/pricing-
+#: table/options.php:40 ../framework-
+#: customizations/extensions/shortcodes/shortcodes/section/options.php:70 ..
+#: framework-customizations/extensions/shortcodes/shortcodes/special-
+#: heading/options.php:27
+msgid "Color"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/column/options.
+#: php:75 ../framework-
+#: customizations/extensions/shortcodes/shortcodes/column/options.php:91 ..
+#: framework-customizations/extensions/shortcodes/shortcodes/section/options.php:
+#: 86
+msgid "The default color palette can be changed from the"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/column/options.
+#: php:75 ../framework-
+#: customizations/extensions/shortcodes/shortcodes/column/options.php:91 ..
+#: framework-customizations/extensions/shortcodes/shortcodes/section/options.php:
+#: 86
+msgid "Styling section"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/column/options.
+#: php:75 ../framework-
+#: customizations/extensions/shortcodes/shortcodes/column/options.php:91 ..
+#: framework-customizations/extensions/shortcodes/shortcodes/section/options.php:
+#: 86
+msgid "found in the Theme Settings page"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/column/options.
+#: php:76 ../framework-
+#: customizations/extensions/shortcodes/shortcodes/column/options.php:92 ..
+#: framework-customizations/extensions/shortcodes/shortcodes/pricing-
+#: table/options.php:50 ../framework-
+#: customizations/extensions/shortcodes/shortcodes/section/options.php:87 ..
+#: framework-customizations/extensions/shortcodes/shortcodes/section/options.php:
+#: 242
+msgid "Select the background color"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/column/options.
+#: php:99 ../framework-
+#: customizations/extensions/shortcodes/shortcodes/section/options.php:94
+msgid "Select how will the background repeat"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/column/options.
+#: php:104 ../framework-
+#: customizations/extensions/shortcodes/shortcodes/section/options.php:99
+msgid "No-Repeat"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/column/options.
+#: php:105 ../framework-
+#: customizations/extensions/shortcodes/shortcodes/section/options.php:100
+msgid "Repeat"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/column/options.
+#: php:106 ../framework-
+#: customizations/extensions/shortcodes/shortcodes/section/options.php:101
+msgid "Repeat-X"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/column/options.
+#: php:107 ../framework-
+#: customizations/extensions/shortcodes/shortcodes/section/options.php:102
+msgid "Repeat-Y"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/column/options.
+#: php:111 ../framework-
+#: customizations/extensions/shortcodes/shortcodes/section/options.php:106
+msgid "Position"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/column/options.
+#: php:112 ../framework-
+#: customizations/extensions/shortcodes/shortcodes/section/options.php:107
+msgid "Select the horizontal background position"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/column/options.
+#: php:117 ../framework-
+#: customizations/extensions/shortcodes/shortcodes/section/options.php:112
+msgid "Left"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/column/options.
+#: php:118 ../framework-
+#: customizations/extensions/shortcodes/shortcodes/column/options.php:130 ..
+#: framework-customizations/extensions/shortcodes/shortcodes/section/options.php:
+#: 113 ../framework-
+#: customizations/extensions/shortcodes/shortcodes/section/options.php:125
+msgid "Center"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/column/options.
+#: php:119 ../framework-
+#: customizations/extensions/shortcodes/shortcodes/section/options.php:114
+msgid "Right"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/column/options.
+#: php:124 ../framework-
+#: customizations/extensions/shortcodes/shortcodes/section/options.php:119
+msgid "Select the vertical background position"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/column/options.
+#: php:129 ../framework-
+#: customizations/extensions/shortcodes/shortcodes/section/options.php:124
+msgid "Top"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/column/options.
+#: php:131 ../framework-
+#: customizations/extensions/shortcodes/shortcodes/section/options.php:126
+msgid "Bottom"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/column/options.
+#: php:135 ../framework-
+#: customizations/extensions/shortcodes/shortcodes/section/options.php:130 ..
+#: framework-customizations/extensions/shortcodes/shortcodes/special-
+#: heading/options.php:18
+msgid "Size"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/column/options.
+#: php:136 ../framework-
+#: customizations/extensions/shortcodes/shortcodes/section/options.php:131
+msgid "Select the background size"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/column/options.
+#: php:137 ../framework-
+#: customizations/extensions/shortcodes/shortcodes/section/options.php:132
+msgid ""
+"<strong>Auto</strong> - Default value, the background image has the original "
+"width and height.<br><br><strong>Cover</strong> - Scale the background image "
+"so that the background area is completely covered by the image."
+"<br><br><strong>Contain</strong> - Scale the image to the largest size such "
+"that both its width and height can fit inside the content area."
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/column/options.
+#: php:142 ../framework-
+#: customizations/extensions/shortcodes/shortcodes/section/options.php:137
+msgid "Auto"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/column/options.
+#: php:143 ../framework-
+#: customizations/extensions/shortcodes/shortcodes/section/options.php:138
+msgid "Cover"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/column/options.
+#: php:144 ../framework-
+#: customizations/extensions/shortcodes/shortcodes/section/options.php:139
+msgid "Contain"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/column/options.
+#: php:149 ../framework-
+#: customizations/extensions/shortcodes/shortcodes/section/options.php:144
+msgid "Parallax Effect"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/column/options.
+#: php:150 ../framework-
+#: customizations/extensions/shortcodes/shortcodes/section/options.php:145
+msgid "Create a parallax effect on scroll?"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/column/options.
+#: php:168 ../framework-
+#: customizations/extensions/shortcodes/shortcodes/section/options.php:163
+msgid "Overlay Color"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/column/options.
+#: php:169 ../framework-
+#: customizations/extensions/shortcodes/shortcodes/section/options.php:164
+msgid "Enable image overlay color?"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/column/options.
+#: php:186 ../framework-
+#: customizations/extensions/shortcodes/shortcodes/section/options.php:181
+msgid "Select the overlay color"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/column/options.
+#: php:200 ../framework-
+#: customizations/extensions/shortcodes/shortcodes/section/options.php:195
+msgid "Select the overlay color opacity in %"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/column/options.
+#: php:211 ../framework-
+#: customizations/extensions/shortcodes/shortcodes/section/options.php:253
+msgid "Custom Class"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/column/options.
+#: php:212 ../framework-
+#: customizations/extensions/shortcodes/shortcodes/section/options.php:254
+msgid "Enter custom CSS class"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/column/options.
+#: php:213 ../framework-
+#: customizations/extensions/shortcodes/shortcodes/section/options.php:255
+msgid ""
+"You can use this class to further style this shortcode by adding your custom "
+"CSS."
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/fw-button/config.
+#: php:9
+msgid "Add a Button"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/fw-button/config.
+#: php:10 ../framework-customizations/extensions/shortcodes/shortcodes/fw-
+#: tabs/config.php:10 ../framework-
+#: customizations/extensions/shortcodes/shortcodes/special-heading/config.php:8 ..
+#: framework-customizations/extensions/shortcodes/shortcodes/text-block/config.
+#: php:9
+msgid "Content Elements"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/fw-button/options.
+#: php:7 ../framework-customizations/extensions/shortcodes/shortcodes/portfolio-
+#: gallery/options.php:81 ../framework-
+#: customizations/extensions/shortcodes/shortcodes/portfolio-gallery/options.php:
+#: 102 ../framework-customizations/extensions/shortcodes/shortcodes/posts/options.
+#: php:83 ../framework-customizations/extensions/shortcodes/shortcodes/pricing-
+#: table/options.php:73
+msgid "Button Label"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/fw-button/options.
+#: php:8 ../framework-customizations/extensions/shortcodes/shortcodes/pricing-
+#: table/options.php:74
+msgid "This is the text that appears on your button"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/fw-button/options.
+#: php:13 ../framework-customizations/extensions/shortcodes/shortcodes/pricing-
+#: table/options.php:79
+msgid "Button Link"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/fw-button/options.
+#: php:14 ../framework-customizations/extensions/shortcodes/shortcodes/pricing-
+#: table/options.php:80
+msgid "Where should your button link to"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/fw-button/options.
+#: php:21 ../framework-customizations/extensions/shortcodes/shortcodes/pricing-
+#: table/options.php:87
+msgid "Select here if you want to open the linked page in a new window"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/fw-button/options.
+#: php:32
+msgid "Button Color"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/fw-button/options.
+#: php:33
+msgid "Choose a color for your button"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/fw-button/options.
+#: php:36
+msgid "Default"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/fw-button/options.
+#: php:37
+msgid "Black"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/fw-button/options.
+#: php:38
+msgid "White"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/fw-button/options.
+#: php:43 ../framework-customizations/extensions/shortcodes/shortcodes/special-
+#: heading/options.php:31
+msgid "Centered"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/fw-tabs/config.
+#: php:8 ../framework-customizations/extensions/shortcodes/shortcodes/fw-
+#: tabs/options.php:8
+msgid "Tabs"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/fw-tabs/config.
+#: php:9
+msgid "Add some Tabs"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/fw-tabs/options.
+#: php:9
+msgid "Add/Edit Tab"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/fw-tabs/options.
+#: php:10
+msgid "Create your tabs"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/fw-tabs/options.
+#: php:19 ../framework-customizations/extensions/shortcodes/shortcodes/text-
+#: block/options.php:14
+msgid "Content"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/portfolio-
+#: gallery/config.php:8
+msgid "Portfolio Gallery"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/portfolio-
+#: gallery/config.php:9
+msgid "Add a few menu entries"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/portfolio-
+#: gallery/options.php:10 ../framework-
+#: customizations/extensions/shortcodes/shortcodes/posts/options.php:10
+msgid "Display From"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/portfolio-
+#: gallery/options.php:11
+msgid "Select a portfolio category"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/portfolio-
+#: gallery/options.php:18
+msgid "No of Posts"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/portfolio-
+#: gallery/options.php:19 ../framework-
+#: customizations/extensions/shortcodes/shortcodes/posts/options.php:19
+msgid "Enter the number of posts to display. Ex: 3, 6, 9"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/portfolio-
+#: gallery/options.php:25
+msgid "Number of Columns"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/portfolio-
+#: gallery/options.php:26 ../functions/widgets/portfolio-showcase.php:224
+msgid "The number of columns may vary depending on user's screen size"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/portfolio-
+#: gallery/options.php:30 ../functions/widgets/portfolio-showcase.php:219
+msgid "3"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/portfolio-
+#: gallery/options.php:31 ../functions/widgets/portfolio-showcase.php:220
+msgid "4"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/portfolio-
+#: gallery/options.php:32 ../functions/widgets/portfolio-showcase.php:221
+msgid "5"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/portfolio-
+#: gallery/options.php:38
+msgid "Masonry Layout"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/portfolio-
+#: gallery/options.php:39
+msgid "Select if you want to display posts in masonry layout or not"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/portfolio-
+#: gallery/options.php:43
+msgid "Enable"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/portfolio-
+#: gallery/options.php:47
+msgid "Disable"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/portfolio-
+#: gallery/options.php:53
+msgid "Post Excerpts"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/portfolio-
+#: gallery/options.php:67 ../framework-
+#: customizations/extensions/shortcodes/shortcodes/posts/options.php:69
+msgid "Read More Button"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/portfolio-
+#: gallery/options.php:88
+msgid "View All Button"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/portfolio-
+#: gallery/options.php:108
+msgid "Link"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/posts/config.php:
+#: 8 ../functions/customizer/customizer-data.php:521
+msgid "Blog Posts"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/posts/config.php:9
+msgid "Display Latest Blog Posts"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/posts/options.php:
+#: 11
+msgid "Select a category"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/posts/options.php:
+#: 18
+msgid "Number of Posts"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/posts/options.php:
+#: 26
+msgid "Post Date"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/posts/options.php:
+#: 40
+msgid "Post Thumbnail"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/posts/options.php:
+#: 55
+msgid "Post Excerpt"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/pricing-
+#: table/config.php:8
+msgid "Pricing Table"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/pricing-
+#: table/options.php:16
+msgid "Pricing Option Title"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/pricing-
+#: table/options.php:19
+msgid "Price"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/pricing-
+#: table/options.php:24
+msgid "Duration"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/pricing-
+#: table/options.php:35 ../framework-
+#: customizations/extensions/shortcodes/shortcodes/section/options.php:63
+msgid "Select the background for your section"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/pricing-
+#: table/options.php:61
+msgid "Features"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/pricing-
+#: table/options.php:62
+msgid "Add/Edit a Feature"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/pricing-
+#: table/options.php:63
+msgid "Click Add for each new feature"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/pricing-
+#: table/options.php:68
+msgid "Enter feature name"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/section/config.
+#: php:8
+msgid "Section"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/section/config.
+#: php:9
+msgid "Add a Section"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/section/options.
+#: php:15
+msgid "Full Width Content"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/section/options.
+#: php:69 ../functions/wpzoom/components/post-slider/post-slider.php:75
+msgid "Video"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/section/options.
+#: php:208
+msgid "Video Type"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/section/options.
+#: php:209
+msgid "Select the video type"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/section/options.
+#: php:213
+msgid "Youtube"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/section/options.
+#: php:223
+msgid "Insert a YouTube video URL"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/section/options.
+#: php:230
+msgid "Upload a video"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/special-
+#: heading/config.php:6
+msgid "Special Heading"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/special-
+#: heading/config.php:7
+msgid "Add a Special Heading"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/text-block/config.
+#: php:7
+msgid "Text Block"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/text-block/config.
+#: php:8
+msgid "Add a Text Block"
+msgstr ""
+
+#: ../framework-customizations/extensions/shortcodes/shortcodes/text-
+#: block/options.php:15
+msgid "Enter some content for this texblock"
+msgstr ""
+
+#: ../functions/custom-post-types.php:11
+msgctxt "post type general name"
+msgid "Slideshow"
+msgstr ""
+
+#: ../functions/custom-post-types.php:12
+msgctxt "post type singular name"
+msgid "Slideshow Item"
+msgstr ""
+
+#: ../functions/custom-post-types.php:13
+msgctxt "slideshow item"
+msgid "Add New"
+msgstr ""
+
+#: ../functions/custom-post-types.php:14
+msgid "Add New Slideshow Item"
+msgstr ""
+
+#: ../functions/custom-post-types.php:15
+msgid "Edit Slideshow Item"
+msgstr ""
+
+#: ../functions/custom-post-types.php:16
+msgid "New Slideshow Item"
+msgstr ""
+
+#: ../functions/custom-post-types.php:17
+msgid "View Slideshow Item"
+msgstr ""
+
+#: ../functions/custom-post-types.php:18
+msgid "Search Slideshow"
+msgstr ""
+
+#: ../functions/custom-post-types.php:19
+msgid "Nothing found"
+msgstr ""
+
+#: ../functions/custom-post-types.php:20
+msgid "Nothing found in Trash"
+msgstr ""
+
+#: ../functions/customizer/customizer-data.php:14
+msgid "Site Identity"
+msgstr ""
+
+#: ../functions/customizer/customizer-data.php:23
+msgid "Retina Ready?"
+msgstr ""
+
+#: ../functions/customizer/customizer-data.php:41 ..
+#: functions/customizer/customizer-data.php:970
+msgid "Site Title"
+msgstr ""
+
+#: ../functions/customizer/customizer-data.php:59
+msgid "Tagline"
+msgstr ""
+
+#: ../functions/customizer/customizer-data.php:79 ..
+#: functions/wpzoom/components/customizer/wpzoom-customizer.php:111
+msgid "General"
+msgstr ""
+
+#: ../functions/customizer/customizer-data.php:92
+msgid "Background Color"
+msgstr ""
+
+#: ../functions/customizer/customizer-data.php:107
+msgid "Body Text"
+msgstr ""
+
+#: ../functions/customizer/customizer-data.php:122
+msgid "Logo Color"
+msgstr ""
+
+#: ../functions/customizer/customizer-data.php:137
+msgid "Logo Color on Hover"
+msgstr ""
+
+#: ../functions/customizer/customizer-data.php:152
+msgid "Link Color"
+msgstr ""
+
+#: ../functions/customizer/customizer-data.php:167
+msgid "Link Color on Hover"
+msgstr ""
+
+#: ../functions/customizer/customizer-data.php:183
+msgid "Buttons Background Color"
+msgstr ""
+
+#: ../functions/customizer/customizer-data.php:198
+msgid "Buttons Background Color on Hover"
+msgstr ""
+
+#: ../functions/customizer/customizer-data.php:213
+msgid "Buttons Border Color"
+msgstr ""
+
+#: ../functions/customizer/customizer-data.php:228
+msgid "Buttons Border Color on Hover"
+msgstr ""
+
+#: ../functions/customizer/customizer-data.php:243
+msgid "Buttons Text Color"
+msgstr ""
+
+#: ../functions/customizer/customizer-data.php:258
+msgid "Buttons Text Color on Hover"
+msgstr ""
+
+#: ../functions/customizer/customizer-data.php:271 ../functions/functions.php:52
+msgid "Main Menu"
+msgstr ""
+
+#: ../functions/customizer/customizer-data.php:281
+msgid "Menu Item"
+msgstr ""
+
+#: ../functions/customizer/customizer-data.php:297
+msgid "Menu Item Hover"
+msgstr ""
+
+#: ../functions/customizer/customizer-data.php:318
+msgid "Menu Current Item"
+msgstr ""
+
+#: ../functions/customizer/customizer-data.php:339
+msgid "Dropdown Menu Background"
+msgstr ""
+
+#: ../functions/customizer/customizer-data.php:354
+msgid "Dropdown Menu Arrow"
+msgstr ""
+
+#: ../functions/customizer/customizer-data.php:371
+msgid "Homepage Slider"
+msgstr ""
+
+#: ../functions/customizer/customizer-data.php:381
+msgid "Slide Title"
+msgstr ""
+
+#: ../functions/customizer/customizer-data.php:397
+msgid "Slide Description"
+msgstr ""
+
+#: ../functions/customizer/customizer-data.php:412
+msgid "Slider Arrows"
+msgstr ""
+
+#: ../functions/customizer/customizer-data.php:433
+msgid "Button Text"
+msgstr ""
+
+#: ../functions/customizer/customizer-data.php:448
+msgid "Button Text Hover"
+msgstr ""
+
+#: ../functions/customizer/customizer-data.php:463
+msgid "Button Background"
+msgstr ""
+
+#: ../functions/customizer/customizer-data.php:478
+msgid "Button Background Hover"
+msgstr ""
+
+#: ../functions/customizer/customizer-data.php:493
+msgid "Button Border"
+msgstr ""
+
+#: ../functions/customizer/customizer-data.php:508
+msgid "Button Border Hover"
+msgstr ""
+
+#: ../functions/customizer/customizer-data.php:531
+msgid "Post Title"
+msgstr ""
+
+#: ../functions/customizer/customizer-data.php:546
+msgid "Post Title Hover"
+msgstr ""
+
+#: ../functions/customizer/customizer-data.php:561 ..
+#: functions/customizer/customizer-data.php:744
+msgid "Post Meta"
+msgstr ""
+
+#: ../functions/customizer/customizer-data.php:576 ..
+#: functions/customizer/customizer-data.php:760
+msgid "Post Meta Link"
+msgstr ""
+
+#: ../functions/customizer/customizer-data.php:597 ..
+#: functions/customizer/customizer-data.php:775
+msgid "Post Meta Link Hover"
+msgstr ""
+
+#: ../functions/customizer/customizer-data.php:618
+msgid "Read More Text Color"
+msgstr ""
+
+#: ../functions/customizer/customizer-data.php:633
+msgid "Read More Text Color Hover"
+msgstr ""
+
+#: ../functions/customizer/customizer-data.php:648
+msgid "Read More Button Background Color"
+msgstr ""
+
+#: ../functions/customizer/customizer-data.php:663
+msgid "Read More Button Background Color Hover"
+msgstr ""
+
+#: ../functions/customizer/customizer-data.php:678
+msgid "Read More Button Border"
+msgstr ""
+
+#: ../functions/customizer/customizer-data.php:693
+msgid "Read More Button Border Hover"
+msgstr ""
+
+#: ../functions/customizer/customizer-data.php:704
+msgid "Individual Posts and Pages"
+msgstr ""
+
+#: ../functions/customizer/customizer-data.php:714
+msgid "Post/Page Title"
+msgstr ""
+
+#: ../functions/customizer/customizer-data.php:729
+msgid "Post/Page Title (with Featured Image)"
+msgstr ""
+
+#: ../functions/customizer/customizer-data.php:790
+msgid "Post Meta (with Featured Image)"
+msgstr ""
+
+#: ../functions/customizer/customizer-data.php:805
+msgid "Post Meta Link (with Featured Image)"
+msgstr ""
+
+#: ../functions/customizer/customizer-data.php:820
+msgid "Post Meta Link Hover (with Featured Image)"
+msgstr ""
+
+#: ../functions/customizer/customizer-data.php:835
+msgid "Post/Page Text Color"
+msgstr ""
+
+#: ../functions/customizer/customizer-data.php:850
+msgid "Links Color in Posts"
+msgstr ""
+
+#: ../functions/customizer/customizer-data.php:862 ../functions/wpzoom/options.
+#: php:120
+msgid "Widgets"
+msgstr ""
+
+#: ../functions/customizer/customizer-data.php:872
+msgid "Widget Title on Home Page"
+msgstr ""
+
+#: ../functions/customizer/customizer-data.php:887 ..
+#: functions/customizer/customizer-data.php:1072
+msgid "Widget Title in Sidebar and Footer"
+msgstr ""
+
+#: ../functions/customizer/customizer-data.php:898 ..
+#: functions/customizer/customizer-data.php:1192
+msgid "Footer"
+msgstr ""
+
+#: ../functions/customizer/customizer-data.php:908
+msgid "Footer Background Color"
+msgstr ""
+
+#: ../functions/customizer/customizer-data.php:923
+msgid "Footer Separator Color"
+msgstr ""
+
+#: ../functions/customizer/customizer-data.php:939
+msgid "Footer Text Color"
+msgstr ""
+
+#: ../functions/customizer/customizer-data.php:954
+msgid "Body"
+msgstr ""
+
+#: ../functions/customizer/customizer-data.php:987
+msgid "Menu Links"
+msgstr ""
+
+#: ../functions/customizer/customizer-data.php:1004
+msgid "Homepage Slider Title"
+msgstr ""
+
+#: ../functions/customizer/customizer-data.php:1021
+msgid "Homepage Slider Description"
+msgstr ""
+
+#: ../functions/customizer/customizer-data.php:1038
+msgid "Homepage Slider Button"
+msgstr ""
+
+#: ../functions/customizer/customizer-data.php:1055
+msgid "Widget Title on Homepage"
+msgstr ""
+
+#: ../functions/customizer/customizer-data.php:1089
+msgid "Blog Posts Title"
+msgstr ""
+
+#: ../functions/customizer/customizer-data.php:1106
+msgid "Single Post Title"
+msgstr ""
+
+#: ../functions/customizer/customizer-data.php:1123
+msgid "Single Post Title (with Featured Image)"
+msgstr ""
+
+#: ../functions/customizer/customizer-data.php:1141
+msgid "Single Page Title"
+msgstr ""
+
+#: ../functions/customizer/customizer-data.php:1158
+msgid "Single Page Title  (with Featured Image)"
+msgstr ""
+
+#: ../functions/customizer/customizer-data.php:1176
+msgid "Portfolio Post Title (in Galleries)"
+msgstr ""
+
+#: ../functions/customizer/customizer-data.php:1202
+msgid "Number of Widget Areas"
+msgstr ""
+
+#: ../functions/customizer/customizer-data.php:1214
+msgid "Footer Text"
+msgstr ""
+
+#: ../functions/functions.php:253 ../functions/functions.php:267
+msgid "View your shopping cart"
+msgstr ""
+
+#: ../functions/functions.php:253
+#, php-format
+msgid "%d item &ndash; "
+msgid_plural "%d items &ndash; "
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../functions/functions.php:267
+#, php-format
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../functions/functions.php:432
+#, php-format
+msgid "%s @ %s"
+msgstr ""
+
+#: ../functions/functions.php:442
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: ../functions/functions.php:456
+msgid "Pingback:"
+msgstr ""
+
+#: ../functions/functions.php:456
+msgid "(Edit)"
+msgstr ""
+
+#: ../functions/functions.php:470
+msgid "Fullscreen Image"
+msgstr ""
+
+#: ../functions/functions.php:535 ../functions/functions.php:554
+msgid "All Categories"
+msgstr ""
+
+#: ../functions/post-options.php:41
+msgid "Slide URL"
+msgstr ""
+
+#: ../functions/post-options.php:41
+msgid "optional"
+msgstr ""
+
+#: ../functions/post-options.php:43
+msgid "When a URL is added, the title of the current slide will become clickable"
+msgstr ""
+
+#: ../functions/post-options.php:49
+msgid "Slide Button"
+msgstr ""
+
+#: ../functions/post-options.php:49
+msgid "(optional)"
+msgstr ""
+
+#: ../functions/post-options.php:60
+msgid "URL"
+msgstr ""
+
+#: ../functions/post-options.php:83 ../functions/post-options.php:161
+msgid "Self Hosted File"
+msgstr ""
+
+#: ../functions/post-options.php:86
+msgid "YouTube / Vimeo"
+msgstr ""
+
+#: ../functions/post-options.php:96 ../functions/post-options.php:176
+msgid "Upload Video"
+msgstr ""
+
+#: ../functions/post-options.php:104 ../functions/post-options.php:184
+msgid "MP4 (h.264) video URL"
+msgstr ""
+
+#: ../functions/post-options.php:107 ../functions/post-options.php:187
+msgid "This format is supported by most of the browsers and mobile devices."
+msgstr ""
+
+#: ../functions/post-options.php:115 ../functions/post-options.php:195
+msgid "WebM video URL"
+msgstr ""
+
+#: ../functions/post-options.php:118 ../functions/post-options.php:198
+msgid "This format is needed for <strong>Mozilla Firefox</strong> browser."
+msgstr ""
+
+#: ../functions/post-options.php:130 ../functions/post-options.php:210
+msgid "Insert Video Url"
+msgstr ""
+
+#: ../functions/post-options.php:150
+msgid ""
+"In this area you can upload a video which will play on the desktop computers "
+"in the background of the current slide continuously and muted by default."
+msgstr ""
+
+#: ../functions/post-options.php:164
+msgid "YouTube"
+msgstr ""
+
+#: ../functions/post-options.php:224
+msgid "Video Background Controls"
+msgstr ""
+
+#: ../functions/post-options.php:232
+msgid "Show Play/Pause Button"
+msgstr ""
+
+#: ../functions/post-options.php:240
+msgid "Show Mute/Unmute Button"
+msgstr ""
+
+#: ../functions/post-options.php:248
+msgid "Video Background Options"
+msgstr ""
+
+#: ../functions/post-options.php:255
+msgid "Autoplay Video"
+msgstr ""
+
+#: ../functions/post-options.php:262
+msgid "Mute Video"
+msgstr ""
+
+#: ../functions/theme-guide-data.php:4 ../functions/wpzoom/components/theme-
+#: updater/theme-updater-admin.php:93
+msgid "Read Theme Documentation"
+msgstr ""
+
+#: ../functions/theme-guide-data.php:5 ../functions/wpzoom/components/theme-
+#: updater/theme-updater-admin.php:94
+msgid ""
+"<strong>Theme Documentation</strong> is the place where you'll find the "
+"information needed to setup the theme quickly, and other details about theme-"
+"specific features."
+msgstr ""
+
+#: ../functions/theme-guide-data.php:12 ../functions/wpzoom/components/theme-
+#: updater/theme-updater-admin.php:101
+msgid "Import the Demo Content"
+msgstr ""
+
+#: ../functions/theme-guide-data.php:13 ../functions/wpzoom/components/theme-
+#: updater/theme-updater-admin.php:102
+msgid ""
+"If you’re installing the theme on a new site, installing the demo content is "
+"the best way to get familiarized. This feature can be found on the <a "
+"href=\"admin.php?page=wpzoom_options\" target=\"_blank\">Theme Options</a> page, "
+"in the <strong>Import/Export</strong> section."
+msgstr ""
+
+#: ../functions/theme-guide-data.php:20 ../functions/wpzoom/components/theme-
+#: updater/theme-updater-admin.php:109
+msgid "Add your Logo & Customize the Theme"
+msgstr ""
+
+#: ../functions/theme-guide-data.php:21 ../functions/wpzoom/components/theme-
+#: updater/theme-updater-admin.php:110
+msgid ""
+"Using the <strong>Live Customizer</strong> you can easily upload your "
+"<strong>logo image</strong>, change <strong>fonts, colors, widgets, "
+"menus</strong> and much more!"
+msgstr ""
+
+#: ../functions/theme-guide-data.php:27 ..
+#: functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:334 ..
+#: functions/wpzoom/components/theme-updater/theme-updater-admin.php:116
+msgid "Install Required Plugins"
+msgstr ""
+
+#: ../functions/theme-guide-data.php:28
+msgid ""
+"In order to enable all the features from your theme, you’ll need to install "
+"and activate the required plugins such as <strong>Jetpack</strong> or "
+"<strong>WooCommerce</strong>, which are available for <strong>free</strong>."
+"<br/>\n"
+"            <h4>General Plugins</h4><ul><li><a href=\"https://wordpress."
+"org/plugins/jetpack/\" target=\"_blank\">Jetpack by WordPress.com</a> "
+"<em>(Free)</em> - popular plugin that includes a dozen of features. "
+"<strong>Tiled Galleries, Lightbox</strong> are just some of the features "
+"recommended for <strong>Inspiro</strong></li> <li><a href=\"https://wordpress."
+"org/plugins/unyson/\" target=\"_blank\">Unyson Page Builder</a> <em>(Free)</em> "
+"- a simple and easy to use <strong>Page Builder</strong></li> <li><a "
+"href=\"https://wordpress.org/plugins/woocommerce/\" "
+"target=\"_blank\">WooCommerce</a> <em>(Free)</em> - popular "
+"<strong>eCommerce</strong> plugin</li><li><a href=\"https://wordpress."
+"org/plugins/social-icons-widget-by-wpzoom/\" target=\"_blank\">Social Icons "
+"Widget</a> <em>(Free)</em> - simple plugin to add social icons</li><li><a "
+"href=\"https://wordpress.org/plugins/instagram-widget-by-wpzoom/\" "
+"target=\"_blank\">Instagram Widget by WPZOOM</a> <em>(Free)</em> - Instagram "
+"timeline widget for your theme</li></ul>"
+msgstr ""
+
+#: ../functions/theme-guide-data.php:36
+msgid "Setup Homepage Template"
+msgstr ""
+
+#: ../functions/theme-guide-data.php:37
+msgid ""
+"Don't want to display your latest posts on homepage? <br/><br/>Create a <a "
+"href=\"post-new.php?post_type=page\">new page</a> and assign a special "
+"<strong>Page Template</strong> to it, depending on your needs (<a href=\"http:"
+"//www.wpzoom.com/docs/page-templates/\" target=\"_blank\">view "
+"instructions</a>):<br/><ul><li><strong>Homepage (Widgetized)</strong> - "
+"<em>page template that includes a widget area. Manage widgets located on "
+"this page from <a href=\"widgets.php\" target=\"_blank\">Widgets</a> page or "
+"Customizer. </em></li><li><strong>Homepage (Unyson Builder)</strong> - "
+"<em>special page template for front page that integrates great with "
+"<strong>Unyson Page Builder</strong> and that displays the slideshow at the "
+"top.</em></li></ul>"
+msgstr ""
+
+#: ../functions/theme-guide-data.php:44
+msgid "Add a New Slideshow Post"
+msgstr ""
+
+#: ../functions/theme-guide-data.php:45
+msgid ""
+"The <strong>Homepage Slideshow</strong> displays your latest "
+"<strong>Slideshow</strong> posts. Each post is a separate slide."
+msgstr ""
+
+#: ../functions/theme-guide-data.php:51
+msgid "Add a New Gallery/Portfolio Post"
+msgstr ""
+
+#: ../functions/theme-guide-data.php:52
+msgid ""
+"From the <strong>Portfolio</strong> menu you can create new posts with "
+"images for your Portfolio or Gallery page. These posts are separate from "
+"your blog posts, and you can display them on the Gallery page or in homepage "
+"widgets."
+msgstr ""
+
+#: ../functions/theme-guide-data.php:58 ../functions/wpzoom/components/theme-
+#: updater/theme-updater-admin.php:124
+msgid "Need one-to-one Assistance?"
+msgstr ""
+
+#: ../functions/theme-guide-data.php:59
+msgid ""
+"Need help setting up your theme or have a question? Get in touch with our "
+"Support Team. We'd love the opportunity to help you."
+msgstr ""
+
+#: ../functions/widgets/featured-products.php:12
+msgid "Custom WPZOOM widget that displays featured WooCommerce products"
+msgstr ""
+
+#: ../functions/widgets/featured-products.php:18
+msgid "WPZOOM: Featured WooCommerce Products"
+msgstr ""
+
+#: ../functions/widgets/portfolio-scroller.php:108
+msgid "Nothing to display&hellip;"
+msgstr ""
+
+#: ../functions/widgets/portfolio-scroller.php:184
+msgid "Title:"
+msgstr ""
+
+#: ../functions/widgets/portfolio-scroller.php:191
+msgid "Category:"
+msgstr ""
+
+#: ../functions/widgets/portfolio-scroller.php:213
+msgid "Number of posts:"
+msgstr ""
+
+#: ../functions/widgets/portfolio-scroller.php:216
+msgid "Number of portfolio items to show at one time"
+msgstr ""
+
+#: ../functions/widgets/portfolio-scroller.php:222
+msgid "Hide Post Title"
+msgstr ""
+
+#: ../functions/widgets/portfolio-scroller.php:229
+msgid "Hide Excerpt"
+msgstr ""
+
+#: ../functions/widgets/portfolio-scroller.php:236
+msgid "Hide Read More button"
+msgstr ""
+
+#: ../functions/widgets/portfolio-scroller.php:244
+msgid "Auto-Scroll"
+msgstr ""
+
+#: ../functions/widgets/portfolio-scroller.php:246
+msgid "Automatically scroll through the portfolio items"
+msgstr ""
+
+#: ../functions/widgets/portfolio-scroller.php:252
+msgid "Scroll Infinitely"
+msgstr ""
+
+#: ../functions/widgets/portfolio-showcase.php:217
+msgid "Preferred number of columns"
+msgstr ""
+
+#: ../functions/widgets/portfolio-showcase.php:231
+msgid "Display Posts in Masonry Layout"
+msgstr ""
+
+#: ../functions/widgets/portfolio-showcase.php:238
+msgid "Display Excerpts"
+msgstr ""
+
+#: ../functions/widgets/portfolio-showcase.php:244
+msgid "Display Read More button"
+msgstr ""
+
+#: ../functions/widgets/portfolio-showcase.php:248
+msgid "Text for Read More button"
+msgstr ""
+
+#: ../functions/widgets/portfolio-showcase.php:256
+msgid "Display View All button"
+msgstr ""
+
+#: ../functions/widgets/portfolio-showcase.php:260
+msgid "Text for View All button"
+msgstr ""
+
+#: ../functions/widgets/portfolio-showcase.php:265
+msgid "Link for View All button"
+msgstr ""
+
+#: ../functions/widgets/recentposts.php:174
+msgid "Show:"
+msgstr ""
+
+#: ../functions/widgets/recentposts.php:180
+msgid "Hide post title"
+msgstr ""
+
+#: ../functions/widgets/recentposts.php:185
+msgid "Display post date"
+msgstr ""
+
+#: ../functions/widgets/recentposts.php:190
+msgid "Display post thumbnail"
+msgstr ""
+
+#: ../functions/widgets/recentposts.php:195
+msgid "Display post excerpt"
+msgstr ""
+
+#: ../functions/widgets/recentposts.php:200
+msgid "Display read more button"
+msgstr ""
+
+#: ../functions/widgets/recentposts.php:204
+msgid "Excerpt character limit:"
+msgstr ""
+
+#: ../functions/widgets/single-page.php:12
+msgid "Custom WPZOOM widget that displays a single specified static page."
+msgstr ""
+
+#: ../functions/widgets/single-page.php:18
+msgid "WPZOOM: Single Page"
+msgstr ""
+
+#: ../functions/widgets/single-page.php:152
+msgid "Page to Display:"
+msgstr ""
+
+#: ../functions/widgets/single-page.php:159
+msgid "Display Image/Video at the Top"
+msgstr ""
+
+#: ../functions/widgets/single-page.php:165
+msgid ""
+"To display a video in the widget, make sure to insert the <strong>embed "
+"code</strong> in the <strong>Excerpt</strong> field of the selected page."
+msgstr ""
+
+#: ../functions/widgets/single-page.php:171
+msgid "Use Featured Image as Widget Background"
+msgstr ""
+
+#: ../functions/widgets/single-page.php:177
+msgid "Link Page Title to Page"
+msgstr ""
+
+#: ../functions/widgets/single-page.php:182
+msgid "Split text in 2 columns?"
+msgstr ""
+
+#: ../functions/wpzoom/components/admin/admin.php:94
+msgid "Page Title"
+msgstr ""
+
+#. Author of the theme
+#: ../functions/wpzoom/components/admin/admin.php:94 ..
+#: functions/wpzoom/components/admin/admin.php:96 ../functions/wpzoom/wpzoom.php:
+#: 155
+msgid "WPZOOM"
+msgstr ""
+
+#: ../functions/wpzoom/components/admin/admin.php:96 ../functions/wpzoom/options.
+#: php:105 ../functions/wpzoom/wpzoom.php:156
+msgid "Theme Options"
+msgstr ""
+
+#: ../functions/wpzoom/components/admin/admin.php:100 ..
+#: functions/wpzoom/components/admin/admin.php:100
+msgid "Customize"
+msgstr ""
+
+#: ../functions/wpzoom/components/admin/admin.php:104 ..
+#: functions/wpzoom/components/admin/admin.php:104
+msgid "Update Framework"
+msgstr ""
+
+#: ../functions/wpzoom/components/admin/admin.php:108 ..
+#: functions/wpzoom/components/admin/admin.php:108
+msgid "New Themes"
+msgstr ""
+
+#: ../functions/wpzoom/components/admin/settings-fields.php:308
+msgid "Web Safe Fonts"
+msgstr ""
+
+#: ../functions/wpzoom/components/admin/settings-fields.php:315
+msgid "Google Web Fonts"
+msgstr ""
+
+#: ../functions/wpzoom/components/admin/settings-fields.php:369
+#, php-format
+msgid ""
+"<p>This option has been deprecated in favor of the Site Icon setting in "
+"WordPress core. Please visit %s to configure your site icon.</p>"
+msgstr ""
+
+#: ../functions/wpzoom/components/admin/settings-fields.php:372
+msgid "General Settings"
+msgstr ""
+
+#: ../functions/wpzoom/components/admin/settings-page.php:140
+msgid "Overview"
+msgstr ""
+
+#: ../functions/wpzoom/components/admin/settings-page.php:141
+msgid ""
+"<p>Some themes provide customization options that are grouped together on a "
+"Theme Options screen. If you change themes, options may change or disappear, "
+"as they are theme-specific. </p><p>Your current theme is running on <a "
+"href=\"http://www.wpzoom.com/framework-tour/\" target=\"_blank\">ZOOM "
+"Framework</a>. The <strong>ZOOM framework</strong> is designed to ease the "
+"process of customizing WPZOOM themes. The many options available allow you "
+"to change almost every aspect of your WPZOOM theme without needing to know "
+"how to write any sort of code. The framework has also been designed to stay "
+"as consistent as possible across all WPZOOM themes so you can take your "
+"knowledge from one theme to another with ease.</p>"
+msgstr ""
+
+#: ../functions/wpzoom/components/admin/settings-page.php:145
+msgid "For more information:"
+msgstr ""
+
+#: ../functions/wpzoom/components/admin/settings-page.php:146
+msgid ""
+"<a href=\"http://www.wpzoom.com/support/documentation\" "
+"target=\"_blank\">Documentation and Tutorials</a>"
+msgstr ""
+
+#: ../functions/wpzoom/components/admin/settings-page.php:147
+msgid "<a href=\"http://www.wpzoom.com/support/\" target=\"_blank\">Support Desk</a>"
+msgstr ""
+
+#: ../functions/wpzoom/components/admin/settings-page.php:154
+msgid "Using Import/Export"
+msgstr ""
+
+#: ../functions/wpzoom/components/admin/settings-page.php:155
+msgid ""
+"<p>The <Strong>ZOOM Framework</strong> has the ability to import and export "
+"various theme and widget settings. This allows you to easily transfer "
+"specific setups between different sites and also to backup settings so you "
+"won't ever lose them.</p>"
+msgstr ""
+
+#: ../functions/wpzoom/components/customizer/helpers/helpers.php:457
+msgid "Standard Fonts"
+msgstr ""
+
+#: ../functions/wpzoom/components/customizer/helpers/helpers.php:459
+msgid "Google Fonts"
+msgstr ""
+
+#: ../functions/wpzoom/components/customizer/helpers/helpers.php:486
+msgctxt "font style"
+msgid "Serif"
+msgstr ""
+
+#: ../functions/wpzoom/components/customizer/helpers/helpers.php:490
+msgctxt "font style"
+msgid "Sans Serif"
+msgstr ""
+
+#: ../functions/wpzoom/components/customizer/helpers/helpers.php:494
+msgctxt "font style"
+msgid "Monospaced"
+msgstr ""
+
+#: ../functions/wpzoom/components/customizer/helpers/helpers.php:698
+msgid "Font Family"
+msgstr ""
+
+#: ../functions/wpzoom/components/customizer/helpers/helpers.php:709
+msgid "Font Size (in px)"
+msgstr ""
+
+#: ../functions/wpzoom/components/customizer/helpers/helpers.php:720
+msgid "Font Style"
+msgstr ""
+
+#: ../functions/wpzoom/components/customizer/helpers/helpers.php:723 ..
+#: functions/wpzoom/components/customizer/helpers/helpers.php:738
+msgid "Normal"
+msgstr ""
+
+#: ../functions/wpzoom/components/customizer/helpers/helpers.php:724
+msgid "Italic"
+msgstr ""
+
+#: ../functions/wpzoom/components/customizer/helpers/helpers.php:725
+msgid "Oblique"
+msgstr ""
+
+#: ../functions/wpzoom/components/customizer/helpers/helpers.php:735
+msgid "Font Weight"
+msgstr ""
+
+#: ../functions/wpzoom/components/customizer/helpers/helpers.php:739
+msgid "Bold"
+msgstr ""
+
+#: ../functions/wpzoom/components/customizer/helpers/helpers.php:754
+msgid "Text Transform"
+msgstr ""
+
+#: ../functions/wpzoom/components/customizer/helpers/helpers.php:758
+msgid "Capitalize"
+msgstr ""
+
+#: ../functions/wpzoom/components/customizer/helpers/helpers.php:759
+msgid "Lowercase"
+msgstr ""
+
+#: ../functions/wpzoom/components/customizer/helpers/helpers.php:760
+msgid "Uppercase"
+msgstr ""
+
+#: ../functions/wpzoom/components/customizer/helpers/helpers.php:832
+#, php-format
+msgid "Copyright &copy; %1$s %2$s"
+msgstr ""
+
+#: ../functions/wpzoom/components/customizer/helpers/helpers.php:863 ..
+#: portfolio/archive-infinite.php:35 ../portfolio/archive-isotope.php:35 ..
+#: portfolio/archive.php:35 ../portfolio/taxonomy.php:15
+msgid "All"
+msgstr ""
+
+#: ../functions/wpzoom/components/customizer/helpers/helpers.php:864
+msgid "Cyrillic"
+msgstr ""
+
+#: ../functions/wpzoom/components/customizer/helpers/helpers.php:865
+msgid "Cyrillic Extended"
+msgstr ""
+
+#: ../functions/wpzoom/components/customizer/helpers/helpers.php:866
+msgid "Devanagari"
+msgstr ""
+
+#: ../functions/wpzoom/components/customizer/helpers/helpers.php:867
+msgid "Greek"
+msgstr ""
+
+#: ../functions/wpzoom/components/customizer/helpers/helpers.php:868
+msgid "Greek Extended"
+msgstr ""
+
+#: ../functions/wpzoom/components/customizer/helpers/helpers.php:869
+msgid "Khmer"
+msgstr ""
+
+#: ../functions/wpzoom/components/customizer/helpers/helpers.php:870
+msgid "Latin"
+msgstr ""
+
+#: ../functions/wpzoom/components/customizer/helpers/helpers.php:871
+msgid "Latin Extended"
+msgstr ""
+
+#: ../functions/wpzoom/components/customizer/helpers/helpers.php:872
+msgid "Vietnamese"
+msgstr ""
+
+#: ../functions/wpzoom/components/customizer/wpzoom-customizer.php:112
+msgid "Typography"
+msgstr ""
+
+#: ../functions/wpzoom/components/customizer/wpzoom-customizer.php:113
+msgid "Colors"
+msgstr ""
+
+#: ../functions/wpzoom/components/dashboard/dashboard.php:8
+msgid "Latest Theme"
+msgstr ""
+
+#: ../functions/wpzoom/components/dashboard/dashboard.php:33
+msgid "Browse our wide selection of WordPress themes to find the right one for you"
+msgstr ""
+
+#: ../functions/wpzoom/components/dashboard/dashboard.php:33
+msgid "Browse more &rarr;"
+msgstr ""
+
+#: ../functions/wpzoom/components/dashboard/dashboard.php:75 ..
+#: functions/wpzoom/pages/news.php:35
+msgid "No items"
+msgstr ""
+
+#: ../functions/wpzoom/components/dashboard/dashboard.php:100
+msgid "WPZOOM News"
+msgstr ""
+
+#: ../functions/wpzoom/components/demo-importer/demo-importer.php:17
+msgid "Demo Content"
+msgstr ""
+
+#: ../functions/wpzoom/components/demo-importer/demo-importer.php:19
+msgid "Load Demo Content"
+msgstr ""
+
+#: ../functions/wpzoom/components/demo-importer/demo-importer.php:20
+msgid ""
+"Click on this button to load the demo content for this theme. This is useful "
+"for seeing how the theme will look when filled with content.<br/><br/>After "
+"the demo content was imported, we recommend you to configure <a href=\"nav-"
+"menus.php\" target=\"_blank\">Menus</a>, <a href=\"widgets.php\" "
+"target=\"_blank\">Widgets</a>, <a href=\"options-reading.php\" "
+"target=\"_blank\">Front Page</a> (if your theme uses a special homepage "
+"template), and other theme-specific features. <br/><br/>If the importer "
+"doesn't work for you, try importing the demo content <a href=\"http://www."
+"wpzoom.com/theme-demo-content/\" target=\"_blank\">manually</a>."
+msgstr ""
+
+#: ../functions/wpzoom/components/demo-importer/demo-importer.php:21
+msgid ""
+"Importing the Demo Content will not delete your current posts, pages or "
+"anything else. You can delete the demo content (posts, pages, menus) only "
+"manually after that from your site.\n"
+"                     <br/><br/> The importing process can take up to "
+"<strong>5 minutes</strong> or longer depending on your server configuration "
+"and the number of images included in the demo. Please do not leave this "
+"screen until you see &ldquo;<strong><em>All done!</em></strong>&rdquo; in "
+"the box that will appear below.</p></div>"
+msgstr ""
+
+#: ../functions/wpzoom/components/demo-importer/demo-importer.php:34
+msgid "Server Environment"
+msgstr ""
+
+#: ../functions/wpzoom/components/demo-importer/demo-importer.php:35 ..
+#: functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:2369
+msgid "Recommended"
+msgstr ""
+
+#: ../functions/wpzoom/components/demo-importer/demo-importer.php:36
+msgid "Current"
+msgstr ""
+
+#: ../functions/wpzoom/components/demo-importer/demo-importer.php:39
+msgid "PHP Maximum Execution Time (seconds)"
+msgstr ""
+
+#: ../functions/wpzoom/components/demo-importer/demo-importer.php:40
+msgid "300 or greater"
+msgstr ""
+
+#: ../functions/wpzoom/components/demo-importer/demo-importer.php:44
+msgid "PHP Maximum Upload Filesize"
+msgstr ""
+
+#: ../functions/wpzoom/components/demo-importer/demo-importer.php:45
+msgid "64<abbr title=\"Megabytes\">M</abbr> or greater"
+msgstr ""
+
+#: ../functions/wpzoom/components/demo-importer/demo-importer.php:49
+msgid "PHP Maximum Post Size"
+msgstr ""
+
+#: ../functions/wpzoom/components/demo-importer/demo-importer.php:50
+msgid "5<abbr title=\"Megabytes\">M</abbr> or greater"
+msgstr ""
+
+#: ../functions/wpzoom/components/demo-importer/demo-importer.php:54
+msgid "PHP Maximum Input Time (seconds)"
+msgstr ""
+
+#: ../functions/wpzoom/components/demo-importer/demo-importer.php:55
+msgid "100 or greater"
+msgstr ""
+
+#: ../functions/wpzoom/components/demo-importer/demo-importer.php:59
+msgid "PHP Memory Limit"
+msgstr ""
+
+#: ../functions/wpzoom/components/demo-importer/demo-importer.php:60
+msgid "128<abbr title=\"Megabytes\">M</abbr> or greater"
+msgstr ""
+
+#: ../functions/wpzoom/components/demo-importer/demo-importer.php:65
+msgid ""
+"If any of these indicators are lower than recommended values, ask your "
+"hosting to increase them."
+msgstr ""
+
+#: ../functions/wpzoom/components/demo-importer/demo-importer.php:112
+msgid "Select the content you want to import:"
+msgstr ""
+
+#: ../functions/wpzoom/components/demo-importer/demo-importer.php:151
+msgid "Loading demo content&hellip;\n"
+msgstr ""
+
+#: ../functions/wpzoom/components/demo-importer/demo-importer.php:152
+msgid "All done!"
+msgstr ""
+
+#: ../functions/wpzoom/components/demo-importer/wordpress-importer/class-wxr-
+#: importer.php:128
+msgid "Could not open the file for parsing"
+msgstr ""
+
+#: ../functions/wpzoom/components/demo-importer/wordpress-importer/class-wxr-
+#: importer.php:164 ../functions/wpzoom/components/demo-importer/wordpress-
+#: importer/class-wxr-importer.php:237
+#, php-format
+msgid ""
+"This WXR file (version %s) is newer than the importer (version %s) and may "
+"not be supported. Please consider updating."
+msgstr ""
+
+#: ../functions/wpzoom/components/demo-importer/wordpress-importer/class-wxr-
+#: importer.php:386
+msgid "The file does not exist, please try again."
+msgstr ""
+
+#: ../functions/wpzoom/components/demo-importer/wordpress-importer/class-wxr-
+#: importer.php:446
+msgid "Invalid author mapping"
+msgstr ""
+
+#: ../functions/wpzoom/components/demo-importer/wordpress-importer/class-wxr-
+#: importer.php:547
+msgid "Cannot import auto-draft posts"
+msgstr ""
+
+#: ../functions/wpzoom/components/demo-importer/wordpress-importer/class-wxr-
+#: importer.php:635
+#, php-format
+msgid "Failed to import \"%s\": Invalid post type %s"
+msgstr ""
+
+#: ../functions/wpzoom/components/demo-importer/wordpress-importer/class-wxr-
+#: importer.php:645
+#, php-format
+msgid "%s \"%s\" already exists."
+msgstr ""
+
+#: ../functions/wpzoom/components/demo-importer/wordpress-importer/class-wxr-
+#: importer.php:718
+#, php-format
+msgid "Skipping attachment \"%s\", fetching attachments disabled"
+msgstr ""
+
+#: ../functions/wpzoom/components/demo-importer/wordpress-importer/class-wxr-
+#: importer.php:732
+#, php-format
+msgid "Failed to import \"%s\" (%s)"
+msgstr ""
+
+#: ../functions/wpzoom/components/demo-importer/wordpress-importer/class-wxr-
+#: importer.php:753 ../functions/wpzoom/components/demo-importer/wordpress-
+#: importer/class-wxr-importer.php:1535
+#, php-format
+msgid "Imported \"%s\" (%s)"
+msgstr ""
+
+#: ../functions/wpzoom/components/demo-importer/wordpress-importer/class-wxr-
+#: importer.php:758
+#, php-format
+msgid "Post %d remapped to %d"
+msgstr ""
+
+#: ../functions/wpzoom/components/demo-importer/wordpress-importer/class-wxr-
+#: importer.php:903
+msgid "Invalid file type"
+msgstr ""
+
+#: ../functions/wpzoom/components/demo-importer/wordpress-importer/class-wxr-
+#: importer.php:1374
+#, php-format
+msgid "Failed to import user \"%s\""
+msgstr ""
+
+#: ../functions/wpzoom/components/demo-importer/wordpress-importer/class-wxr-
+#: importer.php:1387
+#, php-format
+msgid "Imported user \"%s\""
+msgstr ""
+
+#: ../functions/wpzoom/components/demo-importer/wordpress-importer/class-wxr-
+#: importer.php:1391
+#, php-format
+msgid "User %d remapped to %d"
+msgstr ""
+
+#: ../functions/wpzoom/components/demo-importer/wordpress-importer/class-wxr-
+#: importer.php:1520
+#, php-format
+msgid "Failed to import %s %s"
+msgstr ""
+
+#: ../functions/wpzoom/components/demo-importer/wordpress-importer/class-wxr-
+#: importer.php:1540
+#, php-format
+msgid "Term %d remapped to %d"
+msgstr ""
+
+#: ../functions/wpzoom/components/demo-importer/wordpress-importer/class-wxr-
+#: importer.php:1584
+#, php-format
+msgid "Remote server returned %1$d %2$s for %3$s"
+msgstr ""
+
+#: ../functions/wpzoom/components/demo-importer/wordpress-importer/class-wxr-
+#: importer.php:1597
+msgid "Remote file is incorrect size"
+msgstr ""
+
+#: ../functions/wpzoom/components/demo-importer/wordpress-importer/class-wxr-
+#: importer.php:1602
+msgid "Zero size file downloaded"
+msgstr ""
+
+#: ../functions/wpzoom/components/demo-importer/wordpress-importer/class-wxr-
+#: importer.php:1608
+#, php-format
+msgid "Remote file is too large, limit is %s"
+msgstr ""
+
+#. for when debug logging is off
+#: ../functions/wpzoom/components/demo-importer/wordpress-importer/class-wxr-
+#: importer.php:1629
+#, php-format
+msgid "Running post-processing for post %d"
+msgstr ""
+
+#: ../functions/wpzoom/components/demo-importer/wordpress-importer/class-wxr-
+#: importer.php:1643
+#, php-format
+msgid "Could not find the post parent for \"%s\" (post #%d)"
+msgstr ""
+
+#: ../functions/wpzoom/components/demo-importer/wordpress-importer/class-wxr-
+#: importer.php:1648
+#, php-format
+msgid "Post %d was imported with parent %d, but could not be found"
+msgstr ""
+
+#: ../functions/wpzoom/components/demo-importer/wordpress-importer/class-wxr-
+#: importer.php:1663
+#, php-format
+msgid "Could not find the author for \"%s\" (post #%d)"
+msgstr ""
+
+#: ../functions/wpzoom/components/demo-importer/wordpress-importer/class-wxr-
+#: importer.php:1668
+#, php-format
+msgid "Post %d was imported with author \"%s\", but could not be found"
+msgstr ""
+
+#: ../functions/wpzoom/components/demo-importer/wordpress-importer/class-wxr-
+#: importer.php:1694
+#, php-format
+msgid "Post %d was marked for post-processing, but none was required."
+msgstr ""
+
+#: ../functions/wpzoom/components/demo-importer/wordpress-importer/class-wxr-
+#: importer.php:1705
+#, php-format
+msgid "Could not update \"%s\" (post #%d) with mapped data"
+msgstr ""
+
+#: ../functions/wpzoom/components/demo-importer/wordpress-importer/class-wxr-
+#: importer.php:1750
+#, php-format
+msgid "Could not find the menu object for \"%s\" (post #%d)"
+msgstr ""
+
+#: ../functions/wpzoom/components/demo-importer/wordpress-importer/class-wxr-
+#: importer.php:1755
+#, php-format
+msgid "Post %d was imported with object \"%d\" of type \"%s\", but could not be found"
+msgstr ""
+
+#: ../functions/wpzoom/components/demo-importer/wordpress-importer/class-wxr-
+#: importer.php:1778
+#, php-format
+msgid "Could not find the comment parent for comment #%d"
+msgstr ""
+
+#: ../functions/wpzoom/components/demo-importer/wordpress-importer/class-wxr-
+#: importer.php:1782
+#, php-format
+msgid "Comment %d was imported with parent %d, but could not be found"
+msgstr ""
+
+#: ../functions/wpzoom/components/demo-importer/wordpress-importer/class-wxr-
+#: importer.php:1797
+#, php-format
+msgid "Could not find the author for comment #%d"
+msgstr ""
+
+#: ../functions/wpzoom/components/demo-importer/wordpress-importer/class-wxr-
+#: importer.php:1801
+#, php-format
+msgid "Comment %d was imported with author %d, but could not be found"
+msgstr ""
+
+#: ../functions/wpzoom/components/demo-importer/wordpress-importer/class-wxr-
+#: importer.php:1818
+#, php-format
+msgid "Could not update comment #%d with mapped data"
+msgstr ""
+
+#: ../functions/wpzoom/components/demo-importer/wordpress-importer/plugin.php:37
+msgid ""
+"Import <strong>posts, pages, comments, custom fields, categories, and "
+"tags</strong> from a WordPress export file."
+msgstr ""
+
+#: ../functions/wpzoom/components/medialib-uploader.php:15
+msgid "WPZOOM Exporter"
+msgstr ""
+
+#: ../functions/wpzoom/components/medialib-uploader.php:38
+msgid "Upload"
+msgstr ""
+
+#: ../functions/wpzoom/components/medialib-uploader.php:40
+msgid "Upgrade your version of WordPress for full media support."
+msgstr ""
+
+#: ../functions/wpzoom/components/medialib-uploader.php:60
+msgid "View File"
+msgstr ""
+
+#: ../functions/wpzoom/components/portfolio/options.php:6
+msgid "Portfolio Options"
+msgstr ""
+
+#: ../functions/wpzoom/components/portfolio/options.php:13
+msgid "Permalinks"
+msgstr ""
+
+#: ../functions/wpzoom/components/portfolio/options.php:15
+msgid ""
+"Here you can edit URLs for Portfolio post type. Don't forget to flush rules "
+"after changing them."
+msgstr ""
+
+#: ../functions/wpzoom/components/portfolio/options.php:16
+#, php-format
+msgid "Just open the <a href=\"%s\">Permalinks</a> page and hit <b>Save Options</b>."
+msgstr ""
+
+#: ../functions/wpzoom/components/portfolio/options.php:19
+msgid "Portfolio item slug"
+msgstr ""
+
+#: ../functions/wpzoom/components/portfolio/options.php:25
+msgid "Portfolio taxonomy slug"
+msgstr ""
+
+#: ../functions/wpzoom/components/portfolio/portfolio.php:69 ..
+#: functions/wpzoom/components/portfolio/portfolio.php:81
+msgid "Portfolio Items"
+msgstr ""
+
+#: ../functions/wpzoom/components/portfolio/portfolio.php:70 ..
+#: functions/wpzoom/components/portfolio/portfolio.php:72
+msgid "Portfolio Item"
+msgstr ""
+
+#. Name of the template
+#: ../functions/wpzoom/components/portfolio/portfolio.php:71 ..
+#: functions/wpzoom/components/portfolio/portfolio.php:84 ..
+#: functions/wpzoom/components/portfolio/portfolio.php:121 ..
+#: functions/wpzoom/components/portfolio/portfolio.php:123
+msgid "Portfolio"
+msgstr ""
+
+#: ../functions/wpzoom/components/portfolio/portfolio.php:73
+msgid "Add New"
+msgstr ""
+
+#: ../functions/wpzoom/components/portfolio/portfolio.php:74
+msgid "Add New Portfolio Item"
+msgstr ""
+
+#: ../functions/wpzoom/components/portfolio/portfolio.php:75
+msgid "Edit Portfolio Item"
+msgstr ""
+
+#: ../functions/wpzoom/components/portfolio/portfolio.php:76
+msgid "New Portfolio Item"
+msgstr ""
+
+#: ../functions/wpzoom/components/portfolio/portfolio.php:77
+msgid "View Portfolio Item"
+msgstr ""
+
+#: ../functions/wpzoom/components/portfolio/portfolio.php:78
+msgid "Search Portfolio"
+msgstr ""
+
+#: ../functions/wpzoom/components/portfolio/portfolio.php:79
+msgid "No portfolio items found"
+msgstr ""
+
+#: ../functions/wpzoom/components/portfolio/portfolio.php:80
+msgid "No portfolio items found in trash"
+msgstr ""
+
+#: ../functions/wpzoom/components/portfolio/portfolio.php:120 ..
+#: functions/wpzoom/components/portfolio/portfolio.php:122
+msgid "Portfolios"
+msgstr ""
+
+#: ../functions/wpzoom/components/portfolio/portfolio.php:124
+msgid "Search Portfolios"
+msgstr ""
+
+#: ../functions/wpzoom/components/portfolio/portfolio.php:125
+msgid "Popular Portfolios"
+msgstr ""
+
+#: ../functions/wpzoom/components/portfolio/portfolio.php:126
+msgid "All Portfolios"
+msgstr ""
+
+#: ../functions/wpzoom/components/portfolio/portfolio.php:127
+msgid "Edit Portfolio"
+msgstr ""
+
+#: ../functions/wpzoom/components/portfolio/portfolio.php:128
+msgid "View Portfolio"
+msgstr ""
+
+#: ../functions/wpzoom/components/portfolio/portfolio.php:129
+msgid "Update Portfolio"
+msgstr ""
+
+#: ../functions/wpzoom/components/portfolio/portfolio.php:130
+msgid "Add New Portfolio"
+msgstr ""
+
+#: ../functions/wpzoom/components/portfolio/portfolio.php:131
+msgid "New Portfolio Name"
+msgstr ""
+
+#: ../functions/wpzoom/components/portfolio/portfolio.php:132
+msgid "Separate portfolios with commas"
+msgstr ""
+
+#: ../functions/wpzoom/components/portfolio/portfolio.php:133
+msgid "Add or remove portfolios"
+msgstr ""
+
+#: ../functions/wpzoom/components/portfolio/portfolio.php:134
+msgid "Choose from the most used portfolios"
+msgstr ""
+
+#: ../functions/wpzoom/components/portfolio/walker-category-filter.php:13
+#, php-format
+msgid "View all posts filed under %s"
+msgstr ""
+
+#: ../functions/wpzoom/components/portfolio/walker-category-filter.php:29
+#, php-format
+msgid "Feed for all posts filed under %s"
+msgstr ""
+
+#. $id
+#: ../functions/wpzoom/components/post-slider/post-slider.php:35
+msgid "Slider"
+msgstr ""
+
+#: ../functions/wpzoom/components/post-slider/post-slider.php:68
+msgid "Click and drag to reorder this slide"
+msgstr ""
+
+#: ../functions/wpzoom/components/post-slider/post-slider.php:69
+msgid "Click to remove this slide"
+msgstr ""
+
+#: ../functions/wpzoom/components/post-slider/post-slider.php:73
+msgid "Type: "
+msgstr ""
+
+#: ../functions/wpzoom/components/post-slider/post-slider.php:82
+msgid "Paste embed code here..."
+msgstr ""
+
+#: ../functions/wpzoom/components/post-slider/post-slider.php:86
+msgid "Choose Image"
+msgstr ""
+
+#: ../functions/wpzoom/components/post-slider/post-slider.php:87
+msgid "Remove Image"
+msgstr ""
+
+#: ../functions/wpzoom/components/post-slider/post-slider.php:91
+msgid "Enter title"
+msgstr ""
+
+#: ../functions/wpzoom/components/post-slider/post-slider.php:92
+msgid "Enter description (HTML allowed)&hellip;"
+msgstr ""
+
+#: ../functions/wpzoom/components/post-slider/post-slider.php:97
+msgid "+ Add Slide"
+msgstr ""
+
+#: ../functions/wpzoom/components/regenerate-thumbnails/wpzoom-regenerate-
+#: thumbnails.php:103
+msgid "Attention, the importing process was not finished yet!"
+msgstr ""
+
+#: ../functions/wpzoom/components/regenerate-thumbnails/wpzoom-regenerate-
+#: thumbnails.php:104
+msgid "Please wait, process will start in a couple of seconds..."
+msgstr ""
+
+#: ../functions/wpzoom/components/regenerate-thumbnails/wpzoom-regenerate-
+#: thumbnails.php:105
+msgid "Thumbnails Regeneration is Needed"
+msgstr ""
+
+#: ../functions/wpzoom/components/regenerate-thumbnails/wpzoom-regenerate-
+#: thumbnails.php:106 ../functions/wpzoom/components/regenerate-thumbnails/wpzoom-
+#: regenerate-thumbnails.php:107 ../functions/wpzoom/options.php:122
+msgid "Load default widget settings"
+msgstr ""
+
+#: ../functions/wpzoom/components/regenerate-thumbnails/wpzoom-regenerate-
+#: thumbnails.php:108
+msgid "Regenerate Thumbnails"
+msgstr ""
+
+#: ../functions/wpzoom/components/regenerate-thumbnails/wpzoom-regenerate-
+#: thumbnails.php:109
+msgid "Skip this step"
+msgstr ""
+
+#: ../functions/wpzoom/components/regenerate-thumbnails/wpzoom-regenerate-
+#: thumbnails.php:110
+msgid "Image {1} of {2}"
+msgstr ""
+
+#: ../functions/wpzoom/components/regenerate-thumbnails/wpzoom-regenerate-
+#: thumbnails.php:111
+msgid ""
+"Click on this button to start to regenerate the thumbnails for the images "
+"that were imported."
+msgstr ""
+
+#: ../functions/wpzoom/components/regenerate-thumbnails/wpzoom-regenerate-
+#: thumbnails.php:112
+msgid "Click on this button to load the default widget settings (as in theme demo)"
+msgstr ""
+
+#: ../functions/wpzoom/components/regenerate-thumbnails/wpzoom-regenerate-
+#: thumbnails.php:113
+msgid "Thumbnails have been successfully regenerated"
+msgstr ""
+
+#: ../functions/wpzoom/components/regenerate-thumbnails/wpzoom-regenerate-
+#: thumbnails.php:114
+msgid "Default widgets have been successfully loaded."
+msgstr ""
+
+#: ../functions/wpzoom/components/regenerate-thumbnails/wpzoom-regenerate-
+#: thumbnails.php:115
+msgid "Demo Content has been successfully imported"
+msgstr ""
+
+#: ../functions/wpzoom/components/regenerate-thumbnails/wpzoom-regenerate-
+#: thumbnails.php:116
+msgid "Next Step"
+msgstr ""
+
+#: ../functions/wpzoom/components/regenerate-thumbnails/wpzoom-regenerate-
+#: thumbnails.php:117
+msgid "Start regenerate thumbnails"
+msgstr ""
+
+#: ../functions/wpzoom/components/regenerate-thumbnails/wpzoom-regenerate-
+#: thumbnails.php:118
+msgid "Please wait, the process will start in a couple of seconds..."
+msgstr ""
+
+#: ../functions/wpzoom/components/regenerate-thumbnails/wpzoom-regenerate-
+#: thumbnails.php:119
+#, php-format
+msgid ""
+"In the final step you have to go to the <a href=\"%s\" "
+"target=\"_blank\">Menus</a> page and configure your theme's menus. <p>You can "
+"find more instructions in this <br/><a href=\"http://www.wpzoom.com/docs/set-"
+"up-navigation-menus/\" target=\"_blank\">video tutorial</a> <em>(opens in new "
+"tab)</em>.</p>"
+msgstr ""
+
+#: ../functions/wpzoom/components/regenerate-thumbnails/wpzoom-regenerate-
+#: thumbnails.php:120
+msgid "Configure Theme Menus"
+msgstr ""
+
+#: ../functions/wpzoom/components/regenerate-thumbnails/wpzoom-regenerate-
+#: thumbnails.php:121
+msgid "Complete the Theme Setup"
+msgstr ""
+
+#: ../functions/wpzoom/components/regenerate-thumbnails/wpzoom-regenerate-
+#: thumbnails.php:122
+msgid "Open Reading settings"
+msgstr ""
+
+#: ../functions/wpzoom/components/regenerate-thumbnails/wpzoom-regenerate-
+#: thumbnails.php:123
+msgid "View your Site"
+msgstr ""
+
+#: ../functions/wpzoom/components/regenerate-thumbnails/wpzoom-regenerate-
+#: thumbnails.php:124
+msgid "Open Menus page"
+msgstr ""
+
+#: ../functions/wpzoom/components/regenerate-thumbnails/wpzoom-regenerate-
+#: thumbnails.php:125
+#, php-format
+msgid ""
+"Your theme uses a special page template for the front page. <p><strong>1."
+"</strong> Go to the <a href=\"%s\" target=\"_blank\">Reading Settings</a> page."
+"</p><p><strong>2.</strong> In the option <strong>Front page "
+"displays</strong> select <strong>\"A static page\"</strong>. </p><p><strong>3."
+"</strong> In the <strong>Front page</strong> dropdown select the "
+"<strong>Homepage</strong> page.</p>"
+msgstr ""
+
+#: ../functions/wpzoom/components/regenerate-thumbnails/wpzoom-regenerate-
+#: thumbnails.php:126
+#, php-format
+msgid ""
+"Your theme displays your <strong>latest posts</strong> on the front page. Go "
+"to the <a href=\"%s\" target=\"_blank\">Reading Settings</a> page and make sure "
+"that the option <strong>Your latest posts</strong> is selected in the "
+"<strong>Front page displays</strong>."
+msgstr ""
+
+#: ../functions/wpzoom/components/regenerate-thumbnails/wpzoom-regenerate-
+#: thumbnails.php:127
+msgid "The theme has been successfully configured!"
+msgstr ""
+
+#: ../functions/wpzoom/components/regenerate-thumbnails/wpzoom-regenerate-
+#: thumbnails.php:178
+#, php-format
+msgid "Failed resize: %d is an invalid image ID."
+msgstr ""
+
+#: ../functions/wpzoom/components/regenerate-thumbnails/wpzoom-regenerate-
+#: thumbnails.php:187
+msgid "Your user account doesn't have permission to resize images"
+msgstr ""
+
+#: ../functions/wpzoom/components/regenerate-thumbnails/wpzoom-regenerate-
+#: thumbnails.php:197
+#, php-format
+msgid "The originally uploaded image file cannot be found at %s"
+msgstr ""
+
+#: ../functions/wpzoom/components/regenerate-thumbnails/wpzoom-regenerate-
+#: thumbnails.php:214
+msgid "Unknown failure reason."
+msgstr ""
+
+#: ../functions/wpzoom/components/regenerate-thumbnails/wpzoom-regenerate-
+#: thumbnails.php:222
+#, php-format
+msgid "&quot;%1$s&quot; (ID %2$s) was successfully resized in %3$s seconds."
+msgstr ""
+
+#: ../functions/wpzoom/components/shortcodes/dialog.php:23 ..
+#: functions/wpzoom/components/shortcodes/dialog.php:40
+msgid "Preview"
+msgstr ""
+
+#: ../functions/wpzoom/components/shortcodes/dialog.php:24
+msgid "Insert"
+msgstr ""
+
+#: ../functions/wpzoom/components/shortcodes/dialog.php:31
+msgid "Customize the Shortcode"
+msgstr ""
+
+#: ../functions/wpzoom/components/shortcodes/dialog.php:54
+msgid "Your version of theme does not yet support shortcodes."
+msgstr ""
+
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:335
+msgid "Install Plugins"
+msgstr ""
+
+#. translators: %s: plugin name.
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:337
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#. translators: %s: plugin name.
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:339
+#, php-format
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:340
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:377
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:382
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:387
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:392
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:393 ..
+#: functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:920 ..
+#: functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:2626 ..
+#: functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:3673
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:394 ..
+#: functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:3252
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:395 ..
+#: functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:3045
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name.
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:397
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:399
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#. translators: 1: dashboard link.
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:401
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:402
+msgid "Dismiss this notice"
+msgstr ""
+
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:403
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr ""
+
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:404
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:607
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:608
+msgid "Update Required"
+msgstr ""
+
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:725
+msgid "Set the parent_slug config variable instead."
+msgstr ""
+
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:1027
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
+msgstr ""
+
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:1027 ..
+#: functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:1030
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr ""
+
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:1030
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr ""
+
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:1214 ..
+#: functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:3041
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr ""
+
+#. translators: %s: version number
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:2075
+#, php-format
+msgid "TGMPA v%s"
+msgstr ""
+
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:2366
+msgid "Required"
+msgstr ""
+
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:2385
+msgid "WordPress Repository"
+msgstr ""
+
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:2388
+msgid "External Source"
+msgstr ""
+
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:2391
+msgid "Pre-Packaged"
+msgstr ""
+
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:2408
+msgid "Not Installed"
+msgstr ""
+
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:2412
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:2414
+msgid "Active"
+msgstr ""
+
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:2420
+msgid "Required Update not Available"
+msgstr ""
+
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:2423
+msgid "Requires Update"
+msgstr ""
+
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:2426
+msgid "Update recommended"
+msgstr ""
+
+#. translators: 1: install status, 2: update status
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:2435
+#, php-format
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr ""
+
+#. translators: 1: number of plugins.
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:2481
+#, php-format
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:2485
+#, php-format
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:2489
+#, php-format
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:2493
+#, php-format
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:2575
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr ""
+
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:2583
+msgid "Installed version:"
+msgstr ""
+
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:2591
+msgid "Minimum required version:"
+msgstr ""
+
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:2603
+msgid "Available version:"
+msgstr ""
+
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:2626
+msgid "No plugins to install, update or activate."
+msgstr ""
+
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:2640
+msgid "Plugin"
+msgstr ""
+
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:2641
+msgid "Source"
+msgstr ""
+
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:2642
+msgid "Type"
+msgstr ""
+
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:2646
+msgid "Version"
+msgstr ""
+
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:2647
+msgid "Status"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:2696
+#, php-format
+msgid "Install %2$s"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:2701
+#, php-format
+msgid "Update %2$s"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:2707
+#, php-format
+msgid "Activate %2$s"
+msgstr ""
+
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:2777
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:2810
+msgid "Install"
+msgstr ""
+
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:2816
+msgid "Update"
+msgstr ""
+
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:2819
+msgid "Activate"
+msgstr ""
+
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:2850
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:2852
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:2893
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:2895
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:3001
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:3027
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:3251
+msgid "Plugin activation failed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:3591
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#. translators: 1: plugin name, 2: error message.
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:3594
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:3596
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:3600
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:3602
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:3602 ..
+#: functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:3610
+msgid "Show Details"
+msgstr ""
+
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:3602 ..
+#: functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:3610
+msgid "Hide Details"
+msgstr ""
+
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:3603
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:3605
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:3608
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:3610
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:3611
+msgid "All installations have been completed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: ../functions/wpzoom/components/tgmpa/class-tgm-plugin-activation.php:3613
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ../functions/wpzoom/components/theme-updater/theme-updater-admin.php:117
+msgid ""
+"In order to enable all the features from your theme, you’ll need to install "
+"and activate the required plugins such as <strong>Jetpack</strong> or "
+"<strong>WooCommerce</strong>, which are available for <strong>free</strong>."
+msgstr ""
+
+#: ../functions/wpzoom/components/theme-updater/theme-updater-admin.php:125
+msgid ""
+"Need help setting up your theme or have a question? Get in touch with our "
+"Support Team. We’d love the opportunity to help you."
+msgstr ""
+
+#. $strings['theme-license'],
+#: ../functions/wpzoom/components/theme-updater/theme-updater-admin.php:192 ..
+#: functions/wpzoom/components/theme-updater/theme-updater-admin.php:193
+msgid "Getting Started"
+msgstr ""
+
+#: ../functions/wpzoom/components/theme-updater/theme-updater-admin.php:268
+msgid "Follow @WPZOOM"
+msgstr ""
+
+#: ../functions/wpzoom/components/theme-updater/theme-updater-admin.php:293
+msgid "New to WordPress?"
+msgstr ""
+
+#: ../functions/wpzoom/components/theme-updater/theme-updater-admin.php:303
+msgid "WordPress 101 Video Tutorials"
+msgstr ""
+
+#: ../functions/wpzoom/components/theme-updater/theme-updater-admin.php:305
+msgid ""
+"<strong>20+ video tutorials</strong> that cover everything you need to know "
+"to get started using WordPress."
+msgstr ""
+
+#: ../functions/wpzoom/components/theme-updater/theme-updater-admin.php:307
+msgid "Learn WordPress Today &raquo;"
+msgstr ""
+
+#: ../functions/wpzoom/components/theme-updater/theme-updater-admin.php:318
+#, php-format
+msgid "Getting Started with %s"
+msgstr ""
+
+#: ../functions/wpzoom/components/theme-updater/theme-updater-admin.php:320
+msgid "Just installed a new theme and don't know where to start? We're here to help!"
+msgstr ""
+
+#: ../functions/wpzoom/components/theme-updater/theme-updater.php:29
+msgid "Theme License"
+msgstr ""
+
+#: ../functions/wpzoom/components/theme-updater/theme-updater.php:30
+msgid "Enter your theme license key."
+msgstr ""
+
+#: ../functions/wpzoom/components/theme-updater/theme-updater.php:31
+msgid "License Key"
+msgstr ""
+
+#: ../functions/wpzoom/components/theme-updater/theme-updater.php:32
+msgid "License Action"
+msgstr ""
+
+#: ../functions/wpzoom/components/theme-updater/theme-updater.php:33
+msgid "Deactivate License"
+msgstr ""
+
+#: ../functions/wpzoom/components/theme-updater/theme-updater.php:34
+msgid "Activate License"
+msgstr ""
+
+#: ../functions/wpzoom/components/theme-updater/theme-updater.php:35 ..
+#: functions/wpzoom/components/theme-updater/theme-updater.php:47
+msgid "License status is unknown."
+msgstr ""
+
+#: ../functions/wpzoom/components/theme-updater/theme-updater.php:36
+msgid "Renew?"
+msgstr ""
+
+#: ../functions/wpzoom/components/theme-updater/theme-updater.php:37
+msgid "unlimited"
+msgstr ""
+
+#: ../functions/wpzoom/components/theme-updater/theme-updater.php:38
+msgid "License key is active."
+msgstr ""
+
+#: ../functions/wpzoom/components/theme-updater/theme-updater.php:39
+#, php-format
+msgid "Expires %s."
+msgstr ""
+
+#: ../functions/wpzoom/components/theme-updater/theme-updater.php:40
+#, php-format
+msgid "You have %1$s / %2$s sites activated."
+msgstr ""
+
+#: ../functions/wpzoom/components/theme-updater/theme-updater.php:41
+#, php-format
+msgid "License key expired %s."
+msgstr ""
+
+#: ../functions/wpzoom/components/theme-updater/theme-updater.php:42
+msgid "License key has expired."
+msgstr ""
+
+#: ../functions/wpzoom/components/theme-updater/theme-updater.php:43
+msgid "License keys do not match."
+msgstr ""
+
+#: ../functions/wpzoom/components/theme-updater/theme-updater.php:44
+msgid "License is inactive."
+msgstr ""
+
+#: ../functions/wpzoom/components/theme-updater/theme-updater.php:45
+msgid "License key is disabled."
+msgstr ""
+
+#: ../functions/wpzoom/components/theme-updater/theme-updater.php:46
+msgid "Site is inactive."
+msgstr ""
+
+#: ../functions/wpzoom/components/theme-updater/theme-updater.php:48
+msgid ""
+"Updating this theme will lose any customizations you have made. 'Cancel' to "
+"stop, 'OK' to update."
+msgstr ""
+
+#: ../functions/wpzoom/components/theme-updater/theme-updater.php:49
+#, php-format
+msgid ""
+"<strong>%1$s %2$s</strong> is available. <a href=\"%3$s\" class=\"thickbox\" "
+"title=\"%4s\">Check out what's new</a> or <a href=\"%5$s\"%6$s>update now</a>."
+msgstr ""
+
+#: ../functions/wpzoom/components/updater/framework-updater.php:85 ..
+#: functions/wpzoom/components/updater/framework-updater.php:113 ..
+#: functions/wpzoom/components/updater/theme-updater.php:37
+msgid "Can't contact WPZOOM server. Please try again later."
+msgstr ""
+
+#: ../functions/wpzoom/components/updater/framework-updater.php:123
+#, php-format
+msgid ""
+"You are using an outdated version of ZOOM Framework, please <a "
+"href=\"%s\">update now</a>. <input type=\"button\" class=\"close button\" "
+"value=\"Hide\" />"
+msgstr ""
+
+#: ../functions/wpzoom/components/updater/framework-updater.php:146
+#, php-format
+msgid "<p>Failed: Filesystem preventing downloads. (%s)</p>"
+msgstr ""
+
+#: ../functions/wpzoom/components/updater/framework-updater.php:164
+msgid "<p>Failed: Invalid URL Provided</p>"
+msgstr ""
+
+#: ../functions/wpzoom/components/updater/framework-updater.php:166
+#, php-format
+msgid "<p>Failed: Upload - %s</p>"
+msgstr ""
+
+#: ../functions/wpzoom/components/updater/framework-updater.php:193
+msgid "<p>Failed: Incompatible archive</p>"
+msgstr ""
+
+#: ../functions/wpzoom/components/updater/framework-updater.php:199
+msgid "<p>Failed: Empty Archive</p>"
+msgstr ""
+
+#: ../functions/wpzoom/components/updater/framework-updater.php:205
+msgid "<p>Failed: mkdir Failure</p>"
+msgstr ""
+
+#: ../functions/wpzoom/components/updater/framework-updater.php:211
+msgid "<p>Failed: Copy Failed</p>"
+msgstr ""
+
+#: ../functions/wpzoom/components/updater/framework-updater.php:221
+msgid ""
+"<div class=\"updated fade\"><p>New framework successfully downloaded, "
+"extracted and updated.</p></div>"
+msgstr ""
+
+#: ../functions/wpzoom/components/updater/theme-updater.php:116
+msgid ""
+" or visit our tutorial on <u><a target=\"_blank\" href=\"http://www.wpzoom."
+"com/tutorial/how-to-update-a-wpzoom-theme/\">updating themes</a></u>."
+msgstr ""
+
+#: ../functions/wpzoom/components/video-thumb.php:88
+msgid ""
+"<strong>NOTICE!&nbsp;&nbsp;Unable to fetch video "
+"thumbnail</strong><br/>Either an invalid embed code was provided, or there "
+"is no thumbnail available for the specified video&hellip;<br/><small "
+"id=\"wpz_autothumb_remind\"><strong>REMINDER:</strong> You can always manually "
+"upload a featured image via the WordPress Media Uploader.</small>"
+msgstr ""
+
+#: ../functions/wpzoom/components/video-thumb.php:189
+msgid "Use This as the Featured Image"
+msgstr ""
+
+#: ../functions/wpzoom/components/video-thumb.php:198
+msgid "This is the Featured Image"
+msgstr ""
+
+#: ../functions/wpzoom/options.php:8
+msgid "Miscellaneous"
+msgstr ""
+
+#: ../functions/wpzoom/options.php:13
+msgid "Framework"
+msgstr ""
+
+#: ../functions/wpzoom/options.php:18
+msgid "Import/Export"
+msgstr ""
+
+#: ../functions/wpzoom/options.php:25
+msgid "Custom Code"
+msgstr ""
+
+#: ../functions/wpzoom/options.php:27
+msgid "Header Code"
+msgstr ""
+
+#: ../functions/wpzoom/options.php:28
+msgid ""
+"Here you can add scripts that will be added before the end of <code>&lt;"
+"head&gt;</code> tag."
+msgstr ""
+
+#: ../functions/wpzoom/options.php:33
+msgid "Footer Code & Analytics"
+msgstr ""
+
+#: ../functions/wpzoom/options.php:34
+msgid ""
+"If you want to add some tracking script to the footer, like Google Analytics,"
+" insert the complete tracking code here. The following code will be added to "
+"the footer before the closing <code>&lt;/body&gt;</code> tag."
+msgstr ""
+
+#: ../functions/wpzoom/options.php:43
+msgid "Framework Options"
+msgstr ""
+
+#: ../functions/wpzoom/options.php:45
+msgid "Framework Generator Meta Tags"
+msgstr ""
+
+#: ../functions/wpzoom/options.php:46
+msgid ""
+"Includes information about theme and framework you use in meta tags along to "
+"WordPress ones, they are used just for information and doesn't impact your "
+"SEO."
+msgstr ""
+
+#: ../functions/wpzoom/options.php:51
+msgid "Typography Preview"
+msgstr ""
+
+#: ../functions/wpzoom/options.php:52
+msgid ""
+"Preview fonts in typography option dropdown. Disable this if this page takes "
+"long to load or you never need that."
+msgstr ""
+
+#: ../functions/wpzoom/options.php:57
+msgid "Framework Updater"
+msgstr ""
+
+#: ../functions/wpzoom/options.php:58
+msgid ""
+"This enables update features for WPZOOM framework such as menu in wp-admin "
+"and also global notifications about new updates."
+msgstr ""
+
+#: ../functions/wpzoom/options.php:63
+msgid "Framework Updater Notification"
+msgstr ""
+
+#: ../functions/wpzoom/options.php:64
+msgid ""
+"Enables or disables global wp-admin notification about new versions of "
+"framework. If previous option is disabled this one is irrelevant."
+msgstr ""
+
+#: ../functions/wpzoom/options.php:69
+msgid "Themes Updater Notification"
+msgstr ""
+
+#: ../functions/wpzoom/options.php:70
+msgid "Enables or disables global wp-admin notification about new versions of theme."
+msgstr ""
+
+#: ../functions/wpzoom/options.php:75
+msgid "New Themes Page"
+msgstr ""
+
+#: ../functions/wpzoom/options.php:76
+msgid ""
+"Enables or disables page with all WPZOOM themes and displays a link to it "
+"under WPZOOM menu."
+msgstr ""
+
+#: ../functions/wpzoom/options.php:81
+msgid "Enable WPZOOM Shortcodes"
+msgstr ""
+
+#: ../functions/wpzoom/options.php:82
+msgid "This enables the output of shortcodes.css in the HEAD section of your site."
+msgstr ""
+
+#: ../functions/wpzoom/options.php:87
+msgid "Enable WPZOOM Slideshow Shortcode"
+msgstr ""
+
+#: ../functions/wpzoom/options.php:88
+msgid ""
+"This enables the output of slideshow libraries in the footer section of your "
+"site."
+msgstr ""
+
+#: ../functions/wpzoom/options.php:94
+msgid "Debug"
+msgstr ""
+
+#: ../functions/wpzoom/options.php:96
+msgid "Debug info"
+msgstr ""
+
+#: ../functions/wpzoom/options.php:97
+msgid ""
+"You can include this information in your support tickets on WPZOOM Support "
+"Desk."
+msgstr ""
+
+#: ../functions/wpzoom/options.php:107
+msgid "Import Options"
+msgstr ""
+
+#: ../functions/wpzoom/options.php:108
+msgid ""
+"To import the options from another installation of this theme paste your "
+"code here."
+msgstr ""
+
+#: ../functions/wpzoom/options.php:113
+msgid "Export Options"
+msgstr ""
+
+#: ../functions/wpzoom/options.php:114
+msgid ""
+"Export the options to another installation of this theme, or to keep a "
+"backup of your options. You can can also save your options in a new text "
+"document."
+msgstr ""
+
+#: ../functions/wpzoom/options.php:123
+msgid ""
+"Click on this button to load the default widget settings (as in theme demo)."
+"</br><em><strong>NOTE:</strong> Click on <strong>Save all changes</strong> "
+"button to save other modifications before loading default widgets.</em>"
+msgstr ""
+
+#: ../functions/wpzoom/options.php:127
+msgid "Import Widgets"
+msgstr ""
+
+#: ../functions/wpzoom/options.php:128
+msgid ""
+"To import widgets from another installation of this theme insert your "
+"exported code here."
+msgstr ""
+
+#: ../functions/wpzoom/options.php:133
+msgid "Export Widgets"
+msgstr ""
+
+#: ../functions/wpzoom/options.php:134
+msgid "Export widgets to another installation of this theme."
+msgstr ""
+
+#: ../functions/wpzoom/pages/admin.php:8
+msgid "Loading"
+msgstr ""
+
+#: ../functions/wpzoom/pages/admin.php:11
+msgid "Options successful saved"
+msgstr ""
+
+#: ../functions/wpzoom/pages/admin.php:14
+msgid ""
+"Can't save options. Please contact <a href=\"http://wpzoom."
+"com/support/\">WPZOOM Support</a>."
+msgstr ""
+
+#: ../functions/wpzoom/pages/admin.php:17
+#, php-format
+msgid "ZOOM Framework <strong>%s</strong>"
+msgstr ""
+
+#: ../functions/wpzoom/pages/admin.php:27
+msgid "Theme Documentation"
+msgstr ""
+
+#: ../functions/wpzoom/pages/admin.php:32
+msgid "Support Desk"
+msgstr ""
+
+#: ../functions/wpzoom/pages/admin.php:61
+msgid "Save all changes"
+msgstr ""
+
+#: ../functions/wpzoom/pages/admin.php:66
+msgid "Reset settings"
+msgstr ""
+
+#: ../functions/wpzoom/pages/news.php:11 ../functions/wpzoom/pages/themes.php:11
+msgid "More from WPZOOM"
+msgstr ""
+
+#: ../functions/wpzoom/pages/news.php:13
+msgid "More Themes"
+msgstr ""
+
+#: ../functions/wpzoom/pages/news.php:14
+msgid "Support"
+msgstr ""
+
+#: ../functions/wpzoom/pages/news.php:15
+msgid "Theme Showcase"
+msgstr ""
+
+#: ../functions/wpzoom/pages/update.php:3
+msgid "ZOOM Framework Update"
+msgstr ""
+
+#: ../functions/wpzoom/pages/update.php:25
+msgid "A new ZOOM Framework update is available."
+msgstr ""
+
+#: ../functions/wpzoom/pages/update.php:26
+msgid ""
+"<strong>Important:</strong> Backup your theme and modified files before "
+"updating. For help visit <a href=\"http://www.wpzoom.com/docs/using-the-zoom-"
+"framework-automatic-updates/\">Using the ZOOM Framework automatic updates</a>."
+msgstr ""
+
+#: ../functions/wpzoom/pages/update.php:31
+#, php-format
+msgid ""
+"We recommend that you %sUpdate Automatically%s, or you can %sDownload the "
+"Update%s and install it manually in the <code>functions/wpzoom/</code> "
+"folder."
+msgstr ""
+
+#: ../functions/wpzoom/pages/update.php:59
+#, php-format
+msgid "&rarr; <strong>You are using the latest framework version:</strong> %s"
+msgstr ""
+
+#: ../functions/wpzoom/wpzoom.php:159
+msgid "Framework Update"
+msgstr ""
+
+#: ../header.php:32
+msgid "Toggle sidebar &amp; navigation"
+msgstr ""
+
+#: ../index.php:21
+msgid "Our Blog"
+msgstr ""
+
+#. Name of the template
+msgid "Full-width (Unyson Builder)"
+msgstr ""
+
+#. Name of the template
+msgid "Homepage (Unyson Builder)"
+msgstr ""
+
+#. Name of the template
+msgid "Full-width Gallery"
+msgstr ""
+
+#. Name of the template
+msgid "Full-width Gallery (Dark)"
+msgstr ""
+
+#. Name of the template
+msgid "Homepage (Widgetized)"
+msgstr ""
+
+#: ../pagination.php:12 ../portfolio/single.php:174
+msgid "Previous"
+msgstr ""
+
+#: ../pagination.php:13
+msgid "Next"
+msgstr ""
+
+#. Name of the template
+msgid "Portfolio (Infinite Scroll)"
+msgstr ""
+
+#. Name of the template
+msgid "Portfolio (Masonry)"
+msgstr ""
+
+#. Name of the template
+msgid "Portfolio (Sorting Effect)"
+msgstr ""
+
+#: ../portfolio/single.php:56 ../portfolio/single.php:57 ../wpzoom-slider.php:169
+#: ../wpzoom-slider.php:170
+msgid "Scroll to Content"
+msgstr ""
+
+#: ../search.php:7
+msgid "Search Results for"
+msgstr ""
+
+#: ../sidebar.php:8
+msgid "Toggle navigation"
+msgstr ""
+
+#: ../single.php:50
+msgid "Previous Post"
+msgstr ""
+
+#: ../theme-includes/includes/builder-templates/page-builder/full.php:6
+msgid "Services"
+msgstr ""
+
+#: ../theme-includes/includes/builder-templates/page-builder/full.php:11
+msgid "About"
+msgstr ""
+
+#: ../theme-includes/includes/builder-templates/page-builder/full.php:17
+msgid "Homepage - Agency"
+msgstr ""
+
+#: ../theme-includes/includes/builder-templates/page-builder/full.php:22
+msgid "Homepage"
+msgstr ""
+
+#: ../wpzoom-slider.php:150
+msgid "Play"
+msgstr ""
+
+#: ../wpzoom-slider.php:151
+msgid "Pause"
+msgstr ""
+
+#: ../wpzoom-slider.php:180
+msgid "You are now ready to set-up your Slideshow content."
+msgstr ""
+
+#: ../wpzoom-slider.php:185
+#, php-format
+msgid ""
+"For more information about adding posts to the slider, please <strong><a "
+"href=\"%1$s\">read the documentation</a></strong> or <a href=\"%2$s\">add a new "
+"post</a>."
+msgstr ""
+
+#. URI of the theme
+msgid "http://www.wpzoom.com/themes/inspiro"
+msgstr ""
+
+#. Description of the theme
+msgid ""
+"Inspiro is a theme that suits best for portfolio and photography sites. "
+"Widgetized homepage allows you to use the theme for a business site as well."
+msgstr ""
+
+#. Author URI of the theme
+msgid "http://www.wpzoom.com"
+msgstr ""
+
+#: ../404.php:7
+msgid "Error 404"
+msgstr "Eroare 404"
+
+#: ../archive.php:12
+msgid "Post Tagged with:"
+msgstr "Tag:"
+
+#: ../archive.php:13 ../archive.php:14 ../archive.php:15
+msgid "Archive for"
+msgstr "Arhiva pentru"
+
+#: ../archive.php:16
+msgid " Articles by: "
+msgstr "Articole scrise de:"
+
+#: ../archive.php:17
+msgid "Archives"
+msgstr "Arhive"
+
+#: ../archive.php:18 ../functions/widgets/recentposts.php:20
+msgid "Recent Posts"
+msgstr "Articole Recente"
+
+#: ../comments.php:19
+msgid "No Comments"
+msgstr "Niciun Comentariu"
+
+#: ../comments.php:19
+msgid "One Comment"
+msgstr "1 Comentariu"
+
+#: ../comments.php:19
+#, php-format
+msgid "% Comments"
+msgstr "% Comentarii"
+
+#: ../comments.php:35
+msgid "<span class=\"meta-nav\">&larr;</span> Older Comments"
+msgstr "<span class=\"meta-nav\">&larr;</span> Comentariile Precedente"
+
+#: ../comments.php:35
+msgid "Newer Comments <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Comentarii Noi <span class=\"meta-nav\">&rarr;</span>"
+
+#: ../comments.php:47
+msgid "Comments are closed."
+msgstr "Comentariile sunt inchise."
+
+#: ../comments.php:60
+msgid "Name:"
+msgstr "Nume:"
+
+#: ../comments.php:66
+msgid "Email Address:"
+msgstr "Email:"
+
+#: ../comments.php:71
+msgid "Website:"
+msgstr "Site:"
+
+#: ../comments.php:75
+msgid "Message:"
+msgstr "Comentariu:"
+
+#: ../comments.php:78
+#, php-format
+msgid "Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\">Log out?</a>"
+msgstr "Logat ca <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\">Iesire?</a>\n"
+
+#: ../comments.php:79
+msgid "Leave a Comment"
+msgstr "Lasa un Comentariu"
+
+#: ../comments.php:80 ../functions/wpzoom/components/shortcodes/dialog.php:18
+msgid "Cancel"
+msgstr "Anuleaza"
+
+#: ../comments.php:81
+msgid "Post Comment"
+msgstr "Adauga Comentariu"
+
+#: ../content-none.php:9
+msgid "Nothing Found"
+msgstr "Nu am gasit nimic"
+
+#: ../content-none.php:19
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr "Niciun rezultat."
+
+#: ../content-none.php:24
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr "Pagina cautata nu poate fi gasita"
+
+#: ../content-page.php:27 ../content-single.php:31 ../page-templates/template-
+#: full.php:33 ../page-templates/template-full_dark.php:33
+msgid "Pages:"
+msgstr "Pagini:"
+
+#: ../content-page.php:33 ../content-single.php:83 ../content.php:28 ..
+#: functions/functions.php:434 ../portfolio/single.php:135
+msgid "Edit"
+msgstr "Redacteaza"
+
+#: ../content-single.php:15 ../content.php:24
+msgid "in"
+msgstr "în"
+
+#: ../content-single.php:16
+msgid "on"
+msgstr "la"
+
+#: ../content-single.php:41
+msgid "Tags"
+msgstr "Taguri"
+
+#: ../content-single.php:55 ../portfolio/single.php:108
+msgid "Share"
+msgstr "Share"
+
+#: ../content-single.php:57 ../portfolio/single.php:110
+msgid "Tweet this on Twitter"
+msgstr "Tweet"
+
+#: ../content-single.php:59 ../portfolio/single.php:112
+msgid "Share this on Facebook"
+msgstr "Share"
+
+#: ../content-single.php:61 ../portfolio/single.php:114
+msgid "Post this to Google+"
+msgstr "Google+"
+
+#: ../content-single.php:74 ../portfolio/single.php:126
+msgid "Written by"
+msgstr "Autor"
+
+#: ../content.php:21
+msgid "by"
+msgstr "de"
+
+#: ../content.php:26
+msgid "0 comments"
+msgstr "0 comentarii"
+
+#: ../content.php:26
+msgid "1 comment"
+msgstr "1 comentariu"
+
+#: ../content.php:26
+#, php-format
+msgid "% comments"
+msgstr "% comentarii"
+
+#: ../content.php:26
+msgid "Comments are Disabled"
+msgstr "Comentariile sunt inchise"
+
+#: ../content.php:35 ../content.php:43 ../functions/widgets/portfolio-scroller.
+#: php:92 ../functions/widgets/recentposts.php:108 ../portfolio/content-masonry.
+#: php:29 ../portfolio/content.php:30
+msgid "Read More"
+msgstr "Continuare"
+
+#: ../functions/customizer/customizer-data.php:1209
+#, php-format
+msgid "Copyright &copy; %1$s &mdash; %2$s. All Rights Reserved"
+msgstr "Copyright &copy; %1$s &mdash; %2$s. Toate drepturile sunt rezervate"
+
+#: ../functions/functions.php:433
+msgid "Reply"
+msgstr "Raspunde"

@@ -1,0 +1,52 @@
+.wpzabb-heading-wrap .wpzabb-heading {
+	padding: 0;
+	margin: 0;
+}
+
+.wpzabb-heading-wrap .wpzabb-heading a {
+	text-decoration: none;
+}
+
+.wpzabb-heading-wrap .wpzabb-subheading * {
+	margin: 0;
+}
+
+.wpzabb-heading-align-left .wpzabb-heading,
+.wpzabb-heading-align-left .wpzabb-subheading,
+.wpzabb-heading-align-left .wpzabb-subheading * {
+	text-align: left;
+}
+
+.wpzabb-heading-align-center .wpzabb-heading,
+.wpzabb-heading-align-center .wpzabb-subheading,
+.wpzabb-heading-align-center .wpzabb-subheading * {
+	text-align: center;
+}
+
+.wpzabb-heading-align-right .wpzabb-heading,
+.wpzabb-heading-align-right .wpzabb-subheading,
+.wpzabb-heading-align-right .wpzabb-subheading * {
+	text-align: right;
+}
+
+/* Text editor support */
+.wpzabb-module-content .wpzabb-text-editor *:not(a) {
+    color: inherit;
+}
+.wpzabb-module-content .wpzabb-text-editor *:not(i) {
+    font-family: inherit;
+}
+.wpzabb-module-content .wpzabb-text-editor *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
+    font-size: inherit;
+    line-height: inherit;	
+}
+.wpzabb-module-content .wpzabb-text-editor *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6):not(strong):not(b) {
+	font-weight: inherit;
+}
+
+.wpzabb-heading a,
+.wpzabb-heading a:hover,
+.wpzabb-heading a:focus,
+.wpzabb-heading a:active {
+	text-decoration: none;
+}

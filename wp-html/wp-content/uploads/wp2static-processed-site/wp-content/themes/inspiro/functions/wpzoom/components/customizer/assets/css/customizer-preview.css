@@ -1,0 +1,116 @@
+.widget {
+    position: relative;
+}
+
+.widget .widget__outline {
+    position: absolute;
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    top: -10px;
+    left: -10px;
+    z-index: 999;
+
+    /*Keep the widget content clickable*/
+    pointer-events: none;
+
+    padding: inherit;
+    display: flex;
+    align-items: stretch;
+}
+
+.widget .widget__outline:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    border: dashed 1px #5d5d5d;
+}
+
+.widget:hover .widget__outline:before,
+.widget-customizer-highlighted-widget .widget__outline:before {
+    border: solid 1px #0085ba;
+}
+
+/*When a widget is hovered on sidebar*/
+.widget-customizer-highlighted-widget {
+    outline: none;
+    box-shadow: none;
+}
+
+.customize-partial-edit-shortcut button {
+    background: #0085ba !important;
+    border: 0;
+}
+
+.widget .customize-partial-edit-shortcut[class].customize-partial-edit-shortcut[class] {
+    z-index: 1000000;
+}
+
+.widget .customize-partial-edit-shortcut {
+    left: 0;
+    top: 0;
+    width: auto;
+    height: auto;
+    display: none;
+
+    padding-top: inherit;
+}
+
+.widget:hover .customize-partial-edit-shortcut {
+    display: block;
+}
+
+.widget .customize-partial-edit-shortcut button {
+    background: #0085ba !important;
+    border-radius: 0;
+    left: -9px;
+    top: -9px;
+    height: auto;
+    width: auto;
+    border: none;
+    box-shadow: none;
+    position: relative;
+    padding: 8px 15px 8px 10px;
+}
+
+.widget:hover .customize-partial-edit-shortcut button span {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    letter-spacing: 0;
+    text-transform: none;
+    line-height: 22px;
+    margin-left: 5px;
+    text-shadow: none;
+}
+
+/*Overwrite the default Bounce animation*/
+@-webkit-keyframes customize-partial-edit-shortcut-bounce-appear {
+    from,to {
+        animation-timing-function: cubic-bezier(.215,.61,.355,1)
+    }
+    from   { opacity: 0; }
+    to     { opacity: 1; }
+}
+@-moz-keyframes customize-partial-edit-shortcut-bounce-appear {
+    from,to {
+        animation-timing-function: cubic-bezier(.215,.61,.355,1)
+    }
+    from   { opacity: 0; }
+    to     { opacity: 1; }
+}
+@-o-keyframes customize-partial-edit-shortcut-bounce-appear {
+    from,to {
+        animation-timing-function: cubic-bezier(.215,.61,.355,1)
+    }
+    from   { opacity: 0; }
+    to     { opacity: 1; }
+}
+@keyframes customize-partial-edit-shortcut-bounce-appear {
+    from,to {
+        animation-timing-function: cubic-bezier(.215,.61,.355,1)
+    }
+    from   { opacity: 0; }
+    to     { opacity: 1; }
+}

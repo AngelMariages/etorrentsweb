@@ -1,0 +1,62 @@
+<?php
+    extract(get_single_background_vars($post, 'wpzoom_posts_single'));
+?>
+
+    <div class="portfolio-header-cover">
+
+
+        <div
+            <?php if($is_vimeo_pro) echo $vimeo_style; ?>
+            class="<?php if($is_vimeo_pro) echo 'is-vimeo-pro-slide'; ?> entry-cover<?php if ( option::get( 'page_overlay' ) == 'off' ) { echo " no-overlay"; } ?><?php if ( option::get( 'portfolio_page_fullheader' ) == 'on' ) { echo " cover-fullheight"; } ?>"
+            <?php if ( $is_formstone && ( $is_video_slide || $is_video_external ) ): ?>
+                data-formstone-options='<?php echo json_encode( $encode_array ); ?>'
+            <?php endif; ?>
+            <?php if ( $is_vimeo_pro ): ?>
+                class="is-vimeo-pro-slide"
+                data-vimeo-options='<?php echo json_encode( $vimeo_player_args ); ?>'
+            <?php endif; ?>
+        >
+            <?php if ( $has_video_background && option::get( 'page_overlay' ) == 'on' ) : ?>
+                <div class="slide-background-overlay"></div>
+            <?php endif; ?>
+
+            <?php
+                $entryCoverBackground = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'entry-cover' );
+                $small_image_url = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'featured-small');
+                $style = ' data-smallimg="' . wpzoom_get_value($small_image_url, '', 0) . '" data-bigimg="' . wpzoom_get_value($entryCoverBackground, '', 0) . '"';
+                $style .= 'style="background-image:url(\''. wpzoom_get_value($small_image_url, '', 0) .'\')"';
+            ?>
+
+            <?php if ( !empty( $entryCoverBackground ) || !empty( $has_video_background ) ) : ?>
+
+                <div class="portfolio-header-cover-image" <?php echo $style; ?>></div>
+
+            <?php endif; ?>
+
+            <div class="portfolio-header-info">
+                <div class="entry-info">
+                    <?php the_title( '<h2 class="section-title">', '</h2>' ); ?>
+
+                    <div class="entry-header-excerpt"><?php the_content(); ?></div>
+
+                </div>
+            </div><!-- .portfolio-header-info -->
+
+            <!-- single portfolio video background controls -->
+            <div class="background-video-buttons-wrapper">
+
+                <?php if ( $show_play_button || ! $autoplay ): ?>
+                    <a class="wpzoom-button-video-background-play display-none"><?php _e( 'Play', 'wpzoom' ); ?></a>
+                    <a class="wpzoom-button-video-background-pause display-none"><?php _e( 'Pause', 'wpzoom' ); ?></a>
+                <?php endif; ?>
+
+                <?php if ( $show_sound_button ): ?>
+                    <a class="wpzoom-button-sound-background-unmute display-none"><?php _e( 'Unmute', 'wpzoom' ); ?></a>
+                    <a class="wpzoom-button-sound-background-mute display-none"><?php _e( 'Mute', 'wpzoom' ); ?></a>
+                <?php endif; ?>
+
+            </div>
+            <!-- #single portfolio video background controls -->
+
+        </div><!-- .entry-cover -->
+    </div><!-- .portfolio-header-cover -->

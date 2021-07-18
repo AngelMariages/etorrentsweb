@@ -1,0 +1,86 @@
+<?php
+/**
+ * Plugin Name:    WP External Links
+ * Version:        2.50
+ * Plugin URI:     https://wordpress.org/plugins/wp-external-links/
+ * Description:    Check & scan all links + open external links in a new tab or window, control "nofollow" and "noopener", set font icon; SEO friendly.
+ * Author:         WebFactory Ltd
+ * Author URI:     https://www.webfactoryltd.com/
+ * License:        Dual licensed under the MIT and GPLv2+ licenses
+ * Text Domain:    wp-external-links
+ */
+
+require_once 'wf-flyout/wf-flyout.php';
+new wf_flyout(__FILE__);
+
+if ( ! function_exists( 'wpel_init' ) ):
+
+    function wpel_init()
+    {
+        // only load in WP environment
+        if ( ! defined( 'ABSPATH' ) ) {
+            die();
+        }
+
+        define( 'TEST_WPEL_PLUGIN_FILE', __FILE__ );
+
+        $plugin_file = defined( 'TEST_WPEL_PLUGIN_FILE' ) ? TEST_WPEL_PLUGIN_FILE : __FILE__;
+        $plugin_dir = dirname( __FILE__ );
+
+        // check requirements
+        $wp_version = get_bloginfo( 'version' );
+        $php_version = phpversion();
+
+        if ( version_compare( $wp_version, '4.2', '<' ) || version_compare( $php_version, '5.3', '<' ) ) {
+            if ( ! function_exists( 'wpel_requirements_notice' ) ) {
+                function wpel_requirements_notice()
+                {
+                    include dirname( __FILE__ ) .'/templates/requirements-notice.php';
+                }
+
+                add_action( 'admin_notices', 'wpel_requirements_notice' );
+            }
+
+            return;
+        }
+
+        /**
+         * Autoloader
+         */
+        if ( ! class_exists( 'WPRun_Autoloader_1x0x0' ) ) {
+            require_once $plugin_dir . '/libs/wprun/class-wprun-autoloader.php';
+        }
+
+        $autoloader = new WPRun_Autoloader_1x0x0();
+        $autoloader->add_path( $plugin_dir . '/libs/', true );
+        $autoloader->add_path( $plugin_dir . '/includes/', true );
+
+
+        /**
+         * Load debugger
+         */
+        if ( true === constant( 'WP_DEBUG' ) ) {
+            FWP_Debug_1x0x0::create( array(
+                'log_hooks'  => false,
+            ) );
+        }
+
+        /**
+         * Register Hooks
+         */
+        global $wpdb;
+        WPEL_Activation::create( $plugin_file, $wpdb );
+        WPEL_Uninstall::create( $plugin_file, $wpdb );
+
+        /**
+         * Set plugin vars
+         */
+        WPEL_Plugin::create( $plugin_file, $plugin_dir );
+
+        WPEL_LinkHero::create( $plugin_file, $plugin_dir );
+
+    }
+
+    wpel_init();
+
+endif;

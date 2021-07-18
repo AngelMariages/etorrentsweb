@@ -1,0 +1,40 @@
+/* Search widget in footer */
+.site-footer { width: 100% }
+
+.search-form { position: relative }
+
+.search-form input {
+    height: 40px;
+    background: transparent;
+    border: 2px solid #565555;
+    // border: 2px solid rgba(255, 255, 255, 0.18);
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    border-radius: 0;
+    -webkit-transition: 0.2s ease all;
+    -o-transition: 0.2s ease all;
+    transition: 0.2s ease all;
+}
+
+.search-form input:focus {
+    border-color: $primary_color;
+    outline: none;
+}
+
+ .search-form .search-field {
+    width: 100%;
+    padding: 0px 100px 0 10px;
+}
+
+.site-footer .search-form .search-field,
+.side-nav .search-form .search-field {
+    color: #eee;
+}
+
+
+.search-form .search-submit {
+    padding: 0 12px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}

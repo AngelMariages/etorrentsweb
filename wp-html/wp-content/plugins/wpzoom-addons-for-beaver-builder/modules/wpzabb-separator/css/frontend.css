@@ -1,0 +1,191 @@
+.wpzabb-row-separator {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    z-index: 1
+}
+
+.wpzabb-top-row-separator {
+    top: -1px;
+    bottom: auto
+}
+
+.wpzabb-bottom-row-separator {
+    top: auto;
+    bottom: -1px
+}
+
+/*.ult-main-seperator-inner {
+    position: relative;
+    height: 100%;
+    width: 100%
+}*/
+
+.wpzabb-top-row-separator.wpzabb-has-svg svg {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    left: 0;
+    top: -1px;
+    bottom: auto;
+    width: 100%;
+}
+
+.wpzabb-bottom-row-separator.wpzabb-has-svg svg {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    left: 0;
+    bottom: -1px;
+    top: auto;
+    width: 100%;
+}
+.wpzabb-bottom-row-separator.wpzabb-has-svg .uasvg-wave-separator {
+    bottom: 0;
+}
+.wpzabb-top-row-separator.wpzabb-has-svg .uasvg-wave-separator {
+    top: 0;
+}
+
+/**
+ *
+ *  Svg Triangle Separator
+ *  Big Triangle Separator
+ *  Big Triangle Left Separator
+ *  Svg Half Circle Separator
+ *  Curve Center Separator
+ *  Waves Separator
+ *
+ ***************************************/
+.wpzabb-bottom-row-separator.wpzabb-svg-triangle svg,
+.wpzabb-bottom-row-separator.wpzabb-xlarge-triangle svg,
+.wpzabb-top-row-separator.wpzabb-xlarge-triangle-left svg,
+.wpzabb-bottom-row-separator.wpzabb-svg-circle svg,
+.wpzabb-bottom-row-separator.wpzabb-xlarge-circle svg,
+.wpzabb-top-row-separator.wpzabb-wave-separator svg {
+    -webkit-transform: scaleY(-1);
+       -moz-transform: scaleY(-1);
+        -ms-transform: scaleY(-1);
+         -o-transform: scaleY(-1);
+            transform: scaleY(-1);
+}
+
+/**
+ *
+ *  Big Triangle Right Separator
+ *
+ ***************************************/
+.wpzabb-top-row-separator.wpzabb-xlarge-triangle-right svg {
+    -webkit-transform: scale(-1);
+       -moz-transform: scale(-1);
+        -ms-transform: scale(-1);
+         -o-transform: scale(-1);
+            transform: scale(-1);
+}
+
+.wpzabb-bottom-row-separator.wpzabb-xlarge-triangle-right svg {
+    -webkit-transform: scaleX(-1);
+       -moz-transform: scaleX(-1);
+        -ms-transform: scaleX(-1);
+         -o-transform: scaleX(-1);
+            transform: scaleX(-1);
+}
+
+/**
+ *
+ *  Curve Left Separator
+ *  Curve Right Separator
+ *
+ ***************************************/
+.wpzabb-top-row-separator.wpzabb-curve-up-separator svg {
+     -webkit-transform: scaleY(-1);
+       -moz-transform: scaleY(-1);
+        -ms-transform: scaleY(-1);
+         -o-transform: scaleY(-1);
+            transform: scaleY(-1);
+}
+
+.wpzabb-top-row-separator.wpzabb-curve-down-separator svg {
+    -webkit-transform: scale(-1);
+       -moz-transform: scale(-1);
+        -ms-transform: scale(-1);
+         -o-transform: scale(-1);
+            transform: scale(-1);
+}
+
+.wpzabb-bottom-row-separator.wpzabb-curve-down-separator svg {
+    -webkit-transform: scaleX(-1);
+       -moz-transform: scaleX(-1);
+        -ms-transform: scaleX(-1);
+         -o-transform: scaleX(-1);
+            transform: scaleX(-1);
+}
+
+
+/**
+ *
+ *  Tilt Left Separator
+ *  Tilt Right Separator
+ *
+ ***************************************/
+
+.wpzabb-top-row-separator.wpzabb-tilt-left-separator svg {
+    -webkit-transform: scale(-1);
+       -moz-transform: scale(-1);
+        -ms-transform: scale(-1);
+         -o-transform: scale(-1);
+            transform: scale(-1);
+}
+
+.wpzabb-top-row-separator.wpzabb-tilt-right-separator svg{
+    -webkit-transform: scaleY(-1);
+       -moz-transform: scaleY(-1);
+        -ms-transform: scaleY(-1);
+         -o-transform: scaleY(-1);
+            transform: scaleY(-1);
+}
+
+.wpzabb-bottom-row-separator.wpzabb-tilt-right-separator svg {
+    -webkit-transform: scaleX(-1);
+       -moz-transform: scaleX(-1);
+        -ms-transform: scaleX(-1);
+         -o-transform: scaleX(-1);
+            transform: scaleX(-1);
+}
+
+/**
+ *
+ *  Clouds Separator
+ *  Multi Triangle
+ *
+ ***************************************/
+
+.wpzabb-row-separator.wpzabb-cloud-separator svg {
+    left: -1px;
+    width: 100%;
+}
+
+.wpzabb-top-row-separator.wpzabb-cloud-separator svg,
+.wpzabb-top-row-separator.wpzabb-multi-triangle svg {
+    -webkit-transform: scaleY(-1);
+       -moz-transform: scaleY(-1);
+        -ms-transform: scaleY(-1);
+         -o-transform: scaleY(-1);
+            transform: scaleY(-1);
+}
+
+.wpzabb-row-separator.wpzabb-round-split {
+    z-index: 1;
+    /*position: relative;*/
+
+}
+
+.wpzabb-row-separator.wpzabb-round-split:after,
+.wpzabb-row-separator.wpzabb-round-split:before {
+    left: 0;
+    z-index: 10;
+    width: 50%;
+    background: inherit inherit/inherit inherit inherit inherit;
+    content: '';
+    position: absolute
+}

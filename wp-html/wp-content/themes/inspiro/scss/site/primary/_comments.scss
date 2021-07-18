@@ -1,0 +1,144 @@
+/*********************************************************************************************
+
+9.  Comments
+
+*********************************************************************************************/
+
+#comments {
+    max-width: 970px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+#comments>h3,
+#respond>h3 {
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    font-family: $font__headings;
+}
+
+.woocommerce #comments>h2:after,
+#comments>h3:after,
+#respond>h3:after {
+    width: 130px;
+    content: " ";
+    border-bottom: 1px solid #E6E6E6;
+    bottom: -40px;
+    left: 0;
+    position: absolute;
+}
+
+#respond h3 {
+    margin-top: 100px
+}
+
+.comment-notes {
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.commentlist {
+    list-style-type: none;
+    padding: 0;
+}
+
+.commentlist li {
+    list-style-type: none
+}
+
+.commentlist .children {
+    margin-left: 50px
+}
+
+.commentlist .comment {
+    margin-bottom: 80px;
+    position: relative;
+}
+
+.commentlist .comment:after {
+    width: 130px;
+    content: " ";
+    border-bottom: 1px solid #e6e6e6;
+    bottom: -40px;
+    left: 0;
+    position: absolute;
+}
+
+.comment-author:before,
+.comment-author:after {
+    content: " ";
+    display: table;
+}
+
+.comment-author:after {
+    clear: both
+}
+
+.comment-author .avatar {
+    float: left;
+    border-radius: 50%;
+    margin-right: 22px;
+    margin-bottom: 27px;
+}
+
+.comment-author .fn,
+.comment-author .fn a {
+    color: #222;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.comment-author .fn a:hover {
+    text-decoration: none;
+    color: $primary_color;
+}
+
+.comment-author .comment-meta,
+.comment-author .comment-meta a {
+    color: #bbbbbb;
+    font-size: 16px;
+}
+
+.comment-body {
+    margin-bottom: 40px;
+}
+
+#respond {
+    margin-bottom: 85px
+}
+
+#respond .form_fields p {
+    margin-bottom: 15px
+}
+
+#respond input[type="text"] {
+    width: 40%
+}
+
+#respond textarea {
+    width: 100%
+}
+
+#respond #submit {
+    width: auto
+}
+
+#respond code {
+    white-space: pre-wrap
+}
+
+.form-allowed-tags {
+    display: none
+}
+
+#respond .comment-form-cookies-consent label {
+    display: inline;
+    margin-left: 10px;
+    text-transform: none;
+    font-family: inherit;
+    font-size: 14px;
+}

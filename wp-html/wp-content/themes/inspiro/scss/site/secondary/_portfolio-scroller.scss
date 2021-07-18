@@ -1,0 +1,103 @@
+
+
+/* Portfolio Scroller Widget */
+.widgetized-section .widget.wpzoom-portfolio-scroller {
+    margin: 0;
+    list-style: none;
+}
+
+
+
+
+/* Carousel widget */
+.widget.carousel-slider,
+.widgetized-section .widgets .wpzoom-portfolio-scroller {
+    margin: 0 0 30px;
+    padding: 0;
+    position: relative;
+}
+
+
+.carousel_widget_wrapper {
+    overflow: hidden;
+    position: relative;
+    background: $dark_color;
+}
+
+.flickity-enabled {
+    position: relative;
+}
+
+
+
+.wpzoom-portfolio-scroller .slides {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+.wpzoom-portfolio-scroller article {
+    margin: 0;
+    vertical-align: top;
+    display: inline-block;
+ }
+
+.wpzoom-portfolio-scroller .flickity-enabled article {
+    margin: 0;
+}
+
+.carousel_widget_wrapper > div {
+    opacity: 0;
+    visibility:hidden;
+    transition: opacity .3s ease-in;
+}
+
+.carousel_widget_wrapper > div article {
+    display: none;
+}
+
+.carousel_widget_wrapper > .flickity-enabled {
+    opacity: 1;
+    visibility:visible;
+}
+
+.carousel_widget_wrapper > .flickity-enabled article {
+    display: inline-block;
+ }
+
+.carousel_widget_wrapper img {
+    max-width: none;
+}
+
+@-webkit-keyframes stretchdelay {
+    0%, 40%, 100% { -webkit-transform: scaleY(0.4); }
+    20% { -webkit-transform: scaleY(1); }
+}
+
+@keyframes stretchdelay {
+    0%, 40%, 100% { transform: scaleY(0.4); -webkit-transform: scaleY(0.4); }
+    20% { transform: scaleY(1); -webkit-transform: scaleY(1); }
+}
+
+.wpzoom-portfolio-scroller .spinner {
+    margin: 100px auto;
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    font-size: 10px;
+}
+
+.wpzoom-portfolio-scroller .spinner > div {
+    background-color: #eaeaea;
+    height: 100%;
+    width: 6px;
+    display: inline-block;
+    -webkit-animation: stretchdelay 1.2s infinite ease-in-out;
+    -o-animation: stretchdelay 1.2s infinite ease-in-out;
+    animation: stretchdelay 1.2s infinite ease-in-out;
+}
+.wpzoom-portfolio-scroller .spinner .rect2 { -webkit-animation-delay: -1.1s; animation-delay: -1.1s; }
+.wpzoom-portfolio-scroller .spinner .rect3 { -webkit-animation-delay: -1s; animation-delay: -1s; }
+.wpzoom-portfolio-scroller .spinner .rect4 { -webkit-animation-delay: -0.9s; animation-delay: -0.9s; }
+.wpzoom-portfolio-scroller .spinner .rect5 { -webkit-animation-delay: -0.8s; animation-delay: -0.8s; }
+

@@ -1,0 +1,37 @@
+#fl-field-items .fl-form-field .fl-form-field-edit {
+	display: block;
+	text-align: center;
+}
+
+#fl-field-items .fl-form-field .fl-form-field-edit img {
+	display: inline-block;
+}
+
+#fl-field-image_source th,
+#fl-field-image_source td {
+	padding-bottom: 0 !important;
+}
+
+#fl-field-image th,
+#fl-field-image_url th {
+	height: 0;
+}
+
+#fl-field-image_source select {
+	width: 100%;
+}
+
+#fl-field-image th,
+#fl-field-image td,
+#fl-field-image_url th,
+#fl-field-image_url td {
+	padding-top: 0 !important;
+}
+
+#fl-field-image_url .fl-link-field-select {
+	display: none;
+}
+
+.fl-builder-settings[data-form-id="image_grid_form"] #fl-field-link .fl-link-field-select::after {
+	content: ' Post';
+}

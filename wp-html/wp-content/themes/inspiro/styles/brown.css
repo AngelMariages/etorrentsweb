@@ -1,0 +1,187 @@
+.woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover, .woocommerce #respond input#submit:hover, .woocommerce #content input.button:hover, .woocommerce-page a.button:hover, .woocommerce-page button.button:hover, .woocommerce-page input.button:hover, .woocommerce-page #respond input#submit:hover, .woocommerce-page #content input.button:hover,.woocommerce div.product form.cart .button:hover, .woocommerce-page div.product form.cart .button:hover, .woocommerce-page #main a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover, .woocommerce #respond input#submit:hover, .woocommerce #content input.button:hover, .woocommerce-page a.button:hover, .woocommerce-page button.button:hover, .woocommerce-page input.button:hover, .woocommerce-page #respond input#submit:hover, .woocommerce-page #main input.button:hover, .woocommerce button.button.alt:hover,
+.button:hover,
+.btn:hover,
+.more-link:hover,
+.more_link:hover,
+.side-nav .search-form .search-submit:hover,
+.site-footer .search-form .search-submit:hover,
+.infinite-scroll #infinite-handle span:hover,
+.widgetized-section .inner-wrap .portfolio-view_all-link .btn:hover  {
+    color: #d19731;
+    border-color: #d19731;
+
+}
+
+.btn-primary, .side-nav .search-form .search-submit, .site-footer .search-form .search-submit {
+    color: #d19731;
+    border-color: #d19731;
+}
+
+.clean_skin_wrap_post .portfolio_sub_category:hover,
+.clean_skin_wrap_post a:hover {
+    color: #d19731;
+}
+
+.section-footer .zoom-instagram-widget a.ig-b-v-24:hover {
+    color: #d19731 !important;
+}
+
+input:focus, textarea:focus {
+    border-color: #d19731;
+}
+button:hover, input[type=button]:hover, input[type=reset]:hover, input[type=submit]:hover {
+    color: #d19731;
+    border-color: #d19731;
+}
+a {
+    color: #d19731;
+}
+a:hover {
+	color: #ba7700;
+}
+.navbar-nav > li > ul:before {
+	border-bottom-color: #d19731;
+}
+
+@media (min-width: 1025px) {
+	.navbar-nav ul {
+		border-top-color: #d19731;
+	}
+}
+
+.navbar .wpz-button a {
+    background-color: #d19731;
+}
+
+.woocommerce-pagination .current, .woocommerce-pagination .page-numbers:hover,
+.woocommerce-pagination .page-numbers.current, .woocommerce-pagination .page-numbers:hover, .paging-navigation .page-numbers.current, .paging-navigation .page-numbers:hover {
+	color: #d19731 !important;
+}
+
+.slides > li h3 a:hover:after {
+	border-color: #d19731;
+}
+
+.slides > li .slide_button a:hover  {
+    border-color: #d19731;
+    background: #d19731;
+    color: #fff;
+}
+
+.featured_page_wrap--with-background .btn:hover {
+    border-color: #d19731;
+    color: #d19731
+}
+
+.fw-page-builder-content .feature-posts-list h3 a:hover,
+.widgetized-section .feature-posts-list h3 a:hover {
+    color: #d19731;
+}
+
+.widgetized-section .featured-products .price:hover {
+    color: #d19731;
+    border-color: #d19731;
+}
+
+.portfolio-view_all-link .btn:hover {
+    border-color: #d19731;
+    color: #d19731;
+}
+
+.portfolio-archive-taxonomies a:hover {
+    border-color: #d19731;
+    color: #d19731;
+}
+
+.entry-thumbnail-popover-content h3:hover,
+.entry-thumbnail-popover-content span:hover {
+    color: #d19731;
+}
+
+.entry-thumbnail-popover-content .btn:hover {
+    border-color: #d19731;
+}
+
+.entry-title a:hover {
+    color: #d19731;
+}
+
+.entry-meta a:hover {
+    color: #d19731;
+}
+
+.page .has-post-cover .entry-header .entry-meta a:hover,
+.single .has-post-cover .entry-header .entry-meta a:hover {
+    color: #d19731;
+}
+
+.page .post_author a:hover,
+.single .post_author a:hover {
+    color: #d19731;
+}
+
+.single #jp-relatedposts .jp-relatedposts-items-visual h4.jp-relatedposts-post-title a:hover {
+    color: #d19731;
+}
+
+.comment-author .fn a:hover { color: #d19731 }
+
+.site-info a:hover { color: #d19731 }
+
+.search-form input:focus {
+    color: #d19731;
+    border-color: #d19731;
+}
+
+.woocommerce-page #content input.button:hover{ color: #d19731; border-color: #d19731; }
+.woocommerce ul.products li.product .price,
+.woocommerce-page ul.products li.product .price { color: #d19731; }
+.woocommerce #content div.product p.price,
+.woocommerce #content div.product span.price,
+.woocommerce div.product p.price,
+.woocommerce div.product span.price,
+.woocommerce-page #content div.product p.price,
+.woocommerce-page #content div.product span.price,
+.woocommerce-page div.product p.price,
+.woocommerce-page div.product span.price { color: #d19731; }
+
+.woocommerce button.button.alt:hover { border-color: #d19731; color: #d19731;  }
+
+.woocommerce .quantity .minus:hover { background: #d19731 !important; color: #fff !important; }
+
+.woocommerce-pagination .page-numbers:hover { color: #d19731 !important }
+
+.woocommerce .widget_price_filter .ui-slider .ui-slider-range { background-color: #d19731; }
+.woocommerce-cart table.cart td.actions .coupon .input-text:focus { border-color: #d19731; }
+.woocommerce-message::before { color: #d19731; }
+
+.fw_theme_bg_color_1 input[type=submit]:hover {
+    border: 1px solid #d19731;
+    color: #d19731;
+}
+
+.fw-page-builder-content .fw_theme_bg_color_1 .feature-posts-list h3 a:hover { color: #d19731; }
+
+.fw_theme_bg_color_2 {
+    background-color: #d19731;
+    color: #fff;
+}
+
+.fw_theme_bg_color_2 input[type=submit]:hover,
+.fw-section-image .btn:hover {
+    color: #d19731;
+}
+
+.wpz-btn:hover,
+.wpz-btn:focus,
+.fw-section-image .wpz-btn:hover,
+.fw-section-image .wpz-btn:focus,
+.fw-pricing-container .wpz-btn:hover {
+    color: #d19731;
+    border-color: #d19731;
+}
+
+.overlay_color_2{
+  	background-color: #d19731;
+}
+

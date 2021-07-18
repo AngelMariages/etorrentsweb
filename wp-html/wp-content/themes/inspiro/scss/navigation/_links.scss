@@ -1,0 +1,15 @@
+a {
+    transition: 0.1s ease all;
+    text-decoration: none;
+    color: $color__link;
+
+	&:hover {
+        text-decoration: none;
+        color: $color__link-hover;
+	}
+
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}

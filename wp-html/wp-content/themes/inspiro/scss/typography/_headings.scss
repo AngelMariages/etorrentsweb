@@ -1,0 +1,39 @@
+/* Headings */
+h1, h2, h3, h4, h5, h6 { font-weight: 500; line-height: 1.1; color: #000; }
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small { font-weight: normal; line-height: 1; }
+h1, h2, h3 { margin-top: 20px; margin-bottom: 10px; }
+h1 small, h2 small, h3 small { font-size: 65% }
+h4, h5, h6 { margin-top: 10px; margin-bottom: 10px; }
+h4 small, h5 small, h6 small { font-size: 75% }
+h1 { font-size: 36px }
+h2 { font-size: 30px }
+h3 { font-size: 24px }
+h4 { font-size: 18px }
+h5 { font-size: 14px }
+h6 { font-size: 12px }
+
+.section-title {
+    margin-top: 70px;
+    color: #222;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    font-family: $font__headings;
+    text-transform: uppercase;
+}
+
+.section-title:after {
+    display: block;
+    content: " ";
+    width: 130px;
+    height: 1px;
+    background: #E6E6E6;
+    margin: 40px auto 48px;
+}
+
+.category_description {
+    font-size: 16px;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    text-align: center;
+}

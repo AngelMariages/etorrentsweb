@@ -1,0 +1,448 @@
+.wpzabb-button-wrap a,
+.wpzabb-button-wrap a:visited {
+    color: #333;
+    background: #fafafa;
+    border: 1px solid #ccc;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    overflow: hidden;
+    text-decoration: none;
+    text-shadow: none;
+    box-shadow: none;
+    position: relative;
+    -webkit-transition: all 200ms linear;
+       -moz-transition: all 200ms linear;
+        -ms-transition: all 200ms linear;
+         -o-transition: all 200ms linear;
+            transition: all 200ms linear;
+}
+.wpzabb-button-wrap a:hover {
+    text-decoration: none;
+}
+.wpzabb-button-wrap a:focus {
+    text-decoration: none;
+    text-shadow: none;
+    box-shadow: none;
+}
+.wpzabb-button-wrap a .wpzabb-button-text,
+.wpzabb-button-wrap a .wpzabb-button-icon,
+.wpzabb-button-wrap a:visited .wpzabb-button-text,
+.wpzabb-button-wrap a:visited .wpzabb-button-icon {
+    -webkit-transition: all 200ms linear;
+       -moz-transition: all 200ms linear;
+        -ms-transition: all 200ms linear;
+         -o-transition: all 200ms linear;
+            transition: all 200ms linear;
+}
+
+
+.wpzabb-button-wrap.wpzabb-button-width-full .wpzabb-button {
+    display: block;
+    text-align: center;
+}
+.wpzabb-button-wrap.wpzabb-button-width-custom .wpzabb-button {
+    display: inline-block;
+    text-align: center;
+    max-width: 100%;
+}
+.wpzabb-button-wrap.wpzabb-button-left {
+    text-align: left;
+}
+.wpzabb-button-wrap.wpzabb-button-center {
+    text-align: center;
+}
+.wpzabb-button-wrap.wpzabb-button-right {
+    text-align: right;
+}
+
+/* Icon  */
+.wpzabb-button-wrap .wpzabb-button i {
+    font-size: 1.3em;
+    height: auto;
+    line-height: 1em;
+    vertical-align: middle;
+    width: auto;
+}
+.wpzabb-button-wrap .wpzabb-button .wpzabb-button-icon-after {
+    margin-left: 8px;
+    margin-right: 0;
+}
+.wpzabb-button-wrap .wpzabb-button .wpzabb-button-icon-before {
+    margin-right: 8px;
+    margin-left: 0;
+}
+.wpzabb-button-wrap.wpzabb-button-icon-no-text .wpzabb-button i {
+    margin: 0;
+}
+.wpzabb-button-wrap.wpzabb-button-has-icon .wpzabb-button-text {
+    vertical-align: middle;
+}
+
+
+/*  Translate Button styles */
+.wpzabb-button.wpzabb-creative-transparent-btn:after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    -webkit-transition: all 200ms linear;
+       -moz-transition: all 200ms linear;
+        -ms-transition: all 200ms linear;
+         -o-transition: all 200ms linear;
+            transition: all 200ms linear;
+}
+
+/* transparent-fill-top, transparent-fill-bottom  */
+.wpzabb-transparent-fill-top-btn:after,
+.wpzabb-transparent-fill-bottom-btn:after {
+    width: 100%;
+    height: 0;
+    left: 0;
+}
+
+/* transparent-fill-top */
+.wpzabb-transparent-fill-top-btn:after {
+    top: 0;
+}
+/* transparent-fill-bottom */
+.wpzabb-transparent-fill-bottom-btn:after {
+    bottom: 0;
+}
+
+/* transparent-fill-left, transparent-fill-right */
+.wpzabb-transparent-fill-left-btn:after,
+.wpzabb-transparent-fill-right-btn:after {
+    width: 0;
+    height: 100%;
+    top: 0;
+}
+
+/* transparent-fill-left */
+.wpzabb-transparent-fill-left-btn:after {
+    left: 0;
+}
+/* transparent-fill-right */
+.wpzabb-transparent-fill-right-btn:after {
+    right: 0;
+}
+
+
+/* transparent-fill-center */
+.wpzabb-transparent-fill-center-btn:after{
+    width: 0;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+       -moz-transform: translateX(-50%) translateY(-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+         -o-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+}
+
+/*  transparent-fill-diagonal, transparent-fill-horizontal  */
+.wpzabb-transparent-fill-diagonal-btn:after,
+.wpzabb-transparent-fill-horizontal-btn:after {
+    width: 100%;
+    height: 0;
+    top: 50%;
+    left: 50%;
+}
+
+/*  transparent-fill-diagonal */
+.wpzabb-transparent-fill-diagonal-btn{
+    overflow: hidden;
+}
+.wpzabb-transparent-fill-diagonal-btn:after{
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate( 45deg );
+       -moz-transform: translateX(-50%) translateY(-50%) rotate( 45deg );
+        -ms-transform: translateX(-50%) translateY(-50%) rotate( 45deg );
+         -o-transform: translateX(-50%) translateY(-50%) rotate( 45deg );
+            transform: translateX(-50%) translateY(-50%) rotate( 45deg );
+}
+/* transparent-fill-horizontal */
+.wpzabb-transparent-fill-horizontal-btn:after{
+    -webkit-transform: translateX(-50%) translateY(-50%);
+       -moz-transform: translateX(-50%) translateY(-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+         -o-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+}
+
+
+/*  3D Button styles */
+.wpzabb-button-wrap .wpzabb-creative-threed-btn.wpzabb-threed_down-btn,
+.wpzabb-button-wrap .wpzabb-creative-threed-btn.wpzabb-threed_up-btn,
+.wpzabb-button-wrap .wpzabb-creative-threed-btn.wpzabb-threed_left-btn,
+.wpzabb-button-wrap .wpzabb-creative-threed-btn.wpzabb-threed_right-btn {
+    -webkit-transition: none;
+       -moz-transition: none;
+        -ms-transition: none;
+         -o-transition: none;
+            transition: none;
+}
+
+.perspective {
+    -webkit-perspective: 800px;
+       -moz-perspective: 800px;
+            perspective: 800px;
+            margin: 0;
+}
+.wpzabb-button.wpzabb-creative-threed-btn:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 200ms linear;
+       -moz-transition: all 200ms linear;
+            transition: all 200ms linear;
+}
+
+.wpzabb-button.wpzabb-creative-threed-btn {
+    outline: 1px solid transparent;
+    -webkit-transform-style: preserve-3d;
+       -moz-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+}
+
+/*  3D Button styles --- Animate to top */
+.wpzabb-creative-threed-btn.wpzabb-animate_top-btn:after {
+    height: 40%;
+    left: 0;
+    top: -40%;
+    width: 100%;
+    -webkit-transform-origin: 0% 100%;
+       -moz-transform-origin: 0% 100%;
+            transform-origin: 0% 100%;
+    -webkit-transform: rotateX(90deg);
+       -moz-transform: rotateX(90deg);
+            transform: rotateX(90deg);
+}
+
+/*  3D Button styles --- Animate to bottom */
+.wpzabb-creative-threed-btn.wpzabb-animate_bottom-btn:after {
+    width: 100%;
+    height: 40%;
+    left: 0;
+    top: 100%;
+
+    -webkit-transform-origin: 0% 0%;
+       -moz-transform-origin: 0% 0%;
+        -ms-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+
+    -webkit-transform: rotateX(-90deg);
+       -moz-transform: rotateX(-90deg);
+        -ms-transform: rotateX(-90deg);
+            transform: rotateX(-90deg);
+}
+
+/*  3D Button styles --- Animate to Left */
+.wpzabb-creative-threed-btn.wpzabb-animate_left-btn:after {
+    width: 20%;
+    height: 100%;
+    left: -20%;
+    top: 0;
+    -webkit-transform-origin: 100% 0%;
+       -moz-transform-origin: 100% 0%;
+        -ms-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
+
+
+    -webkit-transform: rotateY(-60deg);
+       -moz-transform: rotateY(-60deg);
+        -ms-transform: rotateY(-60deg);
+            transform: rotateY(-60deg);
+}
+
+/*  3D Button styles --- Animate to Right */
+.wpzabb-creative-threed-btn.wpzabb-animate_right-btn:after {
+    width: 20%;
+    height: 100%;
+    left: 104%;
+    top: 0;
+    -webkit-transform-origin: 0% 0%;
+       -moz-transform-origin: 0% 0%;
+        -ms-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+
+    -webkit-transform: rotateY(120deg);
+       -moz-transform: rotateY(120deg);
+        -ms-transform: rotateY(120deg);
+            transform: rotateY(120deg);
+}
+
+
+/* Animate Top */
+.wpzabb-animate_top-btn:hover{
+    -webkit-transform: rotateX(-15deg);
+       -moz-transform: rotateX(-15deg);
+        -ms-transform: rotateX(-15deg);
+         -o-transform: rotateX(-15deg);
+            transform: rotateX(-15deg);
+
+}
+
+/* Animate Bottom */
+.wpzabb-animate_bottom-btn:hover{
+    -webkit-transform: rotateX(15deg);
+       -moz-transform: rotateX(15deg);
+        -ms-transform: rotateX(15deg);
+         -o-transform: rotateX(15deg);
+            transform: rotateX(15deg);
+
+}
+
+/* Animate Left */
+.wpzabb-animate_left-btn:hover{
+    -webkit-transform: rotateY(6deg);
+       -moz-transform: rotateY(6deg);
+        -ms-transform: rotateY(6deg);
+         -o-transform: rotateY(6deg);
+            transform: rotateY(6deg);
+}
+
+/* Animate Right */
+.wpzabb-animate_right-btn:hover{
+    -webkit-transform: rotateY(-6deg);
+       -moz-transform: rotateY(-6deg);
+        -ms-transform: rotateY(-6deg);
+         -o-transform: rotateY(-6deg);
+            transform: rotateY(-6deg);
+
+}
+
+
+
+
+/*  Flat Button styles  */
+
+/*  Common Classes  */
+.wpzabb-creative-flat-btn.wpzabb-animate_to_right-btn,
+.wpzabb-creative-flat-btn.wpzabb-animate_to_left-btn,
+.wpzabb-creative-flat-btn.wpzabb-animate_from_top-btn,
+.wpzabb-creative-flat-btn.wpzabb-animate_from_bottom-btn {
+    overflow: hidden;
+    position: relative;
+}
+
+.wpzabb-creative-flat-btn.wpzabb-animate_to_right-btn i,
+.wpzabb-creative-flat-btn.wpzabb-animate_to_left-btn i,
+.wpzabb-creative-flat-btn.wpzabb-animate_from_top-btn i,
+.wpzabb-creative-flat-btn.wpzabb-animate_from_bottom-btn i {
+    bottom: 0;
+    height: 100%;
+    margin: 0;
+    opacity: 1;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    -webkit-transition: all 200ms linear;
+       -moz-transition: all 200ms linear;
+            transition: all 200ms linear;
+    -webkit-transform: translateY(0);
+       -moz-transform: translateY(0);
+         -o-transform: translateY(0);
+        -ms-transform: translateY(0);
+            transform: translateY(0);
+}
+
+.wpzabb-creative-flat-btn.wpzabb-animate_to_right-btn .wpzabb-button-text,
+.wpzabb-creative-flat-btn.wpzabb-animate_to_left-btn .wpzabb-button-text,
+.wpzabb-creative-flat-btn.wpzabb-animate_from_top-btn .wpzabb-button-text,
+.wpzabb-creative-flat-btn.wpzabb-animate_from_bottom-btn .wpzabb-button-text {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 200ms linear;
+       -moz-transition: all 200ms linear;
+        -ms-transition: all 200ms linear;
+         -o-transition: all 200ms linear;
+            transition: all 200ms linear;
+    -webkit-backface-visibility: hidden;
+       -moz-backface-visibility: hidden;
+            backface-visibility: hidden;
+}
+
+/*  Making Icon position center  */
+.wpzabb-creative-flat-btn.wpzabb-animate_to_right-btn i:before,
+.wpzabb-creative-flat-btn.wpzabb-animate_to_left-btn i:before,
+.wpzabb-creative-flat-btn.wpzabb-animate_from_top-btn i:before,
+.wpzabb-creative-flat-btn.wpzabb-animate_from_bottom-btn i:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+/*  Common Hover Classes */
+.wpzabb-creative-flat-btn.wpzabb-animate_to_right-btn:hover i,
+.wpzabb-creative-flat-btn.wpzabb-animate_to_left-btn:hover i {
+    left: 0;
+}
+.wpzabb-creative-flat-btn.wpzabb-animate_from_top-btn:hover i,
+.wpzabb-creative-flat-btn.wpzabb-animate_from_bottom-btn:hover i {
+    top: 0;
+}
+
+
+/*  Animate Icon to the right */
+.wpzabb-creative-flat-btn.wpzabb-animate_to_right-btn i {
+    top: 0;
+    left: -100%;
+}
+.wpzabb-creative-flat-btn.wpzabb-animate_to_right-btn:hover .wpzabb-button-text {
+    -webkit-transform: translateX(200%);
+       -moz-transform: translateX(200%);
+        -ms-transform: translateX(200%);
+         -o-transform: translateX(200%);
+            transform: translateX(200%);
+}
+
+/*  Animate Icon to the left */
+.wpzabb-creative-flat-btn.wpzabb-animate_to_left-btn i {
+    top: 0;
+    left: 100%;
+}
+
+.wpzabb-creative-flat-btn.wpzabb-animate_to_left-btn:hover .wpzabb-button-text {
+    -webkit-transform: translateX(-200%);
+       -moz-transform: translateX(-200%);
+        -ms-transform: translateX(-200%);
+         -o-transform: translateX(-200%);
+            transform: translateX(-200%);
+}
+
+
+/*  Animate Icon From the Top */
+.wpzabb-creative-flat-btn.wpzabb-animate_from_top-btn i {
+    top: -100%;
+    left: 0;
+}
+
+.wpzabb-creative-flat-btn.wpzabb-animate_from_top-btn:hover .wpzabb-button-text {
+    -webkit-transform: translateY(400px);
+       -moz-transform: translateY(400px);
+        -ms-transform: translateY(400px);
+         -o-transform: translateY(400px);
+            transform: translateY(400px);
+}
+
+/*  Animate Icon From the Bottom */
+.wpzabb-creative-flat-btn.wpzabb-animate_from_bottom-btn i {
+    top: 100%;
+    left: 0;
+}
+
+.wpzabb-creative-flat-btn.wpzabb-animate_from_bottom-btn:hover .wpzabb-button-text {
+    -webkit-transform: translateY(-400px);
+       -moz-transform: translateY(-400px);
+        -ms-transform: translateY(-400px);
+         -o-transform: translateY(-400px);
+            transform: translateY(-400px);
+}

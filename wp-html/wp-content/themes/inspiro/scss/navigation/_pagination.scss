@@ -1,0 +1,28 @@
+.woocommerce-pagination,
+.paging-navigation {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.woocommerce-pagination:empty,
+.paging-navigation:empty {
+    display: none;
+}
+
+.woocommerce-pagination .page-numbers,
+.paging-navigation .page-numbers {
+    font-size: 20px;
+    font-family: $font__headings;
+    line-height: 40px;
+    padding: 10px 15px;
+    color: #444;
+    transition: 0.2s ease all;
+}
+
+.woocommerce-pagination .page-numbers.current,
+.woocommerce-pagination .page-numbers:hover,
+.paging-navigation .page-numbers.current,
+.paging-navigation .page-numbers:hover {
+    text-decoration: none;
+    color: $primary_color;
+}

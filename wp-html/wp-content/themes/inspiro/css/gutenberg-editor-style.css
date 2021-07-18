@@ -1,0 +1,122 @@
+/*
+Theme Name: Inspiro
+Description: Used to style the Block editor.
+*/
+
+.wp-block {
+  margin-bottom: 30px;
+  margin-top: 30px;
+  max-width: 810px;
+}
+
+.wp-block:not([data-type="core/paragraph"]):not([data-type="core/list"]):not([data-type="core/archives"]):not([data-type="core/categories"]):not([data-type="core/latest-posts"]):not([data-type="core/latest-comments"]) {
+  margin-bottom: 42px;
+  margin-top: 42px;
+}
+
+.wp-block[data-align="wide"] {
+  max-width: 910px;
+}
+
+@media screen and (min-width: 719px) {
+  .wp-block[data-align="wide"] {
+    margin-bottom: 52px !important;
+    margin-top: 52px !important;
+  }
+}
+
+.wp-block[data-align="full"] {
+  margin-bottom: 40px !important;
+  margin-top: 40px !important;
+  max-width: none;
+}
+
+@media screen and (min-width: 719px) {
+  .wp-block[data-align="full"] {
+    margin-bottom: 60px !important;
+    margin-top: 60px !important;
+  }
+}
+
+.wp-block .wp-block {
+  width: 100%;
+}
+
+.editor-inner-blocks .wp-block {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+
+/** === Base Typography === */
+body {
+  color: #444;
+  font-family: "Libre Franklin", serif;
+  font-size: 16px;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.8;
+}
+
+/** === Title === */
+
+.editor-post-title__block .editor-post-title__input {
+  font-family: "Libre Franklin", serif;
+  text-rendering: optimizeLegibility;
+  font-smoothing: antialiased;
+}
+
+
+
+
+/** === Button === */
+
+.wp-block-button .wp-block-button__link {
+    border-radius: 0;
+    padding: 10px 30px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    border: 2px solid #fff;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    transition: color 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+    transform: translate3d(0, 0, 0);
+}
+
+.wp-block-button.is-style-default .wp-block-button__link {
+    border-radius: 30px;
+}
+
+/*@media screen and (min-width: 599px) {
+  .wp-block-button .wp-block-button__link {
+    font-size: 19px;
+  }
+}*/
+
+.wp-block-button .wp-block-button__link:not(.has-background), .wp-block-button .wp-block-button__link:not(.has-background):hover, .wp-block-button .wp-block-button__link:not(.has-background):active, .wp-block-button .wp-block-button__link:not(.has-background):focus {
+  background-color: #0bb4aa;
+}
+
+.wp-block-button.is-style-outline .wp-block-button__link,
+.wp-block-button.is-style-outline .wp-block-button__link:hover,
+.wp-block-button.is-style-outline .wp-block-button__link:focus,
+.wp-block-button.is-style-outline .wp-block-button__link:active {
+  background: transparent !important;
+}
+
+
+.wp-block-button.is-style-squared .wp-block-button__link,
+.wp-block-button.is-style-squared .wp-block-button__link:hover,
+.wp-block-button.is-style-squared .wp-block-button__link:focus,
+.wp-block-button.is-style-squared .wp-block-button__link:active {
+  border-radius: 0;
+}
+
+
+.wp-block-button .wp-block-button__link.has-white-background-color,
+.wp-block-button.is-style-outline .wp-block-button__link {
+     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+     text-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+ }

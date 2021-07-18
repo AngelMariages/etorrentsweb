@@ -1,0 +1,92 @@
+/* Generic Styles */
+.fl-module-wpzabb-posts .fl-sep {
+	display: inline-block;
+	margin: 0 2px;
+}
+
+/* Post Columns */
+.wpzabb-post-column .wpzabb-post-grid-post {
+	visibility: visible;
+}
+
+/* Post Grid */
+.wpzabb-post-grid {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	position: relative;
+}
+.wpzabb-post-grid-image {
+	position: relative;
+}
+.wpzabb-post-grid-image img {
+	height: auto !important;
+	width: 100% !important;
+}
+body .wpzabb-post-grid-text a {
+	text-decoration: none;
+}
+.wpzabb-post-grid-more {
+	margin-top: 10px;
+	display: inline-block;
+}
+.wpzabb-post-grid #infscr-loading {
+	bottom: -20px;
+	left: 0;
+	right: 0;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+}
+
+/* Post List */
+.wpzabb-post-list-header a {
+	text-decoration: none;
+}
+.wpzabb-post-list-meta .fl-sep {
+	margin: 0 3px;
+}
+.wpzabb-post-list-image {
+	position: relative;
+}
+.wpzabb-post-list-image img {
+	height: auto !important;
+}
+.wpzabb-post-list-image-beside .wpzabb-post-list-image,
+.wpzabb-post-list-image-beside-content .wpzabb-post-list-image {
+	float: left;
+	margin-bottom: 0;
+	width: 33%;
+}
+.wpzabb-post-list-image-beside .wpzabb-post-list-text,
+.wpzabb-post-list-image-beside-content .wpzabb-post-list-text {
+	margin-left: 37%;
+	overflow: hidden;
+}
+.wpzabb-post-list-image-beside-right .wpzabb-post-list-image,
+.wpzabb-post-list-image-beside-content-right .wpzabb-post-list-image {
+	float: right;
+	margin-bottom: 0;
+	width: 33%;
+}
+.wpzabb-post-list-image-beside-right .wpzabb-post-list-text,
+.wpzabb-post-list-image-beside-content-right .wpzabb-post-list-text {
+	margin-right: 37%;
+	overflow: hidden;
+}
+.wpzabb-post-list-content a {
+	text-decoration: none;
+}
+.wpzabb-post-list-content p:last-of-type {
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+.wpzabb-post-list-more {
+	margin-top: 15px;
+	display: inline-block;
+}
+.wpzabb-post-list #infscr-loading {
+	padding: 40px 0;
+	text-align: center;
+	width: 100%;
+}

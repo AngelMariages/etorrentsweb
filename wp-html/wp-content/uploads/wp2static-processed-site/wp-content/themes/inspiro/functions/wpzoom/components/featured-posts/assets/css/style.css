@@ -1,0 +1,211 @@
+.wpzoom-featured-posts-wrapper{
+    width:95%;
+}
+
+@media (min-width:1200px) {
+
+    .wpzoom-featured-posts-wrapper{
+        width: 70%;
+    }
+
+}
+
+.wpzoom-featured-posts-ul.list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    background-color: #ddd;
+}
+
+.wpzoom-preloader{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -10px;
+    margin-left: -10px;
+}
+
+.wpzoom-featured-posts-ul.list > div {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    padding: 10px;
+    min-height: 40px;
+    border-bottom-width: 0px;
+}
+
+.wpzoom-featured-posts-ul.list > div:last-of-type {
+    border-bottom-width: 1px;
+}
+
+.wpzoom-featured-posts-ul.list .thumb {
+    float: left;
+    height: 60px;
+    width: 60px;
+    background-color: #F1F1F1;
+    margin: 0 9px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.wpzoom-featured-posts-ul.list .thumb.dashicons-format-image {
+    text-align: center;
+    line-height: 60px;
+    color: #404040;
+}
+
+.wpzoom-featured-posts-ul.list .thumb:after {
+    line-height: 60px;
+    text-align: center;
+}
+
+.wpzoom-featured-posts-ul.grid .thumb.dashicons-format-image{
+    color: #404040;
+    font-size: 40px;
+}
+
+
+.wpzoom-featured-posts-ul.list .controls {
+    float: left;
+    clear: both;
+    margin-top: 3px;
+}
+
+.wpzoom-featured-posts-ul.list .row-title {
+    float: left;
+    text-decoration: none;
+
+}
+
+.wpzoom-featured-posts-ul abbr {
+    float: left;
+    clear: both;
+    text-decoration: underline dotted;
+    color: #555;
+    font-size: 13px;
+    line-height: 1.5em;
+}
+
+.wpzoom-featured-posts-ul.list .el-wrap {
+    float: left;
+}
+
+.wpzoom-featured-posts-ul.list .dashicons {
+    cursor: pointer;
+}
+
+.wpzoom-featured-posts-ul.list .dashicons-sort, .wpzoom-featured-posts-ul.list .dashicons-menu {
+    float: left;
+    min-height: 60px;
+    min-width: 45px;
+    line-height: 60px;
+    font-size: 28px;
+    text-align: left;
+    cursor: move;
+    color: #ddd;
+}
+
+.wpzoom-featured-posts-description{
+    width: 100%;
+    text-align: center;
+    display: table;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 13px;
+}
+
+.wpzoom-featured-posts-wrapper .wpz-media-toolbar {
+    background-color: #fff;
+    margin: 15px auto;
+    border: 1px solid #e5e5e5;
+    padding: 12px 12px 10px;
+}
+
+.wpzoom-featured-posts-wrapper .wpz-media-toolbar span {
+    line-height: 30px;
+    margin-right: 12px;
+    float: right;
+
+}
+
+.wpzoom-featured-posts-ul.grid {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.grid > div {
+    display:flex;
+    flex-direction:column;
+    background:#fff;
+    border : 1px solid #ddd;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    padding: 8px;
+    width: 180px;
+
+
+}
+.grid .el-wrap{
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+}
+
+.grid > div > .thumb{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 180px;
+    height: 180px;
+    overflow: hidden;
+    background-color: #F1F1F1;
+}
+
+.grid > div > .thumb img {
+    height: auto;
+}
+
+.grid .el-wrap .controls{
+    align-self: flex-end;
+    justify-self: end;
+}
+
+.grid > div{
+    position: relative;
+}
+
+.grid .handle{
+    position: absolute;
+    top:8px;
+    left:8px;
+    width: 30px;
+    height: 30px;
+    font-size: 28px;
+    cursor: move;
+    background-color: #F1F1F1;
+}
+
+.wp-core-ui  .wpz-media-toolbar .button-primary.wpz-reorder {
+    background: #aa0000;
+    float: right;
+    border-color: #710101 #900303 #900303;
+    box-shadow: 0 1px 0 #900303;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 -1px 1px #900303, 1px 0 1px #900303, 0 1px 1px #900303, -1px 0 1px #900303
+}
+
+.wp-core-ui  .wpz-media-toolbar .button-primary.wpz-reorder:hover{
+    background-color: #c11212;
+}
+
+
+.wpz-media-toolbar .media-grid-view-switch {
+    margin: 0 5px 0 0;
+    display: inline-block;
+}
