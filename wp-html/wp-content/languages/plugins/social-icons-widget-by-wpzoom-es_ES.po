@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Social Icons Widget &amp; Block by WPZOOM - Development (trunk) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-02-16 06:36:07+0000\n"
+"PO-Revision-Date: 2021-06-12 08:00:33+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -11,266 +11,298 @@ msgstr ""
 "Language: es\n"
 "Project-Id-Version: Plugins - Social Icons Widget &amp; Block by WPZOOM - Development (trunk)\n"
 
-#: class.zoom-social-icons-settings.php:491
+#: zoom-helper.php:117
+msgid "Thank you for using <b>Social Icons Widget by WPZOOM</b><br/>Would you mind taking a moment to rate it! It won't take more than two minutes.<p><b>Thanks for your support!</b></p><p><a class=\"button button-primary button-hero\" href=\"https://wordpress.org/support/plugin/social-icons-widget-by-wpzoom/reviews/#new-post\" target=\"_blank\"> &#9733; Rate Now  &#9733;</a></p><p><a class=\"zoom-social-remind-me-later button button-secondary button-hero\">Remind Me later!</a></p>"
+msgstr "Gracias por usar <b>Social Icons Widget by WPZOOM</b><br/>¿Te importaría tomarte un momento para valorarlo? No te llevará más de dos minutos.<p><b>¡Gracias por tu apoyo!</b></p><p><a class=\"button button-primary button-hero\" href=\"https://wordpress.org/support/plugin/social-icons-widget-by-wpzoom/reviews/#new-post\" target=\"_blank\"> &#9733; Valorar ahora &#9733;</a></p><p><a class=\"zoom-social-remind-me-later button-secondary button-hero\">¡Recuérdamelo más tarde!</a></p>"
+
+#: zoom-helper.php:116
+msgid "Rate Social Icons Widget by WPZOOM"
+msgstr "Valorar Social Icons Widget by WPZOOM"
+
+#: class.zoom-social-icons-settings.php:587
+msgid "Get Social Icons Widget PRO"
+msgstr "Obtén Social Icons Widget PRO"
+
+#: class.zoom-social-icons-settings.php:121
+msgid "Upload Icons <span>PRO</span>"
+msgstr "Subir los iconos <span>PRO</span>"
+
+#: class.zoom-social-icons-settings.php:577
+msgid "Sync Icon sets with Block and Widget Settings from popup."
+msgstr "Sincroniza los conjuntos de iconos con los ajustes del bloque y el widget desde la ventana emergente."
+
+#: class.zoom-social-icons-settings.php:575
+msgid "Enable sync"
+msgstr "Activar la sincronización"
+
+#: class.zoom-social-icons-settings.php:334
+msgid "Sync Icon Sets"
+msgstr "Sincronizar el conjuntos de iconos"
+
+#: class.zoom-social-icons-settings.php:557
 msgid "Main icon set"
 msgstr "Conjunto principal de iconos"
 
-#: class.zoom-social-icons-settings.php:435
+#: class.zoom-social-icons-settings.php:501
 msgid "Font Awesome 5 is loaded only in the Social Icons Block."
 msgstr "Font Awesome 5 se carga solo en el bloque de iconos sociales."
 
-#: class.zoom-social-icons-settings.php:416
+#: class.zoom-social-icons-settings.php:482
 msgid "Font Awesome 3 is loaded only in the Social Icons Widget"
 msgstr "Font Awesome 3 se carga solo en el widget de iconos sociales"
 
-#: class.zoom-social-icons-settings.php:396
-#: class.zoom-social-icons-settings.php:414
-#: class.zoom-social-icons-settings.php:433
-#: class.zoom-social-icons-settings.php:453
-#: class.zoom-social-icons-settings.php:471
-#: class.zoom-social-icons-settings.php:489
+#: class.zoom-social-icons-settings.php:462
+#: class.zoom-social-icons-settings.php:480
+#: class.zoom-social-icons-settings.php:499
+#: class.zoom-social-icons-settings.php:519
+#: class.zoom-social-icons-settings.php:537
+#: class.zoom-social-icons-settings.php:555
 msgid "Enable this font"
 msgstr "Activar esta fuente"
 
-#: class.zoom-social-icons-settings.php:379
+#: class.zoom-social-icons-settings.php:445
 msgid "Preload web fonts using rel=\"preload\" to remove any flash of unstyled text and improve the PageSpeed score."
 msgstr "Precarga las fuentes web usando «rel=\"preload\"» para eliminar cualquier destello de texto sin estilo y mejorar la puntuación de PageSpeed."
 
-#: class.zoom-social-icons-settings.php:377
+#: class.zoom-social-icons-settings.php:443
 msgid "Enable"
 msgstr "Activar"
 
-#: class.zoom-social-icons-settings.php:360
+#: class.zoom-social-icons-settings.php:426
 msgid "Social Icons Block module functionality, by default enabled."
 msgstr "Funcionalidad del módulo del bloque de iconos sociales, activado por defecto."
 
-#: class.zoom-social-icons-settings.php:341
+#: class.zoom-social-icons-settings.php:407
 msgid "Social Icons Widget module functionality, by default enabled."
 msgstr "Funcionalidad del módulo del widget de iconos sociales, activado por defecto."
 
-#: class.zoom-social-icons-settings.php:339
-#: class.zoom-social-icons-settings.php:358
+#: class.zoom-social-icons-settings.php:405
+#: class.zoom-social-icons-settings.php:424
 msgid "Disable"
 msgstr "Desactivar"
 
-#: class.zoom-social-icons-settings.php:248
+#: class.zoom-social-icons-settings.php:302
 msgid "Font Awesome 5"
 msgstr "Font Awesome 5"
 
-#: class.zoom-social-icons-settings.php:240
+#: class.zoom-social-icons-settings.php:294
 msgid "Font Awesome 3"
 msgstr "Font Awesome 3"
 
-#: class.zoom-social-icons-settings.php:214
+#: class.zoom-social-icons-settings.php:268
 msgid "Preload Fonts"
 msgstr "Precargar las fuentes"
 
-#: class.zoom-social-icons-settings.php:103
+#: class.zoom-social-icons-settings.php:117
 msgid "Misc."
 msgstr "Varios"
 
-#: class.zoom-social-icons-settings.php:100
+#: class.zoom-social-icons-settings.php:114
 msgid "Optimization"
 msgstr "Optimización"
 
-#: class.zoom-social-icons-settings.php:96
+#: class.zoom-social-icons-settings.php:110
 msgid "Icon Sets"
 msgstr "Conjuntos de iconos"
 
-#: class.zoom-social-icons-settings.php:69
-#: class.zoom-social-icons-settings.php:188
+#: class.zoom-social-icons-settings.php:83
+#: class.zoom-social-icons-settings.php:224
 msgid "Social Icons Widget"
 msgstr "Widget de iconos sociales"
 
-#: class.zoom-social-icons-settings.php:68
+#: class.zoom-social-icons-settings.php:82
 msgid "Social Icons Widget By WPZOOM Settings Page"
 msgstr "Página de ajustes de Social Icons Widget By WPZOOM"
 
-#: class.zoom-social-icons-settings.php:196 block/dist/blocks.build.js:1
+#: social-icons-widget-by-wpzoom.php:154
+msgid "Font Awesome Solid"
+msgstr "Font Awesome sólido"
+
+#: social-icons-widget-by-wpzoom.php:153
+msgid "Font Awesome Regular"
+msgstr "Font Awesome: normal"
+
+#: social-icons-widget-by-wpzoom.php:152
+msgid "Font Awesome Brands"
+msgstr "Font Awesome: marcas"
+
+#: class.zoom-social-icons-settings.php:232 block/dist/blocks.build.js:1
 msgid "Social Icons Block"
 msgstr "Bloque de iconos sociales"
-
-#: zoom-helper.php:117
-msgid "Thank you for using <b>"
-msgstr "Gracias por usar <b>"
-
-#: zoom-helper.php:116
-msgid "Rate "
-msgstr "Valorar "
 
 #: zoom-helper.php:44
 msgid "I already did this"
 msgstr "Ya lo he hecho"
 
-#: block/src/init.php:101
+#: block/src/init.php:102
 msgid "WPZOOM - Blocks"
 msgstr "WPZOOM - Bloques"
 
-#: class.zoom-social-icons-widget.php:1307
+#: class.zoom-social-icons-widget.php:1301
 msgid "Default Label"
 msgstr "Etiqueta por defecto"
 
-#: class.zoom-social-icons-widget.php:1064
+#: class.zoom-social-icons-widget.php:1058
 msgid "Follow us"
 msgstr "Síguenos"
 
-#: class.zoom-social-icons-widget.php:1050
+#: class.zoom-social-icons-widget.php:1044
 msgid "Note that icons above is not how they will look on front-end. This is just for reference."
 msgstr "Ten en cuenta que los iconos anteriores no se muestran como se verán en la vista pública. Esto es solo como referencia."
 
-#: class.zoom-social-icons-widget.php:1046
+#: class.zoom-social-icons-widget.php:1040
 msgid "To add an icon with an email address, use the <strong><em>mailto:mail@example.com</em></strong> format."
-msgstr "Para añadir un icono con una dirección de correo electrónico, usa el formato <strong><em>mailto:mail@example.com</em></strong>."
+msgstr "Para añadir un icono con una dirección de correo electrónico, usa el formato <strong><em>mailto:correo@ejemplo.com</em></strong>."
 
-#: class.zoom-social-icons-widget.php:1042
+#: class.zoom-social-icons-widget.php:1036
 msgid "Add more"
 msgstr "Añadir más"
 
-#: class.zoom-social-icons-widget.php:1012
+#: class.zoom-social-icons-widget.php:1006
 msgid "This is used to provide a description of this icon to screen reader users (for accessibility purposes)."
-msgstr "Se utiliza para proporcionar una descripción de este icono a los usuarios de lectores de pantalla (con fines de accesibilidad)."
+msgstr "Esto se usa para proporcionar una descripción de este icono a los usuarios de lectores de pantalla (con fines de accesibilidad)."
 
-#: class.zoom-social-icons-widget.php:1003
+#: class.zoom-social-icons-widget.php:997
 msgid "<code>\"aria-label\"</code> description"
 msgstr "Descripción <code>\"aria-label\"</code>"
 
-#: class.zoom-social-icons-widget.php:969 block/dist/blocks.build.js:1
+#: class.zoom-social-icons-widget.php:963 block/dist/blocks.build.js:1
 msgid "Label"
 msgstr "Etiqueta"
 
-#: class.zoom-social-icons-widget.php:962
+#: class.zoom-social-icons-widget.php:956
 msgid "Start typing the URL..."
-msgstr "Comienza a escribir la URL..."
+msgstr "Empieza escribiendo la URL..."
 
-#: class.zoom-social-icons-widget.php:848
+#: class.zoom-social-icons-widget.php:842
 msgid "Icons:"
 msgstr "Iconos:"
 
-#: class.zoom-social-icons-widget.php:836 block/dist/blocks.build.js:1
+#: class.zoom-social-icons-widget.php:830 block/dist/blocks.build.js:1
 msgid "Set hover color for all icons"
-msgstr "Establece el color al pasar el cursor para todos los iconos"
+msgstr "Establecer el color al pasar el cursor para todos los iconos"
 
-#: class.zoom-social-icons-widget.php:823 block/dist/blocks.build.js:1
+#: class.zoom-social-icons-widget.php:817 block/dist/blocks.build.js:1
 msgid "Set color for all icons"
-msgstr "Establece el color para todos los iconos"
+msgstr "Establecer el color para todos los iconos"
 
-#: class.zoom-social-icons-widget.php:813
+#: class.zoom-social-icons-widget.php:807
 msgid "Icon Size (pixels):"
-msgstr "Tamaño del icono (en píxeles):"
+msgstr "Tamaño del icono (píxeles):"
 
-#: class.zoom-social-icons-widget.php:802
+#: class.zoom-social-icons-widget.php:796
 msgid "Icon Padding (pixels):"
-msgstr "Relleno del icono (en píxeles):"
+msgstr "Relleno del icono (píxeles):"
 
-#: class.zoom-social-icons-widget.php:797
+#: class.zoom-social-icons-widget.php:791
 msgid "This option has no effect if <i>Color Icon / No Background</i> icon style is selected."
-msgstr "Esta opción no tiene efecto si se selecciona el estilo <i>Icono de color sin fondo</i>."
+msgstr "Esta opción no tiene efecto si se selecciona el estilo <i>Icono de color / Sin fondo</i>."
 
-#: class.zoom-social-icons-widget.php:792
+#: class.zoom-social-icons-widget.php:786
 msgid "Square"
 msgstr "Cuadrado"
 
-#: class.zoom-social-icons-widget.php:790
+#: class.zoom-social-icons-widget.php:784
 msgid "Rounded Corners"
 msgstr "Esquinas redondeadas"
 
-#: class.zoom-social-icons-widget.php:788
+#: class.zoom-social-icons-widget.php:782
 msgid "Round"
 msgstr "Redondeado"
 
-#: class.zoom-social-icons-widget.php:780
+#: class.zoom-social-icons-widget.php:774
 msgid "Icon Background Style:"
 msgstr "Estilo del fondo del icono:"
 
-#: class.zoom-social-icons-widget.php:773 block/dist/blocks.build.js:1
+#: class.zoom-social-icons-widget.php:767 block/dist/blocks.build.js:1
 msgid "Color Icon / No Background"
 msgstr "Icono de color sin fondo"
 
-#: class.zoom-social-icons-widget.php:771
+#: class.zoom-social-icons-widget.php:765
 msgid "Color Background / White Icon"
 msgstr "Color del fondo con icono blanco"
 
-#: class.zoom-social-icons-widget.php:764
+#: class.zoom-social-icons-widget.php:758
 msgid "Icon Style:"
 msgstr "Estilo del icono:"
 
-#: class.zoom-social-icons-widget.php:758
+#: class.zoom-social-icons-widget.php:752
 msgid "Align Right"
 msgstr "Alinear a la derecha"
 
-#: class.zoom-social-icons-widget.php:756
+#: class.zoom-social-icons-widget.php:750
 msgid "Align Center"
 msgstr "Alinear al centro"
 
-#: class.zoom-social-icons-widget.php:754
+#: class.zoom-social-icons-widget.php:748
 msgid "Align Left"
 msgstr "Alinear a la izquierda"
 
-#: class.zoom-social-icons-widget.php:752
+#: class.zoom-social-icons-widget.php:746
 msgid "None"
 msgstr "Ninguna"
 
-#: class.zoom-social-icons-widget.php:745 block/dist/blocks.build.js:1
+#: class.zoom-social-icons-widget.php:739 block/dist/blocks.build.js:1
 msgid "Icons Alignment:"
 msgstr "Alineación de los iconos:"
 
-#: class.zoom-social-icons-widget.php:740
+#: class.zoom-social-icons-widget.php:734
 msgid "Recommended if links or icons open in a new tab"
 msgstr "Recomendado si los enlaces o los iconos se abren en una nueva pestaña"
 
-#: class.zoom-social-icons-widget.php:737
+#: class.zoom-social-icons-widget.php:731
 msgid "Add <code>rel=\"noopener\"</code> to links"
 msgstr "Añadir <code>rel=\"noopener\"</code> a los enlaces"
 
-#: class.zoom-social-icons-widget.php:725
+#: class.zoom-social-icons-widget.php:719
 msgid "Add <code>rel=\"noreferrer\"</code> to links"
 msgstr "Añadir <code>rel=\"noreferrer\"</code> a los enlaces"
 
-#: class.zoom-social-icons-widget.php:713
+#: class.zoom-social-icons-widget.php:707
 msgid "Add <code>rel=\"nofollow\"</code> to links"
 msgstr "Añadir <code>rel=\"nofollow\"</code> a los enlaces"
 
-#: class.zoom-social-icons-widget.php:701
+#: class.zoom-social-icons-widget.php:695
 msgid "Open links in new tab? "
 msgstr "¿Abrir los enlaces en una nueva pestaña? "
 
-#: class.zoom-social-icons-widget.php:690
+#: class.zoom-social-icons-widget.php:684
 msgid "Show icon labels? "
 msgstr "¿Mostrar las etiquetas de los iconos? "
 
-#: class.zoom-social-icons-widget.php:677
+#: class.zoom-social-icons-widget.php:671
 msgid "You can add here a text above the icons. Basic HTML allowed."
 msgstr "Puedes añadir aquí un texto sobre los iconos. Se permite el uso de HTML básico."
 
-#: class.zoom-social-icons-widget.php:671
+#: class.zoom-social-icons-widget.php:665
 msgid "Text above icons:"
 msgstr "Texto encima de los iconos:"
 
-#: class.zoom-social-icons-widget.php:665
+#: class.zoom-social-icons-widget.php:659
 msgid "Title:"
 msgstr "Título:"
 
-#: class.zoom-social-icons-widget.php:293
+#: social-icons-widget-by-wpzoom.php:148
 msgid "Font Awesome"
 msgstr "Font Awesome"
 
-#: class.zoom-social-icons-settings.php:232
-#: class.zoom-social-icons-widget.php:291 block/dist/blocks.build.js:1
+#: class.zoom-social-icons-settings.php:286
+#: social-icons-widget-by-wpzoom.php:144
 msgid "Academicons"
 msgstr "Academicons"
 
-#: class.zoom-social-icons-settings.php:256
-#: class.zoom-social-icons-widget.php:289 block/dist/blocks.build.js:1
+#: class.zoom-social-icons-settings.php:310
+#: social-icons-widget-by-wpzoom.php:143
 msgid "Genericons"
 msgstr "Genericons"
 
-#: class.zoom-social-icons-settings.php:264
-#: class.zoom-social-icons-widget.php:287 block/dist/blocks.build.js:1
+#: class.zoom-social-icons-settings.php:318
+#: social-icons-widget-by-wpzoom.php:142 block/dist/blocks.build.js:1
 msgid "Dashicons"
 msgstr "Dashicons"
 
-#: class.zoom-social-icons-settings.php:272
-#: class.zoom-social-icons-widget.php:285 block/dist/blocks.build.js:1
+#: class.zoom-social-icons-settings.php:326
+#: social-icons-widget-by-wpzoom.php:141 block/dist/blocks.build.js:1
 msgid "Socicons"
 msgstr "Socicons"
 
@@ -324,13 +356,13 @@ msgstr "WPZOOM"
 
 #. Description of the plugin
 msgid "Social Icons Widget & Block to display links to social media networks websites. Supports most of the known social networks and includes more than 400 icons. Sort icons by Drag & Drop and change their color easily."
-msgstr "Widget y bloque de iconos sociales para mostrar enlaces a webs de redes sociales. Es compatible con la mayoría de las redes sociales conocidas e incluye más de 400 iconos. Ordena los iconos arrastrando y soltando, y cambia su color fácilmente."
+msgstr "Widget y bloque de iconos sociales para mostrar enlaces a webs de redes sociales. Es compatible con la mayoría de las redes sociales conocidas e incluye más de 400 iconos. Ordena los iconos arrastrando y soltando y cambia su color fácilmente."
 
 #. Plugin URI of the plugin
 msgid "https://www.wpzoom.com/plugins/social-widget/"
 msgstr "https://www.wpzoom.com/plugins/social-widget/"
 
 #. Plugin Name of the plugin
-#: class.zoom-social-icons-settings.php:91
+#: class.zoom-social-icons-settings.php:105
 msgid "Social Icons Widget & Block by WPZOOM"
 msgstr "Social Icons Widget & Block by WPZOOM"

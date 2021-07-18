@@ -7,7 +7,12 @@
 }
 
 .comments-area {
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
 	margin: calc(2 * #{$size__spacing-unit}) $size__spacing-unit;
+	word-wrap: break-word;
 	@include postContentMaxWidth();
 
 	@include media(tablet) {
@@ -375,6 +380,10 @@
 		@include font-family( $font__heading );
 		font-size: $font__size-xs;
 		color: $color__text-light;
+	}
+
+	#wp-comment-cookies-consent {
+		margin: 0 10px 0 0;
 	}
 
 	.comment-form-author,

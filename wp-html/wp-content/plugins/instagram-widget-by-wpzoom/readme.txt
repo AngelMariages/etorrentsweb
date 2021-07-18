@@ -1,9 +1,9 @@
 === WPZOOM Social Feed Widget ===
-Contributors: WPZOOM, nvartolomei, ciorici, llemurya
+Contributors: WPZOOM, nvartolomei, ciorici
 Donate link: https://www.wpzoom.com/
 Tags: instagram, instagram feed, instagram gallery, instagram photos, instagram widget, instagram stories, widget, timeline, social network, latest images, feed, story, stories, insta
 Requires at least: 4.3
-Tested up to: 5.6
+Tested up to: 5.7
 Requires PHP: 5.6
 Stable tag: trunk
 License: GPLv2 or later
@@ -66,6 +66,37 @@ Make sure to connect your Instagram account with the plugin. You can do that in 
 
 
 == Changelog ==
+
+= 1.8.3 =
+* Fixed error 400 Bad Request
+
+= 1.8.2 =
+* Fixed compatibility with upcoming WordPress 5.8
+* Fixed a bug with Beaver Builder
+
+= 1.8.1 =
+* Fixed a minor bug for PHP 8.0
+
+= 1.8.0 =
+* NEW: Automatically refresh Instagram access token before it expires
+* NOTE: There are limitations to refresh access token for Instagram private accounts! You will need to reauthorize manually after access token expires
+* Improved admin notices
+
+= 1.7.7 =
+* Load plugin text domain
+* Removed old .pot file from /languages
+
+= 1.7.6 =
+* Change textdomain to match with plugin slug
+
+= 1.7.5 =
+* Fixed strings text domain
+* Fixed dismiss url for admin notice
+* Added Text Domain and Domain Path to plugin description
+
+= 1.7.4 =
+* Added the "nofollow" parameter to all links from the widget.
+* Fixing issues with thumbnails that were deleted by third-party plugins.
 
 = 1.7.3 =
 * Multiple improvements and bug fixes

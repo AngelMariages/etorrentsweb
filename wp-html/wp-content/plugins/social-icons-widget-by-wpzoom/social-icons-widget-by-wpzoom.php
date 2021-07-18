@@ -5,11 +5,14 @@
  * Description: Social Icons Widget & Block to display links to social media networks websites. Supports most of the known social networks and includes more than 400 icons. Sort icons by Drag & Drop and change their color easily.
  * Author: WPZOOM
  * Author URI: https://www.wpzoom.com/
- * Version: 4.1.0
+ * Version: 4.1.3
  * License: GPLv2 or later
  * Text Domain: zoom-social-icons-widget
  * Domain Path: /languages
  */
+if ( ! defined( 'WPZOOM_SOCIAL_ICONS_PLUGIN_VERSION' ) ) {
+	define( 'WPZOOM_SOCIAL_ICONS_PLUGIN_VERSION', '4.1.3' );
+}
 
 if ( ! defined( 'WPZOOM_SOCIAL_ICONS_PLUGIN_URL' ) ) {
 	define( 'WPZOOM_SOCIAL_ICONS_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
@@ -77,8 +80,8 @@ function zoom_social_icons_enqueue_fonts() {
 	}
 
 	if ( wp_style_is( 'wpzoom-social-icons-socicon' ) ) {
-		wp_enqueue_style( 'wpzoom-social-icons-font-socicon-ttf', WPZOOM_SOCIAL_ICONS_PLUGIN_URL . 'assets/font/socicon.ttf', [], null );
-		wp_enqueue_style( 'wpzoom-social-icons-font-socicon-woff', WPZOOM_SOCIAL_ICONS_PLUGIN_URL . 'assets/font/socicon.woff', [], null );
+		wp_enqueue_style( 'wpzoom-social-icons-font-socicon-ttf', WPZOOM_SOCIAL_ICONS_PLUGIN_URL . 'assets/font/socicon.ttf?v='.WPZOOM_SOCIAL_ICONS_PLUGIN_VERSION, [], null );
+		wp_enqueue_style( 'wpzoom-social-icons-font-socicon-woff', WPZOOM_SOCIAL_ICONS_PLUGIN_URL . 'assets/font/socicon.woff?v='.WPZOOM_SOCIAL_ICONS_PLUGIN_VERSION, [], null );
 	}
 
 }
@@ -106,17 +109,11 @@ function zoom_social_icons_add_preload_to_rel_attribute( $tag, $handle, $href ) 
 		'wpzoom-social-icons-font-fontawesome-5-solid-woff2',
 	] );
 
-
-	if ( in_array( $handle, $style_handlers ) ) {
-		$file_type = strtolower( pathinfo( basename( parse_url( $href, PHP_URL_PATH ) ), PATHINFO_EXTENSION ) );
-
-		$file_type = ! empty( $file_type ) ? ( 'type="font/' . $file_type . '"' ) : '';
-		$tag       = preg_replace( [ "/='stylesheet'/", "/media='all'/" ], [
-			"=\"preload\" as=\"font\" ",
-			"{$file_type} crossorigin"
-		], $tag );
-
-	}
+    if ( in_array( $handle, $style_handlers ) ) {
+        $file_type = strtolower( pathinfo( basename( parse_url( $href, PHP_URL_PATH ) ), PATHINFO_EXTENSION ) );
+        $file_type = ! empty( $file_type ) ? ( "type='font/{$file_type}'" ) : '';
+        $tag       = preg_replace( array( "/='stylesheet'/", "/media='all'/", "/type=['\"]text\/(css)['\"]/" ), array( "='preload' as='font' ", $file_type . ' crossorigin', '' ), $tag );
+    }
 
 	return $tag;
 }
@@ -127,6 +124,43 @@ function zoom_social_icons_add_preload_to_rel_attribute( $tag, $handle, $href ) 
  */
 function zoom_social_icons_widget_load_textdomain() {
 	load_plugin_textdomain( 'zoom-social-icons-widget', false, plugin_basename( dirname( __FILE__ ) ) . '/languages' );
+}
+
+/**
+ * Generate select values for block and widget options that are synced with fonts loading values from Settings Page.
+ *
+ * @param string $type
+ *
+ * @return array[]
+ */
+function zoom_social_icons_kits_categories_list( $type = 'widget' ) {
+
+	$icons_kits = WPZOOM_Social_Icons_Settings::get_settings_for_icons_kits();
+
+	$categories_list = [
+		[ 'value' => 'socicon', 'label' => __( 'Socicons', 'zoom-social-icons-widget' ) ],
+		[ 'value' => 'dashicons', 'label' => __( 'Dashicons', 'zoom-social-icons-widget' ) ],
+		[ 'value' => 'genericon', 'label' => __( 'Genericons', 'zoom-social-icons-widget' ) ],
+		[ 'value' => 'academicons', 'label' => __( 'Academicons', 'zoom-social-icons-widget' ) ]
+	];
+
+	if ( 'widget' === $type ) {
+		$categories_list[] = [ 'value' => 'fa', 'label' => __( 'Font Awesome', 'zoom-social-icons-widget' ) ];
+	}
+
+	if ( 'block' === $type ) {
+		$categories_list[] = [ 'value' => 'fab', 'label' => __( 'Font Awesome Brands', 'zoom-social-icons-widget' ) ];
+		$categories_list[] = [ 'value' => 'far', 'label' => __( 'Font Awesome Regular', 'zoom-social-icons-widget' ) ];
+		$categories_list[] = [ 'value' => 'fas', 'label' => __( 'Font Awesome Solid', 'zoom-social-icons-widget' ) ];
+	}
+
+	if ( empty( WPZOOM_Social_Icons_Settings::get_option_key( 'categories-sync' ) ) ) {
+		return $categories_list;
+	}
+
+	return array_filter( $categories_list, function ( $category_item ) use ( $icons_kits ) {
+		return ! empty( $icons_kits[ $category_item['value'] ] );
+	} );
 }
 
 add_action( 'init', 'zoom_social_icons_widget_load_textdomain' );

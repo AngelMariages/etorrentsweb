@@ -2,8 +2,8 @@
 Contributors: wpforms, jaredatch, smub, slaFFik
 Tags: contact form, contact form plugin, forms, form builder, custom form, contact button, contact me, custom contact form, form manager, form, forms builder, forms creator, captcha, recaptcha, Akismet, email form, web form, feedback form, payment form, survey form, donation form, email submit form, message form, mailchimp, mailchimp form, aweber, aweber form, paypal, paypal form, stripe, stripe form, getresponse, getresponse form, email subscription, contact form widget, user registration form, wordpress registration, wordpress login form, feedback
 Requires at least: 4.9
-Tested up to: 5.6
-Stable tag: 1.6.5
+Tested up to: 5.8
+Stable tag: 1.6.8
 Requires PHP: 5.5
 License: GNU General Public License v2.0 or later
 
@@ -51,7 +51,7 @@ Whether you're looking to create a simple contact form, marketing form, request 
 
 WPForms comes with <a href="https://wpforms.com/features/form-templates/?utm_source=wprepo&utm_medium=link&utm_campaign=liteplugin" rel="friend">pre-built form templates</a> to help you save time. You can add, remove, or re-arrange fields as necessary.
 
-See <a href="https://wpforms.com/demo/?utm_source=wprepo&utm_medium=link&utm_campaign=liteplugin" rel="friend">100+ Pre-Made WPForms Form Template Demo</a>
+See <a href="https://wpforms.com/templates/?utm_source=wprepo&utm_medium=link&utm_campaign=liteplugin" rel="friend">100+ Pre-Made WPForms Form Template Demo</a>
 
 = Mobile Ready, SEO Friendly and Optimized for Speed =
 
@@ -140,7 +140,7 @@ Since contact forms are essential for marketing, WPForms is a must have plugin f
 * <a href="https://wpforms.com/features/drag-drop-online-form-builder/?utm_source=wprepo&utm_medium=link&utm_campaign=liteplugin" rel="friend">Online Form Builder</a> - Our powerful drag & drop contact form builder allows you to easily create WordPress contact forms and other online forms in just a few minutes without writing any code.
 * 100% Responsive - Mobile Friendly contact forms.
 * GDPR Friendly - Make your contact form GDPR compatible with just a few clicks.
-* <a href="https://wpforms.com/features/form-templates/?utm_source=wprepo&utm_medium=link&utm_campaign=liteplugin" rel="friend">Form Templates</a> - Use our pre-built form templates to save time. Never start from scratch again (see all <a href="https://wpforms.com/demo/?utm_source=wprepo&utm_medium=link&utm_campaign=liteplugin" rel="friend">form templates demos</a>).
+* <a href="https://wpforms.com/features/form-templates/?utm_source=wprepo&utm_medium=link&utm_campaign=liteplugin" rel="friend">Form Templates</a> - Use our pre-built form templates to save time. Never start from scratch again (see all <a href="https://wpforms.com/templates/?utm_source=wprepo&utm_medium=link&utm_campaign=liteplugin" rel="friend">form templates demos</a>).
 * <a href="https://wpforms.com/features/spam-protection/?utm_source=wprepo&utm_medium=link&utm_campaign=liteplugin" rel="friend">Spam Protection</a> - WPForms provides smart anti-spam protection out-of-the-box, plus direct integrations with hCaptcha and Google reCAPTCHA.
 * <a href="https://wpforms.com/features/instant-notifications/?utm_source=wprepo&utm_medium=link&utm_campaign=liteplugin" rel="friend">Instant Form Notification</a> - Quickly respond to incoming inquiries with our instant contact form notification system.
 * <a href="https://wpforms.com/features/form-confirmation/?utm_source=wprepo&utm_medium=link&utm_campaign=liteplugin" rel="friend">Smart Form Confirmation</a> - Show a custom success message, or redirect users to a custom thank you page.
@@ -210,12 +210,12 @@ If you like this plugin, then consider checking out our other projects:
 * <a href="https://www.pushengage.com/">Push Engage</a> - Connect with visitors after they leave your website with the leading web push notification plugin.
 * <a href="https://trustpulse.com/">TrustPulse</a> - Add real-time social proof notifications to boost your store conversions by up to 15%.
 
-Visit <a href="http://www.wpbeginner.com/" rel="friend" title="WPBeginner">WPBeginner</a> to learn from our <a href="http://www.wpbeginner.com/category/wp-tutorials/" rel="friend" title="WordPress Tutorials">WordPress Tutorials</a> and find out about other <a href="http://www.wpbeginner.com/category/plugins/" rel="friend" title="Best WordPress Plugins">best WordPress plugins</a>.
+Visit <a href="https://www.wpbeginner.com/" rel="friend" title="WPBeginner">WPBeginner</a> to learn from our <a href="https://www.wpbeginner.com/category/wp-tutorials/" rel="friend" title="WordPress Tutorials">WordPress Tutorials</a> and find out about other <a href="https://www.wpbeginner.com/category/plugins/" rel="friend" title="Best WordPress Plugins">best WordPress plugins</a>.
 
 
 == Installation ==
 
-1. Install WPForms Lite either via the WordPress.org plugin repository or by uploading the files to your server. (See instructions on <a href="http://www.wpbeginner.com/beginners-guide/step-by-step-guide-to-install-a-wordpress-plugin-for-beginners/" rel="friend">how to install a WordPress plugin</a>)
+1. Install WPForms Lite either via the WordPress.org plugin repository or by uploading the files to your server. (See instructions on <a href="https://www.wpbeginner.com/beginners-guide/step-by-step-guide-to-install-a-wordpress-plugin-for-beginners/" rel="friend">how to install a WordPress plugin</a>)
 2. Activate WPForms Lite.
 3. Navigate to the WPForms tab at the bottom of your admin menu and click the "Add New" button to begin creating your new WordPress contact form.
 4. Want more features? <a href="https://wpforms.com/?utm_source=wprepo&utm_medium=link&utm_campaign=liteplugin" rel="friend" title="WPForms">Purchase the full version of WPForms</a>!
@@ -260,7 +260,7 @@ WPForms drag & drop form builder combined with our addons is the most powerful W
 * Volunteer Registration Contact Form
 * Offline Contact Form
 
-To see a full list, visit our <a href="https://wpforms.com/demo/?utm_source=wprepo&utm_medium=link&utm_campaign=liteplugin" rel="friend">Form Template Gallery</a> which has over 150+ pre-made contact form templates.
+To see a full list, visit our <a href="https://wpforms.com/templates/?utm_source=wprepo&utm_medium=link&utm_campaign=liteplugin" rel="friend">Form Template Gallery</a> which has over 150+ pre-made contact form templates.
 
 = Which Form Fields Does WPForms offer? =
 
@@ -324,7 +324,7 @@ Here is a list of our popular marketing integrations:
 * GetResponse
 * ActiveCampaign
 * Zapier
-* Salsesforce CRM
+* Salesforce CRM
 * Sendinblue
 
 Using our Zapier integration, you can easily connect WPForms with over 1000+ marketing apps including:
@@ -408,7 +408,7 @@ WPForms is absolutely, positively the most <a href="https://wpforms.com/?utm_sou
 
 We took the pain out of creating online forms and made it easy. Check out all <a href="https://wpforms.com/features/?utm_source=wprepo&utm_medium=link&utm_campaign=liteplugin" rel="friend">WPForms features</a>.
 
-Also, I'm the founder of <a href="http://www.wpbeginner.com/" rel="friend">WPBeginner</a>, the largest WordPress resource site for beginners. It was a huge priority for me to make a WordPress contact form plugin that beginners can use without any training.
+Also, I'm the founder of <a href="https://www.wpbeginner.com/" rel="friend">WPBeginner</a>, the largest WordPress resource site for beginners. It was a huge priority for me to make a WordPress contact form plugin that beginners can use without any training.
 
 I feel that we have done that here. I hope you enjoy using WPForms.
 
@@ -417,6 +417,73 @@ Thank you
 Syed Balkhi
 
 == Changelog ==
+
+= 1.6.8 =
+- Added: Form Builder visual modernization and improved user experience.
+- Added: Form Builder is now more optimized, loading and performing faster.
+- Added: More tooltips in various areas of the Form Builder to provide context for different options.
+- Added: A lot more Templates that you can use for one-click forms creation.
+- Added: Categorize Form Templates into different sections and improve search, allowing faster access and better user experience.
+- Added: New Preview button for all Templates, so you can check how your form will look like before applying the Template.
+- Changed: Dropped support for IE11 in the Form Builder (same as WordPress 5.8).
+- Changed: Introducing tabs instead of accordion for Field Options in the Form Builder: General, Advanced, Smart Logic.
+- Changed: Allow underscore symbol usage in Allowlist/Denylist in Email field.
+- Changed: Updated DOMPurify lib to 2.3.0.
+- Fixed: A lot of visual inconsistencies inside the Form Builder.
+- Fixed: TinyMCE editor in the default Confirmation has 2 tabs (Visual, Text), which previously had incorrect height.
+- Fixed: Firefox-specific issue that prevents fields from being drag-n-dropped inside the Preview area of the Form Builder.
+- Fixed: Form Builder performance issue with large number of choices added to option fields.
+- Fixed: Missing down arrow in Dropdown field in Twenty Twenty-One theme.
+- Fixed: Checkboxes and Multiple Choice input fields rendered incorrectly in Twenty Twenty-One theme.
+- Fixed: Breaking words when wrapping in Modern Dropdown field.
+- Fixed: Download all relevant translations when initiating an upgrade from Lite to Pro on the plugin Settings page.
+- Fixed: Preserve line breaks when pasting blocks of text into Paragraph field with word limit option enabled.
+
+= 1.6.7.3 =
+- Changed: Renamed a misspelled `wpforms_display_sumbit_spinner_src` filter to `wpforms_display_submit_spinner_src`, old name is now deprecated.
+- Fixed: Expired transients are not deleted automatically.
+- Fixed: Entries count race condition under high load in the plugin Lite version.
+- Fixed: Form Builder product education links.
+
+= 1.6.7.2 =
+- Fixed: Admin notice option flag reference.
+
+= 1.6.7.1 =
+- Changed: Improved logic of pasting a text in the fields with word and character limits.
+- Changed: Updated DOMPurify lib to 2.2.9.
+- Changed: Some admin notices can be dismissed on a per-user basis.
+- Fixed: Smart Tags don't parse dot and comma symbols well.
+- Fixed: In rare cases, WPForms functions calls are not handled correctly inside the third-party frontend AJAX calls.
+- Fixed: Incorrect `wpforms_smart_tag_process` filter deprecation notice.
+- Fixed: Compatibility with the Elementor 3.1.x, 3.2.x and 3.3.x.
+
+= 1.6.7 =
+- Changed: Email Summaries can now be tweaked via the hook to have multiple "To" recipients.
+- Changed: Email Summaries subject line is changed to reduce a chance of going into spam folder.
+- Changed: Rewrote inline captcha scripts in vanilla JS to improve its compatibility with a third-party code.
+- Changed: Replaced jQuery.isFunction() (deprecated as of jQuery 3.3) usages with a recommended counterpart.
+- Changed: Refine smart tags system to improve extensibility.
+- Changed: Each addon title is linked to a related documentation on the Addons page.
+- Changed: Externally disabled fields are displayed inside the Form Builder as dismissible notices.
+- Changed: Updated DOMPurify lib to 2.2.8.
+- Fixed: Inconsistent Form Builder JS events loading order in jQuery 3+ across different browsers.
+
+= 1.6.6 =
+- Added: WordPress 5.7 new color scheme compatibility.
+- Changed: Allow using 0/false values in choices label for Checkboxes, Multiple Choice, Dropdown fields.
+- Changed: Better AJAX form submit error messages handling for the Email field.
+- Changed: Refactored Tools page with all of its subpages for easier long-term support.
+- Changed: Updated the WPForms > About Us page.
+- Changed: Updated DOMPurify lib to 2.2.7.
+- Changed: Replaced jQuery.ready() function usage with a recommended way since jQuery 3.0.
+- Fixed: HTML layout is broken on the Analytics page for some site languages.
+- Fixed: Incorrect permission checks for different places in the dashboard and the Form Builder.
+- Fixed: RTL support for Name, Email fields.
+- Fixed: Speed up the Form Builder rendering by loading certain scripts only when the Embed functionality is triggered.
+- Fixed: The `iframe` HTML element was rendered incorrectly in the Twenty Twenty theme.
+- Fixed: The Checkboxes and Multiple Choice fields CSS issues in Twenty Twenty-One theme.
+- Fixed: WPForms Challenge was drunk in the Firefox browser.
+- Fixed: reCAPTCHA doesn't render in a popup when the same form exists in another place.
 
 = 1.6.5 =
 - Changed: Updated DOMPurify lib to 2.2.6.

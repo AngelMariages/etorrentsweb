@@ -11,7 +11,11 @@ jQuery(function ($) {
             var delayedItems = $list.find('li').filter(function () {
                 return $(this).data('media-id');
             }).map(function () {
-                return {'media-id': $(this).attr('data-media-id'), 'nonce': $(this).attr('data-nonce')};
+                return {
+                    'media-id': $(this).attr('data-media-id'),
+                    'nonce': $(this).attr('data-nonce'),
+                    'regenerate-thumbnails': $(this)[0].hasAttribute("data-regenerate-thumbnails")
+                };
             });
 
             var getAsyncImages = function (images) {
@@ -28,7 +32,8 @@ jQuery(function ($) {
                     'media-id': image['media-id'],
                     nonce: image['nonce'],
                     'image-resolution': imageResolution,
-                    'image-width': desiredItemWidth
+                    'image-width': desiredItemWidth,
+                    'regenerate-thumbnails': image['regenerate-thumbnails']
                 }).done(function (data) {
                     $list.find('li[data-media-id="' + image['media-id'] + '"] .zoom-instagram-link').css('background-image', 'url(' + data.image_src + ')');
                 }).fail(function () {
@@ -59,14 +64,20 @@ jQuery(function ($) {
 
             if (containerWidth / desiredItemWidth < minItemsPerRow) {
                 fitPerRow = minItemsPerRow;
-                itemWidth = Math.floor((containerWidth - 1 - (minItemsPerRow - 1) * itemSpacing) / minItemsPerRow);
+                itemWidth = Math.floor(((containerWidth - 1 - (minItemsPerRow - 1) * itemSpacing) / minItemsPerRow));
             } else {
                 fitPerRow = Math.floor((containerWidth - 1) / desiredItemWidth);
-                itemWidth = Math.floor((containerWidth - 1 - (fitPerRow - 1) * itemSpacing) / fitPerRow);
+                itemWidth = Math.floor(((containerWidth - 1 - (fitPerRow - 1) * itemSpacing) / fitPerRow));
             }
 
             $list.find('li').each(function (i) {
-                if (++i % fitPerRow == 0) {
+				var loop = ++i;
+				if (loop % fitPerRow == 1) {
+					$(this).css('clear', 'left');
+				} else {
+					$(this).css('clear', 'none');
+				}
+                if (loop % fitPerRow == 0) {
                     $(this).css('margin-right', '0');
                 } else {
                     $(this).css('margin-right', itemSpacing + 'px');
