@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.8.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-07-18 11:23:22+0000\n"
+"PO-Revision-Date: 2021-07-23 06:13:50+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -33,7 +33,7 @@ msgstr "Continua"
 
 #: wp-admin/about.php:75
 msgid "The Query Loop Block makes it possible to display posts based on specified parameters; like a PHP loop without the code. Easily display posts from a specific category, to do things like create a portfolio or a page full of your favorite recipes. Think of it as a more complex and powerful Latest Posts Block! Plus, pattern suggestions make it easier than ever to create a list of posts with the design you want."
-msgstr "El bloc de consultes en bucle fa possible mostrar les entrades basades en paràmetres especificats; com ara un bucle de PHP però sense en codi. Mostreu fàcilment entrades d'una categoria específica, per a fer coses com ara crear un dossier o una pàgina sencera de les vostres receptes favorites. Penseu en això com un blog de les últimes entrades més complex i potent, on els suggeriments de patrons us fan més fàcil que mai, crear una llista d'entrades amb el disseny que voleu."
+msgstr "El bloc de consultes en bucle fa possible mostrar les entrades basades en paràmetres especificats; com ara un bucle de PHP però sense codi. Mostreu fàcilment entrades d'una categoria específica, per a fer coses com ara crear un dossier o una pàgina sencera de les vostres receptes preferides. Penseu en això com una versió més complexa i potent del bloc d'últimes entrades! A més, els suggeriments de patrons fan més fàcil que mai crear una llista d'entrades amb el disseny que vulgueu."
 
 #. translators: %s: https://wordpress.org/about/license
 #: wp-admin/freedoms.php:50
@@ -90,7 +90,7 @@ msgstr "El WordPress 5.8 està creat per un equip mundial d'apassionats. "
 #. dev notes. %3$s: Link to 5.8's block dev notes.
 #: wp-admin/about.php:219
 msgid "Expanding on previously implemented block supports in WordPress <a href=\"%1$s\">5.6</a> and <a href=\"%2$s\">5.7</a>, WordPress 5.8 introduces several new block support flags and new options to customize your registered blocks. More information is available in the <a href=\"%3$s\">block supports dev note</a>."
-msgstr "Estenent el suport de blocs implementat prèviament en les versions <a href=\"%1$s\">5.6</a> i <a href=\"%2$s\">5.7</a>, el WordPress 5.8 presenta diversos etiquetes de suport de blocs nous i noves opcions per a personalitzar els blocs registrats. Més informació disponible a la <a href=\"%3$s\">nota de desenvolupadors del suport de blocs</a>."
+msgstr "En estendre el suport de blocs implementat prèviament en les versions <a href=\"%1$s\">5.6</a> i <a href=\"%2$s\">5.7</a>, el WordPress 5.8 presenta diversos etiquetes de suport de blocs nous i noves opcions per a personalitzar els blocs registrats. Més informació disponible a la <a href=\"%3$s\">nota del suport de blocs per a desenvolupadors</a>."
 
 #: wp-admin/about.php:213
 msgid "Adding Additional Block Supports"
@@ -107,16 +107,16 @@ msgstr "Addició de suport per a WebP"
 #. translators: %s: Link to Browse Happy.
 #: wp-admin/about.php:195
 msgid "Support for Internet Explorer 11 has been dropped as of this release. This means you may have issues managing your site that will not be fixed in the future. If you are currently using IE11, it is strongly recommended that you <a href=\"%s\">switch to a more modern browser</a>."
-msgstr "El suport de la versió 11 de l'Internet Explorer s'ha eliminat d'aquesta versió. Això significa que poden haver problemes en la gestió del lloc web que no estaran solucionats en el futur. Si encara feu servir l'iE11, es recomana encaridament que <a href=\"%s\">us canvieu a un navegador més moden</a>."
+msgstr "La compatibilitat amb l'Internet Explorer 11 s'ha eliminat d'aquesta versió. Això significa que hi poden haver problemes en la gestió del lloc web que no se solucionaran en el futur. Si encara feu servir l'IE11, es recomana encaridament que <a href=\"%s\">us canvieu a un navegador més modern</a>."
 
 #: wp-admin/about.php:189
 msgid "Dropping support for Internet Explorer 11"
-msgstr "Eliminació de suport de l'Internet Explorer 11"
+msgstr "Finalització de la compatibilitat amb l'Internet Explorer 11"
 
 #. translators: %s: Theme.json dev note link.
 #: wp-admin/about.php:178
 msgid "Introducing the Global Styles and Global Settings APIs: control the editor settings, available customization tools, and style blocks using a theme.json file in the active theme. This configuration file enables or disables features and sets default styles for both a website and blocks. If you build themes, you can experiment with this early iteration of a useful new feature. For more about what is currently available and how it works, <a href=\"%s\">check out this dev note</a>."
-msgstr "Presentació de les APIs d'estils i paràmetres globals: controleu la configuració de l'editor, les eines de personalització disponibles, i l'estil dels blocs fent servir el fitxer theme.json del tema actiu. Aquest fitxer de configuració activa i desactiva funcionalitats i defineix estils predeterminats tant per a la web com per als blocs. Si feu temes, podeu experimentar amb funcionalitat funcionalitat útil en la seva primera versió. Per saber més sobre què està disponible actualment i com funciona, <a href=\"%s\">doneu-li una ullada a la nota de desenvolupadors</a>."
+msgstr "Presentació de les APIs d'estils i paràmetres globals: controleu la configuració de l'editor, les eines de personalització disponibles, i l'estil dels blocs fent servir el fitxer theme.json del tema actiu. Aquest fitxer de configuració activa i desactiva funcionalitats i defineix estils predeterminats tant per a la web com per als blocs. Si feu temes, podeu experimentar amb aquesta primera versió de la funcionalitat. Per a saber més sobre què està disponible actualment i com funciona, <a href=\"%s\">doneu una ullada a la nota de desenvolupadors</a>."
 
 #: wp-admin/about.php:172
 msgid "Theme.json"
@@ -128,7 +128,7 @@ msgstr "Perquè els desenvolupadors ho explorin"
 
 #: wp-admin/about.php:149
 msgid "Colorize your image and cover blocks with duotone filters! Duotone can add a pop of color to your designs and style your images (or videos in the cover block) to integrate well with your themes. You can think of the duotone effect as a black and white filter, but instead of the shadows being black and the highlights being white, you pick your own colors for the shadows and highlights. There’s more to learn about how it works in the documentation."
-msgstr "Dóna color als blocs de portada i bloc d'imatges amb els filtres bitò! El bitò pot afegir un toc de color als vostres dissenys i donar estil a les vostres imatges (o vídeos al bloc de portada) per a integrar-los bé amb els vostres temes. Podeu pensar en l’efecte bitò com un filtre en blanc i negre, però en lloc de que les ombres siguin negres i les zones brillants siguin blanques, trieu els vostres propis colors per a les ombres i les llums. A la documentació hi ha més informació sobre com funciona. "
+msgstr "Dóna color als blocs de coberta i bloc d'imatge amb els filtres bitò! Els filtres bitò permeten afegir un toc de color als dissenys i donar estil a les imatges (o vídeos, al bloc de coberta) perquè s'integrin bé amb els temes. Podeu pensar en l’efecte bitò com un filtre en blanc i negre, però on en lloc de les ombres ser negres i les zones il·luminades, blanques, podeu triar els vostres propis colors per a les ombres i les zones il·luminades. A la documentació hi ha més informació sobre com funcionen. "
 
 #: wp-admin/about.php:145
 msgid "Style and Colorize Images"
@@ -136,7 +136,7 @@ msgstr "Dóna estil i color a les imatges"
 
 #: wp-admin/about.php:130
 msgid "Starting in this release the Pattern Transformations tool will suggest block patterns based on the block you are using. Right now, you can give it a try in the Query Block and Social Icon Block. As more patterns are added, you will be able to get inspiration for how to style your site without ever leaving the editor!"
-msgstr "A partir d'aquesta versió, l'eina de transformacions de patrons us suggerirà patrons basats en el bloc que esteu usant. Just ara, podeu provar-la en el bloc de consultes i el bloc d'icones socials. Com més patrons afegiu, podreu tenir més inspiració sobre com donar estil al lloc sense mai deixar l'editor!"
+msgstr "A partir d'aquesta versió, l'eina de transformacions de patrons us suggerirà patrons basats en el bloc que esteu usant. Ja la podeu provar en el bloc de consulta i el bloc d'icones de xarxes socials. Com més patrons afegiu, més inspiració podreu tenir sobre com donar estil al lloc web sense deixar mai l'editor!"
 
 #: wp-admin/about.php:126
 msgid "Suggested Patterns for Blocks"
@@ -144,7 +144,7 @@ msgstr "Patrons suggerits per als blocs"
 
 #: wp-admin/about.php:117
 msgid "Sometimes you need a simple landing page, but sometimes you need something a little more robust. As blocks increase, patterns emerge, and content creation gets easier, new solutions are needed to make complex content easy to navigate. List View is the best way to jump between layers of content and nested blocks. Since the List View gives you an overview of all the blocks in your content, you can now navigate quickly to the precise block you need. Ready to focus completely on your content? Toggle it on or off to suit your workflow."
-msgstr "A vegades necessiteu una pàgina principal, però a vegades necessiteu alguna cosa més robusta. A mesura que augmenten els blocs, apareixen patrons i la creació de contingut es fa més fàcil, calen noves solucions per a facilitar la navegació de contingut complex. La vista llista és la millor forma de saltar entre capes de contingut i blocs imbricats. Des que la vista llista us dóna una ullada de tots els blocs del contingut, podeu navegar més fàcilment al bloc concret que necessiteu. Esteu preparats a posar el focus completament en el contingut? Activeu-la o desactiveu-la per a adaptar-la al vostre flux de treball."
+msgstr "A vegades necessiteu una pàgina simple, però altres vegades necessiteu alguna cosa més robusta. A mesura que augmenten els blocs, apareixen patrons i la creació de contingut es fa més fàcil, calen noves solucions per a facilitar la navegació de contingut complex. La vista del llistat és la millor manera de saltar entre capes de contingut i blocs imbricats. Com que la vista del llistat us permet donar una ullada a tots els blocs del contingut, podeu navegar més fàcilment al bloc concret que necessiteu. Esteu preparats per posar tota l'atenció al contingut? Activeu-la o desactiveu-la per a adaptar-la al vostre flux de treball."
 
 #: wp-admin/about.php:113
 msgid "Overview of the Page Structure"
@@ -156,11 +156,11 @@ msgstr "Tres ajudants del flux de treball"
 
 #: wp-admin/about.php:93
 msgid "You can use the familiar block editor to edit templates that hold your content—simply activate a block theme or a theme that has opted in for this feature. Switch from editing your posts to editing your pages and back again, all while using a familiar block editor. There are more than 20 new blocks available within compatible themes. Read more about this feature and how to experiment with it in the release notes."
-msgstr "Podeu usar l'editor de blocs familiar per a editar les plantilla que contenen el contingut — simplement activeu un bloc de tema o un tema que ha optat per aquesta funcionalitat. Canvieu des de l'edició de les entrades a l'edició de les pàgines i torneu, tot mentre useu l'editor de blocs familiar. Hi ha més de 20 blocs nous disponibles en temes compatibles. Llegiu més sobre aquesta funcionalitat i com experimentar amb ella en les notes de la versió."
+msgstr "Podeu usar l'editor de blocs per a editar les plantilles que contenen el contingut — simplement activeu un tema de blocs o un tema que hagi optat per aquesta funcionalitat. Canvieu des de l'edició de les entrades a l'edició de les pàgines i viceversa, tot sense deixar l'editor de blocs que ja us és familiar. Hi ha més de 20 blocs nous disponibles en temes compatibles. Llegiu més sobre aquesta funcionalitat i com experimentar amb ella a les notes de la versió."
 
 #: wp-admin/about.php:89
 msgid "Edit the Templates Around Posts"
-msgstr "Edita les plantilles al costat de les entrades"
+msgstr "Edita les plantilles al voltant de les entrades"
 
 #: wp-admin/about.php:72
 msgid "Display Posts with New Blocks and Patterns"
@@ -169,7 +169,7 @@ msgstr "Mostra les entrades amb els blocs i patrons nous"
 #. translators: %s: Widgets dev note link.
 #: wp-admin/about.php:61
 msgid "After months of hard work, the power of blocks has come to both the Block Widgets Editor and the Customizer. Now you can add blocks both in widget areas across your site and with live preview through the Customizer. This opens up new possibilities to create content: from no-code mini layouts to the vast library of core and third-party blocks. For our developers, you can find more details in the <a href=\"%s\">Widgets dev note</a>."
-msgstr "Després de mesos de treball dur, la potència dels blocs arriba tant a l'editor de ginys de blocs com al personalitzador. Ara podeu afegir blocs tant a les àrees de blocs a tot el lloc web com amb la vista prèvia mitjançant el personalitzador. Això obre noves possibilitats per a crear contingut: des dels mini dissenys sense codi fins a la immensa llibreria de blocs del cor del WordPress o de terceres parts. Per als desenvolupadors, podeu trobar més detalls a <a href=\"%s\">nota de desenvolupadors de ginys</a>."
+msgstr "Després de mesos de treball dur, la potència dels blocs arriba tant a l'editor de ginys de blocs com al personalitzador. Ara podeu afegir blocs tant a les àrees de ginys del lloc web com amb la vista prèvia mitjançant el personalitzador. Això obre noves possibilitats per a crear contingut: des de mini dissenys sense codi fins a la immensa biblioteca de blocs del WordPress o de terceres parts. Per als desenvolupadors, podeu trobar més detalls a <a href=\"%s\">nota per a desenvolupadors de ginys</a>."
 
 #: wp-admin/about.php:55
 msgid "Manage Widgets with Blocks"
@@ -181,7 +181,7 @@ msgstr "Tres poders essencials"
 
 #: wp-admin/about.php:30
 msgid "The next stop on the road to full site editing"
-msgstr "La propera parada a la carretera per a l'edició completa del lloc web"
+msgstr "La propera parada del camí cap a l'edició completa del lloc web"
 
 #. translators: %s: Theme name.
 #: wp-admin/themes.php:1137
@@ -686,7 +686,7 @@ msgstr "https://developer.wordpress.org/rest-api/frequently-asked-questions/#why
 #. translators: %s: WordPress 5.8 Field Guide link.
 #: wp-admin/about.php:238
 msgid "Check out the latest version of the WordPress Field Guide. It highlights developer notes for each change you may want to be aware of. <a href=\"%s\">WordPress 5.8 Field Guide.</a>"
-msgstr "Consulteu l'última versió de la «Guia de camps del WordPress». Destaquen les notes per als desenvolupadors per a cada canvi que vulgueu tenir en compte. <a href=\"%s\">Guia de camps del WordPress 5.8.</a> (en anglès)."
+msgstr "Consulteu l'última versió de la «Guia de camp del WordPress». Destaquen les notes per a desenvolupadors per a cada canvi en què vulgueu aprofundir. <a href=\"%s\">Guia de camp del WordPress 5.8</a> (en anglès)."
 
 #: wp-admin/update-core.php:390
 msgid "This site appears to be under version control. Automatic updates are disabled."

@@ -347,7 +347,6 @@ class Modula_CPT {
 
 	public function add_extensions_tab( $views ) {
 		$this->display_feedback_notice();
-		Modula_Admin_Helpers::modula_page_header();
 		$this->display_extension_tab();
 		return $views;
 	}
