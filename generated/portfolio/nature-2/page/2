@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="profile" href="http://gmpg.org/xfn/11">
-    <link rel="pingback" href="http://localhost:8080/xmlrpc.php">
-    <link rel="preload" as="font" href="http://localhost:8080/wp-content/themes/inspiro/fonts/inspiro.woff"  type="font/woff" crossorigin>
+    <link rel="pingback" href="https://www.enrictorrents.com/xmlrpc.php">
+    <link rel="preload" as="font" href="https://www.enrictorrents.com/wp-content/themes/inspiro/fonts/inspiro.woff"  type="font/woff" crossorigin>
 
     <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
 
 	<!-- This site is optimized with the Yoast SEO plugin v16.8 - https://yoast.com/wordpress/plugins/seo/ -->
 	<title>Nature archivos | Página 2 de 2 | Enric Torrents</title>
-	<link rel="canonical" href="http://localhost:8080/portfolio/nature-2/page/2/" />
-	<link rel="prev" href="http://localhost:8080/portfolio/nature-2/" />
+	<link rel="canonical" href="https://www.enrictorrents.com/portfolio/nature-2/page/2/" />
+	<link rel="prev" href="https://www.enrictorrents.com/portfolio/nature-2/" />
 	<meta property="og:locale" content="es_ES" />
 	<meta property="og:type" content="article" />
 	<meta property="og:title" content="Nature archivos | Página 2 de 2 | Enric Torrents" />
-	<meta property="og:url" content="http://localhost:8080/portfolio/nature-2/" />
+	<meta property="og:url" content="https://www.enrictorrents.com/portfolio/nature-2/" />
 	<meta property="og:site_name" content="Enric Torrents" />
 	<meta name="twitter:card" content="summary_large_image" />
 	<script type="application/ld+json" class="yoast-schema-graph">{
@@ -27,37 +27,37 @@
 	                "Person",
 	                "Organization"
 	            ],
-	            "@id": "http://localhost:8080/#/schema/person/0cd28fca91801dd0cb035ee73a034424",
+	            "@id": "https://www.enrictorrents.com/#/schema/person/0cd28fca91801dd0cb035ee73a034424",
 	            "name": "enrictorrents",
 	            "image": {
 	                "@type": "ImageObject",
-	                "@id": "http://localhost:8080/#personlogo",
+	                "@id": "https://www.enrictorrents.com/#personlogo",
 	                "inLanguage": "es",
-	                "url": "http://localhost:8080/wp-content/uploads/2020/02/cropped-marca-aigua_2019_nova_5_ombres_pp6luk.png",
-	                "contentUrl": "http://localhost:8080/wp-content/uploads/2020/02/cropped-marca-aigua_2019_nova_5_ombres_pp6luk.png",
+	                "url": "https://www.enrictorrents.com/wp-content/uploads/2020/02/cropped-marca-aigua_2019_nova_5_ombres_pp6luk.png",
+	                "contentUrl": "https://www.enrictorrents.com/wp-content/uploads/2020/02/cropped-marca-aigua_2019_nova_5_ombres_pp6luk.png",
 	                "width": 512,
 	                "height": 512,
 	                "caption": "enrictorrents"
 	            },
 	            "logo": {
-	                "@id": "http://localhost:8080/#personlogo"
+	                "@id": "https://www.enrictorrents.com/#personlogo"
 	            }
 	        },
 	        {
 	            "@type": "WebSite",
-	            "@id": "http://localhost:8080/#website",
-	            "url": "http://localhost:8080/",
+	            "@id": "https://www.enrictorrents.com/#website",
+	            "url": "https://www.enrictorrents.com/",
 	            "name": "Enric Torrents",
 	            "description": "Photographer",
 	            "publisher": {
-	                "@id": "http://localhost:8080/#/schema/person/0cd28fca91801dd0cb035ee73a034424"
+	                "@id": "https://www.enrictorrents.com/#/schema/person/0cd28fca91801dd0cb035ee73a034424"
 	            },
 	            "potentialAction": [
 	                {
 	                    "@type": "SearchAction",
 	                    "target": {
 	                        "@type": "EntryPoint",
-	                        "urlTemplate": "http://localhost:8080/?s={search_term_string}"
+	                        "urlTemplate": "https://www.enrictorrents.com/?s={search_term_string}"
 	                    },
 	                    "query-input": "required name=search_term_string"
 	                }
@@ -66,34 +66,34 @@
 	        },
 	        {
 	            "@type": "CollectionPage",
-	            "@id": "http://localhost:8080/portfolio/nature-2/page/2/#webpage",
-	            "url": "http://localhost:8080/portfolio/nature-2/page/2/",
+	            "@id": "https://www.enrictorrents.com/portfolio/nature-2/page/2/#webpage",
+	            "url": "https://www.enrictorrents.com/portfolio/nature-2/page/2/",
 	            "name": "Nature archivos | P\u00e1gina 2 de 2 | Enric Torrents",
 	            "isPartOf": {
-	                "@id": "http://localhost:8080/#website"
+	                "@id": "https://www.enrictorrents.com/#website"
 	            },
 	            "breadcrumb": {
-	                "@id": "http://localhost:8080/portfolio/nature-2/page/2/#breadcrumb"
+	                "@id": "https://www.enrictorrents.com/portfolio/nature-2/page/2/#breadcrumb"
 	            },
 	            "inLanguage": "es",
 	            "potentialAction": [
 	                {
 	                    "@type": "ReadAction",
 	                    "target": [
-	                        "http://localhost:8080/portfolio/nature-2/page/2/"
+	                        "https://www.enrictorrents.com/portfolio/nature-2/page/2/"
 	                    ]
 	                }
 	            ]
 	        },
 	        {
 	            "@type": "BreadcrumbList",
-	            "@id": "http://localhost:8080/portfolio/nature-2/page/2/#breadcrumb",
+	            "@id": "https://www.enrictorrents.com/portfolio/nature-2/page/2/#breadcrumb",
 	            "itemListElement": [
 	                {
 	                    "@type": "ListItem",
 	                    "position": 1,
 	                    "name": "Portada",
-	                    "item": "http://localhost:8080/"
+	                    "item": "https://www.enrictorrents.com/"
 	                },
 	                {
 	                    "@type": "ListItem",
@@ -109,16 +109,16 @@
 
 <link rel='dns-prefetch' href='//fonts.googleapis.com' />
 <link rel='dns-prefetch' href='//s.w.org' />
-<link rel="alternate" type="application/rss+xml" title="Enric Torrents &raquo; Feed" href="http://localhost:8080/feed/" />
-<link rel="alternate" type="application/rss+xml" title="Enric Torrents &raquo; Nature Portfolio Feed" href="http://localhost:8080/portfolio/nature-2/feed/" />
-<link rel='stylesheet' id='wp-block-library-css'  href='http://localhost:8080/wp-includes/css/dist/block-library/style.min.css?ver=5.8' type='text/css' media='all' />
+<link rel="alternate" type="application/rss+xml" title="Enric Torrents &raquo; Feed" href="https://www.enrictorrents.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Enric Torrents &raquo; Nature Portfolio Feed" href="https://www.enrictorrents.com/portfolio/nature-2/feed/" />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://www.enrictorrents.com/wp-includes/css/dist/block-library/style.min.css?ver=5.8' type='text/css' media='all' />
 <style id='wp-block-library-theme-inline-css' type='text/css'>
 #start-resizable-editor-section{display:none}.wp-block-audio figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio figcaption{color:hsla(0,0%,100%,.65)}.wp-block-code{font-family:Menlo,Consolas,monaco,monospace;color:#1e1e1e;padding:.8em 1em;border:1px solid #ddd;border-radius:4px}.wp-block-embed figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed figcaption{color:hsla(0,0%,100%,.65)}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:hsla(0,0%,100%,.65)}.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-pullquote{border-top:4px solid;border-bottom:4px solid;margin-bottom:1.75em;color:currentColor}.wp-block-pullquote__citation,.wp-block-pullquote cite,.wp-block-pullquote footer{color:currentColor;text-transform:uppercase;font-size:.8125em;font-style:normal}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;position:relative;font-style:normal}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large{border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-group.has-background{padding:1.25em 2.375em;margin-top:0;margin-bottom:0}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto;opacity:.4}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table thead{border-bottom:3px solid}.wp-block-table tfoot{border-top:3px solid}.wp-block-table td,.wp-block-table th{padding:.5em;border:1px solid;word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video figcaption{color:hsla(0,0%,100%,.65)}.wp-block-template-part.has-background{padding:1.25em 2.375em;margin-top:0;margin-bottom:0}#end-resizable-editor-section{display:none}
 </style>
-<link rel='stylesheet' id='wpzoom-social-icons-block-style-css'  href='http://localhost:8080/wp-content/plugins/social-icons-widget-by-wpzoom/block/dist/blocks.style.build.css?ver=1626648905' type='text/css' media='all' />
-<link rel='stylesheet' id='zoom-theme-utils-css-css'  href='http://localhost:8080/wp-content/themes/inspiro/functions/wpzoom/assets/css/theme-utils.css?ver=5.8' type='text/css' media='all' />
+<link rel='stylesheet' id='wpzoom-social-icons-block-style-css'  href='https://www.enrictorrents.com/wp-content/plugins/social-icons-widget-by-wpzoom/block/dist/blocks.style.build.css?ver=1633548075' type='text/css' media='all' />
+<link rel='stylesheet' id='zoom-theme-utils-css-css'  href='https://www.enrictorrents.com/wp-content/themes/inspiro/functions/wpzoom/assets/css/theme-utils.css?ver=5.8' type='text/css' media='all' />
 <link rel='stylesheet' id='inspiro-google-fonts-css'  href='//fonts.googleapis.com/css?family=Libre+Franklin%3Aregular%2C700%2C700i%2Citalic%2C200%7CMontserrat%3Aregular%2C500%2C600%2C700&#038;subset=latin&#038;display=swap&#038;ver=5.8' type='text/css' media='all' />
-<link rel='stylesheet' id='inspiro-style-css'  href='http://localhost:8080/wp-content/themes/inspiro/style.css?ver=6.8.5' type='text/css' media='all' />
+<link rel='stylesheet' id='inspiro-style-css'  href='https://www.enrictorrents.com/wp-content/themes/inspiro/style.css?ver=6.8.5' type='text/css' media='all' />
 <style id='inspiro-style-inline-css' type='text/css'>
 @media screen and (min-width: 769px) {
         #slider .flex-viewport, #slider .slides, #slider .slides > li {
@@ -136,17 +136,17 @@
             }
         }
 </style>
-<link rel='stylesheet' id='media-queries-css'  href='http://localhost:8080/wp-content/themes/inspiro/css/media-queries.css?ver=6.8.5' type='text/css' media='all' />
-<link rel='stylesheet' id='inspiro-style-color-default-css'  href='http://localhost:8080/wp-content/themes/inspiro/styles/default.css?ver=6.8.5' type='text/css' media='all' />
-<link rel='stylesheet' id='dashicons-css'  href='http://localhost:8080/wp-includes/css/dashicons.min.css?ver=5.8' type='text/css' media='all' />
-<link rel='stylesheet' id='magnificPopup-css'  href='http://localhost:8080/wp-content/themes/inspiro/css/magnific-popup.css?ver=6.8.5' type='text/css' media='all' />
-<link rel='stylesheet' id='formstone-background-css'  href='http://localhost:8080/wp-content/themes/inspiro/css/background.css?ver=6.8.5' type='text/css' media='all' />
-<link rel='stylesheet' id='zoom-instagram-widget-css'  href='http://localhost:8080/wp-content/plugins/instagram-widget-by-wpzoom/css/instagram-widget.css?ver=1.8.3' type='text/css' media='all' />
-<link rel='stylesheet' id='wpzoom-social-icons-socicon-css'  href='http://localhost:8080/wp-content/plugins/social-icons-widget-by-wpzoom/assets/css/wpzoom-socicon.css?ver=1626648905' type='text/css' media='all' />
-<link rel='stylesheet' id='wpzoom-social-icons-genericons-css'  href='http://localhost:8080/wp-content/plugins/social-icons-widget-by-wpzoom/assets/css/genericons.css?ver=1626648905' type='text/css' media='all' />
-<link rel='stylesheet' id='wpzoom-social-icons-academicons-css'  href='http://localhost:8080/wp-content/plugins/social-icons-widget-by-wpzoom/assets/css/academicons.min.css?ver=1626648905' type='text/css' media='all' />
-<link rel='stylesheet' id='wpzoom-social-icons-font-awesome-3-css'  href='http://localhost:8080/wp-content/plugins/social-icons-widget-by-wpzoom/assets/css/font-awesome-3.min.css?ver=1626648905' type='text/css' media='all' />
-<link rel='stylesheet' id='wpzoom-social-icons-styles-css'  href='http://localhost:8080/wp-content/plugins/social-icons-widget-by-wpzoom/assets/css/wpzoom-social-icons-styles.css?ver=1626648905' type='text/css' media='all' />
+<link rel='stylesheet' id='media-queries-css'  href='https://www.enrictorrents.com/wp-content/themes/inspiro/css/media-queries.css?ver=6.8.5' type='text/css' media='all' />
+<link rel='stylesheet' id='inspiro-style-color-default-css'  href='https://www.enrictorrents.com/wp-content/themes/inspiro/styles/default.css?ver=6.8.5' type='text/css' media='all' />
+<link rel='stylesheet' id='dashicons-css'  href='https://www.enrictorrents.com/wp-includes/css/dashicons.min.css?ver=5.8' type='text/css' media='all' />
+<link rel='stylesheet' id='magnificPopup-css'  href='https://www.enrictorrents.com/wp-content/themes/inspiro/css/magnific-popup.css?ver=6.8.5' type='text/css' media='all' />
+<link rel='stylesheet' id='formstone-background-css'  href='https://www.enrictorrents.com/wp-content/themes/inspiro/css/background.css?ver=6.8.5' type='text/css' media='all' />
+<link rel='stylesheet' id='zoom-instagram-widget-css'  href='https://www.enrictorrents.com/wp-content/plugins/instagram-widget-by-wpzoom/css/instagram-widget.css?ver=1.8.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wpzoom-social-icons-socicon-css'  href='https://www.enrictorrents.com/wp-content/plugins/social-icons-widget-by-wpzoom/assets/css/wpzoom-socicon.css?ver=1633548075' type='text/css' media='all' />
+<link rel='stylesheet' id='wpzoom-social-icons-genericons-css'  href='https://www.enrictorrents.com/wp-content/plugins/social-icons-widget-by-wpzoom/assets/css/genericons.css?ver=1633548075' type='text/css' media='all' />
+<link rel='stylesheet' id='wpzoom-social-icons-academicons-css'  href='https://www.enrictorrents.com/wp-content/plugins/social-icons-widget-by-wpzoom/assets/css/academicons.min.css?ver=1633548075' type='text/css' media='all' />
+<link rel='stylesheet' id='wpzoom-social-icons-font-awesome-3-css'  href='http://localhost:8080/wp-content/plugins/social-icons-widget-by-wpzoom/assets/css/font-awesome-3.min.css?ver=1633548075' type='text/css' media='all' />
+<link rel='stylesheet' id='wpzoom-social-icons-styles-css'  href='http://localhost:8080/wp-content/plugins/social-icons-widget-by-wpzoom/assets/css/wpzoom-social-icons-styles.css?ver=1633548075' type='text/css' media='all' />
 <link rel='preload' as='font'  id='wpzoom-social-icons-font-academicons-ttf-css'  href='http://localhost:8080/wp-content/plugins/social-icons-widget-by-wpzoom/assets/font/academicons.ttf?v=1.8.6'  type='font/ttf' crossorigin />
 <link rel='preload' as='font'  id='wpzoom-social-icons-font-academicons-woff-css'  href='http://localhost:8080/wp-content/plugins/social-icons-widget-by-wpzoom/assets/font/academicons.woff?v=1.8.6'  type='font/woff' crossorigin />
 <link rel='preload' as='font'  id='wpzoom-social-icons-font-fontawesome-3-ttf-css'  href='http://localhost:8080/wp-content/plugins/social-icons-widget-by-wpzoom/assets/font/fontawesome-webfont.ttf?v=4.7.0'  type='font/ttf' crossorigin />
@@ -579,11 +579,11 @@ var zoomOptions = {"color-palettes":"default","custom_logo_retina_ready":"0","bl
 /* ]]> */
 </script>
 <script type='text/javascript' src='http://localhost:8080/wp-content/themes/inspiro/js/functions.js?ver=6.8.5' id='inspiro-script-js'></script>
-<script type='text/javascript' src='http://localhost:8080/wp-content/plugins/social-icons-widget-by-wpzoom/assets/js/social-icons-widget-frontend.js?ver=1626648905' id='zoom-social-icons-widget-frontend-js'></script>
+<script type='text/javascript' src='http://localhost:8080/wp-content/plugins/social-icons-widget-by-wpzoom/assets/js/social-icons-widget-frontend.js?ver=1633548075' id='zoom-social-icons-widget-frontend-js'></script>
 <script type='text/javascript' src='http://localhost:8080/wp-content/themes/inspiro/js/formstone/core.js?ver=6.8.5' id='formstone-core-js'></script>
 <script type='text/javascript' src='http://localhost:8080/wp-content/themes/inspiro/js/formstone/transition.js?ver=6.8.5' id='formstone-transition-js'></script>
 <script type='text/javascript' src='http://localhost:8080/wp-content/themes/inspiro/js/formstone/background.js?ver=6.8.5' id='formstone-background-js'></script>
-<script type='text/javascript' src='http://localhost:8080/wp-content/plugins/instagram-widget-by-wpzoom/js/jquery.lazy.min.js?ver=1626648921' id='zoom-instagram-widget-lazy-load-js'></script>
+<script type='text/javascript' src='http://localhost:8080/wp-content/plugins/instagram-widget-by-wpzoom/js/jquery.lazy.min.js?ver=1633548075' id='zoom-instagram-widget-lazy-load-js'></script>
 <script type='text/javascript' src='http://localhost:8080/wp-content/plugins/instagram-widget-by-wpzoom/js/instagram-widget.js?ver=1.8.3' id='zoom-instagram-widget-js'></script>
 
 </body>

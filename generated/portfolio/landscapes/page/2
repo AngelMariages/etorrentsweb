@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="profile" href="http://gmpg.org/xfn/11">
-    <link rel="pingback" href="http://localhost:8080/xmlrpc.php">
-    <link rel="preload" as="font" href="http://localhost:8080/wp-content/themes/inspiro/fonts/inspiro.woff"  type="font/woff" crossorigin>
+    <link rel="pingback" href="https://www.enrictorrents.com/xmlrpc.php">
+    <link rel="preload" as="font" href="https://www.enrictorrents.com/wp-content/themes/inspiro/fonts/inspiro.woff"  type="font/woff" crossorigin>
 
     <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
 
 	<!-- This site is optimized with the Yoast SEO plugin v16.8 - https://yoast.com/wordpress/plugins/seo/ -->
 	<title>Landscapes archivos | Página 2 de 2 | Enric Torrents</title>
-	<link rel="canonical" href="http://localhost:8080/portfolio/landscapes/page/2/" />
-	<link rel="prev" href="http://localhost:8080/portfolio/landscapes/" />
+	<link rel="canonical" href="https://www.enrictorrents.com/portfolio/landscapes/page/2/" />
+	<link rel="prev" href="https://www.enrictorrents.com/portfolio/landscapes/" />
 	<meta property="og:locale" content="es_ES" />
 	<meta property="og:type" content="article" />
 	<meta property="og:title" content="Landscapes archivos | Página 2 de 2 | Enric Torrents" />
-	<meta property="og:url" content="http://localhost:8080/portfolio/landscapes/" />
+	<meta property="og:url" content="https://www.enrictorrents.com/portfolio/landscapes/" />
 	<meta property="og:site_name" content="Enric Torrents" />
 	<meta name="twitter:card" content="summary_large_image" />
 	<script type="application/ld+json" class="yoast-schema-graph">{
@@ -27,37 +27,37 @@
 	                "Person",
 	                "Organization"
 	            ],
-	            "@id": "http://localhost:8080/#/schema/person/0cd28fca91801dd0cb035ee73a034424",
+	            "@id": "https://www.enrictorrents.com/#/schema/person/0cd28fca91801dd0cb035ee73a034424",
 	            "name": "enrictorrents",
 	            "image": {
 	                "@type": "ImageObject",
-	                "@id": "http://localhost:8080/#personlogo",
+	                "@id": "https://www.enrictorrents.com/#personlogo",
 	                "inLanguage": "es",
-	                "url": "http://localhost:8080/wp-content/uploads/2020/02/cropped-marca-aigua_2019_nova_5_ombres_pp6luk.png",
-	                "contentUrl": "http://localhost:8080/wp-content/uploads/2020/02/cropped-marca-aigua_2019_nova_5_ombres_pp6luk.png",
+	                "url": "https://www.enrictorrents.com/wp-content/uploads/2020/02/cropped-marca-aigua_2019_nova_5_ombres_pp6luk.png",
+	                "contentUrl": "https://www.enrictorrents.com/wp-content/uploads/2020/02/cropped-marca-aigua_2019_nova_5_ombres_pp6luk.png",
 	                "width": 512,
 	                "height": 512,
 	                "caption": "enrictorrents"
 	            },
 	            "logo": {
-	                "@id": "http://localhost:8080/#personlogo"
+	                "@id": "https://www.enrictorrents.com/#personlogo"
 	            }
 	        },
 	        {
 	            "@type": "WebSite",
-	            "@id": "http://localhost:8080/#website",
-	            "url": "http://localhost:8080/",
+	            "@id": "https://www.enrictorrents.com/#website",
+	            "url": "https://www.enrictorrents.com/",
 	            "name": "Enric Torrents",
 	            "description": "Photographer",
 	            "publisher": {
-	                "@id": "http://localhost:8080/#/schema/person/0cd28fca91801dd0cb035ee73a034424"
+	                "@id": "https://www.enrictorrents.com/#/schema/person/0cd28fca91801dd0cb035ee73a034424"
 	            },
 	            "potentialAction": [
 	                {
 	                    "@type": "SearchAction",
 	                    "target": {
 	                        "@type": "EntryPoint",
-	                        "urlTemplate": "http://localhost:8080/?s={search_term_string}"
+	                        "urlTemplate": "https://www.enrictorrents.com/?s={search_term_string}"
 	                    },
 	                    "query-input": "required name=search_term_string"
 	                }
@@ -66,34 +66,34 @@
 	        },
 	        {
 	            "@type": "CollectionPage",
-	            "@id": "http://localhost:8080/portfolio/landscapes/page/2/#webpage",
-	            "url": "http://localhost:8080/portfolio/landscapes/page/2/",
+	            "@id": "https://www.enrictorrents.com/portfolio/landscapes/page/2/#webpage",
+	            "url": "https://www.enrictorrents.com/portfolio/landscapes/page/2/",
 	            "name": "Landscapes archivos | P\u00e1gina 2 de 2 | Enric Torrents",
 	            "isPartOf": {
-	                "@id": "http://localhost:8080/#website"
+	                "@id": "https://www.enrictorrents.com/#website"
 	            },
 	            "breadcrumb": {
-	                "@id": "http://localhost:8080/portfolio/landscapes/page/2/#breadcrumb"
+	                "@id": "https://www.enrictorrents.com/portfolio/landscapes/page/2/#breadcrumb"
 	            },
 	            "inLanguage": "es",
 	            "potentialAction": [
 	                {
 	                    "@type": "ReadAction",
 	                    "target": [
-	                        "http://localhost:8080/portfolio/landscapes/page/2/"
+	                        "https://www.enrictorrents.com/portfolio/landscapes/page/2/"
 	                    ]
 	                }
 	            ]
 	        },
 	        {
 	            "@type": "BreadcrumbList",
-	            "@id": "http://localhost:8080/portfolio/landscapes/page/2/#breadcrumb",
+	            "@id": "https://www.enrictorrents.com/portfolio/landscapes/page/2/#breadcrumb",
 	            "itemListElement": [
 	                {
 	                    "@type": "ListItem",
 	                    "position": 1,
 	                    "name": "Portada",
-	                    "item": "http://localhost:8080/"
+	                    "item": "https://www.enrictorrents.com/"
 	                },
 	                {
 	                    "@type": "ListItem",
@@ -109,16 +109,16 @@
 
 <link rel='dns-prefetch' href='//fonts.googleapis.com' />
 <link rel='dns-prefetch' href='//s.w.org' />
-<link rel="alternate" type="application/rss+xml" title="Enric Torrents &raquo; Feed" href="http://localhost:8080/feed/" />
-<link rel="alternate" type="application/rss+xml" title="Enric Torrents &raquo; Landscapes Portfolio Feed" href="http://localhost:8080/portfolio/landscapes/feed/" />
-<link rel='stylesheet' id='wp-block-library-css'  href='http://localhost:8080/wp-includes/css/dist/block-library/style.min.css?ver=5.8' type='text/css' media='all' />
+<link rel="alternate" type="application/rss+xml" title="Enric Torrents &raquo; Feed" href="https://www.enrictorrents.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Enric Torrents &raquo; Landscapes Portfolio Feed" href="https://www.enrictorrents.com/portfolio/landscapes/feed/" />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://www.enrictorrents.com/wp-includes/css/dist/block-library/style.min.css?ver=5.8' type='text/css' media='all' />
 <style id='wp-block-library-theme-inline-css' type='text/css'>
 #start-resizable-editor-section{display:none}.wp-block-audio figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio figcaption{color:hsla(0,0%,100%,.65)}.wp-block-code{font-family:Menlo,Consolas,monaco,monospace;color:#1e1e1e;padding:.8em 1em;border:1px solid #ddd;border-radius:4px}.wp-block-embed figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed figcaption{color:hsla(0,0%,100%,.65)}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:hsla(0,0%,100%,.65)}.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-pullquote{border-top:4px solid;border-bottom:4px solid;margin-bottom:1.75em;color:currentColor}.wp-block-pullquote__citation,.wp-block-pullquote cite,.wp-block-pullquote footer{color:currentColor;text-transform:uppercase;font-size:.8125em;font-style:normal}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;position:relative;font-style:normal}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large{border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-group.has-background{padding:1.25em 2.375em;margin-top:0;margin-bottom:0}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto;opacity:.4}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table thead{border-bottom:3px solid}.wp-block-table tfoot{border-top:3px solid}.wp-block-table td,.wp-block-table th{padding:.5em;border:1px solid;word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video figcaption{color:hsla(0,0%,100%,.65)}.wp-block-template-part.has-background{padding:1.25em 2.375em;margin-top:0;margin-bottom:0}#end-resizable-editor-section{display:none}
 </style>
-<link rel='stylesheet' id='wpzoom-social-icons-block-style-css'  href='http://localhost:8080/wp-content/plugins/social-icons-widget-by-wpzoom/block/dist/blocks.style.build.css?ver=1626648905' type='text/css' media='all' />
-<link rel='stylesheet' id='zoom-theme-utils-css-css'  href='http://localhost:8080/wp-content/themes/inspiro/functions/wpzoom/assets/css/theme-utils.css?ver=5.8' type='text/css' media='all' />
+<link rel='stylesheet' id='wpzoom-social-icons-block-style-css'  href='https://www.enrictorrents.com/wp-content/plugins/social-icons-widget-by-wpzoom/block/dist/blocks.style.build.css?ver=1633548075' type='text/css' media='all' />
+<link rel='stylesheet' id='zoom-theme-utils-css-css'  href='https://www.enrictorrents.com/wp-content/themes/inspiro/functions/wpzoom/assets/css/theme-utils.css?ver=5.8' type='text/css' media='all' />
 <link rel='stylesheet' id='inspiro-google-fonts-css'  href='//fonts.googleapis.com/css?family=Libre+Franklin%3Aregular%2C700%2C700i%2Citalic%2C200%7CMontserrat%3Aregular%2C500%2C600%2C700&#038;subset=latin&#038;display=swap&#038;ver=5.8' type='text/css' media='all' />
-<link rel='stylesheet' id='inspiro-style-css'  href='http://localhost:8080/wp-content/themes/inspiro/style.css?ver=6.8.5' type='text/css' media='all' />
+<link rel='stylesheet' id='inspiro-style-css'  href='https://www.enrictorrents.com/wp-content/themes/inspiro/style.css?ver=6.8.5' type='text/css' media='all' />
 <style id='inspiro-style-inline-css' type='text/css'>
 @media screen and (min-width: 769px) {
         #slider .flex-viewport, #slider .slides, #slider .slides > li {
@@ -136,29 +136,29 @@
             }
         }
 </style>
-<link rel='stylesheet' id='media-queries-css'  href='http://localhost:8080/wp-content/themes/inspiro/css/media-queries.css?ver=6.8.5' type='text/css' media='all' />
-<link rel='stylesheet' id='inspiro-style-color-default-css'  href='http://localhost:8080/wp-content/themes/inspiro/styles/default.css?ver=6.8.5' type='text/css' media='all' />
-<link rel='stylesheet' id='dashicons-css'  href='http://localhost:8080/wp-includes/css/dashicons.min.css?ver=5.8' type='text/css' media='all' />
-<link rel='stylesheet' id='magnificPopup-css'  href='http://localhost:8080/wp-content/themes/inspiro/css/magnific-popup.css?ver=6.8.5' type='text/css' media='all' />
-<link rel='stylesheet' id='formstone-background-css'  href='http://localhost:8080/wp-content/themes/inspiro/css/background.css?ver=6.8.5' type='text/css' media='all' />
-<link rel='stylesheet' id='zoom-instagram-widget-css'  href='http://localhost:8080/wp-content/plugins/instagram-widget-by-wpzoom/css/instagram-widget.css?ver=1.8.3' type='text/css' media='all' />
-<link rel='stylesheet' id='wpzoom-social-icons-socicon-css'  href='http://localhost:8080/wp-content/plugins/social-icons-widget-by-wpzoom/assets/css/wpzoom-socicon.css?ver=1626648905' type='text/css' media='all' />
-<link rel='stylesheet' id='wpzoom-social-icons-genericons-css'  href='http://localhost:8080/wp-content/plugins/social-icons-widget-by-wpzoom/assets/css/genericons.css?ver=1626648905' type='text/css' media='all' />
-<link rel='stylesheet' id='wpzoom-social-icons-academicons-css'  href='http://localhost:8080/wp-content/plugins/social-icons-widget-by-wpzoom/assets/css/academicons.min.css?ver=1626648905' type='text/css' media='all' />
-<link rel='stylesheet' id='wpzoom-social-icons-font-awesome-3-css'  href='http://localhost:8080/wp-content/plugins/social-icons-widget-by-wpzoom/assets/css/font-awesome-3.min.css?ver=1626648905' type='text/css' media='all' />
-<link rel='stylesheet' id='wpzoom-social-icons-styles-css'  href='http://localhost:8080/wp-content/plugins/social-icons-widget-by-wpzoom/assets/css/wpzoom-social-icons-styles.css?ver=1626648905' type='text/css' media='all' />
-<link rel='preload' as='font'  id='wpzoom-social-icons-font-academicons-ttf-css'  href='http://localhost:8080/wp-content/plugins/social-icons-widget-by-wpzoom/assets/font/academicons.ttf?v=1.8.6'  type='font/ttf' crossorigin />
-<link rel='preload' as='font'  id='wpzoom-social-icons-font-academicons-woff-css'  href='http://localhost:8080/wp-content/plugins/social-icons-widget-by-wpzoom/assets/font/academicons.woff?v=1.8.6'  type='font/woff' crossorigin />
-<link rel='preload' as='font'  id='wpzoom-social-icons-font-fontawesome-3-ttf-css'  href='http://localhost:8080/wp-content/plugins/social-icons-widget-by-wpzoom/assets/font/fontawesome-webfont.ttf?v=4.7.0'  type='font/ttf' crossorigin />
-<link rel='preload' as='font'  id='wpzoom-social-icons-font-fontawesome-3-woff-css'  href='http://localhost:8080/wp-content/plugins/social-icons-widget-by-wpzoom/assets/font/fontawesome-webfont.woff?v=4.7.0'  type='font/woff' crossorigin />
-<link rel='preload' as='font'  id='wpzoom-social-icons-font-fontawesome-3-woff2-css'  href='http://localhost:8080/wp-content/plugins/social-icons-widget-by-wpzoom/assets/font/fontawesome-webfont.woff2?v=4.7.0'  type='font/woff2' crossorigin />
-<link rel='preload' as='font'  id='wpzoom-social-icons-font-genericons-ttf-css'  href='http://localhost:8080/wp-content/plugins/social-icons-widget-by-wpzoom/assets/font/Genericons.ttf'  type='font/ttf' crossorigin />
-<link rel='preload' as='font'  id='wpzoom-social-icons-font-genericons-woff-css'  href='http://localhost:8080/wp-content/plugins/social-icons-widget-by-wpzoom/assets/font/Genericons.woff'  type='font/woff' crossorigin />
-<link rel='preload' as='font'  id='wpzoom-social-icons-font-socicon-ttf-css'  href='http://localhost:8080/wp-content/plugins/social-icons-widget-by-wpzoom/assets/font/socicon.ttf?v=4.1.3'  type='font/ttf' crossorigin />
-<link rel='preload' as='font'  id='wpzoom-social-icons-font-socicon-woff-css'  href='http://localhost:8080/wp-content/plugins/social-icons-widget-by-wpzoom/assets/font/socicon.woff?v=4.1.3'  type='font/woff' crossorigin />
-<script type='text/javascript' src='http://localhost:8080/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js'></script>
-<script type='text/javascript' src='http://localhost:8080/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
-<link rel="https://api.w.org/" href="http://localhost:8080/wp-json/" /><link rel="alternate" type="application/json" href="http://localhost:8080/wp-json/wp/v2/portfolio/33" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://localhost:8080/xmlrpc.php?rsd" />
+<link rel='stylesheet' id='media-queries-css'  href='https://www.enrictorrents.com/wp-content/themes/inspiro/css/media-queries.css?ver=6.8.5' type='text/css' media='all' />
+<link rel='stylesheet' id='inspiro-style-color-default-css'  href='https://www.enrictorrents.com/wp-content/themes/inspiro/styles/default.css?ver=6.8.5' type='text/css' media='all' />
+<link rel='stylesheet' id='dashicons-css'  href='https://www.enrictorrents.com/wp-includes/css/dashicons.min.css?ver=5.8' type='text/css' media='all' />
+<link rel='stylesheet' id='magnificPopup-css'  href='https://www.enrictorrents.com/wp-content/themes/inspiro/css/magnific-popup.css?ver=6.8.5' type='text/css' media='all' />
+<link rel='stylesheet' id='formstone-background-css'  href='https://www.enrictorrents.com/wp-content/themes/inspiro/css/background.css?ver=6.8.5' type='text/css' media='all' />
+<link rel='stylesheet' id='zoom-instagram-widget-css'  href='https://www.enrictorrents.com/wp-content/plugins/instagram-widget-by-wpzoom/css/instagram-widget.css?ver=1.8.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wpzoom-social-icons-socicon-css'  href='https://www.enrictorrents.com/wp-content/plugins/social-icons-widget-by-wpzoom/assets/css/wpzoom-socicon.css?ver=1633548075' type='text/css' media='all' />
+<link rel='stylesheet' id='wpzoom-social-icons-genericons-css'  href='https://www.enrictorrents.com/wp-content/plugins/social-icons-widget-by-wpzoom/assets/css/genericons.css?ver=1633548075' type='text/css' media='all' />
+<link rel='stylesheet' id='wpzoom-social-icons-academicons-css'  href='https://www.enrictorrents.com/wp-content/plugins/social-icons-widget-by-wpzoom/assets/css/academicons.min.css?ver=1633548075' type='text/css' media='all' />
+<link rel='stylesheet' id='wpzoom-social-icons-font-awesome-3-css'  href='https://www.enrictorrents.com/wp-content/plugins/social-icons-widget-by-wpzoom/assets/css/font-awesome-3.min.css?ver=1633548075' type='text/css' media='all' />
+<link rel='stylesheet' id='wpzoom-social-icons-styles-css'  href='https://www.enrictorrents.com/wp-content/plugins/social-icons-widget-by-wpzoom/assets/css/wpzoom-social-icons-styles.css?ver=1633548075' type='text/css' media='all' />
+<link rel='preload' as='font'  id='wpzoom-social-icons-font-academicons-ttf-css'  href='https://www.enrictorrents.com/wp-content/plugins/social-icons-widget-by-wpzoom/assets/font/academicons.ttf?v=1.8.6'  type='font/ttf' crossorigin />
+<link rel='preload' as='font'  id='wpzoom-social-icons-font-academicons-woff-css'  href='https://www.enrictorrents.com/wp-content/plugins/social-icons-widget-by-wpzoom/assets/font/academicons.woff?v=1.8.6'  type='font/woff' crossorigin />
+<link rel='preload' as='font'  id='wpzoom-social-icons-font-fontawesome-3-ttf-css'  href='https://www.enrictorrents.com/wp-content/plugins/social-icons-widget-by-wpzoom/assets/font/fontawesome-webfont.ttf?v=4.7.0'  type='font/ttf' crossorigin />
+<link rel='preload' as='font'  id='wpzoom-social-icons-font-fontawesome-3-woff-css'  href='https://www.enrictorrents.com/wp-content/plugins/social-icons-widget-by-wpzoom/assets/font/fontawesome-webfont.woff?v=4.7.0'  type='font/woff' crossorigin />
+<link rel='preload' as='font'  id='wpzoom-social-icons-font-fontawesome-3-woff2-css'  href='https://www.enrictorrents.com/wp-content/plugins/social-icons-widget-by-wpzoom/assets/font/fontawesome-webfont.woff2?v=4.7.0'  type='font/woff2' crossorigin />
+<link rel='preload' as='font'  id='wpzoom-social-icons-font-genericons-ttf-css'  href='https://www.enrictorrents.com/wp-content/plugins/social-icons-widget-by-wpzoom/assets/font/Genericons.ttf'  type='font/ttf' crossorigin />
+<link rel='preload' as='font'  id='wpzoom-social-icons-font-genericons-woff-css'  href='https://www.enrictorrents.com/wp-content/plugins/social-icons-widget-by-wpzoom/assets/font/Genericons.woff'  type='font/woff' crossorigin />
+<link rel='preload' as='font'  id='wpzoom-social-icons-font-socicon-ttf-css'  href='https://www.enrictorrents.com/wp-content/plugins/social-icons-widget-by-wpzoom/assets/font/socicon.ttf?v=4.1.3'  type='font/ttf' crossorigin />
+<link rel='preload' as='font'  id='wpzoom-social-icons-font-socicon-woff-css'  href='https://www.enrictorrents.com/wp-content/plugins/social-icons-widget-by-wpzoom/assets/font/socicon.woff?v=4.1.3'  type='font/woff' crossorigin />
+<script type='text/javascript' src='https://www.enrictorrents.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://www.enrictorrents.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<link rel="https://api.w.org/" href="https://www.enrictorrents.com/wp-json/" /><link rel="alternate" type="application/json" href="https://www.enrictorrents.com/wp-json/wp/v2/portfolio/33" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.enrictorrents.com/xmlrpc.php?rsd" />
 <meta name="generator" content="WordPress 5.8" />
 
 <!-- Begin Theme Custom CSS -->
@@ -173,10 +173,10 @@
 @media screen and (max-width: 480px){body, .footer-widgets .column, .site-info{font-size:16px;}.navbar-brand-wpz h1 a{font-size:20px;}.slides > li h3{font-size:24px;}.slides > li .excerpt{font-size:16px;}.slides > li .slide_button a{font-size:14px;}.widget .section-title{font-size:20px;}.widget h3.title, .side-nav .widget .title{font-size:20px;}.entry-title{font-size:24px;}.single h1.entry-title{font-size:24px;}.single .has-post-cover .entry-header .entry-title{font-size:24px;}.page h1.entry-title{font-size:24px;}.page .has-post-cover .entry-header h1.entry-title{font-size:24px;}.entry-thumbnail-popover-content h3{font-size:18px;}.entry-thumbnail-popover-content.lightbox_popup_insp h3{font-size:14px;}}
 </style>
 <!-- End Theme Custom CSS -->
-<link rel="icon" href="http://localhost:8080/wp-content/uploads/2020/02/cropped-marca-aigua_2019_definitiu_negre_gyyeew-150x150.png" sizes="32x32" />
-<link rel="icon" href="http://localhost:8080/wp-content/uploads/2020/02/cropped-marca-aigua_2019_definitiu_negre_gyyeew-280x280.png" sizes="192x192" />
-<link rel="apple-touch-icon" href="http://localhost:8080/wp-content/uploads/2020/02/cropped-marca-aigua_2019_definitiu_negre_gyyeew-280x280.png" />
-<meta name="msapplication-TileImage" content="http://localhost:8080/wp-content/uploads/2020/02/cropped-marca-aigua_2019_definitiu_negre_gyyeew-280x280.png" />
+<link rel="icon" href="https://www.enrictorrents.com/wp-content/uploads/2020/02/cropped-marca-aigua_2019_definitiu_negre_gyyeew-150x150.png" sizes="32x32" />
+<link rel="icon" href="https://www.enrictorrents.com/wp-content/uploads/2020/02/cropped-marca-aigua_2019_definitiu_negre_gyyeew-280x280.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.enrictorrents.com/wp-content/uploads/2020/02/cropped-marca-aigua_2019_definitiu_negre_gyyeew-280x280.png" />
+<meta name="msapplication-TileImage" content="https://www.enrictorrents.com/wp-content/uploads/2020/02/cropped-marca-aigua_2019_definitiu_negre_gyyeew-280x280.png" />
 		<style type="text/css" id="wp-custom-css">
 			.designed-by {
 	display: none;
@@ -202,10 +202,10 @@
                 </button>
             </div>
 
-            <ul class="nav navbar-nav"><li id="menu-item-5218" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-5218"><a href="http://localhost:8080/" data-wpel-link="internal">Home</a></li>
-<li id="menu-item-5408" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5408"><a href="http://localhost:8080/about/" data-wpel-link="internal">About</a></li>
-<li id="menu-item-5217" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5217"><a href="http://localhost:8080/portfolio/" data-wpel-link="internal">Portfolio</a></li>
-<li id="menu-item-5417" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5417"><a href="http://localhost:8080/contact/" data-wpel-link="internal">Contact</a></li>
+            <ul class="nav navbar-nav"><li id="menu-item-5218" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-5218"><a href="https://www.enrictorrents.com/" data-wpel-link="internal">Home</a></li>
+<li id="menu-item-5408" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5408"><a href="https://www.enrictorrents.com/about/" data-wpel-link="internal">About</a></li>
+<li id="menu-item-5217" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5217"><a href="https://www.enrictorrents.com/portfolio/" data-wpel-link="internal">Portfolio</a></li>
+<li id="menu-item-5417" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5417"><a href="https://www.enrictorrents.com/contact/" data-wpel-link="internal">Contact</a></li>
 </ul>
             <div id="text-30" class="widget widget_text"><h3 class="title">About me</h3>			<div class="textwidget"><p>If you need any type of information don’t hesitate to contact me. I’ll be glad to help you in your project.</p>
 </div>
@@ -225,7 +225,7 @@
                      <!-- navbar-brand BEGIN -->
                      <div class="navbar-brand-wpz">
 
-                        <a href="http://localhost:8080/" class="custom-logo-link" rel="home" itemprop="url" data-wpel-link="internal"><img width="50" height="50" src="http://localhost:8080/wp-content/uploads/2020/02/cropped-marca-aigua_2019_definitiu_blanc_4_cy3zqt.png" class="custom-logo" alt="Enric Torrents" loading="lazy" itemprop="logo" /></a>
+                        <a href="https://www.enrictorrents.com/" class="custom-logo-link" rel="home" itemprop="url" data-wpel-link="internal"><img width="50" height="50" src="https://www.enrictorrents.com/wp-content/uploads/2020/02/cropped-marca-aigua_2019_definitiu_blanc_4_cy3zqt.png" class="custom-logo" alt="Enric Torrents" loading="lazy" itemprop="logo" /></a>
                      </div>
                      <!-- navbar-brand END -->
                 </div>
@@ -239,7 +239,7 @@
                     </button>
 
                     <div id="sb-search" class="sb-search">
-                        <form method="get" id="searchform" action="http://localhost:8080/">
+                        <form method="get" id="searchform" action="https://www.enrictorrents.com/">
     <input type="search" class="sb-search-input" placeholder="Type your keywords and hit Enter..."  name="s" id="s" autocomplete="off" />
     <input type="submit" id="searchsubmit" class="sb-search-submit" value="Search" />
     <span class="sb-icon-search"></span>
@@ -279,10 +279,10 @@
 
                     <div class="navbar-collapse collapse">
 
-                        <ul id="menu-main-1" class="nav navbar-nav dropdown sf-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-5218"><a href="http://localhost:8080/" data-wpel-link="internal">Home</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5408"><a href="http://localhost:8080/about/" data-wpel-link="internal">About</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5217"><a href="http://localhost:8080/portfolio/" data-wpel-link="internal">Portfolio</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5417"><a href="http://localhost:8080/contact/" data-wpel-link="internal">Contact</a></li>
+                        <ul id="menu-main-1" class="nav navbar-nav dropdown sf-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-5218"><a href="https://www.enrictorrents.com/" data-wpel-link="internal">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5408"><a href="https://www.enrictorrents.com/about/" data-wpel-link="internal">About</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5217"><a href="https://www.enrictorrents.com/portfolio/" data-wpel-link="internal">Portfolio</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5417"><a href="https://www.enrictorrents.com/contact/" data-wpel-link="internal">Contact</a></li>
 </ul>
                     </div><!-- .navbar-collapse -->
 
@@ -299,7 +299,7 @@
 
             
             
-                <div class="portfolio-header-cover-image"  data-smallimg="http://localhost:8080/wp-content/uploads/2020/02/P1004169_vsdcq2-1000x523.jpg" data-bigimg="http://localhost:8080/wp-content/uploads/2020/02/P1004169_vsdcq2-1800x942.jpg"style="background-image:url('http://localhost:8080/wp-content/uploads/2020/02/P1004169_vsdcq2-1000x523.jpg')"></div>
+                <div class="portfolio-header-cover-image"  data-smallimg="https://www.enrictorrents.com/wp-content/uploads/2020/02/P1004169_vsdcq2-1000x523.jpg" data-bigimg="https://www.enrictorrents.com/wp-content/uploads/2020/02/P1004169_vsdcq2-1800x942.jpg"style="background-image:url('https://www.enrictorrents.com/wp-content/uploads/2020/02/P1004169_vsdcq2-1000x523.jpg')"></div>
 
             
             <div class="portfolio-header-info">
@@ -333,12 +333,12 @@
             <div class="entry-thumbnail-popover-content lightbox_popup_insp popover-content--animated"
                  data-show-caption="0">
                 <!-- start lightbox -->
-                                                            <a class="mfp-image portfolio-popup-video popup_image_insp" href="http://localhost:8080/wp-content/uploads/2020/02/P1004169_vsdcq2.jpg" data-wpel-link="internal"></a>
+                                                            <a class="mfp-image portfolio-popup-video popup_image_insp" href="https://www.enrictorrents.com/wp-content/uploads/2020/02/P1004169_vsdcq2.jpg" data-wpel-link="internal"></a>
                                         
                 <div class="entry-meta">
 
                     <h3 class="portfolio_item-title">
-                        <a href="http://localhost:8080/project/6132/" title="" data-wpel-link="internal"></a>
+                        <a href="https://www.enrictorrents.com/project/6132/" title="" data-wpel-link="internal"></a>
                     </h3>
 
                     <ul>
@@ -352,7 +352,7 @@
         </div>
 
         
-            <img width="600" height="400" src="http://localhost:8080/wp-content/uploads/2020/02/P1004169_vsdcq2-600x400.jpg" class="attachment-portfolio_item-thumbnail size-portfolio_item-thumbnail wp-post-image" alt="" loading="lazy" />
+            <img width="600" height="400" src="https://www.enrictorrents.com/wp-content/uploads/2020/02/P1004169_vsdcq2-600x400.jpg" class="attachment-portfolio_item-thumbnail size-portfolio_item-thumbnail wp-post-image" alt="" loading="lazy" />
         
     
 </article>
@@ -364,12 +364,12 @@
             <div class="entry-thumbnail-popover-content lightbox_popup_insp popover-content--animated"
                  data-show-caption="0">
                 <!-- start lightbox -->
-                                                            <a class="mfp-image portfolio-popup-video popup_image_insp" href="http://localhost:8080/wp-content/uploads/2020/02/1433468_3_rwvskm-scaled.jpg" data-wpel-link="internal"></a>
+                                                            <a class="mfp-image portfolio-popup-video popup_image_insp" href="https://www.enrictorrents.com/wp-content/uploads/2020/02/1433468_3_rwvskm-scaled.jpg" data-wpel-link="internal"></a>
                                         
                 <div class="entry-meta">
 
                     <h3 class="portfolio_item-title">
-                        <a href="http://localhost:8080/project/cala-dels-frares/" title="Cala dels Frares" data-wpel-link="internal">Cala dels Frares</a>
+                        <a href="https://www.enrictorrents.com/project/cala-dels-frares/" title="Cala dels Frares" data-wpel-link="internal">Cala dels Frares</a>
                     </h3>
 
                     <ul>
@@ -383,7 +383,7 @@
         </div>
 
         
-            <img width="600" height="400" src="http://localhost:8080/wp-content/uploads/2020/02/1433468_3_rwvskm-600x400.jpg" class="attachment-portfolio_item-thumbnail size-portfolio_item-thumbnail wp-post-image" alt="" loading="lazy" srcset="http://localhost:8080/wp-content/uploads/2020/02/1433468_3_rwvskm-600x400.jpg 600w, http://localhost:8080/wp-content/uploads/2020/02/1433468_3_rwvskm-300x200.jpg 300w, http://localhost:8080/wp-content/uploads/2020/02/1433468_3_rwvskm-1024x683.jpg 1024w, http://localhost:8080/wp-content/uploads/2020/02/1433468_3_rwvskm-768x512.jpg 768w, http://localhost:8080/wp-content/uploads/2020/02/1433468_3_rwvskm-1536x1024.jpg 1536w, http://localhost:8080/wp-content/uploads/2020/02/1433468_3_rwvskm-2048x1365.jpg 2048w, http://localhost:8080/wp-content/uploads/2020/02/1433468_3_rwvskm-2000x1333.jpg 2000w, http://localhost:8080/wp-content/uploads/2020/02/1433468_3_rwvskm-1000x667.jpg 1000w, http://localhost:8080/wp-content/uploads/2020/02/1433468_3_rwvskm-1800x1200.jpg 1800w, http://localhost:8080/wp-content/uploads/2020/02/1433468_3_rwvskm-840x560.jpg 840w" sizes="(max-width: 600px) 100vw, 600px" />
+            <img width="600" height="400" src="https://www.enrictorrents.com/wp-content/uploads/2020/02/1433468_3_rwvskm-600x400.jpg" class="attachment-portfolio_item-thumbnail size-portfolio_item-thumbnail wp-post-image" alt="" loading="lazy" srcset="https://www.enrictorrents.com/wp-content/uploads/2020/02/1433468_3_rwvskm-600x400.jpg 600w, https://www.enrictorrents.com/wp-content/uploads/2020/02/1433468_3_rwvskm-300x200.jpg 300w, https://www.enrictorrents.com/wp-content/uploads/2020/02/1433468_3_rwvskm-1024x683.jpg 1024w, https://www.enrictorrents.com/wp-content/uploads/2020/02/1433468_3_rwvskm-768x512.jpg 768w, https://www.enrictorrents.com/wp-content/uploads/2020/02/1433468_3_rwvskm-1536x1024.jpg 1536w, https://www.enrictorrents.com/wp-content/uploads/2020/02/1433468_3_rwvskm-2048x1365.jpg 2048w, https://www.enrictorrents.com/wp-content/uploads/2020/02/1433468_3_rwvskm-2000x1333.jpg 2000w, https://www.enrictorrents.com/wp-content/uploads/2020/02/1433468_3_rwvskm-1000x667.jpg 1000w, https://www.enrictorrents.com/wp-content/uploads/2020/02/1433468_3_rwvskm-1800x1200.jpg 1800w, https://www.enrictorrents.com/wp-content/uploads/2020/02/1433468_3_rwvskm-840x560.jpg 840w" sizes="(max-width: 600px) 100vw, 600px" />
         
     
 </article>
@@ -395,12 +395,12 @@
             <div class="entry-thumbnail-popover-content lightbox_popup_insp popover-content--animated"
                  data-show-caption="0">
                 <!-- start lightbox -->
-                                                            <a class="mfp-image portfolio-popup-video popup_image_insp" href="http://localhost:8080/wp-content/uploads/2020/02/1066973_repdzz.jpg" data-wpel-link="internal"></a>
+                                                            <a class="mfp-image portfolio-popup-video popup_image_insp" href="https://www.enrictorrents.com/wp-content/uploads/2020/02/1066973_repdzz.jpg" data-wpel-link="internal"></a>
                                         
                 <div class="entry-meta">
 
                     <h3 class="portfolio_item-title">
-                        <a href="http://localhost:8080/project/barcelona/" title="" data-wpel-link="internal"></a>
+                        <a href="https://www.enrictorrents.com/project/barcelona/" title="" data-wpel-link="internal"></a>
                     </h3>
 
                     <ul>
@@ -414,7 +414,7 @@
         </div>
 
         
-            <img width="600" height="400" src="http://localhost:8080/wp-content/uploads/2020/02/1066973_repdzz-600x400.jpg" class="attachment-portfolio_item-thumbnail size-portfolio_item-thumbnail wp-post-image" alt="" loading="lazy" srcset="http://localhost:8080/wp-content/uploads/2020/02/1066973_repdzz-600x400.jpg 600w, http://localhost:8080/wp-content/uploads/2020/02/1066973_repdzz-300x200.jpg 300w, http://localhost:8080/wp-content/uploads/2020/02/1066973_repdzz-1024x683.jpg 1024w, http://localhost:8080/wp-content/uploads/2020/02/1066973_repdzz-768x512.jpg 768w, http://localhost:8080/wp-content/uploads/2020/02/1066973_repdzz-1536x1024.jpg 1536w, http://localhost:8080/wp-content/uploads/2020/02/1066973_repdzz-2000x1333.jpg 2000w, http://localhost:8080/wp-content/uploads/2020/02/1066973_repdzz-1000x667.jpg 1000w, http://localhost:8080/wp-content/uploads/2020/02/1066973_repdzz-1800x1200.jpg 1800w, http://localhost:8080/wp-content/uploads/2020/02/1066973_repdzz-840x560.jpg 840w, http://localhost:8080/wp-content/uploads/2020/02/1066973_repdzz.jpg 2022w" sizes="(max-width: 600px) 100vw, 600px" />
+            <img width="600" height="400" src="https://www.enrictorrents.com/wp-content/uploads/2020/02/1066973_repdzz-600x400.jpg" class="attachment-portfolio_item-thumbnail size-portfolio_item-thumbnail wp-post-image" alt="" loading="lazy" srcset="https://www.enrictorrents.com/wp-content/uploads/2020/02/1066973_repdzz-600x400.jpg 600w, https://www.enrictorrents.com/wp-content/uploads/2020/02/1066973_repdzz-300x200.jpg 300w, https://www.enrictorrents.com/wp-content/uploads/2020/02/1066973_repdzz-1024x683.jpg 1024w, https://www.enrictorrents.com/wp-content/uploads/2020/02/1066973_repdzz-768x512.jpg 768w, https://www.enrictorrents.com/wp-content/uploads/2020/02/1066973_repdzz-1536x1024.jpg 1536w, https://www.enrictorrents.com/wp-content/uploads/2020/02/1066973_repdzz-2000x1333.jpg 2000w, https://www.enrictorrents.com/wp-content/uploads/2020/02/1066973_repdzz-1000x667.jpg 1000w, https://www.enrictorrents.com/wp-content/uploads/2020/02/1066973_repdzz-1800x1200.jpg 1800w, https://www.enrictorrents.com/wp-content/uploads/2020/02/1066973_repdzz-840x560.jpg 840w, https://www.enrictorrents.com/wp-content/uploads/2020/02/1066973_repdzz.jpg 2022w" sizes="(max-width: 600px) 100vw, 600px" />
         
     
 </article>
@@ -426,12 +426,12 @@
             <div class="entry-thumbnail-popover-content lightbox_popup_insp popover-content--animated"
                  data-show-caption="0">
                 <!-- start lightbox -->
-                                                            <a class="mfp-image portfolio-popup-video popup_image_insp" href="http://localhost:8080/wp-content/uploads/2020/02/P1011200_qut1zq.jpg" data-wpel-link="internal"></a>
+                                                            <a class="mfp-image portfolio-popup-video popup_image_insp" href="https://www.enrictorrents.com/wp-content/uploads/2020/02/P1011200_qut1zq.jpg" data-wpel-link="internal"></a>
                                         
                 <div class="entry-meta">
 
                     <h3 class="portfolio_item-title">
-                        <a href="http://localhost:8080/project/6097/" title="" data-wpel-link="internal"></a>
+                        <a href="https://www.enrictorrents.com/project/6097/" title="" data-wpel-link="internal"></a>
                     </h3>
 
                     <ul>
@@ -445,7 +445,7 @@
         </div>
 
         
-            <img width="600" height="400" src="http://localhost:8080/wp-content/uploads/2020/02/P1011200_qut1zq-600x400.jpg" class="attachment-portfolio_item-thumbnail size-portfolio_item-thumbnail wp-post-image" alt="" loading="lazy" srcset="http://localhost:8080/wp-content/uploads/2020/02/P1011200_qut1zq-600x400.jpg 600w, http://localhost:8080/wp-content/uploads/2020/02/P1011200_qut1zq-300x200.jpg 300w, http://localhost:8080/wp-content/uploads/2020/02/P1011200_qut1zq-1024x683.jpg 1024w, http://localhost:8080/wp-content/uploads/2020/02/P1011200_qut1zq-768x512.jpg 768w, http://localhost:8080/wp-content/uploads/2020/02/P1011200_qut1zq-1536x1024.jpg 1536w, http://localhost:8080/wp-content/uploads/2020/02/P1011200_qut1zq-2000x1334.jpg 2000w, http://localhost:8080/wp-content/uploads/2020/02/P1011200_qut1zq-1000x667.jpg 1000w, http://localhost:8080/wp-content/uploads/2020/02/P1011200_qut1zq-1800x1200.jpg 1800w, http://localhost:8080/wp-content/uploads/2020/02/P1011200_qut1zq-840x560.jpg 840w, http://localhost:8080/wp-content/uploads/2020/02/P1011200_qut1zq.jpg 2020w" sizes="(max-width: 600px) 100vw, 600px" />
+            <img width="600" height="400" src="https://www.enrictorrents.com/wp-content/uploads/2020/02/P1011200_qut1zq-600x400.jpg" class="attachment-portfolio_item-thumbnail size-portfolio_item-thumbnail wp-post-image" alt="" loading="lazy" srcset="https://www.enrictorrents.com/wp-content/uploads/2020/02/P1011200_qut1zq-600x400.jpg 600w, https://www.enrictorrents.com/wp-content/uploads/2020/02/P1011200_qut1zq-300x200.jpg 300w, https://www.enrictorrents.com/wp-content/uploads/2020/02/P1011200_qut1zq-1024x683.jpg 1024w, https://www.enrictorrents.com/wp-content/uploads/2020/02/P1011200_qut1zq-768x512.jpg 768w, https://www.enrictorrents.com/wp-content/uploads/2020/02/P1011200_qut1zq-1536x1024.jpg 1536w, https://www.enrictorrents.com/wp-content/uploads/2020/02/P1011200_qut1zq-2000x1334.jpg 2000w, https://www.enrictorrents.com/wp-content/uploads/2020/02/P1011200_qut1zq-1000x667.jpg 1000w, https://www.enrictorrents.com/wp-content/uploads/2020/02/P1011200_qut1zq-1800x1200.jpg 1800w, https://www.enrictorrents.com/wp-content/uploads/2020/02/P1011200_qut1zq-840x560.jpg 840w, https://www.enrictorrents.com/wp-content/uploads/2020/02/P1011200_qut1zq.jpg 2020w" sizes="(max-width: 600px) 100vw, 600px" />
         
     
 </article>
@@ -457,12 +457,12 @@
             <div class="entry-thumbnail-popover-content lightbox_popup_insp popover-content--animated"
                  data-show-caption="0">
                 <!-- start lightbox -->
-                                                            <a class="mfp-image portfolio-popup-video popup_image_insp" href="http://localhost:8080/wp-content/uploads/2020/02/1488215-3_mpcvk1-scaled.jpg" data-wpel-link="internal"></a>
+                                                            <a class="mfp-image portfolio-popup-video popup_image_insp" href="https://www.enrictorrents.com/wp-content/uploads/2020/02/1488215-3_mpcvk1-scaled.jpg" data-wpel-link="internal"></a>
                                         
                 <div class="entry-meta">
 
                     <h3 class="portfolio_item-title">
-                        <a href="http://localhost:8080/project/sant-llorenc-de-la-muga/" title="Sant Llorenç de la Muga" data-wpel-link="internal">Sant Llorenç de la Muga</a>
+                        <a href="https://www.enrictorrents.com/project/sant-llorenc-de-la-muga/" title="Sant Llorenç de la Muga" data-wpel-link="internal">Sant Llorenç de la Muga</a>
                     </h3>
 
                     <ul>
@@ -476,7 +476,7 @@
         </div>
 
         
-            <img width="600" height="400" src="http://localhost:8080/wp-content/uploads/2020/02/1488215-3_mpcvk1-600x400.jpg" class="attachment-portfolio_item-thumbnail size-portfolio_item-thumbnail wp-post-image" alt="" loading="lazy" srcset="http://localhost:8080/wp-content/uploads/2020/02/1488215-3_mpcvk1-600x400.jpg 600w, http://localhost:8080/wp-content/uploads/2020/02/1488215-3_mpcvk1-300x200.jpg 300w, http://localhost:8080/wp-content/uploads/2020/02/1488215-3_mpcvk1-1024x683.jpg 1024w, http://localhost:8080/wp-content/uploads/2020/02/1488215-3_mpcvk1-768x512.jpg 768w, http://localhost:8080/wp-content/uploads/2020/02/1488215-3_mpcvk1-1536x1024.jpg 1536w, http://localhost:8080/wp-content/uploads/2020/02/1488215-3_mpcvk1-2048x1366.jpg 2048w, http://localhost:8080/wp-content/uploads/2020/02/1488215-3_mpcvk1-2000x1334.jpg 2000w, http://localhost:8080/wp-content/uploads/2020/02/1488215-3_mpcvk1-1000x667.jpg 1000w, http://localhost:8080/wp-content/uploads/2020/02/1488215-3_mpcvk1-1800x1200.jpg 1800w, http://localhost:8080/wp-content/uploads/2020/02/1488215-3_mpcvk1-840x560.jpg 840w" sizes="(max-width: 600px) 100vw, 600px" />
+            <img width="600" height="400" src="https://www.enrictorrents.com/wp-content/uploads/2020/02/1488215-3_mpcvk1-600x400.jpg" class="attachment-portfolio_item-thumbnail size-portfolio_item-thumbnail wp-post-image" alt="" loading="lazy" srcset="https://www.enrictorrents.com/wp-content/uploads/2020/02/1488215-3_mpcvk1-600x400.jpg 600w, https://www.enrictorrents.com/wp-content/uploads/2020/02/1488215-3_mpcvk1-300x200.jpg 300w, https://www.enrictorrents.com/wp-content/uploads/2020/02/1488215-3_mpcvk1-1024x683.jpg 1024w, https://www.enrictorrents.com/wp-content/uploads/2020/02/1488215-3_mpcvk1-768x512.jpg 768w, https://www.enrictorrents.com/wp-content/uploads/2020/02/1488215-3_mpcvk1-1536x1024.jpg 1536w, https://www.enrictorrents.com/wp-content/uploads/2020/02/1488215-3_mpcvk1-2048x1366.jpg 2048w, https://www.enrictorrents.com/wp-content/uploads/2020/02/1488215-3_mpcvk1-2000x1334.jpg 2000w, https://www.enrictorrents.com/wp-content/uploads/2020/02/1488215-3_mpcvk1-1000x667.jpg 1000w, https://www.enrictorrents.com/wp-content/uploads/2020/02/1488215-3_mpcvk1-1800x1200.jpg 1800w, https://www.enrictorrents.com/wp-content/uploads/2020/02/1488215-3_mpcvk1-840x560.jpg 840w" sizes="(max-width: 600px) 100vw, 600px" />
         
     
 </article>
@@ -488,12 +488,12 @@
             <div class="entry-thumbnail-popover-content lightbox_popup_insp popover-content--animated"
                  data-show-caption="0">
                 <!-- start lightbox -->
-                                                            <a class="mfp-image portfolio-popup-video popup_image_insp" href="http://localhost:8080/wp-content/uploads/2020/02/paisatge_e15e9e.jpg" data-wpel-link="internal"></a>
+                                                            <a class="mfp-image portfolio-popup-video popup_image_insp" href="https://www.enrictorrents.com/wp-content/uploads/2020/02/paisatge_e15e9e.jpg" data-wpel-link="internal"></a>
                                         
                 <div class="entry-meta">
 
                     <h3 class="portfolio_item-title">
-                        <a href="http://localhost:8080/project/6073/" title="" data-wpel-link="internal"></a>
+                        <a href="https://www.enrictorrents.com/project/6073/" title="" data-wpel-link="internal"></a>
                     </h3>
 
                     <ul>
@@ -507,7 +507,7 @@
         </div>
 
         
-            <img width="600" height="400" src="http://localhost:8080/wp-content/uploads/2020/02/paisatge_e15e9e-600x400.jpg" class="attachment-portfolio_item-thumbnail size-portfolio_item-thumbnail wp-post-image" alt="" loading="lazy" srcset="http://localhost:8080/wp-content/uploads/2020/02/paisatge_e15e9e-600x400.jpg 600w, http://localhost:8080/wp-content/uploads/2020/02/paisatge_e15e9e-300x200.jpg 300w, http://localhost:8080/wp-content/uploads/2020/02/paisatge_e15e9e-1024x683.jpg 1024w, http://localhost:8080/wp-content/uploads/2020/02/paisatge_e15e9e-768x512.jpg 768w, http://localhost:8080/wp-content/uploads/2020/02/paisatge_e15e9e-1536x1024.jpg 1536w, http://localhost:8080/wp-content/uploads/2020/02/paisatge_e15e9e-2000x1333.jpg 2000w, http://localhost:8080/wp-content/uploads/2020/02/paisatge_e15e9e-1000x667.jpg 1000w, http://localhost:8080/wp-content/uploads/2020/02/paisatge_e15e9e-1800x1200.jpg 1800w, http://localhost:8080/wp-content/uploads/2020/02/paisatge_e15e9e-840x560.jpg 840w, http://localhost:8080/wp-content/uploads/2020/02/paisatge_e15e9e.jpg 2022w" sizes="(max-width: 600px) 100vw, 600px" />
+            <img width="600" height="400" src="https://www.enrictorrents.com/wp-content/uploads/2020/02/paisatge_e15e9e-600x400.jpg" class="attachment-portfolio_item-thumbnail size-portfolio_item-thumbnail wp-post-image" alt="" loading="lazy" srcset="https://www.enrictorrents.com/wp-content/uploads/2020/02/paisatge_e15e9e-600x400.jpg 600w, https://www.enrictorrents.com/wp-content/uploads/2020/02/paisatge_e15e9e-300x200.jpg 300w, https://www.enrictorrents.com/wp-content/uploads/2020/02/paisatge_e15e9e-1024x683.jpg 1024w, https://www.enrictorrents.com/wp-content/uploads/2020/02/paisatge_e15e9e-768x512.jpg 768w, https://www.enrictorrents.com/wp-content/uploads/2020/02/paisatge_e15e9e-1536x1024.jpg 1536w, https://www.enrictorrents.com/wp-content/uploads/2020/02/paisatge_e15e9e-2000x1333.jpg 2000w, https://www.enrictorrents.com/wp-content/uploads/2020/02/paisatge_e15e9e-1000x667.jpg 1000w, https://www.enrictorrents.com/wp-content/uploads/2020/02/paisatge_e15e9e-1800x1200.jpg 1800w, https://www.enrictorrents.com/wp-content/uploads/2020/02/paisatge_e15e9e-840x560.jpg 840w, https://www.enrictorrents.com/wp-content/uploads/2020/02/paisatge_e15e9e.jpg 2022w" sizes="(max-width: 600px) 100vw, 600px" />
         
     
 </article>
@@ -519,12 +519,12 @@
             <div class="entry-thumbnail-popover-content lightbox_popup_insp popover-content--animated"
                  data-show-caption="0">
                 <!-- start lightbox -->
-                                                            <a class="mfp-image portfolio-popup-video popup_image_insp" href="http://localhost:8080/wp-content/uploads/2020/02/1111785_ds86si.jpg" data-wpel-link="internal"></a>
+                                                            <a class="mfp-image portfolio-popup-video popup_image_insp" href="https://www.enrictorrents.com/wp-content/uploads/2020/02/1111785_ds86si.jpg" data-wpel-link="internal"></a>
                                         
                 <div class="entry-meta">
 
                     <h3 class="portfolio_item-title">
-                        <a href="http://localhost:8080/project/6068/" title="" data-wpel-link="internal"></a>
+                        <a href="https://www.enrictorrents.com/project/6068/" title="" data-wpel-link="internal"></a>
                     </h3>
 
                     <ul>
@@ -538,7 +538,7 @@
         </div>
 
         
-            <img width="600" height="400" src="http://localhost:8080/wp-content/uploads/2020/02/1111785_ds86si-600x400.jpg" class="attachment-portfolio_item-thumbnail size-portfolio_item-thumbnail wp-post-image" alt="" loading="lazy" srcset="http://localhost:8080/wp-content/uploads/2020/02/1111785_ds86si-600x400.jpg 600w, http://localhost:8080/wp-content/uploads/2020/02/1111785_ds86si-300x200.jpg 300w, http://localhost:8080/wp-content/uploads/2020/02/1111785_ds86si-1024x683.jpg 1024w, http://localhost:8080/wp-content/uploads/2020/02/1111785_ds86si-768x512.jpg 768w, http://localhost:8080/wp-content/uploads/2020/02/1111785_ds86si-1536x1024.jpg 1536w, http://localhost:8080/wp-content/uploads/2020/02/1111785_ds86si-2000x1333.jpg 2000w, http://localhost:8080/wp-content/uploads/2020/02/1111785_ds86si-1000x667.jpg 1000w, http://localhost:8080/wp-content/uploads/2020/02/1111785_ds86si-1800x1200.jpg 1800w, http://localhost:8080/wp-content/uploads/2020/02/1111785_ds86si-840x560.jpg 840w, http://localhost:8080/wp-content/uploads/2020/02/1111785_ds86si.jpg 2022w" sizes="(max-width: 600px) 100vw, 600px" />
+            <img width="600" height="400" src="https://www.enrictorrents.com/wp-content/uploads/2020/02/1111785_ds86si-600x400.jpg" class="attachment-portfolio_item-thumbnail size-portfolio_item-thumbnail wp-post-image" alt="" loading="lazy" srcset="https://www.enrictorrents.com/wp-content/uploads/2020/02/1111785_ds86si-600x400.jpg 600w, https://www.enrictorrents.com/wp-content/uploads/2020/02/1111785_ds86si-300x200.jpg 300w, https://www.enrictorrents.com/wp-content/uploads/2020/02/1111785_ds86si-1024x683.jpg 1024w, https://www.enrictorrents.com/wp-content/uploads/2020/02/1111785_ds86si-768x512.jpg 768w, https://www.enrictorrents.com/wp-content/uploads/2020/02/1111785_ds86si-1536x1024.jpg 1536w, https://www.enrictorrents.com/wp-content/uploads/2020/02/1111785_ds86si-2000x1333.jpg 2000w, https://www.enrictorrents.com/wp-content/uploads/2020/02/1111785_ds86si-1000x667.jpg 1000w, https://www.enrictorrents.com/wp-content/uploads/2020/02/1111785_ds86si-1800x1200.jpg 1800w, https://www.enrictorrents.com/wp-content/uploads/2020/02/1111785_ds86si-840x560.jpg 840w, https://www.enrictorrents.com/wp-content/uploads/2020/02/1111785_ds86si.jpg 2022w" sizes="(max-width: 600px) 100vw, 600px" />
         
     
 </article>
@@ -550,12 +550,12 @@
             <div class="entry-thumbnail-popover-content lightbox_popup_insp popover-content--animated"
                  data-show-caption="0">
                 <!-- start lightbox -->
-                                                            <a class="mfp-image portfolio-popup-video popup_image_insp" href="http://localhost:8080/wp-content/uploads/2020/02/1111549_egifbp.jpg" data-wpel-link="internal"></a>
+                                                            <a class="mfp-image portfolio-popup-video popup_image_insp" href="https://www.enrictorrents.com/wp-content/uploads/2020/02/1111549_egifbp.jpg" data-wpel-link="internal"></a>
                                         
                 <div class="entry-meta">
 
                     <h3 class="portfolio_item-title">
-                        <a href="http://localhost:8080/project/rupit-i-pruit/" title="" data-wpel-link="internal"></a>
+                        <a href="https://www.enrictorrents.com/project/rupit-i-pruit/" title="" data-wpel-link="internal"></a>
                     </h3>
 
                     <ul>
@@ -569,7 +569,7 @@
         </div>
 
         
-            <img width="600" height="400" src="http://localhost:8080/wp-content/uploads/2020/02/1111549_egifbp-600x400.jpg" class="attachment-portfolio_item-thumbnail size-portfolio_item-thumbnail wp-post-image" alt="" loading="lazy" />
+            <img width="600" height="400" src="https://www.enrictorrents.com/wp-content/uploads/2020/02/1111549_egifbp-600x400.jpg" class="attachment-portfolio_item-thumbnail size-portfolio_item-thumbnail wp-post-image" alt="" loading="lazy" />
         
     
 </article>
@@ -581,12 +581,12 @@
             <div class="entry-thumbnail-popover-content lightbox_popup_insp popover-content--animated"
                  data-show-caption="0">
                 <!-- start lightbox -->
-                                                            <a class="mfp-image portfolio-popup-video popup_image_insp" href="http://localhost:8080/wp-content/uploads/2020/02/P1011176_yyqvrs.jpg" data-wpel-link="internal"></a>
+                                                            <a class="mfp-image portfolio-popup-video popup_image_insp" href="https://www.enrictorrents.com/wp-content/uploads/2020/02/P1011176_yyqvrs.jpg" data-wpel-link="internal"></a>
                                         
                 <div class="entry-meta">
 
                     <h3 class="portfolio_item-title">
-                        <a href="http://localhost:8080/project/la-roca/" title="" data-wpel-link="internal"></a>
+                        <a href="https://www.enrictorrents.com/project/la-roca/" title="" data-wpel-link="internal"></a>
                     </h3>
 
                     <ul>
@@ -600,14 +600,14 @@
         </div>
 
         
-            <img width="600" height="400" src="http://localhost:8080/wp-content/uploads/2020/02/P1011176_yyqvrs-600x400.jpg" class="attachment-portfolio_item-thumbnail size-portfolio_item-thumbnail wp-post-image" alt="" loading="lazy" srcset="http://localhost:8080/wp-content/uploads/2020/02/P1011176_yyqvrs-600x400.jpg 600w, http://localhost:8080/wp-content/uploads/2020/02/P1011176_yyqvrs-300x200.jpg 300w, http://localhost:8080/wp-content/uploads/2020/02/P1011176_yyqvrs-1024x683.jpg 1024w, http://localhost:8080/wp-content/uploads/2020/02/P1011176_yyqvrs-768x512.jpg 768w, http://localhost:8080/wp-content/uploads/2020/02/P1011176_yyqvrs-1536x1024.jpg 1536w, http://localhost:8080/wp-content/uploads/2020/02/P1011176_yyqvrs-2000x1333.jpg 2000w, http://localhost:8080/wp-content/uploads/2020/02/P1011176_yyqvrs-1000x667.jpg 1000w, http://localhost:8080/wp-content/uploads/2020/02/P1011176_yyqvrs-1800x1200.jpg 1800w, http://localhost:8080/wp-content/uploads/2020/02/P1011176_yyqvrs-840x560.jpg 840w, http://localhost:8080/wp-content/uploads/2020/02/P1011176_yyqvrs.jpg 2048w" sizes="(max-width: 600px) 100vw, 600px" />
+            <img width="600" height="400" src="https://www.enrictorrents.com/wp-content/uploads/2020/02/P1011176_yyqvrs-600x400.jpg" class="attachment-portfolio_item-thumbnail size-portfolio_item-thumbnail wp-post-image" alt="" loading="lazy" srcset="https://www.enrictorrents.com/wp-content/uploads/2020/02/P1011176_yyqvrs-600x400.jpg 600w, https://www.enrictorrents.com/wp-content/uploads/2020/02/P1011176_yyqvrs-300x200.jpg 300w, https://www.enrictorrents.com/wp-content/uploads/2020/02/P1011176_yyqvrs-1024x683.jpg 1024w, https://www.enrictorrents.com/wp-content/uploads/2020/02/P1011176_yyqvrs-768x512.jpg 768w, https://www.enrictorrents.com/wp-content/uploads/2020/02/P1011176_yyqvrs-1536x1024.jpg 1536w, https://www.enrictorrents.com/wp-content/uploads/2020/02/P1011176_yyqvrs-2000x1333.jpg 2000w, https://www.enrictorrents.com/wp-content/uploads/2020/02/P1011176_yyqvrs-1000x667.jpg 1000w, https://www.enrictorrents.com/wp-content/uploads/2020/02/P1011176_yyqvrs-1800x1200.jpg 1800w, https://www.enrictorrents.com/wp-content/uploads/2020/02/P1011176_yyqvrs-840x560.jpg 840w, https://www.enrictorrents.com/wp-content/uploads/2020/02/P1011176_yyqvrs.jpg 2048w" sizes="(max-width: 600px) 100vw, 600px" />
         
     
 </article>
                 
             </div>
 
-            <nav class="navigation paging-navigation" role="navigation"><a class="page-numbers" href="http://localhost:8080/portfolio/landscapes/page/1/" data-wpel-link="internal">1</a>
+            <nav class="navigation paging-navigation" role="navigation"><a class="page-numbers" href="https://www.enrictorrents.com/portfolio/landscapes/page/1/" data-wpel-link="internal">1</a>
 <span aria-current="page" class="page-numbers current">2</span></nav><!-- .navigation -->
         
     </section><!-- .portfolio-archive -->
@@ -740,37 +740,37 @@
 
 </div><!-- .site -->
 
-<script type='text/javascript' src='http://localhost:8080/wp-content/themes/inspiro/js/flexslider.min.js?ver=6.8.5' id='flexslider-js'></script>
-<script type='text/javascript' src='http://localhost:8080/wp-content/themes/inspiro/js/fitvids.min.js?ver=6.8.5' id='fitvids-js'></script>
-<script type='text/javascript' src='http://localhost:8080/wp-content/themes/inspiro/js/imagesLoaded.min.js?ver=6.8.5' id='imagesLoaded-js'></script>
-<script type='text/javascript' src='http://localhost:8080/wp-content/themes/inspiro/js/flickity.pkgd.min.js?ver=6.8.5' id='flickity-js'></script>
-<script type='text/javascript' src='http://localhost:8080/wp-content/themes/inspiro/js/jquery.magnific-popup.min.js?ver=6.8.5' id='magnificPopup-js'></script>
-<script type='text/javascript' src='http://localhost:8080/wp-includes/js/imagesloaded.min.js?ver=4.1.4' id='imagesloaded-js'></script>
-<script type='text/javascript' src='http://localhost:8080/wp-includes/js/masonry.min.js?ver=4.2.2' id='masonry-js'></script>
-<script type='text/javascript' src='http://localhost:8080/wp-content/themes/inspiro/js/superfish.min.js?ver=6.8.5' id='superfish-js'></script>
-<script type='text/javascript' src='http://localhost:8080/wp-content/themes/inspiro/js/headroom.min.js?ver=6.8.5' id='headroom-js'></script>
-<script type='text/javascript' src='http://localhost:8080/wp-content/themes/inspiro/js/search_button.js?ver=6.8.5' id='search_button-js'></script>
-<script type='text/javascript' src='http://localhost:8080/wp-content/themes/inspiro/js/jquery.parallax.js?ver=6.8.5' id='jquery.parallax-js'></script>
-<script type='text/javascript' src='http://localhost:8080/wp-includes/js/underscore.min.js?ver=1.8.3' id='underscore-js'></script>
+<script type='text/javascript' src='https://www.enrictorrents.com/wp-content/themes/inspiro/js/flexslider.min.js?ver=6.8.5' id='flexslider-js'></script>
+<script type='text/javascript' src='https://www.enrictorrents.com/wp-content/themes/inspiro/js/fitvids.min.js?ver=6.8.5' id='fitvids-js'></script>
+<script type='text/javascript' src='https://www.enrictorrents.com/wp-content/themes/inspiro/js/imagesLoaded.min.js?ver=6.8.5' id='imagesLoaded-js'></script>
+<script type='text/javascript' src='https://www.enrictorrents.com/wp-content/themes/inspiro/js/flickity.pkgd.min.js?ver=6.8.5' id='flickity-js'></script>
+<script type='text/javascript' src='https://www.enrictorrents.com/wp-content/themes/inspiro/js/jquery.magnific-popup.min.js?ver=6.8.5' id='magnificPopup-js'></script>
+<script type='text/javascript' src='https://www.enrictorrents.com/wp-includes/js/imagesloaded.min.js?ver=4.1.4' id='imagesloaded-js'></script>
+<script type='text/javascript' src='https://www.enrictorrents.com/wp-includes/js/masonry.min.js?ver=4.2.2' id='masonry-js'></script>
+<script type='text/javascript' src='https://www.enrictorrents.com/wp-content/themes/inspiro/js/superfish.min.js?ver=6.8.5' id='superfish-js'></script>
+<script type='text/javascript' src='https://www.enrictorrents.com/wp-content/themes/inspiro/js/headroom.min.js?ver=6.8.5' id='headroom-js'></script>
+<script type='text/javascript' src='https://www.enrictorrents.com/wp-content/themes/inspiro/js/search_button.js?ver=6.8.5' id='search_button-js'></script>
+<script type='text/javascript' src='https://www.enrictorrents.com/wp-content/themes/inspiro/js/jquery.parallax.js?ver=6.8.5' id='jquery.parallax-js'></script>
+<script type='text/javascript' src='https://www.enrictorrents.com/wp-includes/js/underscore.min.js?ver=1.8.3' id='underscore-js'></script>
 <script type='text/javascript' id='wp-util-js-extra'>
 /* <![CDATA[ */
 var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
 /* ]]> */
 </script>
-<script type='text/javascript' src='http://localhost:8080/wp-includes/js/wp-util.min.js?ver=5.8' id='wp-util-js'></script>
-<script type='text/javascript' src='http://localhost:8080/wp-content/themes/inspiro/js/isotope.pkgd.min.js?ver=6.8.5' id='isotope-js'></script>
+<script type='text/javascript' src='https://www.enrictorrents.com/wp-includes/js/wp-util.min.js?ver=5.8' id='wp-util-js'></script>
+<script type='text/javascript' src='https://www.enrictorrents.com/wp-content/themes/inspiro/js/isotope.pkgd.min.js?ver=6.8.5' id='isotope-js'></script>
 <script type='text/javascript' id='inspiro-script-js-extra'>
 /* <![CDATA[ */
 var zoomOptions = {"color-palettes":"default","custom_logo_retina_ready":"0","blogname":"Enric Torrents","blogdescription":"Photographer","custom_logo":"6511","header-layout-type":"wpz_layout_narrow","navbar-hide-search":"","navbar_sticky_menu":"1","featured_posts_show":"1","featured_posts_posts":"10","slideshow_auto":"1","slideshow_speed":"3000","slideshow_title":"","slideshow_excerpt":"","slideshow_arrows":"1","slideshow_scroll":"1","slideshow_height_desktop":"100","slideshow_height_tablet":"100","slideshow_height_phone":"100","slideshow_overlay":"","slideshow_overlay-color":"[{\"start_color\":\"#000\",\"end_color\":\"#000\",\"direction\":\"vertical\",\"start_opacity\":\"0.3\",\"end_opacity\":\"0.5\",\"start_location\":\"38\",\"end_location\":\"100\"}]","slideshow_effect":"fade","featured_video_mobile":"","color-accent":"","color-background":"#ffffff","color-body-text":"#444444","color-logo":"#ffffff","color-logo-hover":"#ffffff","color-link":"#0bb4aa","color-link-hover":"#076c65","button-background":"","button-background-hover":"rgba(11, 180, 170, 0.05)","button-border":"#444","button-border-hover":"#0bb4aa","button-color":"#444","button-color-hover":"#0bb4aa","color-menu-background":"#111111","color-menu-background-scroll":"rgba(0,0,0,0.9)","color-menu-link":"#ffffff","color-menu-link-hover":"#ffffff","color-menu-link-current":"#ffffff","color-menu-dropdown":"#111111","color-menu-dropdown-arrow":"#0bb4aa","color-menu-hamburger":"#ffffff","color-sidebar-background":"#101010","color-sidebar-menu-link":"#fff","color-sidebar-menu-link-hover":"#fff","color-sidebar-text":"#78787f","color-sidebar-link":"#0bb4aa","color-sidebar-link-hover":"#fff","color-slider-title":"#ffffff","color-slider-description":"#ffffff","color-slider-arrows":"#ffffff","color-slider-button-text":"#ffffff","color-slider-button-text-hover":"#ffffff","color-slider-button-background":"","color-slider-button-background-hover":"#0bb4aa","color-slider-button-border":"#ffffff","color-slider-button-border-hover":"#0bb4aa","color-post-title":"#222222","color-post-title-hover":"#0bb4aa","color-post-meta":"#999999","color-post-meta-link":"#222222","color-post-meta-link-hover":"#0bb4aa","color-post-button-color":"#444444","color-post-button-color-hover":"#0bb4aa","color-post-button-background":"","color-post-button-background-hover":"rgba(11, 180, 170, 0.05)","color-post-button-border":"#444444","color-post-button-border-color":"#0bb4aa","color-single-title":"#222222","color-single-title-image":"#ffffff","color-single-meta":"#494949","color-single-meta-link":"#222222","color-single-meta-link-hover":"#0bb4aa","color-single-meta-image":"#ffffff","color-single-meta-link-image":"#ffffff","color-single-meta-link-hover-image":"#0bb4aa","color-single-content":"#444444","color-single-link":"#0bb4aa","color-portfolio-top-categories":"#1a1a1a","color-portfolio-posts-area":"#ffffff","color-widget-title-homepage":"#222222","color-widget-title-others":"#ffffff","footer-background-color":"#1a1a1a","footer-background-color-separator":"#232323","footer-text-color":"#a0a0a0","footer-link-color":"#0bb4aa","footer-link-color-hover":"#076c65","body-font-family":"Libre Franklin","body-font-family-sync-all":"0","body-font-size":{"desktop":16,"tablet":16,"mobile":16,"desktop-unit":"px","tablet-unit":"px","mobile-unit":"px"},"body-font-weight":"normal","body-letter-spacing":"0","body-font-subset":"latin","body-font-style":"normal","title-font-family":"Montserrat","title-font-size":{"desktop":26,"tablet":26,"mobile":20,"desktop-unit":"px","tablet-unit":"px","mobile-unit":"px"},"title-font-weight":"bold","title-letter-spacing":"1","title-font-subset":"latin","title-text-transform":"uppercase","title-font-style":"normal","mainmenu-font-family":"Montserrat","mainmenu-font-size":"16","mainmenu-font-weight":"500","mainmenu-letter-spacing":"0","mainmenu-font-subset":"latin","mainmenu-text-transform":"none","mainmenu-font-style":"normal","mobilemenu-font-family":"Montserrat","mobilemenu-font-size":"16","mobilemenu-font-weight":"600","mobilemenu-letter-spacing":"0","mobilemenu-font-subset":"latin","mobilemenu-text-transform":"uppercase","mobilemenu-font-style":"normal","slider-title-font-family":"Libre Franklin","slider-title-font-size":{"desktop":72,"tablet":38,"mobile":24,"desktop-unit":"px","tablet-unit":"px","mobile-unit":"px"},"slider-title-font-weight":"200","slider-title-letter-spacing":"0","slider-title-font-subset":"latin","slider-title-text-transform":"none","slider-title-font-style":"normal","slider-text-font-family":"Libre Franklin","slider-text-font-size":{"desktop":20,"tablet":18,"mobile":16,"desktop-unit":"px","tablet-unit":"px","mobile-unit":"px"},"slider-text-font-weight":"normal","slider-text-letter-spacing":"0","slider-text-font-subset":"latin","slider-text-text-transform":"none","slider-text-font-style":"normal","slider-button-font-family":"Montserrat","slider-button-font-size":{"desktop":18,"tablet":16,"mobile":14,"desktop-unit":"px","tablet-unit":"px","mobile-unit":"px"},"slider-button-font-weight":"bold","slider-button-letter-spacing":"0","slider-button-font-subset":"latin","slider-button-text-transform":"uppercase","slider-button-font-style":"normal","home-widget-full-font-family":"Montserrat","home-widget-full-font-size":{"desktop":26,"tablet":20,"mobile":20,"desktop-unit":"px","tablet-unit":"px","mobile-unit":"px"},"home-widget-full-font-weight":"bold","home-widget-full-letter-spacing":"0","home-widget-full-font-subset":"latin","home-widget-full-text-transform":"uppercase","home-widget-full-font-style":"normal","widget-title-font-family":"Montserrat","widget-title-font-size":{"desktop":20,"tablet":20,"mobile":20,"desktop-unit":"px","tablet-unit":"px","mobile-unit":"px"},"widget-title-font-weight":"bold","widget-title-letter-spacing":"0","widget-title-font-subset":"latin","widget-title-text-transform":"uppercase","widget-title-font-style":"normal","blog-title-font-family":"Libre Franklin","blog-title-font-size":{"desktop":42,"tablet":32,"mobile":24,"desktop-unit":"px","tablet-unit":"px","mobile-unit":"px"},"blog-title-font-weight":"bold","blog-title-letter-spacing":"0","blog-title-font-subset":"latin","blog-title-text-transform":"none","blog-title-font-style":"normal","post-title-font-family":"Libre Franklin","post-title-font-size":{"desktop":42,"tablet":32,"mobile":24,"desktop-unit":"px","tablet-unit":"px","mobile-unit":"px"},"post-title-font-weight":"bold","post-title-letter-spacing":"0","post-title-font-subset":"latin","post-title-text-transform":"none","post-title-font-style":"normal","post-title-image-font-family":"Libre Franklin","post-title-image-font-size":{"desktop":45,"tablet":32,"mobile":24,"desktop-unit":"px","tablet-unit":"px","mobile-unit":"px"},"post-title-image-font-weight":"bold","post-title-image-letter-spacing":"0","post-title-image-font-subset":"latin","post-title-image-text-transform":"none","post-title-image-font-style":"normal","page-title-font-family":"Montserrat","page-title-font-size":{"desktop":26,"tablet":26,"mobile":24,"desktop-unit":"px","tablet-unit":"px","mobile-unit":"px"},"page-title-font-weight":"bold","page-title-letter-spacing":"0","page-title-font-subset":"latin","page-title-text-transform":"none","page-title-font-style":"uppercase","page-title-image-font-family":"Libre Franklin","page-title-image-font-size":{"desktop":45,"tablet":32,"mobile":24,"desktop-unit":"px","tablet-unit":"px","mobile-unit":"px"},"page-title-image-font-weight":"bold","page-title-image-letter-spacing":"0","page-title-image-font-subset":"latin","page-title-image-text-transform":"none","page-title-image-font-style":"normal","portfolio-title-font-family":"Libre Franklin","portfolio-title-font-size":{"desktop":26,"tablet":18,"mobile":18,"desktop-unit":"px","tablet-unit":"px","mobile-unit":"px"},"portfolio-title-font-weight":"bold","portfolio-title-letter-spacing":"0","portfolio-title-font-subset":"latin","portfolio-title-text-transform":"none","portfolio-title-font-style":"normal","portfolio-title-lightbox-font-family":"Montserrat","portfolio-title-lightbox-font-size":{"desktop":18,"tablet":14,"mobile":14,"desktop-unit":"px","tablet-unit":"px","mobile-unit":"px"},"portfolio-title-lightbox-font-weight":"500","portfolio-title-lightbox-letter-spacing":"0","portfolio-title-lightbox-font-subset":"latin","portfolio-title-lightbox-text-transform":"none","portfolio-title-lightbox-font-style":"normal","footer-widget-areas":"3","blogcopyright":"Copyright \u00a9 2021 \u2014 Enric Torrents. All Rights Reserved"};
 /* ]]> */
 </script>
-<script type='text/javascript' src='http://localhost:8080/wp-content/themes/inspiro/js/functions.js?ver=6.8.5' id='inspiro-script-js'></script>
-<script type='text/javascript' src='http://localhost:8080/wp-content/plugins/social-icons-widget-by-wpzoom/assets/js/social-icons-widget-frontend.js?ver=1626648905' id='zoom-social-icons-widget-frontend-js'></script>
-<script type='text/javascript' src='http://localhost:8080/wp-content/themes/inspiro/js/formstone/core.js?ver=6.8.5' id='formstone-core-js'></script>
-<script type='text/javascript' src='http://localhost:8080/wp-content/themes/inspiro/js/formstone/transition.js?ver=6.8.5' id='formstone-transition-js'></script>
-<script type='text/javascript' src='http://localhost:8080/wp-content/themes/inspiro/js/formstone/background.js?ver=6.8.5' id='formstone-background-js'></script>
-<script type='text/javascript' src='http://localhost:8080/wp-content/plugins/instagram-widget-by-wpzoom/js/jquery.lazy.min.js?ver=1626648921' id='zoom-instagram-widget-lazy-load-js'></script>
-<script type='text/javascript' src='http://localhost:8080/wp-content/plugins/instagram-widget-by-wpzoom/js/instagram-widget.js?ver=1.8.3' id='zoom-instagram-widget-js'></script>
+<script type='text/javascript' src='https://www.enrictorrents.com/wp-content/themes/inspiro/js/functions.js?ver=6.8.5' id='inspiro-script-js'></script>
+<script type='text/javascript' src='https://www.enrictorrents.com/wp-content/plugins/social-icons-widget-by-wpzoom/assets/js/social-icons-widget-frontend.js?ver=1633548075' id='zoom-social-icons-widget-frontend-js'></script>
+<script type='text/javascript' src='https://www.enrictorrents.com/wp-content/themes/inspiro/js/formstone/core.js?ver=6.8.5' id='formstone-core-js'></script>
+<script type='text/javascript' src='https://www.enrictorrents.com/wp-content/themes/inspiro/js/formstone/transition.js?ver=6.8.5' id='formstone-transition-js'></script>
+<script type='text/javascript' src='https://www.enrictorrents.com/wp-content/themes/inspiro/js/formstone/background.js?ver=6.8.5' id='formstone-background-js'></script>
+<script type='text/javascript' src='https://www.enrictorrents.com/wp-content/plugins/instagram-widget-by-wpzoom/js/jquery.lazy.min.js?ver=1633548075' id='zoom-instagram-widget-lazy-load-js'></script>
+<script type='text/javascript' src='https://www.enrictorrents.com/wp-content/plugins/instagram-widget-by-wpzoom/js/instagram-widget.js?ver=1.8.3' id='zoom-instagram-widget-js'></script>
 
 </body>
 </html>
