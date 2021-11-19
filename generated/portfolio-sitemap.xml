@@ -1,31 +1,31 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="//enrictorrents.com/wp-content/plugins/wordpress-seo/css/main-sitemap.xsl"?>
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="//localhost:8080/wp-content/plugins/wordpress-seo/css/main-sitemap.xsl"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
-		<loc>https://enrictorrents.com/portfolio/events/</loc>
+		<loc>https://www.enrictorrents.com/portfolio/events/</loc>
 		<lastmod>2020-11-07T22:50:50+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://enrictorrents.com/portfolio/timelapse/</loc>
+		<loc>https://www.enrictorrents.com/portfolio/timelapse/</loc>
 		<lastmod>2020-11-07T22:21:16+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://enrictorrents.com/portfolio/abstract/</loc>
+		<loc>https://www.enrictorrents.com/portfolio/abstract/</loc>
 		<lastmod>2020-11-07T22:02:41+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://enrictorrents.com/portfolio/landscapes/</loc>
+		<loc>https://www.enrictorrents.com/portfolio/landscapes/</loc>
 		<lastmod>2020-11-07T22:21:16+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://enrictorrents.com/portfolio/nature-2/</loc>
+		<loc>https://www.enrictorrents.com/portfolio/nature-2/</loc>
 		<lastmod>2020-11-07T22:02:41+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://enrictorrents.com/portfolio/travel/</loc>
+		<loc>https://www.enrictorrents.com/portfolio/travel/</loc>
 		<lastmod>2020-11-07T22:02:41+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://enrictorrents.com/portfolio/video/</loc>
+		<loc>https://www.enrictorrents.com/portfolio/video/</loc>
 		<lastmod>2020-11-07T22:21:16+00:00</lastmod>
 	</url>
 </urlset>
