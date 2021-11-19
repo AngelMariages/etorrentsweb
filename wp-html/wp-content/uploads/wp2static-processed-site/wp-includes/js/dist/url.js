@@ -226,7 +226,7 @@ function isValidProtocol(protocol) {
  * @example
  * ```js
  * const authority1 = getAuthority( 'https://wordpress.org/help/' ); // 'wordpress.org'
- * const authority2 = getAuthority( 'https://enrictorrents.com/test/' ); // 'localhost:8080'
+ * const authority2 = getAuthority( 'https://www.enrictorrents.com/test/' ); // 'localhost:8080'
  * ```
  *
  * @return {string|void} The authority part of the URL.
@@ -269,7 +269,7 @@ function isValidAuthority(authority) {
  *
  * @example
  * ```js
- * const path1 = getPath( 'https://enrictorrents.com/this/is/a/test?query=true' ); // 'this/is/a/test'
+ * const path1 = getPath( 'https://www.enrictorrents.com/this/is/a/test?query=true' ); // 'this/is/a/test'
  * const path2 = getPath( 'https://wordpress.org/help/faq/' ); // 'help/faq'
  * ```
  *
@@ -313,7 +313,7 @@ function isValidPath(path) {
  *
  * @example
  * ```js
- * const queryString = getQueryString( 'https://enrictorrents.com/this/is/a/test?query=true#fragment' ); // 'query=true'
+ * const queryString = getQueryString( 'https://www.enrictorrents.com/this/is/a/test?query=true#fragment' ); // 'query=true'
  * ```
  *
  * @return {string|void} The query string part of the URL.
@@ -424,7 +424,7 @@ function isValidQueryString(queryString) {
  *
  * @example
  * ```js
- * const pathAndQueryString1 = getPathAndQueryString( 'https://enrictorrents.com/this/is/a/test?query=true' ); // '/this/is/a/test?query=true'
+ * const pathAndQueryString1 = getPathAndQueryString( 'https://www.enrictorrents.com/this/is/a/test?query=true' ); // '/this/is/a/test?query=true'
  * const pathAndQueryString2 = getPathAndQueryString( 'https://wordpress.org/help/faq/' ); // '/help/faq'
  * ```
  *
@@ -448,7 +448,7 @@ function getPathAndQueryString(url) {
  *
  * @example
  * ```js
- * const fragment1 = getFragment( 'https://enrictorrents.com/this/is/a/test?query=true#fragment' ); // '#fragment'
+ * const fragment1 = getFragment( 'https://www.enrictorrents.com/this/is/a/test?query=true#fragment' ); // '#fragment'
  * const fragment2 = getFragment( 'https://wordpress.org#another-fragment?query=true' ); // '#another-fragment'
  * ```
  *
