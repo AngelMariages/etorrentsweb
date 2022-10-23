@@ -1,3 +1,12 @@
+<?php
+// phpcs:disable Generic.Files.LineLength.MaxExceeded                              
+// phpcs:disable Generic.Files.LineLength.TooLong                                  
+
+/**
+ * @var mixed[] $view
+ */
+?>
+
 <style>
 select.wp2static-select {
     width: 165px;
@@ -5,7 +14,7 @@ select.wp2static-select {
 </style>
 
 <div class="wrap">
-    <p><i><a href="<?php echo admin_url('admin.php?page=wp2static-caches'); ?>">Refresh page</a> to see latest status</i><p>
+    <p><i><a href="<?php echo admin_url( 'admin.php?page=wp2static-caches' ); ?>">Refresh page</a> to see latest status</i><p>
 
     <table class="widefat striped">
         <thead>
@@ -25,7 +34,7 @@ select.wp2static-select {
                     <form
                         name="wp2static-crawl-queue-delete"
                         method="POST"
-                        action="<?php echo esc_url( admin_url('admin-post.php') ); ?>">
+                        action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>">
 
                         <?php wp_nonce_field( $view['nonce_action'] ); ?>
 
@@ -46,7 +55,7 @@ select.wp2static-select {
                     <form
                         name="wp2static-crawl-cache-delete"
                         method="POST"
-                        action="<?php echo esc_url( admin_url('admin-post.php') ); ?>">
+                        action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>">
 
                         <?php wp_nonce_field( $view['nonce_action'] ); ?>
 
@@ -72,7 +81,7 @@ select.wp2static-select {
                     <form
                         name="wp2static-static-site-delete"
                         method="POST"
-                        action="<?php echo esc_url( admin_url('admin-post.php') ); ?>">
+                        action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>">
 
                         <?php wp_nonce_field( $view['nonce_action'] ); ?>
 
@@ -97,7 +106,7 @@ select.wp2static-select {
                     <form
                         name="wp2static-post-processed-site-delete"
                         method="POST"
-                        action="<?php echo esc_url( admin_url('admin-post.php') ); ?>">
+                        action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>">
 
                         <?php wp_nonce_field( $view['nonce_action'] ); ?>
 
@@ -114,21 +123,19 @@ select.wp2static-select {
 
             <?php
             $deploy_cache_rows
-                = isset($view['deployCacheTotalPathsByNamespace'])
-                ? count($view['deployCacheTotalPathsByNamespace'])
-                : 1
-            ;
+                = isset( $view['deployCacheTotalPaths'] )
+                ? count( $view['deployCacheTotalPaths'] )
+                : 1;
             ?>
             <tr>
                 <td rowspan="<?php echo $deploy_cache_rows; ?>">Deploy Cache</td>
-                <?php if ( isset($view['deployCacheTotalPathsByNamespace']) ) : ?>
-                    <?php $namespaces = array_keys($view['deployCacheTotalPathsByNamespace']); ?>
-                    <td><?php echo $view['deployCacheTotalPathsByNamespace'][$namespaces[0]]; ?> Paths in database for <code><?php echo $namespaces[0]; ?></code></td>
+                    <?php $namespaces = array_keys( $view['deployCacheTotalPaths'] ); ?>
+                    <td><?php echo $view['deployCacheTotalPaths'][ $namespaces[0] ]; ?> Paths in database for <code><?php echo $namespaces[0]; ?></code></td>
                     <td>
                         <form
                             name="wp2static-post-processed-site-delete"
                             method="POST"
-                            action="<?php echo esc_url( admin_url('admin-post.php') ); ?>">
+                            action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>">
 
                             <?php wp_nonce_field( $view['nonce_action'] ); ?>
 
@@ -146,12 +153,12 @@ select.wp2static-select {
                     <?php for ( $i = 1; $i < $deploy_cache_rows; $i++ ) : ?>
                         </tr>
                         <tr>
-                        <td><?php echo $view['deployCacheTotalPathsByNamespace'][$namespaces[$i]]; ?> Paths in database for <code><?php echo $namespaces[$i]; ?></code></td>
+                        <td><?php echo $view['deployCacheTotalPaths'][ $namespaces[ $i ] ]; ?> Paths in database for <code><?php echo $namespaces[ $i ]; ?></code></td>
                         <td>
                             <form
                                 name="wp2static-deploy-cache-delete"
                                 method="POST"
-                                action="<?php echo esc_url( admin_url('admin-post.php') ); ?>">
+                                action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>">
 
                                 <?php wp_nonce_field( $view['nonce_action'] ); ?>
 
@@ -160,33 +167,13 @@ select.wp2static-select {
                                     <option value="wp2static_deploy_cache_delete">Delete Deploy Cache</option>
                                 </select>
 
-                                <input name="deploy_namespace" type="hidden" value="<?php echo $namespaces[$i]; ?>" />
+                                <input name="deploy_namespace" type="hidden" value="<?php echo $namespaces[ $i ]; ?>" />
 
                                 <button class="button btn-danger">Go</button>
 
                             </form>
                         </td>
                     <?php endfor; ?>
-                <?php else : ?>
-                    <td><?php echo $view['deployCacheTotalPaths']; ?> Paths in database</td>
-                    <td>
-                        <form
-                            name="wp2static-deploy-cache-delete"
-                            method="POST"
-                            action="<?php echo esc_url( admin_url('admin-post.php') ); ?>">
-
-                            <?php wp_nonce_field( $view['nonce_action'] ); ?>
-
-                            <select name="action" class="wp2static-select">
-                                <option value="wp2static_deploy_cache_show">Show Paths</option>
-                                <option value="wp2static_deploy_cache_delete">Delete Deploy Cache</option>
-                            </select>
-
-                            <button class="button btn-danger">Go</button>
-
-                        </form>
-                    </td>
-                <?php endif; ?>
             </tr>
             </tbody>
         </table>
@@ -196,7 +183,7 @@ select.wp2static-select {
         <form
             name="wp2static-delete-all-caches"
             method="POST"
-            action="<?php echo esc_url( admin_url('admin-post.php') ); ?>">
+            action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>">
 
             <?php wp_nonce_field( $view['nonce_action'] ); ?>
             <input name="action" type="hidden" value="wp2static_delete_all_caches" />

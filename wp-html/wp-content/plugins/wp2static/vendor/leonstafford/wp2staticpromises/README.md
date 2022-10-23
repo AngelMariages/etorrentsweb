@@ -1,0 +1,1 @@
+Safely namespaced fork of [guzzle/promises](https://github.com/guzzle/promises) for use in [WP2Static](https://github.com/leonstafford/wp2static), generated with [AriseByAnyOtherName](https://github.com/leonstafford/AriseByAnyOtherName).

@@ -1,3 +1,12 @@
+<?php
+// phpcs:disable Generic.Files.LineLength.MaxExceeded
+// phpcs:disable Generic.Files.LineLength.TooLong
+
+/**
+ * @var mixed[] $view
+ */
+?>
+
 <div class="wrap">
     <br>
 
@@ -33,14 +42,14 @@
             <tr>
                 <td>Uploads directory writable</td>
                 <td>
-                    <?php echo $view['uploadsWritable']  ? 'Writable' : 'Non-writable'; ?>
+                    <?php echo $view['uploadsWritable'] ? 'Writable' : 'Non-writable'; ?>
 
                     <span
                         class="dashicons <?php echo $view['uploadsWritable'] ? 'dashicons-yes' : 'dashicons-no'; ?>"
                         style="color: <?php echo $view['uploadsWritable'] ? 'green' : 'red'; ?>;"
                     ></span>
                 </td>
-                <td>Generating a static site can involve long-running processes. Set your PHP max_execution_time setting to unlimited or find a better webhost if you're prevented from doing so.</td>
+                <td>By default WP2Static writes the generated static site under wp-content/uploads directory. Make sure WP2Static has the permission to do so.</td>
             </tr>
             <tr>
                 <td>PHP version</td>
@@ -75,17 +84,17 @@
                 </td>
             </tr>
             <tr>
-                <td>WordPress Permalinks Defined</td>
+                <td>WordPress Permalinks Compatible</td>
                 <td>
-                    <?php echo $view['permalinksDefined'] ? 'Yes' : 'No'; ?>
+                    <?php echo $view['permalinksAreCompatible'] ? 'Yes' : 'No'; ?>
 
                     <span
-                        class="dashicons <?php echo $view['permalinksDefined'] ? 'dashicons-yes' : 'dashicons-no'; ?>"
-                        style="color: <?php echo $view['permalinksDefined'] ? 'green' : 'red'; ?>;"
+                        class="dashicons <?php echo $view['permalinksAreCompatible'] ? 'dashicons-yes' : 'dashicons-no'; ?>"
+                        style="color: <?php echo $view['permalinksAreCompatible'] ? 'green' : 'red'; ?>;"
                     ></span>
                 </td>
                 <td>
-                    <p>Due to the nature of how static sites work, you'll need to have some kind of permalinks structure defined in your <a href="<?php echo admin_url( 'options-permalink.php' ); ?>">Permalink Settings</a> within WordPress. To learn more on how to do this, please see WordPress's official guide to the <a href="https://codex.wordpress.org/Settings_Permalinks_Screen">Settings Permalinks Screen</a>.</p>
+                    <p>Due to the nature of how static sites work, you'll need to have some kind of permalinks structure defined in your <a href="<?php echo admin_url( 'options-permalink.php' ); ?>">Permalink Settings</a> within WordPress. To learn more on how to do this, please see WordPress's official guide to the <a href="https://codex.wordpress.org/Settings_Permalinks_Screen">Settings Permalinks Screen</a>. The permalinks must end in a trailing slash (/).</p>
                 </td>
             </tr>
         </tbody>
@@ -98,14 +107,14 @@
         <tbody>
 
     <?php
-    natcasesort($view['extensions']);
+    natcasesort( $view['extensions'] );
     $ar_list = $view['extensions'];
-    $rows = ceil(count($ar_list) / 5);
-    $lists  = array_chunk($ar_list, $rows);
+    $rows = (int) ceil( count( $ar_list ) / 5 );
+    $lists  = array_chunk( $ar_list, $rows );
 
-    foreach ( $lists as $column) {
+    foreach ( $lists as $column ) {
         echo '<tr>';
-        foreach ($column as $item) {
+        foreach ( $column as $item ) {
             echo '<td>' . $item . '</td>';
         }
         echo '</tr>';
@@ -126,11 +135,11 @@
         </thead>
         <tbody>
 
-            <?php foreach ( $view['coreOptions'] as $option) : ?>
+            <?php foreach ( $view['coreOptions'] as $option ) : ?>
 
             <tr>
-            <td><?php echo $option['label'];?></td>
-            <td><?php echo $option['value'];?></td>
+            <td><?php echo $option['label']; ?></td>
+            <td><?php echo $option['value']; ?></td>
             </tr>
 
             <?php endforeach; ?>
@@ -151,10 +160,10 @@
 
             <?php
             // TODO: sort site infos alpha
-            foreach ( $view['site_info'] as $name => $value) : ?>
+            foreach ( $view['site_info'] as $name => $value ) : ?>
             <tr>
-            <td><?php echo $name;?></td>
-            <td><?php echo $value;?></td>
+            <td><?php echo $name; ?></td>
+            <td><?php echo $value; ?></td>
             </tr>
 
             <?php endforeach; ?>

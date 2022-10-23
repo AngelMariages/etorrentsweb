@@ -7,7 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     '7b11c4dc42b3b3023073cb14e519683c' => $vendorDir . '/ralouphie/getallheaders/src/getallheaders.php',
-    'a0edc8309cc5e1d60e3047b5df6b7052' => $vendorDir . '/guzzlehttp/psr7/src/functions_include.php',
-    'c964ee0ededf28c96ebd9db5099ef910' => $vendorDir . '/guzzlehttp/promises/src/functions_include.php',
-    '37a3dc5111fe8f707ab4c132ef1dbc62' => $vendorDir . '/guzzlehttp/guzzle/src/functions_include.php',
+    'd0b5a4bcb2eb77db006193765fbdeb4e' => $vendorDir . '/leonstafford/wp2staticpromises/src/functions_include.php',
+    '2edcfd5834be80ee2967bce938e96f65' => $vendorDir . '/leonstafford/wp2staticpsr7/src/functions_include.php',
+    '5a8a9c246f848495ce6ab4838c0cce72' => $vendorDir . '/leonstafford/wp2staticguzzle/src/functions_include.php',
 );

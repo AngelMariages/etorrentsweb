@@ -487,10 +487,20 @@ class Controller {
         }
     }
 
-    public static function wp2staticToggleAddon() : void {
-        check_admin_referer( 'wp2static-addons-page' );
+    public static function wp2staticToggleAddon( string $addon_slug = null ) : void {
+        if ( defined( 'WP_CLI' ) ) {
+            if ( ! $addon_slug ) {
+                throw new WP2StaticException(
+                    'No addon slug given for CLI toggling'
+                );
+            }
 
-        $addon_slug = sanitize_text_field( $_POST['addon_slug'] );
+            $addon_slug = sanitize_text_field( $addon_slug );
+        } else {
+            check_admin_referer( 'wp2static-addons-page' );
+
+            $addon_slug = sanitize_text_field( $_POST['addon_slug'] );
+        }
 
         global $wpdb;
 
@@ -519,7 +529,10 @@ class Controller {
             [ 'slug' => $addon_slug ]
         );
 
-        wp_safe_redirect( admin_url( 'admin.php?page=wp2static-addons' ) );
+        if ( ! defined( 'WP_CLI' ) ) {
+            wp_safe_redirect( admin_url( 'admin.php?page=wp2static-addons' ) );
+        }
+
         exit;
     }
 
@@ -712,8 +725,10 @@ class Controller {
             [
                 'method' => CoreOptions::getValue( 'completionWebhookMethod' ),
                 'timeout' => 30,
-                'user-agent' => 'WP2Static.com',
-                'body' => $body,
+                'user-agent' =>
+                    apply_filters( 'wp2static_deploy_webhook_user_agent', 'WP2Static.com' ),
+                'body' => apply_filters( 'wp2static_deploy_webhook_body', $body ),
+                'headers' => apply_filters( 'wp2static_deploy_webhook_headers', [] ),
             ]
         );
 

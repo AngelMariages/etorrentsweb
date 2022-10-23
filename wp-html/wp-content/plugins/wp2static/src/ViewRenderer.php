@@ -36,7 +36,7 @@ class ViewRenderer {
         $view['uploadsWritable'] = SiteInfo::isUploadsWritable();
         $view['maxExecutionTime'] = ini_get( 'max_execution_time' );
         $view['curlSupported'] = SiteInfo::hasCURLSupport();
-        $view['permalinksDefined'] = SiteInfo::permalinksAreDefined();
+        $view['permalinksAreCompatible'] = SiteInfo::permalinksAreCompatible();
         $view['domDocumentAvailable'] = class_exists( 'DOMDocument' );
         $view['extensions'] = get_loaded_extensions();
 
@@ -313,12 +313,6 @@ class ViewRenderer {
         $view['crawlQueueTotalURLs'] = CrawlQueue::getTotal();
         $view['crawlCacheTotalURLs'] = CrawlCache::getTotal();
         $view['deployCacheTotalPaths'] = DeployCache::getTotal();
-
-        if ( apply_filters( 'wp2static_deploy_cache_totals_by_namespace', false ) ) {
-            $view['deployCacheTotalPathsByNamespace']
-                = DeployCache::getTotalsByNamespace();
-        }
-
         $view['uploads_path'] = SiteInfo::getPath( 'uploads' );
         $view['nonce_action'] = 'wp2static-caches-page';
 

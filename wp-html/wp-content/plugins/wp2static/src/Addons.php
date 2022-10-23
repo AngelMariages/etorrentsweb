@@ -11,7 +11,7 @@ class Addons {
         $charset_collate = $wpdb->get_charset_collate();
 
         $sql = "CREATE TABLE $table_name (
-            slug VARCHAR(249) NOT NULL,
+            slug VARCHAR(191) NOT NULL,
             type VARCHAR(249) NOT NULL,
             name VARCHAR(249) NOT NULL,
             docs_url VARCHAR(2083) NOT NULL,
@@ -37,7 +37,7 @@ class Addons {
 
         $table_name = $wpdb->prefix . 'wp2static_addons';
 
-        $sql = "INSERT INTO {$table_name} (slug,type,name,docs_url,description)" .
+        $sql = "INSERT IGNORE INTO {$table_name} (slug,type,name,docs_url,description)" .
             ' VALUES (%s,%s,%s,%s,%s)';
 
         $sql = $wpdb->prepare( $sql, $slug, $type, $name, $docs_url, $description );

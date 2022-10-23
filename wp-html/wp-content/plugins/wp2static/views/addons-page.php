@@ -1,3 +1,12 @@
+<?php
+// phpcs:disable Generic.Files.LineLength.MaxExceeded                              
+// phpcs:disable Generic.Files.LineLength.TooLong                                  
+
+/**
+ * @var mixed[] $view
+ */
+?>
+
 <div class="wrap">
     <br>
 
@@ -19,13 +28,13 @@
             <?php endif; ?>
 
 
-            <?php foreach( $view['addons'] as $addon ) : ?>
+            <?php foreach ( $view['addons'] as $addon ) : ?>
                 <tr>
                     <td>
                         <form
                             name="wp2static-crawl-queue-delete"
                             method="POST"
-                            action="<?php echo esc_url( admin_url('admin-post.php') ); ?>">
+                            action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>">
 
                         <?php wp_nonce_field( $view['nonce_action'] ); ?>
                         <input name="action" type="hidden" value="wp2static_toggle_addon" />
@@ -46,7 +55,7 @@
                         <a href="<?php echo $addon->docs_url; ?>"><span class="dashicons dashicons-book-alt"></span></a>
                     </td>
                     <td>
-                        <a href="<?php echo esc_url( admin_url("admin.php?page={$addon->slug}") ); ?>"><span class="dashicons dashicons-admin-generic"></span></a>
+                        <a href="<?php echo esc_url( admin_url( "admin.php?page={$addon->slug}" ) ); ?>"><span class="dashicons dashicons-admin-generic"></span></a>
                     </td>
 
                 </tr>

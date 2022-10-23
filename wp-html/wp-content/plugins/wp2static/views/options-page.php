@@ -1,24 +1,18 @@
 <?php
+// phpcs:disable Generic.Files.LineLength.MaxExceeded                              
+// phpcs:disable Generic.Files.LineLength.TooLong                                  
+
 /**
- * @package WP2Static
- *
- * Copyright (c) 2011 Leon Stafford
+ * @var mixed[] $view
  */
 
-function displayTextfield($a = null, $b = null, $c = null, $d = null, $e = null) {
- echo 'something';
-}
-
-function displayCheckbox($a = null, $b = null, $c = null) {
- echo 'something';
-}
-
 ?>
+
 <div class="wrap">
     <form
         name="wp2static-ui-options"
         method="POST"
-        action="<?php echo esc_url( admin_url('admin-post.php') ); ?>">
+        action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>">
 
     <h2>Detection Options</h2>
 
