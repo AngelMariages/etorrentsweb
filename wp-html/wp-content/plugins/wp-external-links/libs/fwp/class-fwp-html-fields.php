@@ -257,6 +257,36 @@ class FWP_HTML_Fields_1x0x0
         return ( $this->get_value( $key ) == $checked_value ) ? ' checked' : '';
     }
 
+    /**
+     * Show text input field
+     * @param string $key
+     * @param array  $atts  Optional
+     */
+    public function number( $key, array $atts = array() )
+    {
+        echo '<input type="number"
+                    id="' . $this->get_field_id( $key ) . '"
+                    name="' . $this->get_field_name( $key ) . '"
+                    value="' . esc_attr( $this->get_value( $key ) ) . '"
+                    ' . $this->get_html_atts( $atts ) . '
+                > ' . $atts['unit'];
+    }
+
+     /**
+     * Show text input field
+     * @param string $key
+     * @param array  $atts  Optional
+     */
+    public function color( $key, array $atts = array() )
+    {
+        echo '<input type="text" class="wpel-colorpicker"
+                    id="' . $this->get_field_id( $key ) . '"
+                    name="' . $this->get_field_name( $key ) . '"
+                    value="' . esc_attr( $this->get_value( $key ) ) . '"
+                    ' . $this->get_html_atts( $atts ) . '
+                >';
+    }
+
 }
 
 /*?>*/

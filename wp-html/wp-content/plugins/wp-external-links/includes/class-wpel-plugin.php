@@ -21,7 +21,34 @@ final class WPEL_Plugin extends FWP_Plugin_Base_1x0x0
     {
         parent::init($plugin_file, $plugin_dir);
         $this->create_components();
+        add_action('wp_ajax_wpel_dismiss_notice', array($this, 'ajax_dismiss_notice'));
     }
+
+    /**
+     * Dismiss notice via AJAX call
+     *
+     * @return null
+     */
+    function ajax_dismiss_notice()
+    {
+      check_ajax_referer('wpel_dismiss_notice');
+
+      if (!current_user_can('administrator')) {
+        wp_send_json_error('You are not allowed to run this action.');
+      }
+
+      $notice_name = trim(sanitize_text_field(@$_GET['notice_name']));
+      $pointers = get_option('wpel-pointers', array());
+
+      if ($notice_name != 'welcome') {
+        wp_send_json_error('Unknown notice');
+      } else {
+        $pointers['hide_welcome_pointer'] = true;
+        update_option('wpel-pointers', $pointers);
+        wp_send_json_success();
+      }
+    } // ajax_dismiss_notice
+
 
     /**
      * Create components
@@ -43,6 +70,7 @@ final class WPEL_Plugin extends FWP_Plugin_Base_1x0x0
             'excluded-links'    => WPEL_Excluded_Link_Fields::create(),
             'admin'             => WPEL_Admin_Fields::create(),
             'exceptions'        => WPEL_Exceptions_Fields::create(),
+            'exit-confirmation' => WPEL_Exit_Confirmation_Fields::create(),
         ));
 
         // front site

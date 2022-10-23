@@ -36,14 +36,13 @@ class Breadcrumb extends Abstract_Schema_Piece {
 		// In case of pagination, replace the last breadcrumb, because it only contains "Page [number]" and has no URL.
 		if (
 			(
-				$this->helpers->current_page->is_paged() ||
-				$this->context->indexable->number_of_pages > 1
-			) &&
-			(
+				$this->helpers->current_page->is_paged()
+				|| $this->context->indexable->number_of_pages > 1
+			) && (
 				// Do not replace the last breadcrumb on static post pages.
-				! $this->helpers->current_page->is_static_posts_page() &&
+				! $this->helpers->current_page->is_static_posts_page()
 				// Do not remove the last breadcrumb if only one exists (bugfix for custom paginated frontpages).
-				\count( $breadcrumbs ) > 1
+				&& \count( $breadcrumbs ) > 1
 			)
 		) {
 			\array_pop( $breadcrumbs );
@@ -82,6 +81,9 @@ class Breadcrumb extends Abstract_Schema_Piece {
 				$breadcrumbs[0]['text'] = $breadcrumbs_home;
 			}
 		}
+
+		$breadcrumbs = \array_filter( $breadcrumbs, [ $this, 'not_empty_text' ] );
+		$breadcrumbs = \array_values( $breadcrumbs );
 
 		// Create intermediate breadcrumbs.
 		foreach ( $breadcrumbs as $index => $breadcrumb ) {
@@ -165,5 +167,16 @@ class Breadcrumb extends Abstract_Schema_Piece {
 	 */
 	private function not_hidden( $breadcrumb ) {
 		return empty( $breadcrumb['hide_in_schema'] );
+	}
+
+	/**
+	 * Checks whether the breadcrumb has a not empty text.
+	 *
+	 * @param array $breadcrumb The breadcrumb array.
+	 *
+	 * @return bool If the breadcrumb has a not empty text.
+	 */
+	private function not_empty_text( $breadcrumb ) {
+		return ! empty( $breadcrumb['text'] );
 	}
 }

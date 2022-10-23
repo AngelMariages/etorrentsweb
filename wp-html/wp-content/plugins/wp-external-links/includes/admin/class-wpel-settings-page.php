@@ -40,10 +40,6 @@ final class WPEL_Settings_Page extends WPRun_Base_1x0x0
         $this->network_page = $network_page;
 
         $this->tabs = array(
-            'link-checking' => array(
-              'title'     => '<span class="dashicons dashicons-star-filled"></span>'.__('Link Checker', 'wp-external-links'),
-              'icon'      => false,
-            ),
             'external-links' => array(
                 'title'     => __('External Links', 'wp-external-links'),
                 'icon'      => false,
@@ -64,11 +60,24 @@ final class WPEL_Settings_Page extends WPRun_Base_1x0x0
                 'icon'      => false,
                 'fields'    => $fields_objects['exceptions'],
             ),
-            'admin' => array(
-                'title'     => __('Admin Settings', 'wp-external-links'),
+            'link-rules' => array(
+              'title'     => '<span class="dashicons dashicons-star-filled"></span>' . __('Link Rules', 'wp-external-links'),
+              'icon'      => false,
+          ),
+
+          'exit-confirmation' => array(
+            'title'     => '<span class="dashicons dashicons-star-filled"></span>' . __('Exit Confirmation', 'wp-external-links'),
+            'icon'      => false,
+            'fields'    => $fields_objects['exit-confirmation'],
+        ),
+            'link-checking' => array(
+                'title'     => '<span class="dashicons dashicons-star-filled"></span>' . __('Link Checker', 'wp-external-links'),
                 'icon'      => false,
-                'fields'    => $fields_objects['admin'],
-            ),
+          ),
+            'pro' => array(
+                'title'     => __('PRO', 'wp-external-links'),
+                'icon'      => false,
+          ),
             'support' => array(
                 'title'     => __('Support', 'wp-external-links'),
                 'icon'      => false,
@@ -105,8 +114,9 @@ final class WPEL_Settings_Page extends WPRun_Base_1x0x0
         $current_screen = get_current_screen();
         if (!empty($current_screen) && $current_screen->id == 'toplevel_page_wpel-settings-page') {
             $plugin_version = get_option('wpel-version');
-            $text = '<i>WP External Links v'.$plugin_version.' <a href="https://www.webfactoryltd.com?ref=wp-external-links" title="WebFactory Ltd" target="_blank">WebFactory Ltd</a>. Please <a target="_blank" href="https://wordpress.org/support/plugin/wp-external-links/reviews/#new-post" title="Rate the plugin">rate the plugin <span>★★★★★</span></a> to help us spread the word. Thank you 🙌 from the Webfactory team!</i>';
+            $text = '<i>WP External Links v' . $plugin_version . ' by <a href="https://www.webfactoryltd.com?ref=wp-external-links" title="WebFactory Ltd" target="_blank">WebFactory Ltd</a>. Please <a target="_blank" href="https://wordpress.org/support/plugin/wp-external-links/reviews/#new-post" title="Rate the plugin">rate the plugin <span>★★★★★</span></a> to help us spread the word. Thank you 🙌</i>';
         }
+
         return $text;
     } // admin_footer_text
 
@@ -121,8 +131,10 @@ final class WPEL_Settings_Page extends WPRun_Base_1x0x0
      */
     function plugin_action_links($links)
     {
-        $settings_link = '<a href="' . admin_url('admin.php?page=wpel-settings-page') . '" title="Open WP External Links Settings">Configure Settings</a>';
+        $settings_link = '<a href="' . admin_url('admin.php?page=wpel-settings-page') . '" title="Open WP External Links Settings">Configure</a>';
+        $pro_link = '<a href="' . admin_url('admin.php?page=wpel-settings-page#open-pro-dialog') . '" title="Get PRO version"><b>Get PRO</b></a>';
 
+        array_unshift($links, $pro_link);
         array_unshift($links, $settings_link);
 
         return $links;
@@ -137,6 +149,10 @@ final class WPEL_Settings_Page extends WPRun_Base_1x0x0
      */
     public function get_option_value($key, $type = null)
     {
+        if ('own_admin_menu' == $key) {
+          return '1';
+        }
+
         if (null === $type) {
             foreach ($this->tabs as $tab_key => $values) {
                 if (!isset($values['fields'])) {
@@ -172,7 +188,7 @@ final class WPEL_Settings_Page extends WPRun_Base_1x0x0
             $this->page_hook = add_menu_page(
                 __('WP External Links', 'wp-external-links')          // page title
                 ,
-                __('External Links', 'wp-external-links')           // menu title
+                __('WP External Links', 'wp-external-links')           // menu title
                 ,
                 $capability                               // capability
                 ,
@@ -180,7 +196,7 @@ final class WPEL_Settings_Page extends WPRun_Base_1x0x0
                 ,
                 $this->get_callback('show_admin_page')  // callback
                 ,
-                'none'                                    // icon
+                WPEL_PLUGIN_URL . 'public/images/icon-small.png'  // icon
                 ,
                 null                                      // position
             );
@@ -188,7 +204,7 @@ final class WPEL_Settings_Page extends WPRun_Base_1x0x0
             $this->page_hook = add_options_page(
                 __('WP External Links', 'wp-external-links')          // page title
                 ,
-                __('External Links', 'wp-external-links')           // menu title
+                __('WP External Links', 'wp-external-links')           // menu title
                 ,
                 $capability                               // capability
                 ,
@@ -230,9 +246,18 @@ final class WPEL_Settings_Page extends WPRun_Base_1x0x0
         if ($current_screen->id == 'toplevel_page_wpel-settings-page' || $current_screen->id == 'settings_page_wpel-settings-page') {
             wp_enqueue_script('jquery-ui-core');
             wp_enqueue_script('jquery-ui-accordion');
-            wp_enqueue_style('font-awesome');
+
+            wp_enqueue_style('wp-jquery-ui-dialog');
+            wp_enqueue_script('jquery-ui-position');
+            wp_enqueue_script('jquery-ui-dialog');
+
+            wp_enqueue_style('wpel-font-awesome');
             wp_enqueue_style('wpel-admin-style');
             wp_enqueue_script('wpel-admin-script');
+
+            wp_enqueue_style('wp-color-picker');
+            wp_enqueue_script('wp-color-picker');
+
             wp_enqueue_style('jquery-ui-smoothness', 'https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css', false, null);
             wp_enqueue_style('wpel-admin-font', 'https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&display=swap');
         }

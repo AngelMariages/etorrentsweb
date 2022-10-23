@@ -38,7 +38,8 @@ class Modula_Gutenberg {
 	 */
 	public function register_block_type() {
 
-		wp_register_script( 'modula-gutenberg', MODULA_URL . 'assets/js/admin/wp-modula-gutenberg.js', array( 'wp-blocks', 'wp-element', 'wp-editor', 'wp-data', 'jquery-ui-autocomplete', 'wp-api-fetch' ), MODULA_LITE_VERSION, true );
+		wp_register_script( 'modula-gutenberg', MODULA_URL . 'assets/js/admin/wp-modula-gutenberg.js', array( 'wp-blocks', 'wp-element', 'wp-data', 'jquery-ui-autocomplete', 'wp-api-fetch' ), MODULA_LITE_VERSION, true );
+
 		wp_register_style( 'modula-gutenberg', MODULA_URL . 'assets/css/admin/modula-gutenberg.css', array(), true );
 
 		register_block_type(
@@ -58,22 +59,33 @@ class Modula_Gutenberg {
 	 * @since 2.5.0
 	 */
 	public function enqueue_block_assets() {
+		global $pagenow;
 		$screen = get_current_screen();
-		if ( 'post' === $screen->post_type || 'page' === $screen->post_type ) {
-			wp_enqueue_style( 'modula', MODULA_URL . 'assets/css/front.css', null, MODULA_LITE_VERSION );
 
-			do_action( 'modula_block_style' );
+		//Early return to avoid loading Gutenberg assets on non-Gutenberg pages.
 
-			wp_enqueue_script( 'modula-selectize', MODULA_URL . 'assets/js/admin/selectize.js', null, MODULA_LITE_VERSION, true );
-			wp_enqueue_style( 'modula-selectize', MODULA_URL . 'assets/css/admin/selectize.default.css' );
-			wp_enqueue_script( 'modula-isotope', MODULA_URL . 'assets/js/front/isotope.js', array( 'jquery' ), MODULA_LITE_VERSION, true );
-			wp_enqueue_script( 'modula-isotope-packery', MODULA_URL . 'assets/js/front/isotope-packery.js', array( 'jquery' ), MODULA_LITE_VERSION, true );
-			wp_enqueue_script( 'modula-grid-justified-gallery', MODULA_URL . 'assets/js/front/justifiedGallery.js', array( 'jquery' ), MODULA_LITE_VERSION, true );
-
-			do_action( 'modula_block_scripts' );
-
-			wp_enqueue_script( 'modula', MODULA_URL . 'assets/js/front/jquery-modula.js', array( 'jquery' ), MODULA_LITE_VERSION, true );
+		if ( function_exists( 'is_gutenberg_page' ) && ! is_gutenberg_page() ) {
+			return;
 		}
+
+		if ( method_exists( $screen, 'is_block_editor' ) && ! $screen->is_block_editor() ) {
+			return;
+		}
+
+		// If we end up here it means that the block is enabled, so let's enqueue our scripts
+		wp_enqueue_style( 'modula', MODULA_URL . 'assets/css/front.css', null, MODULA_LITE_VERSION );
+
+		do_action( 'modula_block_style' );
+
+		wp_enqueue_script( 'modula-selectize', MODULA_URL . 'assets/js/admin/selectize.js', null, MODULA_LITE_VERSION, true );
+		wp_enqueue_style( 'modula-selectize', MODULA_URL . 'assets/css/admin/selectize.default.css', array(), MODULA_LITE_VERSION );
+		wp_enqueue_script( 'modula-isotope', MODULA_URL . 'assets/js/front/isotope.js', array( 'jquery' ), MODULA_LITE_VERSION, true );
+		wp_enqueue_script( 'modula-isotope-packery', MODULA_URL . 'assets/js/front/isotope-packery.js', array( 'jquery' ), MODULA_LITE_VERSION, true );
+		wp_enqueue_script( 'modula-grid-justified-gallery', MODULA_URL . 'assets/js/front/justifiedGallery.js', array( 'jquery' ), MODULA_LITE_VERSION, true );
+
+		do_action( 'modula_block_scripts' );
+
+		wp_enqueue_script( 'modula', MODULA_URL . 'assets/js/front/jquery-modula.js', array( 'jquery' ), MODULA_LITE_VERSION, true );
 	}
 
 	/**
@@ -171,11 +183,14 @@ class Modula_Gutenberg {
 	 * @since 2.5.0
 	 */
 	public function get_jsconfig() {
-		if ( isset( $_POST['nonce'] ) ) {
-			if ( ! wp_verify_nonce( $_POST['nonce'], 'modula_nonce' ) ) {//phpcs:ignore
-				wp_send_json_error();
-				die();
-			}
+		if( !isset( $_POST['nonce'] ) ) {
+			wp_send_json_error( 'no nonce' );
+			die();
+		}
+
+		if ( ! wp_verify_nonce( $_POST['nonce'], 'modula_nonce' ) ) {//phpcs:ignore
+			wp_send_json_error();
+			die();
 		}
 
 		if ( isset( $_POST['settings'] ) ) {
@@ -207,12 +222,16 @@ class Modula_Gutenberg {
 	 * @param string $effect Selected effect so we can check if we add title and caption to it.
 	 */
 	public function check_hover_effect( $effect ) {
-		if ( isset( $_POST['nonce'] ) ) {
-			if ( ! wp_verify_nonce( $_POST['nonce'], 'modula_nonce' ) ) { //phpcs:ignore
-				wp_send_json_error();
-				die();
-			}
+		if( !isset( $_POST['nonce'] ) ) {
+			wp_send_json_error( 'no nonce' );
+			die();
 		}
+
+		if ( ! wp_verify_nonce( $_POST['nonce'], 'modula_nonce' ) ) {//phpcs:ignore
+			wp_send_json_error();
+			die();
+		}
+
 		if ( isset( $_POST['effect'] ) ) {
 			$effect = $_POST['effect']; //phpcs:ignore
 		}
@@ -227,14 +246,17 @@ class Modula_Gutenberg {
 
 	public function get_gallery() {
 
-		$nonce = $_GET['nonce'];
+		$nonce = '';
+		if( isset( $_GET['nonce'] ) ){
+			$nonce = $_GET['nonce'];
+		}
 
 		if ( ! wp_verify_nonce( $nonce, 'modula_nonce' ) ) {
 			die();
 		}
 
 		$suggestions = array();
-		$term        = sanitize_text_field( $_GET['term'] );
+		$term        = isset( $_GET['term'] ) ? sanitize_text_field( wp_unslash( $_GET['term'] ) ) : '';
 
 		$loop = new WP_Query(
 			array(

@@ -34,10 +34,28 @@ final class WPEL_Register_Scripts extends WPRun_Base_1x0x0
     protected function register_scripts()
     {
         $plugin_version = get_option('wpel-version');
+        $pointers = get_option('wpel-pointers', array());
+
+        if(function_exists('get_current_screen')){
+            $current_screen = get_current_screen();
+        }
+
+      if (isset($current_screen) && $current_screen->id != 'toplevel_page_wpel-settings-page' && $current_screen->id != 'settings_page_wpel-settings-page') {
+        if (empty($pointers['hide_welcome_pointer']) && current_user_can('administrator')) {
+          $pointers['_nonce_dismiss_pointer'] = wp_create_nonce('wpel_dismiss_notice');
+          $pointers['welcome'] = array('target' => '#toplevel_page_wpel-settings-page', 'edge' => 'left', 'align' => 'right', 'content' => 'Thank you for installing the <b style="font-weight: 800;">WP External Links</b> plugin!<br>Open <a href="' . admin_url('admin.php?page=wpel-settings-page') . '">WP External Links</a> to manage your links, and configure settings.');
+
+          wp_enqueue_style('wp-pointer');
+
+          wp_enqueue_script('wpel-pointers', plugins_url('/public/js/wpel-pointers.js', WPEL_Plugin::get_plugin_file()), array('jquery'), get_option('wpel-version'), true);
+          wp_enqueue_script('wp-pointer');
+          wp_localize_script('wp-pointer', 'wpel_pointers', $pointers);
+        }
+      }
 
         // set style font awesome icons
         wp_register_style(
-            'font-awesome',
+            'wpel-font-awesome',
             'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css',
             array(),
             $plugin_version
@@ -59,29 +77,10 @@ final class WPEL_Register_Scripts extends WPRun_Base_1x0x0
             $plugin_version
         );
 
-        // set admin global style
-        wp_register_style(
-            'wpel-admin-global-style',
-            plugins_url('/public/css/wpel-admin-global.css', WPEL_Plugin::get_plugin_file()),
-            array(),
-            $plugin_version
-        );
-
-        $linkhero = get_option('wpel-linkhero', array('checker' => array(), 'enabled' => false));
-        if(!isset($linkhero['enabled'])){
-            $linkhero['enabled'] = false;
-        }
         $wpel_js = array(
             'nonce_ajax' => wp_create_nonce('wpel_run_tool'),
-            'loader' => admin_url('/images/spinner.gif'),
-            'link_checking_enabled' => false
+            'loader' => admin_url('/images/spinner.gif')
         );
-
-        $wpel_js['lh_url'] = WPEL_LinkHero::$lh_url;
-
-        if(!WPEL_LinkHero::is_localhost()){
-            $wpel_js['link_checking_enabled'] = $linkhero['enabled'];
-        }
 
         // set wpel admin script
         wp_register_script(

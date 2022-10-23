@@ -49,7 +49,7 @@ class Modula_WP_Core_Gallery_Importer {
             }
         }
 
-        $sql       = "SELECT * FROM " . $wpdb->prefix . "posts WHERE `post_content` LIKE '%[galler%' AND `post_type` IN ($post_in)";
+        $sql = $wpdb->prepare("SELECT ID, post_title, post_content FROM {$wpdb->posts} WHERE post_type IN ({$post_in}) AND post_content LIKE %s", '%[gallery%');
         $galleries = $wpdb->get_results($sql);
 
         if (count($galleries) != 0) {
@@ -124,7 +124,7 @@ class Modula_WP_Core_Gallery_Importer {
             }
 
             // Need to make replace so we can search our shortcode in content
-            $galery_atts = str_replace('\"','"',$_POST['id']);
+            $galery_atts = str_replace('\"','"', sanitize_text_field( $_POST['id'] ) );
         }
 
 
@@ -175,7 +175,7 @@ class Modula_WP_Core_Gallery_Importer {
                 $modula_gallery_id = wp_insert_post(array(
                     'post_type'   => 'modula-gallery',
                     'post_status' => 'publish',
-                    'post_title'  => sanitize_text_field($_POST['gallery_title']),
+                    'post_title'  => isset( $_POST['gallery_title'] ) ? sanitize_text_field($_POST['gallery_title']) : '',
                 ));
 
 

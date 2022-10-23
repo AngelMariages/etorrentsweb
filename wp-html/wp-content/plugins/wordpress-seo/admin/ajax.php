@@ -111,7 +111,7 @@ function wpseo_save_what( $what ) {
  * @param string $meta_key        Meta key string.
  * @param string $return_key      Return key string to use in results.
  *
- * @return string
+ * @return array
  */
 function wpseo_upsert_meta( $post_id, $new_meta_value, $orig_meta_value, $meta_key, $return_key ) {
 
@@ -232,17 +232,17 @@ function wpseo_save_all( $what ) {
 /**
  * Insert a new value.
  *
- * @param string $what     Item type (such as title).
- * @param int    $post_id  Post ID.
- * @param string $new      New value to record.
- * @param string $original Original value.
+ * @param string $what      Item type (such as title).
+ * @param int    $post_id   Post ID.
+ * @param string $new_value New value to record.
+ * @param string $original  Original value.
  *
  * @return string
  */
-function wpseo_upsert_new( $what, $post_id, $new, $original ) {
+function wpseo_upsert_new( $what, $post_id, $new_value, $original ) {
 	$meta_key = WPSEO_Meta::$meta_prefix . $what;
 
-	return wpseo_upsert_meta( $post_id, $new, $original, $meta_key, $what );
+	return wpseo_upsert_meta( $post_id, $new_value, $original, $meta_key, $what );
 }
 
 /**

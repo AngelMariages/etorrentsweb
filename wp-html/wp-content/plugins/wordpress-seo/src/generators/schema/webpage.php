@@ -27,7 +27,7 @@ class WebPage extends Abstract_Schema_Piece {
 	public function generate() {
 		$data = [
 			'@type'      => $this->context->schema_page_type,
-			'@id'        => $this->context->canonical . Schema_IDs::WEBPAGE_HASH,
+			'@id'        => $this->context->main_schema_id,
 			'url'        => $this->context->canonical,
 			'name'       => $this->helpers->schema->html->smart_strip_tags( $this->context->title ),
 			'isPartOf'   => [
@@ -35,15 +35,19 @@ class WebPage extends Abstract_Schema_Piece {
 			],
 		];
 
+		if ( empty( $this->context->canonical ) && \is_search() ) {
+			$data['url'] = $this->build_search_url();
+		}
+
 		if ( $this->helpers->current_page->is_front_page() ) {
 			if ( $this->context->site_represents_reference ) {
 				$data['about'] = $this->context->site_represents_reference;
 			}
 		}
 
-		if ( $this->context->indexable->object_type === 'post' ) {
-			$this->add_image( $data );
+		$this->add_image( $data );
 
+		if ( $this->context->indexable->object_type === 'post' ) {
 			$data['datePublished'] = $this->helpers->date->format( $this->context->post->post_date_gmt );
 			$data['dateModified']  = $this->helpers->date->format( $this->context->post->post_modified_gmt );
 
@@ -96,6 +100,8 @@ class WebPage extends Abstract_Schema_Piece {
 	public function add_image( &$data ) {
 		if ( $this->context->has_image ) {
 			$data['primaryImageOfPage'] = [ '@id' => $this->context->canonical . Schema_IDs::PRIMARY_IMAGE_HASH ];
+			$data['image']              = [ '@id' => $this->context->canonical . Schema_IDs::PRIMARY_IMAGE_HASH ];
+			$data['thumbnailUrl']       = $this->context->main_image_url;
 		}
 	}
 
@@ -120,12 +126,17 @@ class WebPage extends Abstract_Schema_Piece {
 	 * @return array The WebPage data with the potential action added.
 	 */
 	private function add_potential_action( $data ) {
+		$url = $this->context->canonical;
+		if ( $data['@type'] === 'CollectionPage' || ( \is_array( $data['@type'] ) && \in_array( 'CollectionPage', $data['@type'], true ) ) ) {
+			return $data;
+		}
+
 		/**
 		 * Filter: 'wpseo_schema_webpage_potential_action_target' - Allows filtering of the schema WebPage potentialAction target.
 		 *
 		 * @api array $targets The URLs for the WebPage potentialAction target.
 		 */
-		$targets = \apply_filters( 'wpseo_schema_webpage_potential_action_target', [ $this->context->canonical ] );
+		$targets = \apply_filters( 'wpseo_schema_webpage_potential_action_target', [ $url ] );
 
 		$data['potentialAction'][] = [
 			'@type'  => 'ReadAction',
@@ -133,5 +144,14 @@ class WebPage extends Abstract_Schema_Piece {
 		];
 
 		return $data;
+	}
+
+	/**
+	 * Creates the search URL for use when if there is no canonical.
+	 *
+	 * @return string Search URL.
+	 */
+	private function build_search_url() {
+		return $this->context->site_url . '?s=' . \get_search_query();
 	}
 }

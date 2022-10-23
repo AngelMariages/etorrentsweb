@@ -25,7 +25,7 @@ class Image_Presenter extends Abstract_Indexable_Presenter {
 	protected static $image_tags = [
 		'width'     => 'width',
 		'height'    => 'height',
-		'mime-type' => 'type',
+		'type'      => 'type',
 	];
 
 	/**
@@ -43,15 +43,16 @@ class Image_Presenter extends Abstract_Indexable_Presenter {
 		$return = '';
 		foreach ( $images as $image_index => $image_meta ) {
 			$image_url = $image_meta['url'];
+			$class     = \is_admin_bar_showing() ? ' class="yoast-seo-meta-tag"' : '';
 
-			$return .= '<meta property="og:image" content="' . \esc_url( $image_url ) . '" />';
+			$return .= '<meta property="og:image" content="' . \esc_url( $image_url, null, 'attribute' ) . '"' . $class . ' />';
 
 			foreach ( static::$image_tags as $key => $value ) {
 				if ( empty( $image_meta[ $key ] ) ) {
 					continue;
 				}
 
-				$return .= \PHP_EOL . "\t" . '<meta property="og:image:' . \esc_attr( $key ) . '" content="' . $image_meta[ $key ] . '" />';
+				$return .= \PHP_EOL . "\t" . '<meta property="og:image:' . \esc_attr( $key ) . '" content="' . \esc_attr( $image_meta[ $key ] ) . '"' . $class . ' />';
 			}
 		}
 
@@ -67,7 +68,12 @@ class Image_Presenter extends Abstract_Indexable_Presenter {
 		$images = [];
 
 		foreach ( $this->presentation->open_graph_images as $open_graph_image ) {
-			$images[] = $this->filter( $open_graph_image );
+			$images[] = \array_intersect_key(
+				// First filter the object.
+				$this->filter( $open_graph_image ),
+				// Then strip all keys that aren't in the image tags or the url.
+				\array_flip( \array_merge( static::$image_tags, [ 'url' ] ) )
+			);
 		}
 
 		return \array_filter( $images );

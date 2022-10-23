@@ -5,6 +5,7 @@
  * @package WPSEO\Admin
  */
 
+use Yoast\WP\SEO\Conditionals\Indexables_Page_Conditional;
 /**
  * Notifications template variables.
  *
@@ -13,9 +14,6 @@
  * @var array
  */
 $notifications_data = Yoast_Notifications::get_template_variables();
-
-$notifier = new WPSEO_Configuration_Notifier();
-$notifier->listen();
 
 $wpseo_contributors_phrase = sprintf(
 	/* translators: %1$s expands to Yoast SEO */
@@ -28,11 +26,6 @@ $wpseo_contributors_phrase = sprintf(
 <div class="tab-block">
 	<div class="yoast-notifications">
 
-		<?php
-		// phpcs:ignore WordPress.Security.EscapeOutput -- WPSEO_Configuration_Notifier::notify() escapes correctly.
-		echo $notifier->notify();
-		?>
-
 		<div class="yoast-container yoast-container__error">
 			<?php require WPSEO_PATH . 'admin/views/partial-notifications-errors.php'; ?>
 		</div>
@@ -43,6 +36,16 @@ $wpseo_contributors_phrase = sprintf(
 
 	</div>
 </div>
+
+<?php
+if ( YoastSEO()->classes->get( Indexables_Page_Conditional::class )->is_met() ) {
+	?>
+<div class="tab-block">
+	<div id="wpseo-indexables-page"></div>
+</div>
+	<?php
+}
+?>
 
 <div class="tab-block">
 	<h2><?php esc_html_e( 'Credits', 'wordpress-seo' ); ?></h2>

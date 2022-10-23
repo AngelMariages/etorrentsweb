@@ -117,26 +117,6 @@ class WPSEO_Utils {
 	}
 
 	/**
-	 * Translates a decimal analysis score into a textual one.
-	 *
-	 * @since 1.8.0
-	 *
-	 * @param int  $val       The decimal score to translate.
-	 * @param bool $css_value Whether to return the i18n translated score or the CSS class value.
-	 *
-	 * @return string
-	 */
-	public static function translate_score( $val, $css_value = true ) {
-		$seo_rank = WPSEO_Rank::from_numeric_score( $val );
-
-		if ( $css_value ) {
-			return $seo_rank->get_css_class();
-		}
-
-		return $seo_rank->get_label();
-	}
-
-	/**
 	 * Emulate the WP native sanitize_text_field function in a %%variable%% safe way.
 	 *
 	 * Sanitize a string from user input or from the db.
@@ -448,7 +428,7 @@ class WPSEO_Utils {
 	 * @since 1.8.0
 	 */
 	public static function clear_rewrites() {
-		delete_option( 'rewrite_rules' );
+		update_option( 'rewrite_rules', '' );
 	}
 
 	/**
@@ -589,16 +569,16 @@ class WPSEO_Utils {
 	 *
 	 * @since 2.0.0
 	 *
-	 * @param string $string String input to trim.
+	 * @param string $text String input to trim.
 	 *
 	 * @return string
 	 */
-	public static function trim_nbsp_from_string( $string ) {
-		$find   = [ '&nbsp;', chr( 0xC2 ) . chr( 0xA0 ) ];
-		$string = str_replace( $find, ' ', $string );
-		$string = trim( $string );
+	public static function trim_nbsp_from_string( $text ) {
+		$find = [ '&nbsp;', chr( 0xC2 ) . chr( 0xA0 ) ];
+		$text = str_replace( $find, ' ', $text );
+		$text = trim( $text );
 
-		return $string;
+		return $text;
 	}
 
 	/**
@@ -897,6 +877,7 @@ class WPSEO_Utils {
 			'isBreadcrumbsDisabled' => WPSEO_Options::get( 'breadcrumbs-enable', false ) !== true && ! current_theme_supports( 'yoast-seo-breadcrumbs' ),
 			// phpcs:ignore Generic.ControlStructures.DisallowYodaConditions -- Bug: squizlabs/PHP_CodeSniffer#2962.
 			'isPrivateBlog'         => ( (string) get_option( 'blog_public' ) ) === '0',
+			'news_seo_is_active'    => ( defined( 'WPSEO_NEWS_FILE' ) ),
 		];
 
 		$additional_entries = apply_filters( 'wpseo_admin_l10n', [] );
@@ -947,7 +928,7 @@ class WPSEO_Utils {
 	 * @return false|string The prepared JSON string.
 	 */
 	public static function format_json_encode( $data ) {
-		$flags = JSON_UNESCAPED_SLASHES;
+		$flags = ( JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE );
 
 		if ( self::is_development_mode() ) {
 			$flags = ( $flags | JSON_PRETTY_PRINT );
@@ -1173,14 +1154,14 @@ class WPSEO_Utils {
 	 * @deprecated 15.2
 	 * @codeCoverageIgnore
 	 *
-	 * @param string $string String input to standardize.
+	 * @param string $text String input to standardize.
 	 *
 	 * @return string
 	 */
-	public static function standardize_whitespace( $string ) {
+	public static function standardize_whitespace( $text ) {
 		_deprecated_function( __METHOD__, 'WPSEO 15.2' );
 
-		return YoastSEO()->helpers->string->standardize_whitespace( $string );
+		return YoastSEO()->helpers->string->standardize_whitespace( $text );
 	}
 
 	/**
@@ -1247,12 +1228,12 @@ class WPSEO_Utils {
 	 * @deprecated 15.5
 	 * @codeCoverageIgnore
 	 *
-	 * @param array  $graph The Schema graph array to output.
-	 * @param string $class The (optional) class to add to the script tag.
+	 * @param array  $graph        The Schema graph array to output.
+	 * @param string $class_to_add The (optional) class to add to the script tag.
 	 *
 	 * @return bool
 	 */
-	public static function schema_output( $graph, $class = 'yoast-schema-graph' ) {
+	public static function schema_output( $graph, $class_to_add = 'yoast-schema-graph' ) {
 		_deprecated_function( __METHOD__, 'WPSEO 15.5' );
 
 		if ( ! is_array( $graph ) || empty( $graph ) ) {
@@ -1260,7 +1241,7 @@ class WPSEO_Utils {
 		}
 
 		// phpcs:ignore WordPress.Security.EscapeOutput -- Escaping happens in WPSEO_Utils::schema_tag, which should be whitelisted.
-		echo self::schema_tag( $graph, $class );
+		echo self::schema_tag( $graph, $class_to_add );
 		return true;
 	}
 
@@ -1270,12 +1251,12 @@ class WPSEO_Utils {
 	 * @deprecated 15.5
 	 * @codeCoverageIgnore
 	 *
-	 * @param array  $graph The Schema graph array to output.
-	 * @param string $class The (optional) class to add to the script tag.
+	 * @param array  $graph        The Schema graph array to output.
+	 * @param string $class_to_add The (optional) class to add to the script tag.
 	 *
 	 * @return false|string A schema blob with script tags.
 	 */
-	public static function schema_tag( $graph, $class = 'yoast-schema-graph' ) {
+	public static function schema_tag( $graph, $class_to_add = 'yoast-schema-graph' ) {
 		_deprecated_function( __METHOD__, 'WPSEO 15.5' );
 
 		if ( ! is_array( $graph ) || empty( $graph ) ) {
@@ -1286,7 +1267,7 @@ class WPSEO_Utils {
 			'@context' => 'https://schema.org',
 			'@graph'   => $graph,
 		];
-		return "<script type='application/ld+json' class='" . esc_attr( $class ) . "'>" . self::format_json_encode( $output ) . '</script>' . "\n";
+		return "<script type='application/ld+json' class='" . esc_attr( $class_to_add ) . "'>" . self::format_json_encode( $output ) . '</script>' . "\n";
 	}
 
 	/**
@@ -1416,5 +1397,29 @@ SVG;
 		}
 
 		return is_super_admin();
+	}
+
+	/**
+	 * Translates a decimal analysis score into a textual one.
+	 *
+	 * @since 1.8.0
+	 * @deprecated 19.5
+	 * @codeCoverageIgnore
+	 *
+	 * @param int  $val       The decimal score to translate.
+	 * @param bool $css_value Whether to return the i18n translated score or the CSS class value.
+	 *
+	 * @return string
+	 */
+	public static function translate_score( $val, $css_value = true ) {
+		_deprecated_function( __METHOD__, 'WPSEO 19.5', 'YoastSEO()->helpers->score_icon' );
+
+		$seo_rank = WPSEO_Rank::from_numeric_score( $val );
+
+		if ( $css_value ) {
+			return $seo_rank->get_css_class();
+		}
+
+		return $seo_rank->get_label();
 	}
 }

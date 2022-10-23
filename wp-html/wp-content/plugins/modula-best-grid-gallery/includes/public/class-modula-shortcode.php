@@ -129,7 +129,7 @@ class Modula_Shortcode {
 		}
 
 		$images = apply_filters( 'modula_gallery_images', $images, $settings );
-		
+
 		if ( empty( $settings ) || empty( $images ) ) {
 			return esc_html__( 'Gallery not found.', 'modula-best-grid-gallery' );
 		}
@@ -137,8 +137,8 @@ class Modula_Shortcode {
         do_action('modula_extra_scripts', $settings);
 
 		// Main CSS & JS
-		$necessary_scripts = apply_filters( 'modula_necessary_scripts', array( 'modula-fancybox', 'modula' ), $settings );
-		$necessary_styles  = apply_filters( 'modula_necessary_styles', array( 'modula-fancybox', 'modula' ), $settings );
+		$necessary_scripts = apply_filters( 'modula_necessary_scripts', array( 'modula' ), $settings );
+		$necessary_styles  = apply_filters( 'modula_necessary_styles', array( 'modula' ), $settings );
 
 
 		if ( ! empty( $necessary_scripts ) ) {
@@ -193,13 +193,13 @@ class Modula_Shortcode {
 		 * @hooked modula_add_align_classes - 99
 		 */
 		$template_data = apply_filters( 'modula_gallery_template_data', $template_data );
-		
+
 		echo $this->generate_gallery_css( $gallery_id, $settings );
 		do_action( 'modula_before_gallery', $settings );
 		$this->loader->set_template_data( $template_data );
 		$this->loader->get_template_part( 'modula', 'gallery' );
 		do_action( 'modula_after_gallery', $settings );
-		
+
     	$html = ob_get_clean();
     	return $html;
 
@@ -210,14 +210,17 @@ class Modula_Shortcode {
 		$modula_shortcode = new Modula_Shortcode;
 
 		$js_config = apply_filters( 'modula_gallery_settings', array(
-			'height'           => absint( $settings[ 'height' ] ),
+			'height'           => absint( $settings[ 'height' ][0] ),
+			'tabletHeight'     => isset( $settings[ 'height' ][1] ) ? absint( $settings[ 'height' ][1] ) : false,
+			'mobileHeight'     => isset( $settings[ 'height' ][2] ) ? absint( $settings[ 'height' ][2] ) : false,
+			'desktopHeight'    => isset( $settings[ 'height' ][0] ) ? absint( $settings[ 'height' ][0] ) : false,
 			"enableTwitter"    => boolval( $settings[ 'enableTwitter' ] ),
 			"enableWhatsapp"   => boolval( $settings[ 'enableWhatsapp' ] ),
 			"enableFacebook"   => boolval( $settings[ 'enableFacebook' ] ),
 			"enablePinterest"  => boolval( $settings[ 'enablePinterest' ] ),
 			"enableLinkedin"   => boolval( $settings[ 'enableLinkedin' ] ),
 			"enableEmail"      => boolval( $settings[ 'enableEmail' ] ),
-			"randomFactor"     => ( $settings[ 'randomFactor' ] / 100 ),
+			"randomFactor"     => ( absint( $settings[ 'randomFactor' ] ) / 100 ),
 			'type'             => $type,
 			'columns'          => 12,
 			'gutter'           => isset( $settings[ 'gutter' ] ) ? absint( $settings[ 'gutter' ] ) : 10,
@@ -301,14 +304,21 @@ class Modula_Shortcode {
 			$activeTheme = wp_get_theme(); // gets the current theme
 			$themeArray  = array( 'Twenty Twenty' ); // Themes that have this problem
 			if ( in_array( $activeTheme->name, $themeArray ) || in_array( $activeTheme->parent_theme, $themeArray ) ) {
-				$css .= "#{$gallery_id}{max-width:" . esc_attr( $settings['width'] ) . "}";
+				$width = ( ! empty( $settings['width'] ) ) ? $settings['width'] : '100%';
+				$css .= "#{$gallery_id}{max-width:" . esc_attr( $width ) . "}";
 			}
 
-			$css .= "#{$gallery_id} { width:" . esc_attr( $settings['width'] ) . ";}";
+			if ( ! empty( $settings['width'] ) ) {
+				$css .= "#{$gallery_id} { width:" . esc_attr( $settings['width'] ) . ";}";
+			} else {
+				$css .= "#{$gallery_id} { min-width:100%;}";
+			}
 
 			// We don't have and need height setting on grid type
-			if('creative-gallery' == $settings['type']){
-				$css .= "#{$gallery_id} .modula-items{height:" . absint( $settings['height'] ) . "px;}";
+			if ( 'creative-gallery' == $settings['type'] ) {
+				$css .= "#{$gallery_id} .modula-items{height:" . absint( $settings['height'][0] ) . "px;}";
+				$css .= "@media screen and (max-width: 992px) {#{$gallery_id} .modula-items{height:" . absint( $settings['height'][1] ) . "px;}}";
+				$css .= "@media screen and (max-width: 768px) {#{$gallery_id} .modula-items{height:" . absint( $settings['height'][2] ) . "px;}}";
 			}
 
 		}
@@ -322,8 +332,8 @@ class Modula_Shortcode {
 			$css .= "#{$gallery_id} .modula-items .figc .jtg-title { color:" . Modula_Helper::sanitize_rgba_colour( $settings['titleColor'] ) . "; }";
 		}
 
-		$css .= "#{$gallery_id}.modula-gallery .modula-item > a, #{$gallery_id}.modula-gallery .modula-item, #{$gallery_id}.modula-gallery .modula-item-content > a { cursor:" . esc_attr( $settings['cursor'] ) . "; } ";
-
+		$css .= "#{$gallery_id}.modula-gallery .modula-item > a, #{$gallery_id}.modula-gallery .modula-item, #{$gallery_id}.modula-gallery .modula-item-content > a:not(.modula-no-follow) { cursor:" . esc_attr( $settings['cursor'] ) . "; } ";
+		$css .= "#{$gallery_id}.modula-gallery .modula-item-content .modula-no-follow { cursor: default; } ";
 		$css = apply_filters( 'modula_shortcode_css', $css, $gallery_id, $settings );
 
 
@@ -401,7 +411,7 @@ class Modula_Shortcode {
 		);
 
 		$atts = wp_parse_args( $atts, $default_atts );
-		
+
 		$affiliate = get_option( 'modula_affiliate', array() );
 		$affiliate = wp_parse_args( $affiliate, array( 'link' => 'https://wp-modula.com', 'text' => 'Powered by' ) );
 

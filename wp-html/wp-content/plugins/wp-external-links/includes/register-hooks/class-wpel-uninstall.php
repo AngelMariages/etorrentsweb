@@ -42,6 +42,7 @@ final class WPEL_Uninstall extends FWP_Register_Hook_Base_1x0x0
 
         delete_option( 'wpel-version' );
         delete_option( 'wpel-show-notice' );
+        delete_option( 'wpel-pointers' );
     }
 
 }

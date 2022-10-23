@@ -1,9 +1,9 @@
 <?php
 /**
  * Plugin Name:    WP External Links
- * Version:        2.50
+ * Version:        2.55
  * Plugin URI:     https://wordpress.org/plugins/wp-external-links/
- * Description:    Check & scan all links + open external links in a new tab or window, control "nofollow" and "noopener", set font icon; SEO friendly.
+ * Description:    Open external links in a new tab or window, control "nofollow" and "noopener", set font icon; SEO friendly.
  * Author:         WebFactory Ltd
  * Author URI:     https://www.webfactoryltd.com/
  * License:        Dual licensed under the MIT and GPLv2+ licenses
@@ -22,7 +22,9 @@ if ( ! function_exists( 'wpel_init' ) ):
             die();
         }
 
-        define( 'TEST_WPEL_PLUGIN_FILE', __FILE__ );
+        define('TEST_WPEL_PLUGIN_FILE', __FILE__);
+        define('WPEL_PLUGIN_DIR', plugin_dir_path(__FILE__));
+        define('WPEL_PLUGIN_URL', plugin_dir_url(__FILE__));
 
         $plugin_file = defined( 'TEST_WPEL_PLUGIN_FILE' ) ? TEST_WPEL_PLUGIN_FILE : __FILE__;
         $plugin_dir = dirname( __FILE__ );
@@ -70,15 +72,13 @@ if ( ! function_exists( 'wpel_init' ) ):
          */
         global $wpdb;
         WPEL_Activation::create( $plugin_file, $wpdb );
+        WPEL_Deactivate::create( $plugin_file, $wpdb );
         WPEL_Uninstall::create( $plugin_file, $wpdb );
 
         /**
          * Set plugin vars
          */
         WPEL_Plugin::create( $plugin_file, $plugin_dir );
-
-        WPEL_LinkHero::create( $plugin_file, $plugin_dir );
-
     }
 
     wpel_init();

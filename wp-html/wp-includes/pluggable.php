@@ -20,9 +20,9 @@ if ( ! function_exists( 'wp_set_current_user' ) ) :
 	 *
 	 * @global WP_User $current_user The current user object which holds the user data.
 	 *
-	 * @param int    $id   User ID
-	 * @param string $name User's username
-	 * @return WP_User Current user User object
+	 * @param int|null $id   User ID.
+	 * @param string   $name User's username.
+	 * @return WP_User Current user User object.
 	 */
 	function wp_set_current_user( $id, $name = '' ) {
 		global $current_user;
@@ -91,7 +91,6 @@ if ( ! function_exists( 'get_user_by' ) ) :
 	 *
 	 * @since 2.8.0
 	 * @since 4.4.0 Added 'ID' as an alias of 'id' for the `$field` parameter.
-	 * @since 5.8.0 Returns the global `$current_user` if it's the user being fetched.
 	 *
 	 * @global WP_User $current_user The current user object which holds the user data.
 	 *
@@ -100,16 +99,10 @@ if ( ! function_exists( 'get_user_by' ) ) :
 	 * @return WP_User|false WP_User object on success, false on failure.
 	 */
 	function get_user_by( $field, $value ) {
-		global $current_user;
-
 		$userdata = WP_User::get_data_by( $field, $value );
 
 		if ( ! $userdata ) {
 			return false;
-		}
-
-		if ( $current_user instanceof WP_User && $current_user->ID === (int) $userdata->ID ) {
-			return $current_user;
 		}
 
 		$user = new WP_User;
@@ -127,7 +120,7 @@ if ( ! function_exists( 'cache_users' ) ) :
 	 *
 	 * @global wpdb $wpdb WordPress database abstraction object.
 	 *
-	 * @param array $user_ids User ID numbers list
+	 * @param int[] $user_ids User ID numbers list
 	 */
 	function cache_users( $user_ids ) {
 		global $wpdb;
@@ -361,6 +354,8 @@ if ( ! function_exists( 'wp_mail' ) ) :
 		$phpmailer->clearAttachments();
 		$phpmailer->clearCustomHeaders();
 		$phpmailer->clearReplyTos();
+		$phpmailer->Body    = '';
+		$phpmailer->AltBody = '';
 
 		// Set "From" name and email.
 
@@ -378,12 +373,16 @@ if ( ! function_exists( 'wp_mail' ) ) :
 		 */
 		if ( ! isset( $from_email ) ) {
 			// Get the site domain and get rid of www.
-			$sitename = wp_parse_url( network_home_url(), PHP_URL_HOST );
-			if ( 'www.' === substr( $sitename, 0, 4 ) ) {
-				$sitename = substr( $sitename, 4 );
-			}
+			$sitename   = wp_parse_url( network_home_url(), PHP_URL_HOST );
+			$from_email = 'wordpress@';
 
-			$from_email = 'wordpress@' . $sitename;
+			if ( null !== $sitename ) {
+				if ( 'www.' === substr( $sitename, 0, 4 ) ) {
+					$sitename = substr( $sitename, 4 );
+				}
+
+				$from_email .= $sitename;
+			}
 		}
 
 		/**
@@ -537,13 +536,36 @@ if ( ! function_exists( 'wp_mail' ) ) :
 		 */
 		do_action_ref_array( 'phpmailer_init', array( &$phpmailer ) );
 
+		$mail_data = compact( 'to', 'subject', 'message', 'headers', 'attachments' );
+
 		// Send!
 		try {
-			return $phpmailer->send();
-		} catch ( PHPMailer\PHPMailer\Exception $e ) {
+			$send = $phpmailer->send();
 
-			$mail_error_data                             = compact( 'to', 'subject', 'message', 'headers', 'attachments' );
-			$mail_error_data['phpmailer_exception_code'] = $e->getCode();
+			/**
+			 * Fires after PHPMailer has successfully sent an email.
+			 *
+			 * The firing of this action does not necessarily mean that the recipient(s) received the
+			 * email successfully. It only means that the `send` method above was able to
+			 * process the request without any errors.
+			 *
+			 * @since 5.9.0
+			 *
+			 * @param array $mail_data {
+			 *     An array containing the email recipient(s), subject, message, headers, and attachments.
+			 *
+			 *     @type string[] $to          Email addresses to send message.
+			 *     @type string   $subject     Email subject.
+			 *     @type string   $message     Message contents.
+			 *     @type string[] $headers     Additional headers.
+			 *     @type string[] $attachments Paths to files to attach.
+			 * }
+			 */
+			do_action( 'wp_mail_succeeded', $mail_data );
+
+			return $send;
+		} catch ( PHPMailer\PHPMailer\Exception $e ) {
+			$mail_data['phpmailer_exception_code'] = $e->getCode();
 
 			/**
 			 * Fires after a PHPMailer\PHPMailer\Exception is caught.
@@ -553,7 +575,7 @@ if ( ! function_exists( 'wp_mail' ) ) :
 			 * @param WP_Error $error A WP_Error object with the PHPMailer\PHPMailer\Exception message, and an array
 			 *                        containing the mail recipient, subject, message, headers, and attachments.
 			 */
-			do_action( 'wp_mail_failed', new WP_Error( 'wp_mail_failed', $e->getMessage(), $mail_error_data ) );
+			do_action( 'wp_mail_failed', new WP_Error( 'wp_mail_failed', $e->getMessage(), $mail_data ) );
 
 			return false;
 		}
@@ -698,7 +720,16 @@ if ( ! function_exists( 'wp_validate_auth_cookie' ) ) :
 			 *
 			 * @since 2.7.0
 			 *
-			 * @param string[] $cookie_elements An array of data for the authentication cookie.
+			 * @param string[] $cookie_elements {
+			 *     Authentication cookie components. None of the components should be assumed
+			 *     to be valid as they come directly from a client-provided cookie value.
+			 *
+			 *     @type string $username   User's username.
+			 *     @type string $expiration The time the cookie expires as a UNIX timestamp.
+			 *     @type string $token      User's session token used.
+			 *     @type string $hmac       The security hash for the cookie.
+			 *     @type string $scheme     The cookie scheme to use.
+			 * }
 			 */
 			do_action( 'auth_cookie_expired', $cookie_elements );
 			return false;
@@ -711,7 +742,16 @@ if ( ! function_exists( 'wp_validate_auth_cookie' ) ) :
 			 *
 			 * @since 2.7.0
 			 *
-			 * @param string[] $cookie_elements An array of data for the authentication cookie.
+			 * @param string[] $cookie_elements {
+			 *     Authentication cookie components. None of the components should be assumed
+			 *     to be valid as they come directly from a client-provided cookie value.
+			 *
+			 *     @type string $username   User's username.
+			 *     @type string $expiration The time the cookie expires as a UNIX timestamp.
+			 *     @type string $token      User's session token used.
+			 *     @type string $hmac       The security hash for the cookie.
+			 *     @type string $scheme     The cookie scheme to use.
+			 * }
 			 */
 			do_action( 'auth_cookie_bad_username', $cookie_elements );
 			return false;
@@ -731,7 +771,16 @@ if ( ! function_exists( 'wp_validate_auth_cookie' ) ) :
 			 *
 			 * @since 2.7.0
 			 *
-			 * @param string[] $cookie_elements An array of data for the authentication cookie.
+			 * @param string[] $cookie_elements {
+			 *     Authentication cookie components. None of the components should be assumed
+			 *     to be valid as they come directly from a client-provided cookie value.
+			 *
+			 *     @type string $username   User's username.
+			 *     @type string $expiration The time the cookie expires as a UNIX timestamp.
+			 *     @type string $token      User's session token used.
+			 *     @type string $hmac       The security hash for the cookie.
+			 *     @type string $scheme     The cookie scheme to use.
+			 * }
 			 */
 			do_action( 'auth_cookie_bad_hash', $cookie_elements );
 			return false;
@@ -744,7 +793,16 @@ if ( ! function_exists( 'wp_validate_auth_cookie' ) ) :
 			 *
 			 * @since 4.0.0
 			 *
-			 * @param string[] $cookie_elements An array of data for the authentication cookie.
+			 * @param string[] $cookie_elements {
+			 *     Authentication cookie components. None of the components should be assumed
+			 *     to be valid as they come directly from a client-provided cookie value.
+			 *
+			 *     @type string $username   User's username.
+			 *     @type string $expiration The time the cookie expires as a UNIX timestamp.
+			 *     @type string $token      User's session token used.
+			 *     @type string $hmac       The security hash for the cookie.
+			 *     @type string $scheme     The cookie scheme to use.
+			 * }
 			 */
 			do_action( 'auth_cookie_bad_session_token', $cookie_elements );
 			return false;
@@ -760,7 +818,15 @@ if ( ! function_exists( 'wp_validate_auth_cookie' ) ) :
 		 *
 		 * @since 2.7.0
 		 *
-		 * @param string[] $cookie_elements An array of data for the authentication cookie.
+		 * @param string[] $cookie_elements {
+		 *     Authentication cookie components.
+		 *
+		 *     @type string $username   User's username.
+		 *     @type string $expiration The time the cookie expires as a UNIX timestamp.
+		 *     @type string $token      User's session token used.
+		 *     @type string $hmac       The security hash for the cookie.
+		 *     @type string $scheme     The cookie scheme to use.
+		 * }
 		 * @param WP_User  $user            User object.
 		 */
 		do_action( 'auth_cookie_valid', $cookie_elements, $user );
@@ -828,7 +894,17 @@ if ( ! function_exists( 'wp_parse_auth_cookie' ) ) :
 	 *
 	 * @param string $cookie Authentication cookie.
 	 * @param string $scheme Optional. The cookie scheme to use: 'auth', 'secure_auth', or 'logged_in'.
-	 * @return string[]|false Authentication cookie components.
+	 * @return string[]|false {
+	 *     Authentication cookie components. None of the components should be assumed
+	 *     to be valid as they come directly from a client-provided cookie value. If
+	 *     the cookie value is malformed, false is returned.
+	 *
+	 *     @type string $username   User's username.
+	 *     @type string $expiration The time the cookie expires as a UNIX timestamp.
+	 *     @type string $token      User's session token used.
+	 *     @type string $hmac       The security hash for the cookie.
+	 *     @type string $scheme     The cookie scheme to use.
+	 * }
 	 */
 	function wp_parse_auth_cookie( $cookie = '', $scheme = '' ) {
 		if ( empty( $cookie ) ) {
@@ -1569,7 +1645,7 @@ if ( ! function_exists( 'wp_notify_postauthor' ) ) :
 		 * @since 3.7.0
 		 *
 		 * @param string[] $emails     An array of email addresses to receive a comment notification.
-		 * @param int      $comment_id The comment ID.
+		 * @param string   $comment_id The comment ID as a numeric string.
 		 */
 		$emails = apply_filters( 'comment_notification_recipients', $emails, $comment->comment_ID );
 		$emails = array_filter( $emails );
@@ -1590,9 +1666,9 @@ if ( ! function_exists( 'wp_notify_postauthor' ) ) :
 		 *
 		 * @since 3.8.0
 		 *
-		 * @param bool $notify     Whether to notify the post author of their own comment.
-		 *                         Default false.
-		 * @param int  $comment_id The comment ID.
+		 * @param bool   $notify     Whether to notify the post author of their own comment.
+		 *                           Default false.
+		 * @param string $comment_id The comment ID as a numeric string.
 		 */
 		$notify_author = apply_filters( 'comment_notification_notify_author', false, $comment->comment_ID );
 
@@ -1725,7 +1801,7 @@ if ( ! function_exists( 'wp_notify_postauthor' ) ) :
 		 * @since 1.5.2
 		 *
 		 * @param string $notify_message The comment notification email text.
-		 * @param int    $comment_id     Comment ID.
+		 * @param string $comment_id     Comment ID as a numeric string.
 		 */
 		$notify_message = apply_filters( 'comment_notification_text', $notify_message, $comment->comment_ID );
 
@@ -1735,7 +1811,7 @@ if ( ! function_exists( 'wp_notify_postauthor' ) ) :
 		 * @since 1.5.2
 		 *
 		 * @param string $subject    The comment notification email subject.
-		 * @param int    $comment_id Comment ID.
+		 * @param string $comment_id Comment ID as a numeric string.
 		 */
 		$subject = apply_filters( 'comment_notification_subject', $subject, $comment->comment_ID );
 
@@ -1745,7 +1821,7 @@ if ( ! function_exists( 'wp_notify_postauthor' ) ) :
 		 * @since 1.5.2
 		 *
 		 * @param string $message_headers Headers for the comment notification email.
-		 * @param int    $comment_id      Comment ID.
+		 * @param string $comment_id      Comment ID as a numeric string.
 		 */
 		$message_headers = apply_filters( 'comment_notification_headers', $message_headers, $comment->comment_ID );
 
@@ -2678,7 +2754,7 @@ if ( ! function_exists( 'get_avatar' ) ) :
 		);
 
 		if ( wp_lazy_loading_enabled( 'img', 'get_avatar' ) ) {
-			$defaults['loading'] = 'lazy';
+			$defaults['loading'] = wp_get_loading_attr_default( 'get_avatar' );
 		}
 
 		if ( empty( $args ) ) {
@@ -2705,7 +2781,7 @@ if ( ! function_exists( 'get_avatar' ) ) :
 		/**
 		 * Allows the HTML for a user's avatar to be returned early.
 		 *
-		 * Passing a non-null value will effectively short-circuit get_avatar(), passing
+		 * Returning a non-null value will effectively short-circuit get_avatar(), passing
 		 * the value through the {@see 'get_avatar'} filter and returning early.
 		 *
 		 * @since 4.2.0
@@ -2785,8 +2861,7 @@ if ( ! function_exists( 'get_avatar' ) ) :
 		 * @param int    $size        Square avatar width and height in pixels to retrieve.
 		 * @param string $default     URL for the default image or a default type. Accepts '404', 'retro', 'monsterid',
 		 *                            'wavatar', 'indenticon', 'mystery', 'mm', 'mysteryman', 'blank', or 'gravatar_default'.
-		 *                            Default is the value of the 'avatar_default' option, with a fallback of 'mystery'.
-		 * @param string $alt         Alternative text to use in the avatar image tag. Default empty.
+		 * @param string $alt         Alternative text to use in the avatar image tag.
 		 * @param array  $args        Arguments passed to get_avatar_data(), after processing.
 		 */
 		return apply_filters( 'get_avatar', $avatar, $id_or_email, $args['size'], $args['default'], $args['alt'], $args );

@@ -1,7 +1,8 @@
 <?php
 
-
-    function TOPluginInterface()
+    if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+    
+    function TO_PluginInterface()
         {
             global $wpdb, $wp_locale;
             
@@ -34,7 +35,6 @@
 
             ?>
             <div class="wrap">
-                <div class="icon32" id="icon-edit"><br></div>
                 <h2><?php _e( "Taxonomy Order", 'taxonomy-terms-order' ) ?></h2>
 
                 <?php tto_info_box() ?>
@@ -71,7 +71,7 @@
                     <input type="hidden" name="page" value="to-interface-<?php echo esc_attr($post_type) ?>" />
                     <?php
                 
-                     if (!in_array($post_type, array('post', 'attachment'))) 
+                    if (!in_array($post_type, array('post', 'attachment'))) 
                         echo '<input type="hidden" name="post_type" value="'. esc_attr($post_type) .'" />';
 
                     //output all available taxonomies for this post type
@@ -139,9 +139,7 @@
                             ?>
 
                 <div id="order-terms">
-                    
-      
-                    
+
                     <div id="post-body">                    
                         
                             <ul class="sortable" id="tto_sortable">
@@ -200,7 +198,7 @@
                                 var serialize_data = JSON.stringify( convArrToObj(mySortable));
                                                                                             
                                 jQuery.post( ajaxurl, { action:'update-taxonomy-order', order: serialize_data, nonce : '<?php echo wp_create_nonce( 'update-taxonomy-order' ); ?>' }, function() {
-                                    jQuery("#ajax-response").html('<div class="message updated fade"><p><?php _e( "Items Order Updated", 'taxonomy-terms-order' ) ?></p></div>');
+                                    jQuery("#ajax-response").html('<div class="message updated fade"><p><?php echo esc_html ( __( "Items Order Updated", 'taxonomy-terms-order' ) ) ?></p></div>');
                                     jQuery("#ajax-response div").delay(3000).hide("slow");
                                 });
                             });

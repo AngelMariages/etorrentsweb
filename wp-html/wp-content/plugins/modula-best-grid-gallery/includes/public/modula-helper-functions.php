@@ -102,9 +102,10 @@ function modula_check_lightboxes_and_links( $item_data, $item, $settings ) {
 
 	if ( 'attachment-page' == $settings['lightbox'] ) {
 
-		$item_data['link_attributes']['class'][] = 'modula-simple-link';
-		$item_data['item_classes'][] = 'modula-simple-link';
-
+		$item_data['link_attributes']['class'][]    = 'modula-simple-link';
+		$item_data['item_classes'][]                = 'modula-simple-link';
+		$item_data['link_attributes']['aria-label'] = esc_html__('Open attachment page', 'modula-best-grid-gallery');
+		$item_data['link_attributes']['title']      = esc_html__('Open attachment page', 'modula-best-grid-gallery');
 		if ( '' != $item['link'] ) {
 
 			$item_data['link_attributes']['href'] = $item['link'];
@@ -120,18 +121,20 @@ function modula_check_lightboxes_and_links( $item_data, $item, $settings ) {
 
 	} else if ( 'direct' == $settings['lightbox'] ) {
 
-		$item_data['link_attributes']['href'] = $item_data['image_full'];
-		$item_data['link_attributes']['class'][] = 'modula-simple-link';
-		$item_data['item_classes'][] = 'modula-simple-link';
+		$item_data['link_attributes']['href']       = $item_data['image_full'];
+		$item_data['link_attributes']['class'][]    = 'modula-simple-link';
+		$item_data['item_classes'][]                = 'modula-simple-link';
+		$item_data['link_attributes']['aria-label'] = esc_html__('Open image', 'modula-best-grid-gallery');
+		$item_data['link_attributes']['title']      = esc_html__('Open image', 'modula-best-grid-gallery');
 
 	} else {
 
 		$item_data['link_attributes']['href']          = $item_data['image_full'];
 		$item_data['link_attributes']['rel']           = $settings['gallery_id'];
 		$item_data['link_attributes']['data-caption']  = $caption;
+		$item_data['link_attributes']['aria-label']    = esc_html__('Open image in lightbox', 'modula-best-grid-gallery');
 
 	}
-
 
 	return $item_data;
 }
@@ -213,7 +216,7 @@ function modula_add_align_classes( $template_data ){
 function modula_show_schemaorg( $settings ){
 	global $wp;
 
-	$current_url = home_url(add_query_arg(array(), $wp->request));
+	$current_url = esc_url( home_url( add_query_arg( array(), $wp->request ) ) );
 
 	?>
 
@@ -319,16 +322,32 @@ function modula_sources_and_sizes( $data ) {
 
 	// Lets creat our $image object
 	$image = '<img class="' . esc_attr( implode( ' ', $data->img_classes ) ) . '" ' . Modula_Helper::generate_attributes( $data->img_attributes ) . '/>';
-
+	
+	// Check if srcset is disabled for an early return.
+	$troubleshoot_opt = get_option( 'modula_troubleshooting_option' );
+	if( isset( $troubleshoot_opt['disable_srcset'] ) && '1' == $troubleshoot_opt[ 'disable_srcset' ] ){
+		echo $image;
+		return;
+	}
+	
 	// Get the imag meta
 	$image_meta = wp_get_attachment_metadata( $data->link_attributes['data-image-id'] );
 
-	if ( ! empty( $data->image_info ) ) {
+	$mime_type = '';
+
+	if ( isset( $image_meta['sizes']['thumbnail']['mime-type'] ) ) {
+		$mime_type = $image_meta['sizes']['thumbnail']['mime-type'];
+	} else if ( function_exists( 'mime_content_type' ) && $data->image_info) {
+		$mime_type = mime_content_type( $data->image_info['file_path'] );
+	}
+
+	//Add custom size only if it's different than original image size
+	if ( ! empty( $data->image_info ) && $data->image_info && $image_meta['width'] !== $data->img_attributes['width'] && $image_meta['height'] !== $data->img_attributes['height'] ) {
 		$image_meta['sizes']['custom'] = array(
 				'file'      => $data->image_info['name'] . '-' . $data->image_info['suffix'] . '.' . $data->image_info['ext'],
 				'width'     => $data->img_attributes['width'],
 				'height'    => $data->img_attributes['height'],
-				'mime-type' => $image_meta['sizes']['thumbnail']['mime-type']
+				'mime-type' => $mime_type
 		);
 	}
 	// Ensure the image meta exists.
@@ -336,7 +355,6 @@ function modula_sources_and_sizes( $data ) {
 		echo $image;
 		return;
 	}
-
 
 	$attachment_id = $data->link_attributes['data-image-id'];
 

@@ -103,7 +103,7 @@ class Modula_Field_Builder {
 		echo '<div class="upload-info-container">';
 		echo '<div class="upload-info">';
                 if (current_user_can('upload_files')) {
-                    echo sprintf( __( '<b>Drag and drop</b> files here (max %s per file), or <b>drag images around to change their order</b>', 'modula-best-grid-gallery' ), esc_html( size_format( $max_upload_size ) ) );
+                    echo sprintf( wp_kses_post( __( '<b>Drag and drop</b> files here (max %s per file), or <b>drag images around to change their order</b>', 'modula-best-grid-gallery' ) ), esc_html( size_format( $max_upload_size ) ) );
                     echo '</div>';
                     echo '<div class="upload-progress">';
                     echo '<p class="modula-upload-numbers">' . esc_html__( 'Uploading image', 'modula-best-grid-gallery' ) . ' <span class="modula-current"></span> ' . esc_html__( 'of', 'modula-best-grid-gallery' ) . ' <span class="modula-total"></span>';
@@ -114,7 +114,7 @@ class Modula_Field_Builder {
                     echo '<a href="#" id="modula-uploader-browser" class="button">' . esc_html__( 'Upload image files', 'modula-best-grid-gallery' ) . '</a><a href="#" id="modula-wp-gallery" class="button button-primary">' . esc_html__( 'Select from Library', 'modula-best-grid-gallery' ) . '</a>';
                     do_action( 'modula_gallery_media_button');
                 } else {
-                    echo '<b>' . __( 'Drag images around to change their order', 'modula-best-grid-gallery' ) . '</b>';
+                    echo '<b>' . esc_html__( 'Drag images around to change their order', 'modula-best-grid-gallery' ) . '</b>';
                     echo '</div>';
                 }
 		echo '</div>';
@@ -274,28 +274,42 @@ class Modula_Field_Builder {
 			$child = $field['is_child'].'_child_setting';
 		}
 
-		$format = '<tr data-container="' . esc_attr( $field['id'] ) . '"><th scope="row" class="'.$child.'"><label>%s</label>%s</th><td>%s</td></tr>';
+		$format = '<tr data-container="' . esc_attr( $field['id'] ) . '"><th scope="row" class="' . esc_attr( $child ) . '"><label>%s</label>%s</th><td>%s</td></tr>';
+
+		if( isset( $field['children'] ) && is_array( $field['children'] ) && 0 < count( $field['children'] ) ){
+
+			$children = htmlspecialchars(json_encode( $field['children'] ), ENT_QUOTES, 'UTF-8');
+
+			$parent = '';
+			if( isset( $field['parent'] ) && '' != $field['parent']  ){
+				$parent = 'data-parent="' . $field['parent'] . '"';
+			}
+			$format = '<tr data-container="' . esc_attr( $field['id'] ) . '" data-children=\'' . $children . '\' ' . $parent . '><th scope="row" class="' . esc_attr( $child ) . '"><label>%s</label>%s</th><td>%s</td></tr>';
+		}
 
 		// Formats for General Gutter
-		if ( 'gutter' == $field[ 'id' ] ) {
-			$format = '<tr data-container="' . esc_attr( $field[ 'id' ] ) . '"><th scope="row" class="' . $child . '"><label>%s</label>%s</th><td><span class="dashicons dashicons-desktop"></span>%s<span class="modula_input_suffix">px</span></td>';
-		}
+		if ( 'gutterInput' == $field['type'] ) {
 
-		if ( 'tablet_gutter' == $field[ 'id' ] ) {
-			$field_name = '<span class="dashicons dashicons-tablet"></span>';
-			$tooltip = '';
-			$format = '<td>%s%s%s<span class="modula_input_suffix">px</span></td>';
-		}
+			if ( 'desktop' == $field['media'] ) {
+				$format = '<tr data-container="' . esc_attr( $field['id'] ) . '"><th scope="row" class="' . esc_attr( $child ) . '"><label>%s</label>%s</th><td><span class="dashicons dashicons-desktop"></span>%s<span class="modula_input_suffix">px</span></td>';
+			}
 
-		if ( 'mobile_gutter' == $field[ 'id' ] ) {
-			$field_name = '<span class="dashicons dashicons-smartphone"></span>';
-			$tooltip = '';
-			$format = '<td>%s%s%s<span class="modula_input_suffix">px</span></td></tr>';
+			if ( 'tablet' == $field['media'] ) {
+				$field_name = '<span class="dashicons dashicons-tablet"></span>';
+				$tooltip    = '';
+				$format     = '<td>%s%s%s<span class="modula_input_suffix">px</span></td>';
+			}
+
+			if ( 'mobile' == $field['media'] ) {
+				$field_name = '<span class="dashicons dashicons-smartphone"></span>';
+				$tooltip    = '';
+				$format     = '<td>%s%s%s<span class="modula_input_suffix">px</span></td></tr>';
+			}
 		}
 		// End formats for General Gutter
 
 		if ( 'textarea' == $field['type'] || 'custom_code' == $field['type'] || 'hover-effect' == $field['type'] ) {
-			$format = '<tr data-container="' . esc_attr( $field['id'] ) . '"><td colspan="2" class="'.$child.'"><label class="th-label">%s</label>%s<div>%s</div></td></tr>';
+			$format = '<tr data-container="' . esc_attr( $field['id'] ) . '"><td colspan="2" class="' . esc_attr( $child ) . '"><label class="th-label">%s</label>%s<div>%s</div></td></tr>';
 		}
 
 		$format = apply_filters( "modula_field_type_{$field['type']}_format", $format, $field );
@@ -336,6 +350,29 @@ class Modula_Field_Builder {
 				break;
 			case 'number':
 				$html = '<input type="number"  name="modula-settings[' . esc_attr( $field['id'] ) . ']" data-setting="' . esc_attr( $field['id'] ) . '" value="' . esc_attr( $value ) . '">';
+				if ( isset( $field['after'] ) ) {
+					$html .= '<span class="modula-after-input">' . esc_html( $field['after'] ) . '</span>';
+				}
+
+				if(isset($field['afterrow'])){
+					$html .= '<p class="description '.esc_attr($field['id']).'-afterrow">'. wp_kses_post( $field['afterrow'] ) .'</p>';
+				}
+				break;
+			case 'gutterInput':
+				$html = '<input type="number"  name="modula-settings[' . esc_attr( $field['id'] ) . ']" data-setting="' . esc_attr( $field['id'] ) . '" class="modula-gutter-input" value="' . esc_attr( $value ) . '">';
+				if ( isset( $field['after'] ) ) {
+					$html .= '<span class="modula-after-input">' . esc_html( $field['after'] ) . '</span>';
+				}
+
+				if(isset($field['afterrow'])){
+					$html .= '<p class="description '.esc_attr($field['id']).'-afterrow">'. wp_kses_post( $field['afterrow'] ) .'</p>';
+				}
+				break;
+
+			case 'responsiveInput':
+				$html = '<span class="dashicons dashicons-desktop"></span><input type="number"  name="modula-settings[' . esc_attr( $field['id'] ) . '][]" data-setting="' . esc_attr( $field['id'] ) . '" class="modula-gutter-input" value="' . esc_attr( $value[0] ) . '"><span class="modula_input_suffix">px</span></td>';
+				$html .= '<td><span class="dashicons dashicons-tablet"></span><input type="number"  name="modula-settings[' . esc_attr( $field['id'] ) . '][]" data-setting="' . esc_attr( $field['id'] ) . '" class="modula-gutter-input" value="' . esc_attr( $value[1] ) . '"><span class="modula_input_suffix">px</span></td>';
+				$html .= '<td><span class="dashicons dashicons-smartphone"></span><input type="number"  name="modula-settings[' . esc_attr( $field['id'] ) . '][]" data-setting="' . esc_attr( $field['id'] ) . '" class="modula-gutter-input" value="' . esc_attr( $value[2] ) . '"><span class="modula_input_suffix">px</span>';
 				if ( isset( $field['after'] ) ) {
 					$html .= '<span class="modula-after-input">' . esc_html( $field['after'] ) . '</span>';
 				}
@@ -550,7 +587,7 @@ class Modula_Field_Builder {
 						$effect .= '<div class="figc"><div class="figc-inner">';
 
 						if ( $effect_elements[ 'title' ] ) {
-							$effect .= '<h2 class="jtg-title">Lorem ipsum</h2>';
+							$effect .= '<div class="jtg-title">Lorem ipsum</div>';
 						}
 
 						if ( in_array( $key, $jtg_body ) ) {
@@ -684,6 +721,13 @@ class Modula_Field_Builder {
 					$html .= '<p class="description '.esc_attr($field['id']).'-afterrow">'.esc_html($field['afterrow']).'</p>';
 				}
 				break;
+		}
+
+		if( isset( $field['children'] ) && is_array( $field['children'] ) && 0 < count( $field['children'] ) ){
+
+			$children = htmlspecialchars(json_encode( $field['children'] ), ENT_QUOTES, 'UTF-8');
+			
+			$html .= '<span class="modula_settings_accordion">' . absint( count( $field['children'] ) ) . esc_html__(' other settings') . ' </span>';
 		}
 
 		return apply_filters( "modula_render_field_type", $html, $field, $value );

@@ -720,9 +720,9 @@ class WPSEO_Bulk_List_Table extends WP_List_Table {
 
 		if ( ( is_array( $records ) && $records !== [] ) && ( is_array( $columns ) && $columns !== [] ) ) {
 
-			foreach ( $records as $rec ) {
+			foreach ( $records as $record ) {
 
-				echo '<tr id="', esc_attr( 'record_' . $rec->ID ), '">';
+				echo '<tr id="', esc_attr( 'record_' . $record->ID ), '">';
 
 				foreach ( $columns as $column_name => $column_display_name ) {
 
@@ -733,10 +733,10 @@ class WPSEO_Bulk_List_Table extends WP_List_Table {
 
 					$attributes = $this->column_attributes( $column_name, $hidden, $classes, $column_display_name );
 
-					$column_value = $this->parse_column( $column_name, $rec );
+					$column_value = $this->parse_column( $column_name, $record );
 
 					if ( method_exists( $this, 'parse_page_specific_column' ) && empty( $column_value ) ) {
-						$column_value = $this->parse_page_specific_column( $column_name, $rec, $attributes );
+						$column_value = $this->parse_page_specific_column( $column_name, $record, $attributes );
 					}
 
 					if ( ! empty( $column_value ) ) {
@@ -909,7 +909,7 @@ class WPSEO_Bulk_List_Table extends WP_List_Table {
 			$meta_value = $values[ $meta_value ];
 		}
 
-		$id = "wpseo-existing-$record_id-$this->target_db_field";
+		$id = "wpseo-existing-$this->target_db_field-$record_id";
 
 		// $attributes correctly escaped, verified by Alexander. See WPSEO_Bulk_Description_List_Table::parse_page_specific_column.
 		return sprintf( '<td %2$s id="%3$s">%1$s</td>', esc_html( $meta_value ), $attributes, esc_attr( $id ) );

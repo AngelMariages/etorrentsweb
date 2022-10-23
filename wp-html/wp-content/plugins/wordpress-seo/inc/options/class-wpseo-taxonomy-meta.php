@@ -51,27 +51,27 @@ class WPSEO_Taxonomy_Meta extends WPSEO_Option {
 	 * @var array
 	 */
 	public static $defaults_per_term = [
-		'wpseo_title'                 => '',
-		'wpseo_desc'                  => '',
-		'wpseo_canonical'             => '',
-		'wpseo_bctitle'               => '',
-		'wpseo_noindex'               => 'default',
-		'wpseo_focuskw'               => '',
-		'wpseo_linkdex'               => '',
-		'wpseo_content_score'         => '',
-		'wpseo_focuskeywords'         => '[]',
-		'wpseo_keywordsynonyms'       => '[]',
-		'wpseo_is_cornerstone'        => '0',
+		'wpseo_title'                    => '',
+		'wpseo_desc'                     => '',
+		'wpseo_canonical'                => '',
+		'wpseo_bctitle'                  => '',
+		'wpseo_noindex'                  => 'default',
+		'wpseo_focuskw'                  => '',
+		'wpseo_linkdex'                  => '',
+		'wpseo_content_score'            => '',
+		'wpseo_focuskeywords'            => '[]',
+		'wpseo_keywordsynonyms'          => '[]',
+		'wpseo_is_cornerstone'           => '0',
 
 		// Social fields.
-		'wpseo_opengraph-title'       => '',
-		'wpseo_opengraph-description' => '',
-		'wpseo_opengraph-image'       => '',
-		'wpseo_opengraph-image-id'    => '',
-		'wpseo_twitter-title'         => '',
-		'wpseo_twitter-description'   => '',
-		'wpseo_twitter-image'         => '',
-		'wpseo_twitter-image-id'      => '',
+		'wpseo_opengraph-title'          => '',
+		'wpseo_opengraph-description'    => '',
+		'wpseo_opengraph-image'          => '',
+		'wpseo_opengraph-image-id'       => '',
+		'wpseo_twitter-title'            => '',
+		'wpseo_twitter-description'      => '',
+		'wpseo_twitter-image'            => '',
+		'wpseo_twitter-image-id'         => '',
 	];
 
 	/**
@@ -378,9 +378,9 @@ class WPSEO_Taxonomy_Meta extends WPSEO_Option {
 	 * @param string      $taxonomy Name of the taxonomy to which the term is attached.
 	 * @param string|null $meta     Optional. Meta value to get (without prefix).
 	 *
-	 * @return mixed|bool Value for the $meta if one is given, might be the default.
-	 *                    If no meta is given, an array of all the meta data for the term.
-	 *                    False if the term does not exist or the $meta provided is invalid.
+	 * @return mixed Value for the $meta if one is given, might be the default.
+	 *               If no meta is given, an array of all the meta data for the term.
+	 *               False if the term does not exist or the $meta provided is invalid.
 	 */
 	public static function get_term_meta( $term, $taxonomy, $meta = null ) {
 		/* Figure out the term id. */
@@ -421,7 +421,7 @@ class WPSEO_Taxonomy_Meta extends WPSEO_Option {
 	 *
 	 * @param string $meta The meta field that is needed.
 	 *
-	 * @return bool|mixed
+	 * @return mixed
 	 */
 	public static function get_meta_without_term( $meta ) {
 		$term = $GLOBALS['wp_query']->get_queried_object();

@@ -29,6 +29,9 @@ class Modula {
 
 		add_action( 'divi_extensions_init', array( $this, 'initialize_divi_extension' ) );
 
+		// Gallery 'srcset' management.
+		add_action( 'modula_before_gallery', array( $this, 'disable_wp_srcset' ) );
+		add_action( 'modula_after_gallery', array( $this, 'enable_wp_srcset' ) );
 	}
 
 	private function load_dependencies() {
@@ -66,12 +69,11 @@ class Modula {
 		require_once MODULA_PATH . 'includes/compatibility/class-modula-compatibility.php';
 
 		if ( is_admin() ) {
-
 			require_once MODULA_PATH . 'includes/admin/class-modula-importer-exporter.php';
 			require_once MODULA_PATH . 'includes/class-modula-upgrades.php';
 			require_once MODULA_PATH . 'includes/libraries/class-modula-review.php';
 			require_once MODULA_PATH . 'includes/uninstall/class-modula-uninstall.php';
-			require_once MODULA_PATH . 'includes/update/class-modula-update.php';
+			require_once MODULA_PATH . 'includes/admin/pages/about/class-modula-about-page.php';
 			require_once MODULA_PATH . 'includes/migrate/class-modula-importer.php';
 			require_once MODULA_PATH . 'includes/migrate/class-modula-ajax-migrator.php';
 			// Admin Helpers
@@ -81,7 +83,7 @@ class Modula {
 			// Modula Debug Class
 			require_once MODULA_PATH . 'includes/admin/class-modula-debug.php';
 
-			
+
 
 		}
 
@@ -95,7 +97,7 @@ class Modula {
 	}
 
 	public function set_locale() {
-		load_plugin_textdomain( 'modula-best-grid-gallery', false, MODULA_PATH . '/languages' );
+		load_plugin_textdomain( 'modula-best-grid-gallery', false, dirname( MODULA_FILE ) . '/languages'  );
 	}
 
 	private function define_admin_hooks() {
@@ -126,6 +128,10 @@ class Modula {
 
 		if ( ! is_admin() ) {
 			return;
+		}
+
+		if ( defined( 'DOING_CRON' ) && DOING_CRON ) {
+		   return;
 		}
 
 		new Modula_Upsells();
@@ -168,6 +174,17 @@ class Modula {
 				return;
 			}
 
+			if ( apply_filters( 'modula_disable_drag_cpt_box', true ) ) {
+
+				//returns modula CPT metaboxes to the default position.
+				add_filter('get_user_option_meta-box-order_modula-gallery', '__return_empty_string');
+				add_filter('get_user_option_closedpostboxes_modula-gallery', '__return_empty_string');
+				add_filter( 'admin_body_class', array( $this, 'no_drag_classes' ), 15, 1 );
+
+				//prevents the modula metaboxes from being dragged.
+				wp_deregister_script('postbox');
+			}
+
 			/*
 			 CPT Styles & Scripts */
 			// Media Scripts
@@ -179,9 +196,10 @@ class Modula {
 
 			// Get all items from current gallery.
 			$images = get_post_meta( $post_id, 'modula-images', true );
+
 			if ( is_array( $images ) && ! empty( $images ) ) {
 				foreach ( $images as $image ) {
-					if ( ! is_numeric( $image['id'] ) ) {
+					if ( ! is_numeric( $image['id'] ) || 'attachment' !== get_post_type( $image['id'] ) ) {
 						continue;
 					}
 
@@ -253,7 +271,18 @@ class Modula {
 			wp_enqueue_style( 'modula-header-style', MODULA_URL . 'assets/css/admin/modula-header.css', null, MODULA_LITE_VERSION );
 			wp_enqueue_style( 'modula-notices-style', MODULA_URL . 'assets/css/admin/modula-notices.css', null, MODULA_LITE_VERSION );
 			wp_enqueue_style( 'modula-welcome-style', MODULA_URL . 'assets/css/admin/addons.css', null, MODULA_LITE_VERSION );
-			wp_enqueue_script( 'modula-addon', MODULA_URL . 'assets/js/admin/modula-addon.js', array( 'jquery' ), MODULA_LITE_VERSION, true );
+			wp_enqueue_script( 'modula-addon', MODULA_URL . 'assets/js/admin/modula-addon.js', array( 'jquery', 'updates' ), MODULA_LITE_VERSION, true );
+
+			wp_localize_script( 'modula-addon', 'modulaAddons', array(
+				// Add addon slug to verify addon's slug in wp-plugin-install-success action
+				'free_addons'       => apply_filters( 'modula_free_extensions_install', array( ) ),
+				'installing_text'   => esc_html__( 'Installing addon...', 'modula-best-grid-gallery' ),
+				'activated_text'    => esc_html__( 'Addon activated!', 'modula-best-grid-gallery' ),
+				'deactivated_text'  => esc_html__( 'Addon deactivated!', 'modula-best-grid-gallery' ),
+				'activating_text'   => esc_html__( 'Activating addon...', 'modula-best-grid-gallery' ),
+				'deactivating_text' => esc_html__( 'Deactivating addon...', 'modula-best-grid-gallery' )
+			) );
+
 		} elseif ( 'modula-gallery_page_modula-lite-vs-pro' == $hook ) {
 
 			wp_enqueue_style( 'modula-header-style', MODULA_URL . 'assets/css/admin/modula-header.css', null, MODULA_LITE_VERSION );
@@ -272,7 +301,45 @@ class Modula {
 
 	}
 
+	/**
+	 * Filters the maximum image width to be included in a 'srcset' attribute.
+	 * 
+	 * @return int
+	 *
+	 */
+	public function disable_wp_responsive_images() {
+		return 1;
+	}
 
+	/**
+	 * Prevents WP from adding srcsets to modula gallery images if srcsets are disabled.
+	 * 
+	 * @param $settings
+	 * @return void
+	 *
+	 */
+
+	public function disable_wp_srcset( $settings ){
+		$troubleshoot_opt = get_option( 'modula_troubleshooting_option' );
+
+		if( isset( $troubleshoot_opt['disable_srcset'] ) && '1' == $troubleshoot_opt[ 'disable_srcset' ] ){
+
+			add_filter('max_srcset_image_width', array( $this, 'disable_wp_responsive_images' ), 999 );
+		}
+		
+	}
+
+	/**
+	 * Allows WP to add srcsets to other content after the gallery was created.
+	 * 
+	 * @param $settings
+	 * @return void
+	 *
+	 */
+	public function enable_wp_srcset( $settings ){
+
+		remove_filter('max_srcset_image_width', array( $this, 'disable_wp_responsive_images' ) );
+	}
 
 	// Register and load the widget
 	public function modula_load_widget() {
@@ -353,4 +420,19 @@ class Modula {
 
 		return $result;
 	}
+
+	/**
+	 * Add the `modula-no-drag` class to body so we know when to hide the arrows
+	 * @param String $classes The classes of the body, a space-separated string of class names instead of an array
+	 * @return String
+	 * 
+	 * @since 2.6.3
+	 */
+	public function no_drag_classes( $classes ) {
+
+		$classes .= ' modula-no-drag';
+
+		return $classes;
+	}
+
 }

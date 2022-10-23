@@ -1,4 +1,4 @@
-<?php // @phpcs:ignore Yoast.Files.FileName.InvalidClassFileName -- reason: this explicitly concerns the Yoast head fields.
+<?php // phpcs:ignore Yoast.Files.FileName.InvalidClassFileName -- Reason: this explicitly concerns the Yoast head fields.
 
 namespace Yoast\WP\SEO\Routes;
 
@@ -13,8 +13,6 @@ use Yoast\WP\SEO\Helpers\Taxonomy_Helper;
  *
  * Registers the yoast head REST field.
  * Not technically a route but behaves the same so is included here.
- *
- * @phpcs:ignore Yoast.NamingConventions.ObjectNameDepth.MaxExceeded
  */
 class Yoast_Head_REST_Field implements Route_Interface {
 
@@ -206,7 +204,7 @@ class Yoast_Head_REST_Field implements Route_Interface {
 	 * @param stdObject $head   The Yoast head.
 	 * @param string    $format The format to return.
 	 *
-	 * @return string|array The output value. String if HTML was requested, array otherwise.
+	 * @return string|array|null The output value. String if HTML was requested, array otherwise.
 	 */
 	protected function render_object( $head, $format = self::YOAST_HEAD_ATTRIBUTE_NAME ) {
 		if ( $head->status === 404 ) {

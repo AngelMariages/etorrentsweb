@@ -99,18 +99,18 @@ final class WPEL_Network_Page extends WPRun_Base_1x0x0
         if ( '1' === $own_admin_menu ) {
             $this->page_hook = add_menu_page(
                 __( 'WP External Links' , 'wp-external-links' )                  // page title
-                , __( 'External Links' , 'wp-external-links' )                   // menu title
+                , __( 'WP External Links' , 'wp-external-links' )                   // menu title
                 , 'manage_network'                                  // capability
                 , $this->menu_slug                                  // menu slug
                 , $this->get_callback( 'show_network_page' )        // callback
-                , 'none'                                            // icon
+                , WPEL_PLUGIN_URL . '/public/images/icon-small.png' // icon                                            // icon
                 , null                                              // position
             );
         } else {
             $this->page_hook = add_submenu_page(
                 'settings.php'                                      // parent slug
                 , __( 'WP External Links' , 'wp-external-links' )                // page title
-                , __( 'External Links' , 'wp-external-links' )                   // menu title
+                , __( 'WP External Links' , 'wp-external-links' )                   // menu title
                 , 'manage_options'                                  // capability
                 , $this->menu_slug                                  // menu slug
                 , $this->get_callback( 'show_network_page' )        // callback
@@ -128,11 +128,11 @@ final class WPEL_Network_Page extends WPRun_Base_1x0x0
         $current_screen = get_current_screen();
 
         if($current_screen->id == 'toplevel_page_wpel-network-settings-page-network' || $current_screen->id == 'settings_page_wpel-network-settings-page-network'){
-            wp_enqueue_style( 'font-awesome' );
+            wp_enqueue_style( 'wpel-font-awesome' );
             wp_enqueue_style( 'wpel-admin-style' );
             wp_enqueue_script( 'wpel-admin-script' );
         }
-        
+
         wp_enqueue_style( 'wpel-admin-global-style' );
     }
 

@@ -92,29 +92,18 @@ final class WPEL_Front extends WPRun_Base_1x0x0
     {
         $icon_type_int = $this->opt( 'icon_type', 'internal-links' );
         $icon_type_ext = $this->opt( 'icon_type', 'external-links' );
+        $icon_type_excl = $this->opt( 'icon_type', 'excluded-links' );
 
-        if ( 'dashicon' === $icon_type_int || 'dashicon' === $icon_type_ext ) {
+        if ( 'dashicon' === $icon_type_int || 'dashicon' === $icon_type_ext || 'dashicon' === $icon_type_excl ) {
             wp_enqueue_style( 'dashicons' );
         }
 
-        if ( 'fontawesome' === $icon_type_int || 'fontawesome' === $icon_type_ext ) {
-            wp_enqueue_style( 'font-awesome' );
+        if ( 'fontawesome' === $icon_type_int || 'fontawesome' === $icon_type_ext || 'fontawesome' === $icon_type_excl) {
+            wp_enqueue_style( 'wpel-font-awesome' );
         }
 
-        if ( $this->opt( 'icon_type', 'external-links' ) || $this->opt( 'icon_type', 'internal-links' ) ) {
+        if ( $this->opt( 'icon_type', 'excluded-links' ) || $this->opt( 'icon_type', 'external-links' ) || $this->opt( 'icon_type', 'internal-links' ) ) {
             wp_enqueue_style( 'wpel-style' );
-        }
-
-        wp_register_script(
-            'wpel-link-highlighter',
-            plugins_url('/public/js/wpel-link-highlighter.js', WPEL_Plugin::get_plugin_file()),
-            array('jquery'),
-            false,
-            true
-        );
-
-        if(isset($_GET['wpel-link-highlight'])){
-            wp_enqueue_script( 'wpel-link-highlighter' );
         }
     }
 

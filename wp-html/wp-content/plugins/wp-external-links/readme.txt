@@ -2,22 +2,22 @@
 Contributors: WebFactory
 Tags: new window, new tab, external links, nofollow, noopener, ugc, sponsored, follow, dofollow, seo, noreferrer, internal links, target, links, link, internal link, external link, link scanner, link checker
 Requires at least: 4.2
-Tested up to: 5.7
+Tested up to: 6.0
 Requires PHP: 7.2
-Stable tag: 2.50
+Stable tag: 2.55
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Link scanner + internal & external links manager: open in new window or tab, control nofollow, ugc, sponsored & noopener. SEO friendly.
+Internal links & external links manager: open in new window or tab, control nofollow, ugc, sponsored & noopener. SEO friendly.
 
 == Description ==
 
 **Manage all external & internal links on your site**. Control icons, nofollow, noopener, ugc (User Generated Content), sponsored and if links open in new window or new tab.
 
-WP External Links plugin was completely rebuilt in v2 and has lots of new features, like noopener, ugc and sponsored values for rel; font icons, internal links options and full WPMU support.
+<a href="https://getwplinks.com/">WP Links</a> plugin was completely rebuilt in v2 and has lots of new features, like noopener, ugc and sponsored values for rel; font icons, internal links options and full WPMU support.
 
-= Link Scanner / Link Checker =
-Check every single link on your site! See if it's broken or not, if it's redirected, what's the target and rel attribute and what page exactly it's linking to. This SaaS is currently in beta so bugs are possible :) If you run into any please contact support.
+= Link Scanner - PRO feature =
+Check every single link on your site! See if it's broken or not, if it's redirected, what's the target and rel attribute and what page exactly it's linking to. This feature is a part of the <a href="https://getwplinks.com/">WP Links PRO</a> plugin.
 
 = Features =
 * Manage external and internal links
@@ -29,6 +29,9 @@ Check every single link on your site! See if it's broken or not, if it's redirec
 * Set other attributes like title and CSS classes
 * Scan complete page (or just posts, comments, widgets)
 * SEO friendly
+* Link Scanner - check all links on your site - PRO feature
+* Exit Confirmation - protect visitors and traffic when external links are clicked - PRO feature
+* Link Rules - create advanced link rules for choosen link groups - PRO feature
 
 = And more... =
 * Network Settings (WPMU support)
@@ -44,6 +47,8 @@ The plugin filters the output and changes the links on the fly. The real content
 When deactivating the plugin, all contents will be the same as it was before.
 
 **Like the plugin?** [Rate it](http://wordpress.org/support/view/plugin-reviews/wp-external-links) to support the development.
+
+If you're having **problems with SSL or HTTPS** try our free <a href="https://wordpress.org/plugins/wp-force-ssl/">WP Force SSL</a> plugin. It's a great way to enable SSL and fix SSL problems.
 
 == Installation ==
 
@@ -244,6 +249,18 @@ See [FAQ](https://wordpress.org/plugins/wp-external-links/faq/) for more info.
 
 
 == Changelog ==
+
+= 2.55 =
+ * 2022-07-09
+ * fixed current_screen() bug
+ * fixed "icon_type" cannot be found bug
+ * introduction of the PRO version
+ * removed link scanner beta
+
+= 2.51 =
+ * 2022-01-28
+ * fixed icons for excluded external links
+ * fixed FontAwesome conflict
 
 = 2.50 =
  * 2021-07-09

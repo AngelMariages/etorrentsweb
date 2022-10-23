@@ -49,6 +49,14 @@ class WP_REST_Terms_Controller extends WP_REST_Controller {
 	protected $total_terms;
 
 	/**
+	 * Whether the controller supports batching.
+	 *
+	 * @since 5.9.0
+	 * @var array
+	 */
+	protected $allow_batch = array( 'v1' => true );
+
+	/**
 	 * Constructor.
 	 *
 	 * @since 4.7.0
@@ -57,9 +65,9 @@ class WP_REST_Terms_Controller extends WP_REST_Controller {
 	 */
 	public function __construct( $taxonomy ) {
 		$this->taxonomy  = $taxonomy;
-		$this->namespace = 'wp/v2';
 		$tax_obj         = get_taxonomy( $taxonomy );
 		$this->rest_base = ! empty( $tax_obj->rest_base ) ? $tax_obj->rest_base : $tax_obj->name;
+		$this->namespace = ! empty( $tax_obj->rest_namespace ) ? $tax_obj->rest_namespace : 'wp/v2';
 
 		$this->meta = new WP_REST_Term_Meta_Fields( $taxonomy );
 	}
@@ -89,7 +97,8 @@ class WP_REST_Terms_Controller extends WP_REST_Controller {
 					'permission_callback' => array( $this, 'create_item_permissions_check' ),
 					'args'                => $this->get_endpoint_args_for_item_schema( WP_REST_Server::CREATABLE ),
 				),
-				'schema' => array( $this, 'get_public_item_schema' ),
+				'allow_batch' => $this->allow_batch,
+				'schema'      => array( $this, 'get_public_item_schema' ),
 			)
 		);
 
@@ -97,7 +106,7 @@ class WP_REST_Terms_Controller extends WP_REST_Controller {
 			$this->namespace,
 			'/' . $this->rest_base . '/(?P<id>[\d]+)',
 			array(
-				'args'   => array(
+				'args'        => array(
 					'id' => array(
 						'description' => __( 'Unique identifier for the term.' ),
 						'type'        => 'integer',
@@ -129,9 +138,39 @@ class WP_REST_Terms_Controller extends WP_REST_Controller {
 						),
 					),
 				),
-				'schema' => array( $this, 'get_public_item_schema' ),
+				'allow_batch' => $this->allow_batch,
+				'schema'      => array( $this, 'get_public_item_schema' ),
 			)
 		);
+	}
+
+	/**
+	 * Checks if the terms for a post can be read.
+	 *
+	 * @since 6.0.3
+	 *
+	 * @param WP_Post         $post    Post object.
+	 * @param WP_REST_Request $request Full details about the request.
+	 * @return bool Whether the terms for the post can be read.
+	 */
+	public function check_read_terms_permission_for_post( $post, $request ) {
+		// If the requested post isn't associated with this taxonomy, deny access.
+		if ( ! is_object_in_taxonomy( $post->post_type, $this->taxonomy ) ) {
+			return false;
+		}
+
+		// Grant access if the post is publicly viewable.
+		if ( is_post_publicly_viewable( $post ) ) {
+			return true;
+		}
+
+		// Otherwise grant access if the post is readable by the logged in user.
+		if ( current_user_can( 'read_post', $post->ID ) ) {
+			return true;
+		}
+
+		// Otherwise, deny access.
+		return false;
 	}
 
 	/**
@@ -155,6 +194,30 @@ class WP_REST_Terms_Controller extends WP_REST_Controller {
 				__( 'Sorry, you are not allowed to edit terms in this taxonomy.' ),
 				array( 'status' => rest_authorization_required_code() )
 			);
+		}
+
+		if ( ! empty( $request['post'] ) ) {
+			$post = get_post( $request['post'] );
+
+			if ( ! $post ) {
+				return new WP_Error(
+					'rest_post_invalid_id',
+					__( 'Invalid post ID.' ),
+					array(
+						'status' => 400,
+					)
+				);
+			}
+
+			if ( ! $this->check_read_terms_permission_for_post( $post, $request ) ) {
+				return new WP_Error(
+					'rest_forbidden_context',
+					__( 'Sorry, you are not allowed to view terms for this post.' ),
+					array(
+						'status' => rest_authorization_required_code(),
+					)
+				);
+			}
 		}
 
 		return true;
@@ -914,15 +977,14 @@ class WP_REST_Terms_Controller extends WP_REST_Controller {
 		$post_type_links = array();
 
 		foreach ( $taxonomy_obj->object_type as $type ) {
-			$post_type_object = get_post_type_object( $type );
+			$rest_path = rest_get_route_for_post_type_items( $type );
 
-			if ( empty( $post_type_object->show_in_rest ) ) {
+			if ( empty( $rest_path ) ) {
 				continue;
 			}
 
-			$rest_base         = ! empty( $post_type_object->rest_base ) ? $post_type_object->rest_base : $post_type_object->name;
 			$post_type_links[] = array(
-				'href' => add_query_arg( $this->rest_base, $term->term_id, rest_url( sprintf( 'wp/v2/%s', $rest_base ) ) ),
+				'href' => add_query_arg( $this->rest_base, $term->term_id, rest_url( $rest_path ) ),
 			);
 		}
 

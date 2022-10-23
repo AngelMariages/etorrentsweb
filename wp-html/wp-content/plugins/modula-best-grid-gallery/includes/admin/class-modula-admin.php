@@ -75,8 +75,34 @@ class Modula_Admin {
 	}
 
 	public function register_submenus() {
-
-		$this->tabs = apply_filters( 'modula_admin_page_tabs', array() );
+		$tabs =  array(
+			'shortcodes' => array(
+				'label'    => esc_html__('Advanced Shortcodes', 'modula-best-grid-gallery'),
+				'priority' => 40,
+				'badge'    => 'PRO'
+        	),
+			'watermark' => array(
+				'label'    => esc_html__('Watermark', 'modula-best-grid-gallery'),
+				'priority' => 50,
+				'badge'    => 'PRO'
+        	),
+			'compression' => array(
+				'label'    => esc_html__('SpeedUp Settings', 'modula-best-grid-gallery'),
+				'priority' => 30,
+				'badge'    => 'PRO'
+        	),
+			'standalone' => array(
+				'label'    => esc_html__('Standalone', 'modula-best-grid-gallery'),
+				'priority' => 20,
+				'badge'    => 'PRO'
+        	),
+			'roles' => array(
+				'label'    => esc_html__('Roles', 'modula-best-grid-gallery'),
+				'priority' => 120,
+				'badge'    => 'PRO'
+        	)
+		);
+		$this->tabs = apply_filters( 'modula_admin_page_tabs', $tabs );
 
 		$links = array(
 			array(
@@ -88,15 +114,15 @@ class Modula_Admin {
 				'priority'   => 35,
 			),
 			'freevspro' => array(
-				'page_title' => esc_html__( 'Free vs Premium', 'modula-best-grid-gallery' ),
-				'menu_title' => esc_html__( 'Free vs Premium', 'modula-best-grid-gallery' ),
+				'page_title' => esc_html__( 'Free vs PRO', 'modula-best-grid-gallery' ),
+				'menu_title' => esc_html__( 'Free vs PRO', 'modula-best-grid-gallery' ),
 				'capability' => 'manage_options',
 				'menu_slug'  => 'modula-lite-vs-pro',
 				'function'   => array( $this, 'lite_vs_pro' ),
 				'priority'   => 100,
 			),
 		);
-		
+
 		$links['modulaalbums'] = array(
 			'page_title' => esc_html__( 'Albums', 'modula-best-grid-gallery' ),
 			'menu_title' => esc_html__( 'Albums', 'modula-best-grid-gallery' ),
@@ -105,6 +131,25 @@ class Modula_Admin {
 			'function'   => array( $this, 'modula_albums' ),
 			'priority'   => 25,
 		);
+
+		$links['moduladefaults'] = array(
+			'page_title' => esc_html__( 'Gallery Defaults', 'modula-best-grid-gallery' ),
+			'menu_title' => esc_html__( 'Gallery Defaults', 'modula-best-grid-gallery' ),
+			'capability' => 'manage_options',
+			'menu_slug'  => '#gallery-defaults',
+			'function'   => array( $this, 'modula_gallery_defaults' ),
+			'priority'   => 22,
+		);
+
+		$links['albumsdefaults'] = array(
+			'page_title' => esc_html__( 'Albums Defaults', 'modula-best-grid-gallery' ),
+			'menu_title' => esc_html__( 'Albums Defaults', 'modula-best-grid-gallery' ),
+			'capability' => 'manage_options',
+			'menu_slug'  => '#albums-defaults',
+			'function'   => array( $this, 'modula_albums_defaults' ),
+			'priority'   => 26,
+		);
+
 
 		if ( current_user_can( 'install_plugins' ) ) {
 			$links[] =
@@ -151,7 +196,7 @@ class Modula_Admin {
 
 		// Get current tab
 		if ( isset( $_GET['modula-tab'] ) && isset( $this->tabs[ $_GET['modula-tab'] ] ) ) {
-			$this->current_tab = $_GET['modula-tab'];
+			$this->current_tab = sanitize_text_field( wp_unslash( $_GET['modula-tab'] ) );
 		} else {
 
 			$tabs              = array_keys( $this->tabs );
@@ -193,7 +238,7 @@ class Modula_Admin {
 
 		$active_tab = 'extensions';
 		if ( isset( $_GET['tab'] ) && isset( $tabs[ $_GET['tab'] ] ) ) {
-			$active_tab = $_GET['tab'];
+			$active_tab = sanitize_text_field( wp_unslash( $_GET['tab'] ) );
 		}
 		?>
 		<div class="wrap">
@@ -228,7 +273,7 @@ class Modula_Admin {
 
 					$dt->setTimestamp( $t_ext_timeout - $offset );
 
-					echo $dt->format( get_option( 'date_format' ) . ' ' . get_option( 'time_format' ) );
+					echo esc_html( $dt->format( get_option( 'date_format' ) . ' ' . get_option( 'time_format' ) ) );
 
 					echo '</span>';
 				}
@@ -243,12 +288,35 @@ class Modula_Admin {
 		<?php
 
 		if ( 'extensions' == $active_tab ) {
+
 			$addons = new Modula_Addons();
+			$pro_ext = false;
+
+			if(!isset($_GET['extensions']) || 'pro' === $_GET['extensions']){
+				$pro_ext = true;
+			}
+
+			if( $addons->check_free_addons() ){
 			?>
-			<div class="modula-addons-container">
+				<div class="modula-subtab-navigation wp-clearfix wrap">
+					<ul class="subsubsub">
+						<li><a href="<?php echo esc_url( add_query_arg(array('extensions' =>'pro')) ); ?>" class="<?php echo $pro_ext ? 'current' : ''; ?>">PRO</a> | </li>
+						<li><a href="<?php echo esc_url( add_query_arg(array('extensions' =>'free')) ); ?>" class="<?php echo !$pro_ext ? 'current' : ''; ?>">Free</a></li>
+					</ul>
+				</div>
+			<?php
+			 }
+			?>
+
+			<div class="modula-addons-container <?php echo !$pro_ext ? 'hidden' : ''; ?>">
 				<?php $addons->render_addons(); ?>
 			</div>
-			<?php
+			<?php if( $addons->check_free_addons() ){ ?>
+				<div class="modula-free-addons-container <?php echo $pro_ext ? 'hidden' : ''; ?>">
+					<?php $addons->render_free_addons(); ?>
+				</div>
+				<?php
+			}
 		} else {
 			do_action( "modula_exntesion_{$active_tab}_tab" );
 		}
@@ -277,6 +345,7 @@ class Modula_Admin {
 				'target',
 				'width',
 				'height',
+				'togglelightbox',
 			)
 		);
 
@@ -299,6 +368,13 @@ class Modula_Admin {
 						$new_image[ $attribute ] = esc_url_raw( $image[ $attribute ] );
 						break;
 					case 'target':
+						if ( isset( $image[ $attribute ] ) ) {
+							$new_image[ $attribute ] = absint( $image[ $attribute ] );
+						} else {
+							$new_image[ $attribute ] = 0;
+						}
+						break;
+					case 'togglelightbox':
 						if ( isset( $image[ $attribute ] ) ) {
 							$new_image[ $attribute ] = absint( $image[ $attribute ] );
 						} else {
@@ -389,6 +465,7 @@ class Modula_Admin {
 			wp_send_json( array( 'status' => 'failed' ) );
 		}
 
+
 		$image      = json_decode( stripslashes( $_POST['image'] ), true );
 		$old_images = get_post_meta( $gallery_id, 'modula-images', true );
 
@@ -423,17 +500,20 @@ class Modula_Admin {
 	public function import_export_doc() {
 		?>
 		<div class="wrap">
-			<h3><?php esc_html_e( 'Import Galleries', 'modula-best-grid-gallery' ); ?></h3>
-			<p><?php esc_html_e( 'In order to import exported galleries head over to "Tools -> Import" or click', 'modula-best-grid-gallery' ); ?>
-				<a href="<?php echo admin_url( 'import.php' ); ?>"><?php esc_html_e( 'here.', 'modula-best-grid-gallery' ); ?></a>
-			</p>
-			<p><?php echo '<a href="' . esc_url( 'https://wordpress.org/plugins/wordpress-importer/' ) . '" target="_blank">' . esc_html__( 'Install WordPress Importer', 'modula-best-grid-gallery' ) . '</a>' . esc_html__( '( if not installed ). If installed, click on WordPress "Run importer". After that select the export file you desire and click "Upload file and import".', 'modula-best-grid-gallery' ); ?></p>
-			<br/>
-			<h3><?php esc_html_e( 'Export Galleries', 'modula-best-grid-gallery' ); ?></h3>
-			<p><?php esc_html_e( 'In order to export Modula galleries head over to "Tools -> Export" or click', 'modula-best-grid-gallery' ); ?>
-				<a href="<?php echo admin_url( 'export.php' ); ?>"><?php esc_html_e( 'here.', 'modula-best-grid-gallery' ); ?></a>
-			</p>
-			<p><?php echo esc_html__( 'Select "Galleries" and click "Download Export File". An export file will be created and downloaded, which will be used to import the galleries somewhere else.', 'modula-best-grid-gallery' ); ?></p>
+			<div class="card">
+				<h3><?php esc_html_e( 'Import Galleries', 'modula-best-grid-gallery' ); ?></h3>
+				<p><?php esc_html_e( 'In order to import exported galleries head over to "Tools -> Import" or click', 'modula-best-grid-gallery' ); ?>
+					<a href="<?php echo esc_url( admin_url( 'import.php' ) ); ?>"><?php esc_html_e( 'here.', 'modula-best-grid-gallery' ); ?></a>
+				</p>
+				<p><?php echo '<a href="' . esc_url( 'https://wordpress.org/plugins/wordpress-importer/' ) . '" target="_blank">' . esc_html__( 'Install WordPress Importer', 'modula-best-grid-gallery' ) . '</a>' . esc_html__( '( if not installed ). If installed, click on WordPress "Run importer". After that select the export file you desire and click "Upload file and import".', 'modula-best-grid-gallery' ); ?></p>
+			</div>
+			<div class="card">
+				<h3><?php esc_html_e( 'Export Galleries', 'modula-best-grid-gallery' ); ?></h3>
+				<p><?php esc_html_e( 'In order to export Modula galleries head over to "Tools -> Export" or click', 'modula-best-grid-gallery' ); ?>
+					<a href="<?php echo esc_url( admin_url( 'export.php' ) ); ?>"><?php esc_html_e( 'here.', 'modula-best-grid-gallery' ); ?></a>
+				</p>
+				<p><?php echo esc_html__( 'Select "Galleries" and click "Download Export File". An export file will be created and downloaded, which will be used to import the galleries somewhere else.', 'modula-best-grid-gallery' ); ?></p>
+			</div>
 		</div>
 		<?php
 
@@ -447,7 +527,12 @@ class Modula_Admin {
 	 */
 	public function modula_lbu_notice() {
 
-		$nonce = $_POST['nonce'];
+		$nonce = '';
+		
+		if( isset( $_POST['nonce'] ) ){
+			$nonce = $_POST['nonce'];
+		}
+
 
 		if ( ! wp_verify_nonce( $nonce, 'modula-ajax-save' ) ) {
 			wp_send_json_error();
@@ -524,7 +609,7 @@ class Modula_Admin {
 	 */
 	public function lite_vs_pro() {
 
-		$pro_features = array(
+	$pro_features = array(
 			'gallery-filters' => array(
 				'title'       => esc_html__( 'Gallery Filters', 'modula-best-grid-gallery' ),
 				'description' => esc_html__( 'Let visitors filter your gallery items with a single click', 'modula-best-grid-gallery' ),
@@ -532,7 +617,15 @@ class Modula_Admin {
 			'gallery-sorting' => array(
 				'title'       => esc_html__( 'Gallery Sorting', 'modula-best-grid-gallery' ),
 				'description' => esc_html__( 'Multiple choices for sorting out images from your gallery: manual, date created, date modified, alphabetically, reverse or random', 'modula-best-grid-gallery' ),
-			)
+			),
+			'hover-effects' => array(
+				'title'       => esc_html__( 'Hover Effects', 'modula-best-grid-gallery' ),
+				'description' => esc_html__( 'Choose from 42 different hover effects.', 'modula-best-grid-gallery' ),
+			),
+			'loadng-effects' => array(
+				'title'       => esc_html__( 'Loading Effects', 'modula-best-grid-gallery' ),
+				'description' => esc_html__( 'Build your own effects with these new customizations', 'modula-best-grid-gallery' ),
+			),
 		);
 
 		echo '<div class="modula wrap lite-vs-pro-section about-wrap">';
@@ -544,6 +637,14 @@ class Modula_Admin {
 	}
 
 	public function modula_albums() {
+		return;
+	}
+
+	public function modula_gallery_defaults() {
+		return;
+	}
+
+	public function modula_albums_defaults() {
 		return;
 	}
 

@@ -28,11 +28,9 @@ class Modula_Helper {
 				$value = str_replace( '<script', '&lt;script', $value );
 				$value = strip_tags( htmlspecialchars( $value ) );
 				$value = preg_replace( '@<(script|style)[^>]*?>.*?</\\1>@si', '', $value );
-			} else {
-				$value = esc_attr( $value );
 			}
 
-			$return .= ' ' . esc_attr( $name ) . '="' . $value . '"';
+			$return .= ' ' . esc_attr( $name ) . '="' . esc_attr( $value ) . '"';
 		}
 
 		return $return;
@@ -72,7 +70,7 @@ class Modula_Helper {
 
 		$effects_with_title         = apply_filters( 'modula_effects_with_title', array( 'under', 'fluid-up', 'hide', 'quiet', 'reflex', 'curtain', 'lens', 'appear', 'crafty', 'seemo', 'comodo', 'pufrobo', 'lily', 'sadie', 'honey', 'layla', 'zoe', 'oscar', 'marley', 'ruby', 'roxy', 'bubba', 'dexter', 'sarah', 'chico', 'milo', 'julia', 'hera', 'winston', 'selena', 'terry', 'phoebe', 'apollo', 'steve', 'jazz', 'ming', 'lexi', 'duke', 'tilt_1', 'tilt_3', 'tilt_7','greyscale' ) );
 		$effects_with_description   = apply_filters( 'modula_effects_with_description', array( 'under', 'fluid-up', 'hide', 'reflex', 'lens', 'crafty', 'pufrobo', 'lily', 'sadie', 'layla', 'zoe', 'oscar', 'marley', 'ruby', 'roxy', 'bubba', 'dexter', 'sarah', 'chico', 'milo', 'julia', 'selena', 'apollo', 'steve', 'jazz', 'ming', 'lexi', 'duke', 'tilt_1', 'tilt_3', 'tilt_7','greyscale' ) );
-		$effects_with_social        = apply_filters( 'modula_effects_with_social', array( 'under', 'comodo', 'seemo', 'appear', 'lens', 'curtain', 'reflex', 'catinelle', 'quiet', 'hide', 'pufrobo', 'lily', 'sadie', 'zoe', 'ruby', 'roxy', 'bubba', 'dexter', 'sarah', 'chico', 'julia', 'hera', 'winston', 'selena', 'terry', 'phoebe', 'ming', 'tilt_1', 'tilt_3', 'tilt_7','greyscale' ) );
+		$effects_with_social        = apply_filters( 'modula_effects_with_social', array( 'under', 'comodo', 'seemo', 'appear', 'lens', 'curtain', 'reflex', 'catinelle', 'quiet', 'hide', 'pufrobo', 'lily', 'sadie', 'zoe', 'ruby', 'roxy', 'bubba', 'dexter', 'sarah', 'chico', 'julia', 'hera', 'winston', 'selena', 'terry', 'phoebe', 'ming','greyscale' ) );
 		$effects_with_extra_scripts = apply_filters( 'modula_effects_with_scripts', array( 'tilt_1', 'tilt_3', 'tilt_7' ) );
 
 		return array(

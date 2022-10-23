@@ -1,12 +1,12 @@
 === Social Icons Widget & Block by WPZOOM ===
-Contributors: WPZOOM, nvartolomei, ciorici, llemurya
+Contributors: WPZOOM, nvartolomei, ciorici
 Donate link: https://www.wpzoom.com/
 Tags: social icons, social networks, social media, social media icons, icons, social profiles, social widget, widget, block, social block, block icons, academicons, elementor, social networking, sharing, share buttons, fontawesome
-Requires at least: 5.0
-Requires PHP: 5.6
-Tested up to: 5.7
-Stable tag: trunk
-License: GPLv2 or later
+Requires at least: 5.2
+Requires PHP: 7.2
+Tested up to: 6.0
+Stable tag: 4.2.8
+License: GNU General Public License v2.0 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Social Icons Widget & Block helps adding icons with links to social media profiles on your website. Supports more than 100 websites and includes 400 icons.
@@ -38,8 +38,6 @@ Social Icons Widget & Block helps adding icons with links to social media profil
 
 ⭐️ **[Get the PRO version!](https://www.wpzoom.com/plugins/social-widget/?utm_source=wporg&utm_medium=website&utm_campaign=free_description)** ⭐️
 
-
-
 = What's new in 4.0.0 =
 * **NEW: Gutenberg Block**
 * New icon styles in the new Social Icons Block
@@ -64,7 +62,7 @@ Social Icons Widget & Block helps adding icons with links to social media profil
 
 = What's new in 2.0 =
 
-* Support for custom icons
+* New custom icons
 * Color picker for each icon
 * 3 Icon Sets from which you can choose more than 400 icons
 
@@ -102,13 +100,11 @@ You can view the widget live in all our themes at [WPZOOM](https://www.wpzoom.co
 
 = Icons =
 
-Icons are provided by [socicon](http://www.socicon.com) icon font.
-
 Twitter, Facebook, Google+, Instagram, Pinterest, Snapchat, Skype, Yelp, Feedburner, LinkedIn, Bloglovin', Lookbook, Feedly, Periscope, SoundCloud, Spotify, Last.fm, YouTube, Vimeo, Vine, Flickr, 500px, Tumblr, Blogger, Reddit, Dribbble, Envato, Behance, DeviantArt, GitHub, RSS, Disqus, Stackoverflow, Komoot, Tiktok, Mailchimp, Podcasts, Telegram and many others.
 
 = Credits =
 
-Social Icons are provided by [socicon](http://www.socicon.com) icon font.
+Some Social Icons are provided by the Socicon icon font.
 
 [Academicons](https://jpswalsh.github.io/academicons/) are provided by James Walsh.
 
@@ -133,11 +129,9 @@ After that go to the **Widgets** page and add the widget **Social Icons by WPZOO
 
 On our [website](http://www.wpzoom.com/plugins/social-widget/).
 
-= Can I insert the Widget as a Shortcode in a Page? =
+= How can I add Social Icons to a Page? =
 
-Yes, using the [Widget Shortcode](https://wordpress.org/plugins/widget-shortcode/) plugin you can generate a shortcode for each Social Icons widget and insert the shortcode in posts or pages where you need it.
-You can also create a hidden widget area using a plugin like Custom Sidebars if you don’t want to add the widget in a sidebar to be visible.
-
+Add the Social Icons Block to the editor and customize the icons as you want.
 
 == Screenshots ==
 
@@ -151,6 +145,40 @@ You can also create a hidden widget area using a plugin like Custom Sidebars if 
 8. Widget Settings
 
 == Changelog ==
+
+= 4.2.8 =
+* Updating Academicons set to the latest version with new icons
+
+= 4.2.7 =
+* New icons: IMDb, Spotlight
+* Minor bug fix
+
+= 4.2.6 =
+* Multiple fixes for WordPress 6.0 compatibility
+
+= 4.2.5 =
+* New icon: Discourse
+* Updated icon: Slack
+* Minor improvements
+
+= 4.2.4 =
+* Bug fix with the Amazon icon
+
+= 4.2.3 =
+* Updated icons: Spotify, Beatport
+* Change textdomain to match with plugin slug
+
+= 4.2.2 =
+* Fixed an issue with the Legacy Widget
+
+= 4.2.1 =
+* Multiple fixes and improvements when converting legacy widgets to blocks
+* Improvements to icon styles in the Social Icons Block
+
+= 4.2.0 =
+* Fixed compatibility issues with WordPress 5.8
+* Added warning notice to widgets block-based page. Please make sure you've read the message before doing some changes to widgets!
+* Added the ability to convert legacy widget "Social Icons" to block
 
 = 4.1.3 =
 * Added new tab in the Settings page with a promo for the new PRO version

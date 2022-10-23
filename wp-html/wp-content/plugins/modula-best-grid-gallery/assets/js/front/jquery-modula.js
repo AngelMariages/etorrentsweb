@@ -40,6 +40,10 @@ jQuery(window).on('elementor/frontend/init', function () {
 			keepArea: true,
 			type: 'creative-gallery',
 			columns: 12,
+			height: 800,
+			desktopHeight: 800,
+			mobileHeight: 800,
+			tabletHeight: 800,
 			gutter: 10,
 			desktopGutter: 10,
 			mobileGutter: 10,
@@ -118,6 +122,12 @@ jQuery(window).on('elementor/frontend/init', function () {
 			instance.onResize(instance);
 		});
 
+		const resizeObserver = new ResizeObserver(entries => {
+
+			instance.onResize(instance);
+		});
+		resizeObserver.observe(instance.$element[0]);
+
 		$(window).on('modula-update', function() {
 			instance.onResize(instance);
 		});
@@ -182,10 +192,15 @@ jQuery(window).on('elementor/frontend/init', function () {
 	Plugin.prototype.initLightbox = function() {
 		var self = this;
 
+		self.$element.on('click', '.modula-no-follow', function(evt) {
+			evt.preventDefault();
+		});
+
 		self.$element.on('click', '.modula-item-link:not( .modula-simple-link )', function(evt) {
 			evt.preventDefault();
-
+			var clickedLink = jQuery(this);
 			var links = $.map(self.$items, function(o) {
+				if( jQuery(o).find('.modula-item-link:not( .modula-no-follow )').length > 0 ){
 					var link = jQuery(o).find('.modula-item-link:not( .modula-simple-link )'),
 						image = jQuery(o).find('.pic');
 					return {
@@ -195,10 +210,17 @@ jQuery(window).on('elementor/frontend/init', function () {
 							caption: link.data('caption'),
 							alt: image.attr('alt'),
 							image_id: link.attr('data-image-id')
-						}
-					};
+						},
+						current: jQuery(o).is(clickedLink.parents('.modula-item')) ,
+					};	
+					
+				}
 				}),
-				index = self.$items.index(jQuery(this).parents('.modula-item'));
+				index = $.map(links,function(element,myIndex){
+					if( element.current ){
+						return myIndex;
+					}
+				})[0];
 
 			jQuery.modulaFancybox.open(links, self.options.lightboxOpts, index);
 		});
@@ -314,6 +336,16 @@ jQuery(window).on('elementor/frontend/init', function () {
 		// if ( this.options.height ) {
 		// 	this.$itemsCnt.height(this.options.height);
 		// }
+		var viewport = document.documentElement.clientWidth;
+
+		if (viewport <= 568) {
+			instance.options.height = instance.options.mobileHeight;
+		} else if (viewport <= 768) {
+			instance.options.height = instance.options.tabletHeight;
+		} else {
+			instance.options.height = instance.options.desktopHeight;
+		}
+
 		this.$itemsCnt.data('area', this.$itemsCnt.width() * this.options.height);
 
 		this.lastWidth = this.$itemsCnt.width();
