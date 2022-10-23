@@ -53,6 +53,15 @@
     content: "\e00e"
 }
 
+.socicon-amazon {
+    background-color: #FF9900;
+    color: #FF9900;
+}
+
+.social-icon.socicon-amazon:before {
+    content: "\e05c"
+}
+
 .socicon-anchor {
     background-color: #8940fa;
     color: #8940fa;
@@ -153,12 +162,12 @@
 }
 
 .socicon-beatport {
-    background-color: #94d500;
-    color: #94d500;
+    background-color: #01FF95;
+    color: #01FF95;
 }
 
 .social-icon.socicon-beatport:before {
-    content: "\e955"
+    content: "\e944"
 }
 
 .socicon-bebo {
@@ -312,6 +321,15 @@
 
 .social-icon.socicon-discord2:before {
     content: "\e079";
+}
+
+.socicon-discourse{
+    background-color: #000;
+    color: #000;
+}
+
+.social-icon.socicon-discourse:before {
+    content: "\e947";
 }
 
 .socicon-disqus {
@@ -627,6 +645,15 @@
 
 .social-icon.socicon-iheartradio:before {
     content: "\e930"
+}
+
+.socicon-imdb {
+    background-color: #F5C518;
+    color: #F5C518;
+}
+
+.social-icon.socicon-imdb:before {
+    content: "\e064"
 }
 
 .socicon-instagram {
@@ -1099,12 +1126,12 @@
 }
 
 .socicon-slack {
-    background-color: #4B6BC6;
-    color: #4B6BC6;
+    background-color: #4A154B;
+    color: #4A154B;
 }
 
 .social-icon.socicon-slack:before {
-    content: "\e918"
+    content: "\e946"
 }
 
 .socicon-slideshare {
@@ -1153,12 +1180,21 @@
 }
 
 .socicon-spotify {
-    background-color: #7bb342;
-    color: #7bb342;
+    background-color: #1DB954;
+    color: #1DB954;
 }
 
 .social-icon.socicon-spotify:before {
-    content: "\e04e"
+    content: "\e945"
+}
+
+.socicon-spotlight{
+    background-color: #352A71;
+    color: #352A71;
+}
+
+.social-icon.socicon-spotlight:before {
+    content: "\e948"
 }
 
 .socicon-ssrn {

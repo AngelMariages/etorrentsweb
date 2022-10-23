@@ -2,13 +2,13 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>https://www.enrictorrents.com/</loc>
+		<lastmod>2022-10-23T19:30:55+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://www.enrictorrents.com/about/</loc>
 		<lastmod>2019-10-07T14:38:34+00:00</lastmod>
 		<image:image>
 			<image:loc>https://www.enrictorrents.com/wp-content/uploads/2020/02/MG_3334_3_nszpbp-scaled.jpg</image:loc>
-			<image:title><![CDATA[_MG_3334_3]]></image:title>
 		</image:image>
 	</url>
 	<url>
@@ -16,7 +16,6 @@
 		<lastmod>2020-02-13T22:56:49+00:00</lastmod>
 		<image:image>
 			<image:loc>https://www.enrictorrents.com/wp-content/uploads/2020/02/1466919_3-1_yosjf3.jpg</image:loc>
-			<image:title><![CDATA[_1466919_3]]></image:title>
 		</image:image>
 	</url>
 	<url>

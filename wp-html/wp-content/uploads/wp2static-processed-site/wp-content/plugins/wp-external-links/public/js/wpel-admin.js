@@ -2,6 +2,7 @@
  * WP External Links Plugin
  * Admin
  */
+
 /*global jQuery, window*/
 jQuery(function ($) {
   // add custom jQuery show/hide function
@@ -129,247 +130,169 @@ jQuery(function ($) {
   // for network pages
   $(".wpel-network-page").find("form").wpelShow();
 
-  let check_links_timeout;
-
-  $wrapper.on("click", ".check-links", function (e) {
+  // pro dialog
+  $('a.nav-tab-pro').on('click', function (e) {
     e.preventDefault();
-    
-    check_links($(this).data("force"));
-    if (!$(this).data("force")) {
-      $("#lh_results").html('<tr class="lh-results-loader"><td><img src=' + wpel.loader + " /><br />Generating list of pages</td></tr>");
-    }
+
+    open_upsell('tab');
+
+    return false;
   });
 
-  const urlParams = new URLSearchParams(window.location.search);
-  const current_tab = decodeURI(urlParams.get("tab"));
-  
-  if ((current_tab == 'null' || current_tab == null || current_tab == "link-checking") && wpel.link_checking_enabled) {
-    check_links();
+  $('#wpwrap').on('click', '.open-pro-dialog', function (e) {
+    e.preventDefault();
+    $(this).blur();
+
+    pro_feature = $(this).data('pro-feature');
+    if (!pro_feature) {
+      pro_feature = $(this).parent('label').attr('for');
+    }
+    open_upsell(pro_feature);
+
+    return false;
+  });
+
+  $('#wpel-pro-dialog').dialog({
+    dialogClass: 'wp-dialog wpel-pro-dialog',
+    modal: true,
+    resizable: false,
+    width: 850,
+    height: 'auto',
+    show: 'fade',
+    hide: 'fade',
+    close: function (event, ui) {},
+    open: function (event, ui) {
+      $(this).siblings().find('span.ui-dialog-title').html('WP Links PRO is here!');
+      wpel_fix_dialog_close(event, ui);
+    },
+    autoOpen: false,
+    closeOnEscape: true,
+  });
+
+  function clean_feature(feature) {
+    feature = feature || 'free-plugin-unknown';
+    feature = feature.toLowerCase();
+    feature = feature.replace(' ', '-');
+
+    return feature;
   }
 
-  function check_links(force) {
-    $("#lh_results").show();
-    let loader_html = '<img class="wpel-loader" src=' + wpel.loader + " />";
-    if (force) {
-      clearTimeout(check_links_timeout);
-    }
-    $.ajax({
-      url: ajaxurl,
-      method: "POST",
-      crossDomain: true,
-      dataType: "json",
-      timeout: 30000,
-      data: {
-        _ajax_nonce: wpel.nonce_ajax,
-        action: "wpel_run_tool",
-        force: force,
-        tool: "check_links",
-      },
-    })
-      .done(function (response) {
-        if (response.success == true) {
-          if (force == true) {
-            location.reload();
-            return;
-          }
+  function open_upsell(feature) {
+    feature = clean_feature(feature);
 
-          if (response.data.status == "scan_pending" || response.data.status == "pending" || response.data.status == "finished") {
-            var total_pages = 0;
-            var total_pages_links = 0;
-            var total_links = 0;
-            var total_finished = 0;
+    $('#wpel-pro-dialog').dialog('open');
 
-            for (page in response.data.pages) {
-              total_pages++;
-              var page_id = page.replace(/\/|\:|\./g, "");
-              var html = "";
-
-              html += '<td class="lh-page-href">';
-              if (response.data.pages[page].title && response.data.pages[page].title.length > 0) {
-                html += response.data.pages[page].title + " - ";
-              }
-              html += '<a href="' + page + '" target="_blank">' + page + '<span class="dashicons dashicons-external"></span></a>';
-              html += "</td>";
-
-              html += '<td class="lh-results-stats">';
-              html += '<span class="lh-results-links-total">' + response.data.pages[page].links_total + " links</span>";
-              html += '<span class="lh-results-links-finished">' + response.data.pages[page].links_finished + " scanned</span>";
-              if(response.data.pages[page].links_error > 0){
-                html += '<span class="lh-results-links-error">' + response.data.pages[page].links_error + " errors</span>";
-              }
-              html += "</td>";
-
-              html += "<td>";
-              //Show loader
-              total_links+=response.data.pages[page].links_total;
-              total_finished+=response.data.pages[page].links_error + response.data.pages[page].links_finished;
-              if(response.data.pages[page].links_total > 0){
-                total_pages_links++;
-              }
-              if (response.data.pages[page].links_total == 0 || response.data.pages[page].links_total > response.data.pages[page].links_error + response.data.pages[page].links_finished) {
-                html += loader_html;
-              } else {
-                html += '<div class="button button-primary lh-open-analysis">Open Details</div>';
-              }
-              html += "</td>";
-
-              if ($("#lh_results #wpel-page-" + page_id).length > 0) {
-                if ($("#wpel-page-" + page_id).text() != $("<div>").append(html).text()) {
-                  $("#wpel-page-" + page_id).html(html);
-                }
-              } else {
-                $("#lh_results").append('<tr class="lh-page" id="wpel-page-' + page_id + '" data-page="' + page + '">' + html + "</tr>");
-              }
-            }
-
-            if (total_pages > 0) {
-              $(".lh-results-loader").remove();
-
-              var page_progress = total_pages_links/total_pages * 25;
-              var link_progress = total_finished/total_links * 75;
-
-              if(total_finished < total_links){
-                $('#lh-progress-bar-wrapper').show();
-                var progress = page_progress + link_progress;
-                $('#lh-progress-bar').css('width',progress+'%');
-              } else {
-                $('#lh-progress-bar-wrapper').hide();
-              }
-
-              $(".lh-search-wrapper").show();
-              if (response.data.total_pages > total_pages) {
-                var unscanned_pages = response.data.total_pages - total_pages;
-                $("#lh_pro_count").html(unscanned_pages);
-                $("#lh_pro").show();
-              } else {
-                $("#lh_pro").hide();
-              }
-            } else {
-              $(".lh-search-wrapper").hide();
-            }
-
-            if (response.data.status == "pending") {
-              check_links_timeout = setTimeout(function () {
-                check_links();
-              }, 2000);
-            }
-          }
-        } else {
-          alert(response.data);
-        }
-      })
-      .fail(function (data) {
-        alert("An undocumented error occured checking the links");
-      });
-  } // check_links
-
-  var analysis_table = false;
-  $("#lh_results").on("click", ".lh-open-analysis", function () {
-    var page = $(this).parents(".lh-page").attr("data-page");
-    var title = $(this).parents(".lh-page").children(".lh-page-href").html();
-
-    $("#lh_details_title").html(title);
-
-    if (analysis_table != false) {
-      analysis_table.destroy();
-      analysis_table = false;
-    }
-
-    analysis_table = $("#lh_page_details").DataTable({
-      ajax: ajaxurl + "?action=wpel_run_tool&tool=link_details&link=" + page,
-      columnDefs: [
-        {
-          targets: [0],
-          className: "dt-body-center",
-          width: 100,
-        },
-        {
-          targets: [1, 2, 3],
-          className: "dt-body-left dt-head-center",
-        },
-      ],
-      fixedColumns: true,
+    $('#wpel-pro-table .button-buy').each(function (ind, el) {
+      tmp = $(el).data('href-org');
+      tmp = tmp.replace('pricing-table', feature);
+      $(el).attr('href', tmp);
     });
+  } // open_upsell
 
-    $("#lh_details").show();
-    $("body").addClass("body_lh_details_open");
-  });
+  if (window.localStorage.getItem('wpel_upsell_shown') != 'true') {
+    open_upsell('welcome');
 
-  $("#lh_details").on("click", ".lh-close", function () {
-    $("#lh_details").hide();
-    $("body").removeClass("body_lh_details_open");
-  });
-
-  $("#lh-search").on("change, keyup", function () {
-    var search_term = $(this).val();
-    var $rows = $("#lh_results tr");
-    $rows
-      .show()
-      .filter(function () {
-        var text = $(this).text().replace(/\s+/g, " ").toLowerCase();
-        return !~text.indexOf(search_term);
-      })
-      .hide();
-  });
-
-  $("#lh_subscribe_button").on("click", function () {
-    if($(this).hasClass('disabled')){
-        return false;
-    }
-    var email = $("#lh_subscribe_email").val();
-    $("#lh_subscribe_button_loader").html('<img class="lh-subscribe-loader" src=' + wpel.loader + ' />');
-    $('#lh_subscribe_button').addClass('disabled');
-    $.ajax({
-      url: wpel.lh_url,
-      method: "POST",
-      crossDomain: true,
-      dataType: "json",
-      timeout: 30000,
-      data: {
-        email: email,
-      },
-    })
-      .done(function (response) {
-        if (response.success == true) {
-          subscribe_message(true, "<b>Thank you!</b> We'll be in touch soon!");
-          $('#lh_subscribe_email').hide();
-          $('#lh_subscribe_button').hide();
-          $.ajax({
-            url: ajaxurl,
-            method: "POST",
-            crossDomain: true,
-            dataType: "json",
-            timeout: 30000,
-            data: {
-              _ajax_nonce: wpel.nonce_ajax,
-              action: "wpel_run_tool",
-              tool: "subscribed",
-            },
-          }).done(function (response) {
-            //
-          });
-        } else {
-          subscribe_message(false, response.data);
-        }
-      })
-      .fail(function (data) {
-        subscribe_message(false, "An undocumented error occured.");
-      })
-      .always(function (data) {
-        $(".lh-subscribe-loader").remove();
-        $('#lh_subscribe_button').removeClass('disabled');
-      });
-  });
-
-  function subscribe_message(success, message) {
-    if (success) {
-      $("#lh_subscribe_message").removeClass("lh-subscribe-bad");
-      $("#lh_subscribe_message").addClass("lh-subscribe-good");
-    } else {
-      $("#lh_subscribe_message").removeClass("lh-subscribe-good");
-      $("#lh_subscribe_message").addClass("lh-subscribe-bad");
-    }
-
-    $("#lh_subscribe_message").html(message).show();
+    window.localStorage.setItem('wpel_upsell_shown', 'true');
+    window.localStorage.setItem('wpel_upsell_shown_timestamp', new Date().getTime());
   }
+
+  if (window.location.hash == '#open-pro-dialog') {
+    open_upsell('url-hash');
+    window.location.hash = '';
+  }
+
+  $("a.show-link-rules").click(function() {
+    $('#link-rules-new').dialog({ height:'auto',
+                                  width:'auto',
+                                  closeOnEscape: true,
+                                  dialogClass: 'wp-dialog',
+                                  modal: true,
+                                  open: function (event, ui) {
+                                    wpel_fix_dialog_close(event, ui);
+                                  },});
 });
+
+jQuery(document).ready(function($){
+    $('.wpel-colorpicker').wpColorPicker();
+  });
+
+
+  $('.wpel-exit-confirmation').on('click', function(event){
+    event.stopPropagation();
+    refresh_exit_confirmaiton_preview();
+  });
+
+function refresh_exit_confirmaiton_preview(){
+    wp_external_links = {};
+    wp_external_links.background = $('#wpel-exit-confirmation-settings-background').val();
+    wp_external_links.title = $('#wpel-exit-confirmation-settings-title').val();
+    wp_external_links.title_color = $('#wpel-exit-confirmation-settings-title_color').val();
+    wp_external_links.title_background = $('#wpel-exit-confirmation-settings-title_background').val();
+    wp_external_links.title_size = $('#wpel-exit-confirmation-settings-title_size').val();
+    wp_external_links.text = $('#wpel-exit-confirmation-settings-text').val().replace('{siteurl}', wpel.home_url);
+    wp_external_links.text_color = $('#wpel-exit-confirmation-settings-text_color').val();
+    wp_external_links.text_size = $('#wpel-exit-confirmation-settings-text_size').val();
+    wp_external_links.popup_width = $('#wpel-exit-confirmation-settings-popup_width').val();
+    wp_external_links.popup_height = $('#wpel-exit-confirmation-settings-popup_height').val();
+    wp_external_links.overlay = $('#wpel-exit-confirmation-settings-overlay').val();
+    wp_external_links.overlay_color = $('#wpel-exit-confirmation-settings-overlay_color').val();
+    wp_external_links.button_text = $('#wpel-exit-confirmation-settings-button_text').val();
+    wp_external_links.button_size = $('#wpel-exit-confirmation-settings-button_size').val();
+    wp_external_links.button_color = $('#wpel-exit-confirmation-settings-button_color').val();
+    wp_external_links.button_background = $('#wpel-exit-confirmation-settings-button_background').val();
+    wp_external_links.title = $('#wpel-exit-confirmation-settings-title').val();
+
+    wp_external_links.href = 'https://www.google.com';
+
+    exit_confirmation_html = '';
+    if(wp_external_links.overlay == '1'){
+        exit_confirmation_html += '<div id="wpel_exit_confirmation_overlay"></div>';
+    }
+    exit_confirmation_html += '<div id="wpel_exit_confirmation">';
+    if(wp_external_links.title.length>0){
+        exit_confirmation_html += '<div id="wpel_exit_confirmation_title">'+wp_external_links.title+'</div>';
+    }
+    exit_confirmation_html += '<div id="wpel_exit_confirmation_link">'+wp_external_links.text+'<br /><a target="'+ wp_external_links.href +'" href="'+wp_external_links.href+'">'+wp_external_links.href+'</a></div>';
+    exit_confirmation_html += '<div id="wpel_exit_confirmation_button_wrapper">';
+    exit_confirmation_html += '<div id="wpel_exit_confirmation_cancel" onMouseOver="this.style.opacity=\'0.8\'" onMouseOut="this.style.opacity=\'1\'">' + wp_external_links.button_text + '</a></div>';
+    exit_confirmation_html += '</div>';
+    exit_confirmation_html += '</div>';
+
+    exit_confirmation_html += '<style>';
+    exit_confirmation_html += '#wpel_exit_confirmation_overlay{width:100%;height:100%;position:fixed;top:0px;left:0px;opacity:0.2;z-index:100000;background:'+wp_external_links.overlay_color+';}';
+    exit_confirmation_html += '#wpel_exit_confirmation{z-index:100001;border-radius:4px;padding-bottom:40px;position:fixed;top:0px;left:0px;top:50%;left:50%;margin-top:-'+(wp_external_links.popup_height/2)+'px;margin-left:-'+(wp_external_links.popup_width/2)+'px;width:'+wp_external_links.popup_width+'px;height:'+wp_external_links.popup_height+'px;background:'+wp_external_links.background+';}';
+    exit_confirmation_html += '#wpel_exit_confirmation_title{width:100%;padding:6px 10px; text-align:center; box-sizing: border-box; background:'+wp_external_links.title_background+';font-size:'+wp_external_links.title_size+'px; color:'+wp_external_links.title_color+';}';
+    exit_confirmation_html += '#wpel_exit_confirmation_link{width:100%;padding:10px 20px; line-height: 1.5; box-sizing: border-box;font-size:'+wp_external_links.text_size+'px; color:'+wp_external_links.text_color+';}';
+    exit_confirmation_html += '#wpel_exit_confirmation_button_wrapper{width:100%; text-align:center; position:absolute; bottom:10px;}';
+    exit_confirmation_html += '#wpel_exit_confirmation_cancel{cursor:pointer;border-radius:4px;padding:10px 15px;display:inline-block;font-size:'+wp_external_links.button_size+'px;color:'+wp_external_links.button_color+'; background:'+wp_external_links.button_background+';}';
+
+    exit_confirmation_html += '@media only screen and (max-width: 900px) {';
+    exit_confirmation_html += '#wpel_exit_confirmation{ width: 90%; margin: 0 auto; padding-bottom: 40px; top: 20%; position: fixed; left: auto; height: auto; height:'+wp_external_links.popup_height+'px; display: block; margin-left: 5%;}';
+    exit_confirmation_html += '}';
+    exit_confirmation_html += '</style>';
+
+    $('#exit-confirmation-preview').html(exit_confirmation_html);
+}
+
+$('body').on('click', '#wpel_exit_confirmation_cancel', function(e){
+    $('#wpel_exit_confirmation_overlay').remove();
+    $('#wpel_exit_confirmation').remove();
+});
+
+$('body').click(function() {
+    $('#wpel_exit_confirmation_overlay').remove();
+    $('#wpel_exit_confirmation').remove();
+  });
+
+  $('#wpel_exit_confirmation').click(function(event){
+    event.stopPropagation();
+  });
+
+
+});
+
+function wpel_fix_dialog_close(event, ui) {
+  jQuery('.ui-widget-overlay').bind('click', function () {
+    jQuery('#' + event.target.id).dialog('close');
+  });
+} // wpel_fix_dialog_close

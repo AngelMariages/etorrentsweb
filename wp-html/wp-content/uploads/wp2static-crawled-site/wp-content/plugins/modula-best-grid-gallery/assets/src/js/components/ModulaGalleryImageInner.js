@@ -2,7 +2,7 @@ import icons from '../utils/icons';
 const { Fragment } = wp.element;
 
 const ModulaGalleryImageInner = (props) => {
-	const { settings, img, effectCheck, hideTitle, hideDescription, hideSocial } = props;
+	const { settings, img, hideTitle, hideDescription, hideSocial } = props;
 
 	let effectArray = [ 'tilt_1', 'tilt_3', 'tilt_7' ],
 		overlayArray = [ 'tilt_3', 'tilt_7' ],
@@ -12,18 +12,18 @@ const ModulaGalleryImageInner = (props) => {
 	return [
 		<Fragment>
 			{effectArray.includes(settings.effect) && (
-				<div class="tilter__deco tilter__deco--shine">
+				<div className="tilter__deco tilter__deco--shine">
 					<div />
 				</div>
 			)}
-			{overlayArray.includes(settings.effect) && <div class="tilter__deco tilter__deco--overlay" />}
+			{overlayArray.includes(settings.effect) && <div className="tilter__deco tilter__deco--overlay" />}
 
-			{svgArray.includes(settings.effect) && <div class="tilter__deco tilter__deco--lines" />}
+			{svgArray.includes(settings.effect) && <div className="tilter__deco tilter__deco--lines" />}
 
 			<div className="figc">
 				<div className="figc-inner">
 					{/* checking for undefined because on the first run , imageId doesnt exist */}
-					{'0' == settings.hide_title && !hideTitle && <h2 className={'jtg-title'}> {img.title} </h2>}
+					{'0' == settings.hide_title && !hideTitle && <div className={'jtg-title'}> {img.title} </div>}
 					<div className={jtgBody.includes(settings.effect) ? 'jtg-body' : ''}>
 						{'0' == settings.hide_description &&
 						!hideDescription && (
