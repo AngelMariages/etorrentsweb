@@ -182,5 +182,3 @@ final class WPEL_Front_Ignore extends WPRun_Base_1x0x0
     }
 
 }
-
-/*?>*/

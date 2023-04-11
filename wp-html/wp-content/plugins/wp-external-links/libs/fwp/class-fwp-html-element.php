@@ -5,7 +5,7 @@
  * @package  FWP
  * @category WordPress Library
  * @version  1.0.0
- 
+
  * @link     https://www.webfactoryltd.com/
  */
 class FWP_HTML_Element_1x0x0
@@ -274,5 +274,3 @@ class FWP_HTML_Element_1x0x0
     }
 
 }
-
-/*?>*/

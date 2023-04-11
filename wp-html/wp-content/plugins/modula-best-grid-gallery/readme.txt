@@ -2,9 +2,9 @@
 Contributors: wpchill, silkalns
 Tags: best gallery plugin, image gallery, video gallery, free gallery, wordpress gallery plugin, best gallery plugin, masonry gallery, media gallery, portfolio gallery, simple gallery, responsive gallery, photo gallery, grid gallery, product gallery, 
 Requires at least: 5.2
-Tested up to: 6.0
+Tested up to: 6.2
 Requires PHP: 5.6
-Stable tag: 2.6.91
+Stable tag: 2.7.4
 License: GNU General Public License v3.0 or later
 The WordPress gallery plugin that's highly customizable & you can use to impress your clients. Create beautiful image galleries in minutes.
 
@@ -17,7 +17,7 @@ Modula is the best WordPress gallery plugin for adding custom, unique and respon
 
 **Free gallery features in Modula Lite:**
 
-- Create image and video galleries
+- Create image galleries
 - 100% Gutenberg compatible
 - Image metadata: Title, alt text, caption
 - Add URLs to images
@@ -262,6 +262,44 @@ Free support is included only with a PRO license: [Buy Modula PRO](https://wp-mo
 4. Responsive galleries created with Modula
 
 == Changelog ==
+= 2.7.4 - 28.03.2023 =
+Fixed: Undefined index if default value for gallery setting input fields not set ( [#788](https://github.com/WPChill/modula-lite/issues/788) )
+Fixed: Lightbox error if image caption has '"' and thumbnails navigation on ( [#787](https://github.com/WPChill/modula-lite/issues/787) )
+
+= 2.7.3 - 15.03.2023 =
+Fixed: No content in lightbox ( [#783](https://github.com/WPChill/modula-lite/issues/783) )
+
+= 2.7.2 - 13.03.2023 =
+Fixed: Enqueue welcome banner assets only on the welcome page ( [#716](https://github.com/WPChill/modula-lite/issues/#716) )
+Fixed: Issue preventing the display of texts according to the user language ( [#719](https://github.com/WPChill/download-monitor/issues/719) )
+Changed: Removed "href" attribute from the image's <a> tag. ( [#770](https://github.com/WPChill/download-monitor/issues/770) )
+Changed: "Not installed" badge if Slider addon is included in license ( [#774](https://github.com/WPChill/download-monitor/issues/774) )
+Added: New hover effect "Centered Bottom" ( [#773](https://github.com/WPChill/modula-lite/issues/773) )
+Added: Check user capabilities when addong/removing images from a gallery. ( [#779](https://github.com/WPChill/modula-lite/issues/779) )
+Fixed: Widths and Heights are empty when changing gallery types. ( [#767](https://github.com/WPChill/modula-lite/issues/767) )
+Fixed: Only having private galleries shows "Create your first gallery" page. ( [#720](https://github.com/WPChill/modula-lite/issues/720) )
+Fixed: Private galleries won't display for non logged-in users. ( [#720](https://github.com/WPChill/modula-lite/issues/720) )
+Fixed: Error when triggering file deletion ( [#721](https://github.com/WPChill/modula-lite/issues/721) )
+Fixed: Gallery type icons coloring ( [#713](https://github.com/WPChill/modula-lite/issues/713) )
+
+
+= 2.7.1 - 15.12.2022 =
+Fixed: Incorrect placement of ' ( [#715](https://github.com/WPChill/modula-lite/issues/715) )
+
+= 2.7.0 - 12.12.2022 =
+Changed: Custom icons for Modula Settings  ( [#679](https://github.com/WPChill/modula-lite/issues/679) )
+Fixed: Fancybox error ( [#678](https://github.com/WPChill/modula-lite/issues/678) )
+Changed: Modula uninstall process - proper target the inputs with js ( [#673](https://github.com/WPChill/modula-lite/issues/673) )
+Fixed: jQuery .load() deprecated warning ( [#669](https://github.com/WPChill/modula-lite/issues/669) )
+Added: Create new gallery welcome screen ( [#650](https://github.com/WPChill/modula-lite/issues/650) )
+Fixed: WP Core galleries migration ( [#694](https://github.com/WPChill/modula-lite/issues/694) )
+Fixed: Issue preventing gallery status change in gallery edit ( [#703](https://github.com/WPChill/modula-lite/issues/703) )
+Fixed: Screen options not working when editing a gallery ( [#700](https://github.com/WPChill/modula-lite/issues/700) )
+Fixed: Empty blocks in admin custom grid gallery edit ( [#709](https://github.com/WPChill/modula-lite/issues/709) )
+
+= 2.6.92 - 24/10/2022 =
+Changed: Responsive tab settings no longer collapse on setting disabling. ( [#690](https://github.com/WPChill/modula-lite/issues/690) )
+Fixed: Misc settings nonce bug. ( [#697](https://github.com/WPChill/modula-lite/issues/697) )
 
 = 2.6.91 - 20/10/2022 =
 Changed: Metabox Accordeons no longer collapse on setting disabling. ( [#690](https://github.com/WPChill/modula-lite/issues/690) )

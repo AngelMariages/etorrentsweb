@@ -141,5 +141,3 @@ final class WPEL_Update extends WPRun_Base_1x0x0
     }
 
 }
-
-/*?>*/

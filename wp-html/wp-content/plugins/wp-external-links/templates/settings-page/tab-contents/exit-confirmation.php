@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Tab Exit Confirmation Links
  *
@@ -17,7 +18,7 @@ echo '<div class="notice-box-info">
 <b>Exit Confirmation (a PRO feature) protects your traffic &amp; visitors</b> by alerting them when they\'re about to leave your site. Since you don\'t control content on 3rd party sites it\'s a good practice to warn visitors they\'re leaving the safety of your site. Doing that will also bring you more traffic as visitors will spend more time on your site. <a href="#" class="open-pro-dialog" data-pro-feature="exit-confirmation-banner">Get PRO now</a> to use the Exit Confirmation feature.
 </div>';
 
-$default_fields_file = WPEL_Plugin::get_plugin_dir( '/templates/partials/tab-contents/fields-default.php' );
-WPEL_Plugin::show_template( $default_fields_file, $vars );
+$default_fields_file = WPEL_Plugin::get_plugin_dir('/templates/partials/tab-contents/fields-default.php');
+WPEL_Plugin::show_template($default_fields_file, $vars);
 
 echo '<br><a href="#" class="open-pro-dialog button button-primary" data-pro-feature="exit-confirmation">Save Changes</a>';

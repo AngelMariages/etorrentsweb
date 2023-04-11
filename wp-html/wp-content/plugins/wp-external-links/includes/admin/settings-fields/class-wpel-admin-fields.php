@@ -74,5 +74,3 @@ final class WPEL_Admin_Fields extends FWP_Settings_Section_Base_1x0x0
     }
 
 }
-
-/*?>*/

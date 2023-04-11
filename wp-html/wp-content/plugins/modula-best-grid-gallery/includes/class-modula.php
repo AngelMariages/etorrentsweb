@@ -82,8 +82,7 @@ class Modula {
 			require_once MODULA_PATH . 'includes/admin/class-modula-addons.php';
 			// Modula Debug Class
 			require_once MODULA_PATH . 'includes/admin/class-modula-debug.php';
-
-
+			require_once MODULA_PATH . 'includes/admin/class-modula-onboarding.php';
 
 		}
 
@@ -97,7 +96,30 @@ class Modula {
 	}
 
 	public function set_locale() {
-		load_plugin_textdomain( 'modula-best-grid-gallery', false, dirname( MODULA_FILE ) . '/languages'  );
+
+		$modula_lang = dirname( MODULA_FILE ) . '/languages/';
+
+		if( get_user_locale() !== get_locale() ){
+
+			unload_textdomain( 'modula-best-grid-gallery' );
+			$locale = apply_filters( 'plugin_locale', get_user_locale(), 'modula-best-grid-gallery' );
+
+			$lang_ext = sprintf( '%1$s-%2$s.mo', 'modula-best-grid-gallery', $locale );
+			$lang_ext1 = WP_LANG_DIR . "/modula-best-grid-gallery/modula-best-grid-gallery-{$locale}.mo";
+			$lang_ext2 = WP_LANG_DIR . "/plugins/modula-best-grid-gallery/{$lang_ext}";
+
+			if ( file_exists( $lang_ext1 ) ) {
+				load_textdomain( 'modula-best-grid-gallery', $lang_ext1 );
+
+			} elseif ( file_exists( $lang_ext2 ) ) {
+				load_textdomain( 'modula-best-grid-gallery', $lang_ext2 );
+
+			} else {
+				load_plugin_textdomain( 'modula-best-grid-gallery', false, $modula_lang );
+			}
+		} else {
+			load_plugin_textdomain( 'modula-best-grid-gallery', false, $modula_lang );
+		}
 	}
 
 	private function define_admin_hooks() {
@@ -181,8 +203,6 @@ class Modula {
 				add_filter('get_user_option_closedpostboxes_modula-gallery', '__return_empty_string');
 				add_filter( 'admin_body_class', array( $this, 'no_drag_classes' ), 15, 1 );
 
-				//prevents the modula metaboxes from being dragged.
-				wp_deregister_script('postbox');
 			}
 
 			/*

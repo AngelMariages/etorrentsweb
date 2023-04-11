@@ -16,8 +16,8 @@
  *      @option string "own_admin_menu"
  */
 ?>
-<div class="wrap wpel-network-page wpel-network-page-<?php echo $vars[ 'current_tab' ]; ?>">
-    <h1><?php echo get_admin_page_title(); ?></h1>
+<div class="wrap wpel-network-page wpel-network-page-<?php echo esc_html($vars[ 'current_tab' ]); ?>">
+    <h1><?php esc_html_e(get_admin_page_title(), 'wp-external-links'); ?></h1>
     <?php
         if ( $vars[ 'own_admin_menu' ] ):
             settings_errors();
@@ -38,7 +38,7 @@
         }
     ?>
 
-    <form method="post" action="<?php echo $action_url; ?>" class="wpel-hidden">
+    <form method="post" action="<?php echo esc_html($action_url); ?>" class="wpel-hidden">
         <?php
             wp_referer_field();
 

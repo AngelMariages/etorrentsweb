@@ -18,7 +18,7 @@
       <b>Link Checker (a PRO feature) scans your website's pages &amp; analyzes all links.</b> It not only checks if links are valid, but also checks their details such as REL attributes (nofollow, dofollow, noopener, sponsored, ...) and checks if they are pointing to bad domains. Linking to domains that contain pornography, illegal downloads or that contain malware can hurt your site's SEO. Link Scanner will help you get rid of those links in minutes, regardless of your site size. <a href="#" class="open-pro-dialog" data-pro-feature="link-checker-banner">Get PRO now</a> to use the Link Checker.
     </div>
 
-    <p><a href="#" class="open-pro-dialog" data-pro-feature="link-checker"><img style="max-width: 100%;" src="<?php echo plugins_url('/public/images/link-checker.png', WPEL_Plugin::get_plugin_file()); ?>" alt="Link checker" title="Link checker"></a></p>
+    <p><a href="#" class="open-pro-dialog" data-pro-feature="link-checker"><img style="max-width: 100%;" src="<?php echo esc_url(plugins_url('/public/images/link-checker.png', WPEL_Plugin::get_plugin_file())); ?>" alt="Link checker" title="Link checker"></a></p>
 
     <p><b>Will the Scanner help my SEO score?</b><br>
     The Scanner is a reporting tool, so it doesn't modify any links on its own. However, it'll show you a list of broken and bad links that you have on your site. By removing those you can improve your SEO score.</p>

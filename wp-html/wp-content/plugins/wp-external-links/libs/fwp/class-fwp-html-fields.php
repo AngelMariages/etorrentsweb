@@ -5,7 +5,7 @@
  * @package  FWP
  * @category WordPress Library
  * @version  1.0.0
- 
+
  * @link     https://www.webfactoryltd.com/
  */
 class FWP_HTML_Fields_1x0x0
@@ -81,10 +81,10 @@ class FWP_HTML_Fields_1x0x0
      */
     public function label( $key, $label_text, array $atts = array() )
     {
-        echo '<label for="' . $this->get_field_id( $key ) . '"
+        WPEL_Plugin::wp_kses_wf('<label for="' . esc_attr($this->get_field_id( $key )) . '"
                     ' . $this->get_html_atts( $atts ) . '
-                >' . $label_text . '
-                </label>';
+                >' . esc_attr($label_text) . '
+                </label>');
     }
 
     /**
@@ -94,12 +94,12 @@ class FWP_HTML_Fields_1x0x0
      */
     public function text( $key, array $atts = array() )
     {
-        echo '<input type="text"
-                    id="' . $this->get_field_id( $key ) . '"
-                    name="' . $this->get_field_name( $key ) . '"
+        WPEL_Plugin::wp_kses_wf('<input type="text"
+                    id="' . esc_attr($this->get_field_id( $key )). '"
+                    name="' . esc_attr($this->get_field_name( $key )) . '"
                     value="' . esc_attr( $this->get_value( $key ) ) . '"
                     ' . $this->get_html_atts( $atts ) . '
-                >';
+                >');
     }
 
     /**
@@ -109,10 +109,10 @@ class FWP_HTML_Fields_1x0x0
      */
     public function text_area( $key, array $atts = array() )
     {
-        echo '<textarea id="' . $this->get_field_id( $key ) . '"
-                    name="' . $this->get_field_name( $key ) . '"
+        WPEL_Plugin::wp_kses_wf('<textarea id="' . esc_attr($this->get_field_id( $key )) . '"
+                    name="' . esc_attr($this->get_field_name( $key )) . '"
                     ' . $this->get_html_atts( $atts ) . '
-                >'. esc_textarea( $this->get_value( $key ) ) .'</textarea>';
+                >'. esc_textarea( $this->get_value( $key ) ) .'</textarea>');
     }
 
     /**
@@ -126,19 +126,19 @@ class FWP_HTML_Fields_1x0x0
     {
         // workaround for also posting a value when checkbox is unchecked
         if ( null !== $unchecked_value ) {
-            echo '<input type="hidden"
+            WPEL_Plugin::wp_kses_wf('<input type="hidden"
                         name="' . $this->get_field_name( $key ) . '"
                         value="' . esc_attr( $unchecked_value ) . '"
-                    >';
+                    >');
         }
 
-        echo '<span class="checkbox-container"><input type="checkbox"
+        WPEL_Plugin::wp_kses_wf('<span class="checkbox-container"><input type="checkbox"
                     id="' . $this->get_field_id( $key ) . '"
                     name="' . $this->get_field_name( $key ) . '"
                     value="' . esc_attr( $checked_value ) . '"
                     ' . $this->get_checked_attr( $key, $checked_value ) . '
                     ' . $this->get_html_atts( $atts ) . '
-                ><span class="checkmark"></span></span>';
+                ><span class="checkmark"></span></span>');
     }
 
     /**
@@ -153,7 +153,7 @@ class FWP_HTML_Fields_1x0x0
     {
         echo '<label>';
         $this->check( $key, $checked_value, $unchecked_value, $atts );
-        echo $label_text;
+        WPEL_Plugin::wp_kses_wf($label_text);
         echo '</label>';
     }
 
@@ -167,13 +167,13 @@ class FWP_HTML_Fields_1x0x0
     {
         $id = $this->get_field_id( $key ) . '-' . sanitize_key( $checked_value );
 
-        echo '<span class="radio-container"><input type="radio"
+        WPEL_Plugin::wp_kses_wf('<span class="radio-container"><input type="radio"
                     id="' . $id . '"
                     name="' . $this->get_field_name( $key ) . '"
                     value="' . esc_attr( $checked_value ) . '"
                     ' . $this->get_checked_attr( $key, $checked_value ) . '
                     ' . $this->get_html_atts( $atts ) . '
-                ><span class="radio"></span></span>';
+                ><span class="radio"></span></span>');
     }
 
     /**
@@ -187,7 +187,7 @@ class FWP_HTML_Fields_1x0x0
     {
         echo '<label>';
         $this->radio( $key, $checked_value, $atts );
-        echo $label_text;
+        WPEL_Plugin::wp_kses_wf($label_text);
         echo '</label>';
     }
 
@@ -202,10 +202,10 @@ class FWP_HTML_Fields_1x0x0
     {
         $value = $this->get_value( $key );
 
-        echo '<select id="' . $this->get_field_id( $key ) . '"
+        WPEL_Plugin::wp_kses_wf('<select id="' . $this->get_field_id( $key ) . '"
                     name="' . $this->get_field_name( $key ) . '"
                     ' . $this->get_html_atts( $atts ) . '
-                >';
+                >');
 
         foreach ( $options as $option_value => $option_text ) {
             $this->select_option( $option_text, $option_value, ( $value == $option_value ) );
@@ -222,9 +222,9 @@ class FWP_HTML_Fields_1x0x0
      */
     public function select_option( $text, $value, $selected = false )
     {
-        echo '<option value="' . esc_attr( $value ) . '"' . ( $selected ? ' selected' : '' ) . '>
+        WPEL_Plugin::wp_kses_wf('<option value="' . esc_attr( $value ) . '"' . ( $selected ? ' selected' : '' ) . '>
                     ' . $text  . '
-               </option>';
+               </option>');
     }
 
     /**
@@ -264,12 +264,12 @@ class FWP_HTML_Fields_1x0x0
      */
     public function number( $key, array $atts = array() )
     {
-        echo '<input type="number"
+        WPEL_Plugin::wp_kses_wf('<input type="number"
                     id="' . $this->get_field_id( $key ) . '"
                     name="' . $this->get_field_name( $key ) . '"
                     value="' . esc_attr( $this->get_value( $key ) ) . '"
                     ' . $this->get_html_atts( $atts ) . '
-                > ' . $atts['unit'];
+                > ' . $atts['unit']);
     }
 
      /**
@@ -279,14 +279,12 @@ class FWP_HTML_Fields_1x0x0
      */
     public function color( $key, array $atts = array() )
     {
-        echo '<input type="text" class="wpel-colorpicker"
+        WPEL_Plugin::wp_kses_wf('<input type="text" class="wpel-colorpicker"
                     id="' . $this->get_field_id( $key ) . '"
                     name="' . $this->get_field_name( $key ) . '"
                     value="' . esc_attr( $this->get_value( $key ) ) . '"
                     ' . $this->get_html_atts( $atts ) . '
-                >';
+                >');
     }
 
 }
-
-/*?>*/

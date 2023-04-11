@@ -18,9 +18,9 @@
     </div>
 
     <div id="link-rules-new" style="display: none;">
-    <img style="width: 900px;" src="<?php echo plugins_url('/public/images/link-rules-new.png', WPEL_Plugin::get_plugin_file()); ?>" alt="New link rule example" title="New link rule example">
+    <img style="width: 900px;" src="<?php echo esc_url(plugins_url('/public/images/link-rules-new.png', WPEL_Plugin::get_plugin_file())); ?>" alt="New link rule example" title="New link rule example">
     </div>
 
-    <p><a href="#" class="open-pro-dialog" data-pro-feature="link-rules"><img style="max-width: 100%;" src="<?php echo plugins_url('/public/images/link-rules.png', WPEL_Plugin::get_plugin_file()); ?>" alt="Link rules example" title="Link rules example"></a></p>
+    <p><a href="#" class="open-pro-dialog" data-pro-feature="link-rules"><img style="max-width: 100%;" src="<?php echo esc_url(plugins_url('/public/images/link-rules.png', WPEL_Plugin::get_plugin_file())); ?>" alt="Link rules example" title="Link rules example"></a></p>
 
     </div>

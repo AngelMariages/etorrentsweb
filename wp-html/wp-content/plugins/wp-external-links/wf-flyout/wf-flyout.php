@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Universal fly-out menu for WebFactory plugins
  * (c) WebFactory Ltd, 2022
@@ -111,7 +112,7 @@ if (false == class_exists('wf_flyout')) {
       $out .=  sanitize_text_field($this->config['custom_css']);
       $out .= '</style>';
 
-      echo $out;
+      WPEL_Plugin::wp_kses_wf($out);
     } // admin_head
 
 
@@ -160,7 +161,7 @@ if (false == class_exists('wf_flyout')) {
 
       $out .= '</div>'; // #wf-flyout
 
-      echo $out;
+      WPEL_Plugin::wp_kses_wf($out);
     } // admin_footer
   } // wf_flyout
 } // if class exists

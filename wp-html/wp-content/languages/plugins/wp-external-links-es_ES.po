@@ -2,136 +2,152 @@
 # This file is distributed under the same license as the Plugins - External Links &#8211; nofollow, noopener &amp; new window - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-08-02 11:55:33+0000\n"
+"PO-Revision-Date: 2023-03-10 13:13:58+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: GlotPress/4.0.0-alpha.1\n"
+"X-Generator: GlotPress/4.0.0-alpha.4\n"
 "Language: es\n"
 "Project-Id-Version: Plugins - External Links &#8211; nofollow, noopener &amp; new window - Stable (latest release)\n"
 
-#: includes/admin/settings-fields/class-wpel-exit-confirmation-fields.php:231
+#. Plugin URI of the plugin
+msgid "https://getwplinks.com/"
+msgstr "https://getwplinks.com/"
+
+#: templates/partials/tab-contents/support.php:47
+msgid "Active Theme: "
+msgstr "Tema activo: "
+
+#: templates/partials/tab-contents/support.php:41
+msgid "WP URL: "
+msgstr "URL de WP: "
+
+#: templates/partials/tab-contents/support.php:59
+msgid " - "
+msgstr " - "
+
+#: includes/admin/settings-fields/class-wpel-exit-confirmation-fields.php:232
 msgid "Text size of the Exit Confirmation popup button."
 msgstr "Tamaño del texto del botón emergente de confirmación de salida."
 
-#: includes/admin/settings-fields/class-wpel-exit-confirmation-fields.php:224
+#: includes/admin/settings-fields/class-wpel-exit-confirmation-fields.php:225
 msgid "Text of the button that will cancel leaving website."
 msgstr "Texto del botón que cancelará abandonar la web."
 
-#: includes/admin/settings-fields/class-wpel-exit-confirmation-fields.php:199
+#: includes/admin/settings-fields/class-wpel-exit-confirmation-fields.php:200
 msgid "Background color of the Exit Confirmation popup title."
 msgstr "Color de fondo del título de la ventana emergente de confirmación de salida."
 
-#: includes/admin/settings-fields/class-wpel-exit-confirmation-fields.php:192
+#: includes/admin/settings-fields/class-wpel-exit-confirmation-fields.php:193
 msgid "Background color of the Exit Confirmation popup."
 msgstr "Color de fondo de la ventana emergente de confirmación de salida."
 
-#: includes/admin/settings-fields/class-wpel-exit-confirmation-fields.php:182
+#: includes/admin/settings-fields/class-wpel-exit-confirmation-fields.php:183
 msgid "Show transparent overlay behind popup"
 msgstr "Mostrar una superposición transparente detrás de la ventana emergente"
 
-#: includes/admin/settings-fields/class-wpel-exit-confirmation-fields.php:175
+#: includes/admin/settings-fields/class-wpel-exit-confirmation-fields.php:176
 msgid "Height of the Exit Confirmation popup. Leave empty for auto."
 msgstr "Altura de la ventana emergente de confirmación de salida. Dejar vacío para los valores automáticos."
 
-#: includes/admin/settings-fields/class-wpel-exit-confirmation-fields.php:168
+#: includes/admin/settings-fields/class-wpel-exit-confirmation-fields.php:169
 msgid "Width of the Exit Confirmation popup."
 msgstr "Ancho de la ventana emergente de confirmación de salida."
 
-#: includes/admin/settings-fields/class-wpel-exit-confirmation-fields.php:161
+#: includes/admin/settings-fields/class-wpel-exit-confirmation-fields.php:162
 msgid "Text size of the Exit Confirmation popup text."
 msgstr "Tamaño del texto de la ventana emergente de confirmación de salida."
 
-#: includes/admin/settings-fields/class-wpel-exit-confirmation-fields.php:154
+#: includes/admin/settings-fields/class-wpel-exit-confirmation-fields.php:155
 msgid "Text size of the Exit Confirmation popup title."
 msgstr "Tamaño del texto del título de la ventana emergente de confirmación de salida."
 
-#: includes/admin/settings-fields/class-wpel-exit-confirmation-fields.php:147
+#: includes/admin/settings-fields/class-wpel-exit-confirmation-fields.php:148
 msgid "Color of the Exit Confirmation popup title."
 msgstr "Color del título de la ventana emergente de confirmación de salida."
 
-#: includes/admin/settings-fields/class-wpel-exit-confirmation-fields.php:140
+#: includes/admin/settings-fields/class-wpel-exit-confirmation-fields.php:141
 msgid "Color of the Exit Confirmation popup text."
 msgstr "Color de texto de la ventana emergente de confirmación de salida."
 
-#: includes/admin/settings-fields/class-wpel-exit-confirmation-fields.php:133
+#: includes/admin/settings-fields/class-wpel-exit-confirmation-fields.php:134
 msgid "Text of the Exit Confirmation popup. Leave empty for no text."
 msgstr "Texto de la ventana emergente de confirmación de salida. Dejar vacío para los valores automáticos."
 
-#: includes/admin/settings-fields/class-wpel-exit-confirmation-fields.php:121
+#: includes/admin/settings-fields/class-wpel-exit-confirmation-fields.php:122
 msgid "Title of the Exit Confirmation popup. Leave empty for no title."
 msgstr "Título de la ventana emergente de confirmación de salida. Dejar vacío para que no tenga título."
 
-#: includes/admin/settings-fields/class-wpel-exit-confirmation-fields.php:96
+#: includes/admin/settings-fields/class-wpel-exit-confirmation-fields.php:97
 msgid "Button Background:"
 msgstr "Fondo del botón:"
 
-#: includes/admin/settings-fields/class-wpel-exit-confirmation-fields.php:92
+#: includes/admin/settings-fields/class-wpel-exit-confirmation-fields.php:93
 msgid "Button Text Color:"
 msgstr "Color del texto del botón:"
 
-#: includes/admin/settings-fields/class-wpel-exit-confirmation-fields.php:88
+#: includes/admin/settings-fields/class-wpel-exit-confirmation-fields.php:89
 msgid "Button Text Size:"
 msgstr "Tamaño del texto del botón:"
 
-#: includes/admin/settings-fields/class-wpel-exit-confirmation-fields.php:84
+#: includes/admin/settings-fields/class-wpel-exit-confirmation-fields.php:85
 msgid "Button Text:"
 msgstr "Texto del botón:"
 
-#: includes/admin/settings-fields/class-wpel-exit-confirmation-fields.php:80
+#: includes/admin/settings-fields/class-wpel-exit-confirmation-fields.php:81
 msgid "Overlay Color:"
 msgstr "Color de superposición:"
 
-#: includes/admin/settings-fields/class-wpel-exit-confirmation-fields.php:75
+#: includes/admin/settings-fields/class-wpel-exit-confirmation-fields.php:76
 msgid "Show overlay:"
 msgstr "Mostrar superposición:"
 
-#: includes/admin/settings-fields/class-wpel-exit-confirmation-fields.php:71
+#: includes/admin/settings-fields/class-wpel-exit-confirmation-fields.php:72
 msgid "Popup Height:"
 msgstr "Altura de la ventana emergente:"
 
-#: includes/admin/settings-fields/class-wpel-exit-confirmation-fields.php:67
+#: includes/admin/settings-fields/class-wpel-exit-confirmation-fields.php:68
 msgid "Popup Width:"
 msgstr "Ancho de la ventana emergente:"
 
-#: includes/admin/settings-fields/class-wpel-exit-confirmation-fields.php:63
+#: includes/admin/settings-fields/class-wpel-exit-confirmation-fields.php:64
 msgid "Text Size:"
 msgstr "Tamaño de texto:"
 
-#: includes/admin/settings-fields/class-wpel-exit-confirmation-fields.php:59
+#: includes/admin/settings-fields/class-wpel-exit-confirmation-fields.php:60
 msgid "Text Color:"
 msgstr "Color del texto:"
 
-#: includes/admin/settings-fields/class-wpel-exit-confirmation-fields.php:55
+#: includes/admin/settings-fields/class-wpel-exit-confirmation-fields.php:56
 msgid "Text:"
 msgstr "Texto:"
 
-#: includes/admin/settings-fields/class-wpel-exit-confirmation-fields.php:51
+#: includes/admin/settings-fields/class-wpel-exit-confirmation-fields.php:52
 msgid "Title Size:"
 msgstr "Tamaño del título:"
 
-#: includes/admin/settings-fields/class-wpel-exit-confirmation-fields.php:46
+#: includes/admin/settings-fields/class-wpel-exit-confirmation-fields.php:47
 msgid "Title Background Color:"
 msgstr "Color del fondo del título:"
 
-#: includes/admin/settings-fields/class-wpel-exit-confirmation-fields.php:41
+#: includes/admin/settings-fields/class-wpel-exit-confirmation-fields.php:42
 msgid "Title Text Color:"
 msgstr "Color del texto del título:"
 
-#: includes/admin/settings-fields/class-wpel-exit-confirmation-fields.php:38
+#: includes/admin/settings-fields/class-wpel-exit-confirmation-fields.php:39
 msgid "You are leaving our website"
 msgstr "Estás abandonando nuestra web"
 
-#: includes/admin/settings-fields/class-wpel-exit-confirmation-fields.php:37
+#: includes/admin/settings-fields/class-wpel-exit-confirmation-fields.php:38
 msgid "Title:"
 msgstr "Título:"
 
-#: includes/admin/settings-fields/class-wpel-exit-confirmation-fields.php:32
+#: includes/admin/settings-fields/class-wpel-exit-confirmation-fields.php:33
 msgid "Popup Background Color:"
 msgstr "Color de fondo de la ventana emergente:"
 
-#: includes/admin/settings-fields/class-wpel-exit-confirmation-fields.php:27
+#: includes/admin/settings-fields/class-wpel-exit-confirmation-fields.php:28
 msgid "Exit Confirmation Preview"
 msgstr "Vista previa de la confirmación de salida"
 
@@ -140,7 +156,7 @@ msgid "PRO"
 msgstr "PRO"
 
 #: includes/admin/class-wpel-settings-page.php:69
-#: includes/admin/settings-fields/class-wpel-exit-confirmation-fields.php:24
+#: includes/admin/settings-fields/class-wpel-exit-confirmation-fields.php:25
 msgid "Exit Confirmation"
 msgstr "Confirmación de salida"
 
@@ -161,12 +177,12 @@ msgid "Add <code>\"sponsored\"</code>"
 msgstr "Añadir <code>\"sponsored\"</code>"
 
 #: templates/partials/tab-contents/support.php:34
-msgid "<br>Make sure you copy/past the technical information displayed below. Without it we can't help you."
+msgid "<br>Make sure you copy/paste the technical information displayed below. Without it we can't help you."
 msgstr "<br>Asegúrate de copiar y pegar la información técnica que se muestra a continuación. Sin ella no podemos ayudarte."
 
 #: templates/partials/tab-contents/support.php:33
-msgid "If the issue wasn't reported yet then you should <a href=\"https://wordpress.org/support/plugin/wp-external-links#postform\" target=\"_blank\">post your problem</a>. <b>Our average response time is 2 hours, and we reply to every message!</b>"
-msgstr "Si aún no se ha informado del problema, entonces debes <a href=\"https://wordpress.org/support/plugin/wp-external-links#postform\" target=\"_blank\"> publicar tu problema</a>.<b>¡Nuestro tiempo de respuesta promedio es de 2 horas y respondemos a todos los mensajes!</b>"
+msgid "If the issue wasn't reported yet then you should <a href=\"https://wordpress.org/support/plugin/wp-external-links#postform\" target=\"_blank\">post your problem</a>. <b>Our average response time is a few hours, and we reply to every message!</b>"
+msgstr "Si aún no se ha inforamado del problema deberías <a href=\"https://wordpress.org/support/plugin/wp-external-links#postform\" target=\"_blank\">publicar tu problema</a>. <b>Nuestro tiempo medio de respuesta es de unas pocas horas, y ¡respondemos a todos los mensajes!</b>"
 
 #: templates/requirements-notice.php:14
 msgid "The plugin <strong>WP External Links</strong> requires PHP version 5.3 or up and WordPress version 3.6 or up.<br>Please upgrade your PHP and/or WordPress. Deactivate the plugin to remove this message."
@@ -226,10 +242,6 @@ msgstr "en el marco superior (NO recomendado)"
 msgid "all in the same new window or tab (NOT recommended)"
 msgstr "todos en la misma nueva ventana o pestaña (NO recomendado)"
 
-#. Plugin URI of the plugin
-msgid "https://wordpress.org/plugins/wp-external-links/"
-msgstr "https://es.wordpress.org/plugins/wp-external-links/"
-
 #: templates/settings-page/tab-contents/exceptions.php:21
 msgid "The data-attribute <a href=\"%s\"><code>data-wpel-link</code></a> can be set on individual links to treat them as internal, external or excluded, or to completely ignore links form being processed by this plugin."
 msgstr "El atributo de datos <a href=\"%s\"><code>data-wpel-link</code></a> se puede establecer en enlaces individuales para tratarlos como internos, externos o excluidos, o para ignorar por completo los enlaces que procesa este plugin."
@@ -264,25 +276,21 @@ msgstr "El atributo <code>data-wpel-link</code> se puede establecer en los enlac
 msgid "Exclude or include by data-attribute"
 msgstr "Excluir o incluir por data-attribute"
 
-#: templates/partials/tab-contents/support.php:61
+#: templates/partials/tab-contents/support.php:63
 msgid "WPEL Settings:"
 msgstr "Ajustes de WPEL:"
 
-#: templates/partials/tab-contents/support.php:47
+#: templates/partials/tab-contents/support.php:49
 msgid "Active Plugins:"
 msgstr "Plugins activos:"
 
 #: templates/partials/tab-contents/support.php:45
-msgid "PHP version:"
-msgstr "Versión de PHP:"
+msgid "PHP version: "
+msgstr "Versión de PHP: "
 
 #: templates/partials/tab-contents/support.php:43
-msgid "WP version:"
-msgstr "Versión de WP:"
-
-#: templates/partials/tab-contents/support.php:41
-msgid "WP url:"
-msgstr "URL de WP:"
+msgid "WP version: "
+msgstr "Versión de WP: "
 
 #: templates/partials/tab-contents/support.php:37
 msgid "Copy Technical Info"
@@ -301,7 +309,7 @@ msgid "Reported issues"
 msgstr "Problemas informados"
 
 #: templates/partials/tab-contents/support.php:27
-msgid "On the <a href=\"https://wordpress.org/plugins/wp-external-links/faq/\" target=\"_blank\">FAQ page</a> you can find some additional tips & trics."
+msgid "On the <a href=\"https://wordpress.org/plugins/wp-external-links/faq/\" target=\"_blank\">FAQ page</a> you can find some additional tips & tricks."
 msgstr "En la <a href=\"https://es.wordpress.org/plugins/wp-external-links/faq/\" target=\"_blank\"> página de preguntas frecuentes</a> puedes encontrar algunos consejos y trucos adicionales."
 
 #: templates/partials/tab-contents/support.php:26
@@ -522,7 +530,7 @@ msgstr "Capacidad para sitios individuales:"
 #: includes/admin/network-fields/class-wpel-network-admin-fields.php:105
 #: includes/admin/settings-fields/class-wpel-admin-fields.php:69
 #: includes/admin/settings-fields/class-wpel-exceptions-fields.php:240
-#: includes/admin/settings-fields/class-wpel-exit-confirmation-fields.php:248
+#: includes/admin/settings-fields/class-wpel-exit-confirmation-fields.php:249
 #: includes/admin/settings-fields/class-wpel-external-link-fields.php:95
 #: includes/admin/settings-fields/class-wpel-link-fields-base.php:321
 msgid "Something went wrong. One or more values were invalid."
@@ -545,7 +553,7 @@ msgstr "Menú principal de administración de red:"
 msgid "Network Admin Settings"
 msgstr "Ajustes del administrador de red"
 
-#: includes/admin/class-wpel-settings-page.php:303
+#: includes/admin/class-wpel-settings-page.php:305
 msgid "Data Attributes"
 msgstr "Atributos de datos"
 
@@ -564,8 +572,8 @@ msgstr "Enlaces excluidos"
 msgid "Internal Links"
 msgstr "Enlaces internos"
 
-#: includes/admin/class-wpel-network-page.php:168
-#: includes/admin/class-wpel-settings-page.php:298
+#: includes/admin/class-wpel-network-page.php:170
+#: includes/admin/class-wpel-settings-page.php:300
 #: templates/network-page/help-tabs/under-construction.php:12
 #: templates/settings-page/help-tabs/under-construction.php:12
 msgid "Under Construction"
@@ -620,13 +628,13 @@ msgid "External Links"
 msgstr "Enlaces externos"
 
 #. Plugin Name of the plugin
-#: includes/admin/class-wpel-network-page.php:101
-#: includes/admin/class-wpel-network-page.php:102
-#: includes/admin/class-wpel-network-page.php:112
-#: includes/admin/class-wpel-network-page.php:113
-#: includes/admin/class-wpel-settings-page.php:189
+#: includes/admin/class-wpel-network-page.php:103
+#: includes/admin/class-wpel-network-page.php:104
+#: includes/admin/class-wpel-network-page.php:114
+#: includes/admin/class-wpel-network-page.php:115
 #: includes/admin/class-wpel-settings-page.php:191
-#: includes/admin/class-wpel-settings-page.php:205
+#: includes/admin/class-wpel-settings-page.php:193
 #: includes/admin/class-wpel-settings-page.php:207
+#: includes/admin/class-wpel-settings-page.php:209
 msgid "WP External Links"
 msgstr "Enlaces externos de WP"

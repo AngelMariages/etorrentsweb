@@ -3,7 +3,7 @@
  * Admin Style
  */
 .toplevel_page_wpel-settings-page #wpcontent {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   color: #1d2328;
   margin-bottom: 30px;
@@ -103,8 +103,8 @@ a.button.button-buy:focus {
   font-weight: 400;
 }
 
-.wpel-body-wrap form h2{
-    display: none;
+.wpel-body-wrap form h2 {
+  display: none;
 }
 
 #wpfooter a {
@@ -116,10 +116,10 @@ a.button.button-buy:focus {
 }
 
 .nav-tab .dashicons {
-    color: #1775a7;
-    font-size: 18px;
-    margin-right: 4px;
-    line-height: 24px;
+  color: #1775a7;
+  font-size: 18px;
+  margin-right: 4px;
+  line-height: 24px;
 }
 
 .toplevel_page_wpel-settings-page .wrap .wpel-logo-wrapper {
@@ -147,7 +147,7 @@ a.button.button-buy:focus {
   padding-top: 0;
 }
 .wpel-no-label th:after {
-  content: "\00a0";
+  content: '\00a0';
 }
 
 .wpel-hidden {
@@ -155,8 +155,8 @@ a.button.button-buy:focus {
 }
 
 .toplevel_page_wpel-settings-page table.dataTable thead th,
-.toplevel_page_wpel-settings-page table.dataTable thead td{
-    padding: 10px 8px;
+.toplevel_page_wpel-settings-page table.dataTable thead td {
+  padding: 10px 8px;
 }
 /**
  * Tabs
@@ -276,18 +276,19 @@ h1.nav-tab-wrapper {
   padding-top: 20px;
 }
 
-#rating-notice, .notice {
-    display: block;
-    width: 1200px;
-    margin: 10px 20px !important;
-    box-sizing: border-box;
-    border-right: none;
-    border-top: none;
-    border-bottom: none;
+#rating-notice,
+.notice {
+  display: block;
+  width: 1200px;
+  margin: 10px 20px !important;
+  box-sizing: border-box;
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
 }
 
-#rating-notice{
-    padding: 15px;
+#rating-notice {
+  padding: 15px;
 }
 
 .wpel-logo {
@@ -341,7 +342,7 @@ h1.nav-tab-wrapper {
 
 .toplevel_page_wpel-settings-page .checkmark:after,
 .toplevel_page_wpel-settings-page .radio:after {
-  content: "";
+  content: '';
   position: absolute;
   display: none;
 }
@@ -382,7 +383,7 @@ h1.nav-tab-wrapper {
   background: white;
 }
 
-.toplevel_page_wpel-settings-page input[type="text"],
+.toplevel_page_wpel-settings-page input[type='text'],
 .toplevel_page_wpel-settings-page select {
   background-color: #eef3f5;
   padding: 10px;
@@ -417,11 +418,11 @@ kbd {
 #wpel-external-link-settings-icon_dashicon,
 #wpel-external-link-settings-icon_fontawesome,
 #wpel-internal-link-settings-icon_dashicon,
-#wpel-internal-link-settings-icon_fontawesome{
-    font-size: 20px;
-    width: 80px;
-    padding: 4px 10px;
-    color: #1d2327;
+#wpel-internal-link-settings-icon_fontawesome {
+  font-size: 20px;
+  width: 80px;
+  padding: 4px 10px;
+  color: #1d2327;
 }
 
 .notice-box-error {
@@ -443,7 +444,8 @@ kbd {
   line-height: 1.5;
 }
 
-.notice-box-error p, .notice-box-info p {
+.notice-box-error p,
+.notice-box-info p {
   font-size: 14px;
 }
 
@@ -580,5 +582,5 @@ kbd {
 }
 
 .wpel-field-number {
-    width: 80px;
-  }
+  width: 80px;
+}

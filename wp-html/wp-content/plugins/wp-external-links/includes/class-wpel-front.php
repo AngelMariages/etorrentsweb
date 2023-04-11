@@ -59,10 +59,10 @@ final class WPEL_Front extends WPRun_Base_1x0x0
             }
         }
 
-        
+
     }
-    
-    
+
+
     /**
      * Turn off output buffer for REST API calls
      * @param type $wp_rest_server
@@ -209,7 +209,7 @@ final class WPEL_Front extends WPRun_Base_1x0x0
         $is_excluded = $link->is_exclude() || $this->is_excluded_url( $url );
         $is_internal = $link->is_internal() || ( $this->is_internal_url( $url ) && ! $this->is_included_url( $url ) ) || ( $is_excluded && $excludes_as_internal_links );
         $is_external = $link->is_external() || ( ! $is_internal && ! $is_excluded );
-        
+
         if (strpos($url,'#') === 0) {
             // skip anchors
         } else if ( $is_external ) {
@@ -422,7 +422,7 @@ final class WPEL_Front extends WPRun_Base_1x0x0
         // is internal
         $url_without_protocol = preg_replace('#^http(s)?://#', '', home_url( '' ));
         $clean_home_url = preg_replace('/^www\./', '', $url_without_protocol);
-        
+
         if ( 0 === strpos( $url, 'http://'.$clean_home_url )
           || 0 === strpos( $url, 'https://'.$clean_home_url )
           || 0 === strpos( $url, 'http://www.'.$clean_home_url )
@@ -457,7 +457,7 @@ final class WPEL_Front extends WPRun_Base_1x0x0
             if ( count( $domain_tld ) > 0 ) {
                 $domain_name = $domain_tld[ 0 ];
             } else {
-                $domain_name = $_SERVER[ 'SERVER_NAME' ];
+                $domain_name = sanitize_text_field($_SERVER[ 'SERVER_NAME' ]);
             }
         }
 
@@ -465,5 +465,3 @@ final class WPEL_Front extends WPRun_Base_1x0x0
     }
 
 }
-
-/*?>*/

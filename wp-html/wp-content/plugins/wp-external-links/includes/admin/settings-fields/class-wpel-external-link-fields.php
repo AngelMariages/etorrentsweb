@@ -79,7 +79,7 @@ final class WPEL_External_Link_Fields extends WPEL_Link_Fields_Base
     }
 
     /**
-     * Validate and sanitize user input before saving to databse
+     * Validate and sanitize user input before saving to database
      * @param array $new_values
      * @param array $old_values
      * @return array
@@ -101,5 +101,3 @@ final class WPEL_External_Link_Fields extends WPEL_Link_Fields_Base
     }
 
 }
-
-/*?>*/

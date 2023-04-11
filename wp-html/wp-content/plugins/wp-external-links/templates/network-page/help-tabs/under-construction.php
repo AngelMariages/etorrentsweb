@@ -9,7 +9,7 @@
  * @license  Dual licensed under the MIT and GPLv2+ licenses
  */
 ?>
-<h3><?php _e( 'Under Construction', 'wp-external-links' ) ?></h3>
+<h3><?php esc_html_e( 'Under Construction', 'wp-external-links' ) ?></h3>
 <p>
-    <?php _e( 'Still working on the documentation...', 'wp-external-links' ); ?>
+    <?php esc_html_e( 'Still working on the documentation...', 'wp-external-links' ); ?>
 </p>

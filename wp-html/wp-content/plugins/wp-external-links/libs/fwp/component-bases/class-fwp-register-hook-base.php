@@ -5,7 +5,7 @@
  * @package  FWP
  * @category WordPress Library
  * @version  1.0.0
- 
+
  * @link     https://www.webfactoryltd.com/
  */
 abstract class FWP_Register_Hook_Base_1x0x0 extends WPRun_Base_1x0x0
@@ -32,7 +32,7 @@ abstract class FWP_Register_Hook_Base_1x0x0 extends WPRun_Base_1x0x0
         $wp_hook_function = 'register_'. $this->hook_type .'_hook';
 
         if ( ! function_exists( $wp_hook_function ) ) {
-            trigger_error( 'Register hook function "'. $wp_hook_function .'" does not exist.' );
+            trigger_error( 'Register hook function "'. esc_html($wp_hook_function) .'" does not exist.' );
         }
 
         $wp_hook_function(
@@ -48,7 +48,7 @@ abstract class FWP_Register_Hook_Base_1x0x0 extends WPRun_Base_1x0x0
     {
         if ( is_multisite() && $networkwide ) {
             // network activation
-            $sites = wp_get_sites();
+            $sites = get_sites();
             $active_blog = $this->wpdb->blogid;
 
             foreach ( $sites as $site ) {
@@ -81,5 +81,3 @@ abstract class FWP_Register_Hook_Base_1x0x0 extends WPRun_Base_1x0x0
     abstract protected function site_procedure();
 
 }
-
-/*?>*/

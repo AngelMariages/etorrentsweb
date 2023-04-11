@@ -49,7 +49,9 @@ final class WPEL_Network_Page extends WPRun_Base_1x0x0
         );
 
         // get current tab
-        $this->current_tab = filter_input( INPUT_GET, 'tab', FILTER_SANITIZE_STRING );
+        if(isset($_GET['tab'])){
+            $this->current_tab = sanitize_text_field($_GET['tab']);
+        }
 
         // set default tab
         if ( ! key_exists( $this->current_tab, $this->tabs ) ) {
@@ -86,7 +88,7 @@ final class WPEL_Network_Page extends WPRun_Base_1x0x0
             return $option_values[ $key ];
         }
 
-        trigger_error( 'Option value "'. $key .'" cannot be found.' );
+        trigger_error( 'Option value "'. esc_html($key) .'" cannot be found.' );
     }
 
     /**
@@ -181,5 +183,3 @@ final class WPEL_Network_Page extends WPRun_Base_1x0x0
     }
 
 }
-
-/*?>*/

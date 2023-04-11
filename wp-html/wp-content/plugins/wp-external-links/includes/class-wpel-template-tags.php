@@ -36,5 +36,3 @@ final class WPEL_Template_Tags extends FWP_Template_Tag_Base_1x0x0
     }
 
 }
-
-/*?>*/

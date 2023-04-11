@@ -5,7 +5,7 @@
  * @package  WPRun
  * @category WordPress Library
  * @version  1.0.0
- 
+
  * @link     https://www.webfactoryltd.com/
  */
 class WPRun_Autoloader_1x0x0
@@ -153,5 +153,3 @@ class WPRun_Autoloader_1x0x0
     }
 
 }
-
-/*?>*/

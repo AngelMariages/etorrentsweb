@@ -36,5 +36,3 @@ final class WPEL_Internal_Link_Fields extends WPEL_Link_Fields_Base
     }
 
 }
-
-/*?>*/

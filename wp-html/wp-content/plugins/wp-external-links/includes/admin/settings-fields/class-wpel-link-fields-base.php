@@ -230,8 +230,8 @@ abstract class WPEL_Link_Fields_Base extends FWP_Settings_Section_Base_1x0x0
 
         for ( $x = 1; $x <= 20; $x++ ) {
             echo '<label>';
-            echo $this->get_html_fields()->radio( $args[ 'key' ], strval( $x ) );
-            echo '<img src="'. plugins_url( '/public/images/wpel-icons/icon-'. esc_attr( $x ) .'.png', WPEL_Plugin::get_plugin_file() ) .'">';
+            WPEL_Plugin::wp_kses_wf($this->get_html_fields()->radio( $args[ 'key' ], strval( $x ) ));
+            echo '<img src="'. esc_url(plugins_url( '/public/images/wpel-icons/icon-'. esc_attr( $x ) .'.png', WPEL_Plugin::get_plugin_file() )) .'">';
             echo '</label>';
             echo '<br>';
 
@@ -253,7 +253,7 @@ abstract class WPEL_Link_Fields_Base extends FWP_Settings_Section_Base_1x0x0
 
         $options = array();
         foreach ( $dashicons as $icon ) {
-            $options[ $icon[ 'className' ] ] = '&#x'. $icon[ 'unicode' ];
+            $options[ $icon[ 'className' ] ] = '&#x'. $icon[ 'unicode' ] . ';';
         }
 
         $this->get_html_fields()->select( $args[ 'key' ], $options, array(
@@ -269,7 +269,7 @@ abstract class WPEL_Link_Fields_Base extends FWP_Settings_Section_Base_1x0x0
 
         $options = array();
         foreach ( $fa_icons as $icon ) {
-            $options[ $icon[ 'className' ] ] = '&#x'. $icon[ 'unicode' ];
+            $options[ $icon[ 'className' ] ] = '&#x'. $icon[ 'unicode' ] . ';';
         }
 
         $this->get_html_fields()->select( $args[ 'key' ], $options, array(
@@ -336,5 +336,3 @@ abstract class WPEL_Link_Fields_Base extends FWP_Settings_Section_Base_1x0x0
     }
 
 }
-
-/*?>*/

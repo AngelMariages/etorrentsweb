@@ -5,7 +5,7 @@
  * @package  FWP
  * @category WordPress Library
  * @version  1.0.0
- 
+
  * @link     https://www.webfactoryltd.com/
  */
 abstract class FWP_Settings_Section_Base_1x0x0 extends WPRun_Base_1x0x0
@@ -87,12 +87,12 @@ abstract class FWP_Settings_Section_Base_1x0x0 extends WPRun_Base_1x0x0
     protected function action_admin_init()
     {
         $description = $this->get_setting( 'description' );
-        
+
         add_settings_section(
             $this->get_setting( 'section_id' )      // id
             , $this->get_setting( 'title' )         // title
             , function () use ( $description ) {    // callback
-                echo $description;
+                WPEL_Plugin::wp_kses_wf($description);
             }
             , $this->get_setting( 'page_id' )       // page id
         );
@@ -270,5 +270,3 @@ abstract class FWP_Settings_Section_Base_1x0x0 extends WPRun_Base_1x0x0
     }
 
 }
-
-/*?>*/

@@ -8,7 +8,7 @@
  * @package  FWP
  * @category WordPress Library
  * @version  1.0.0
- 
+
  * @link     https://www.webfactoryltd.com/
  */
 class FWP_Widget_Output_1x0x0 extends WPRun_Base_1x0x0
@@ -70,9 +70,7 @@ class FWP_Widget_Output_1x0x0 extends WPRun_Base_1x0x0
         call_user_func_array( $original_callback, $original_callback_params );
         $widget_output = ob_get_clean();
 
-        echo apply_filters( self::FILTER_NAME, $widget_output, $widget_id_base, $widget_id );
+        WPEL_Plugin::wp_kses_wf(apply_filters( self::FILTER_NAME, $widget_output, $widget_id_base, $widget_id ));
     }
 
 }
-
-/*?>*/

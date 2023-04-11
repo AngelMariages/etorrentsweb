@@ -98,5 +98,3 @@ class WPEL_Link extends FWP_HTML_Element_1x0x0
     }
 
 }
-
-/*?>*/

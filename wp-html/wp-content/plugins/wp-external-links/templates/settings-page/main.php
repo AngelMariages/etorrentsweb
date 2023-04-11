@@ -17,9 +17,9 @@
  *      @option string "own_admin_menu"
  */
 ?>
-<div class="wrap wpel-settings-page wpel-settings-page-<?php echo $vars['current_tab']; ?>">
+<div class="wrap wpel-settings-page wpel-settings-page-<?php echo esc_html($vars['current_tab']); ?>">
     <h1 class="wpel-logo-wrapper">
-        <span class="wpel-logo"><img src="<?php echo plugins_url('/public/images/logo.png', WPEL_Plugin::get_plugin_file()); ?>" /></span>
+        <span class="wpel-logo"><img src="<?php echo esc_url(plugins_url('/public/images/logo.png', WPEL_Plugin::get_plugin_file())); ?>" /></span>
     </h1>
 
     <div class="wpel-body-wrap">
@@ -55,7 +55,7 @@
     <div class="wpel-container-right">
         <div class="sidebar-box pro-ad-box">
             <p class="text-center"><a href="#" data-pro-feature="sidebar-box-logo" class="open-pro-dialog">
-            <img src="<?php echo plugins_url('/public/images/logo.png', WPEL_Plugin::get_plugin_file()); ?>" alt="WP Links PRO" title="WP Links PRO"></a><br>PRO version is here! Grab the launch discount.<br><b>All prices are LIFETIME!</b></p>
+            <img src="<?php echo esc_url(plugins_url('/public/images/logo.png', WPEL_Plugin::get_plugin_file())); ?>" alt="WP Links PRO" title="WP Links PRO"></a><br>PRO version is here! Grab the launch discount.<br><b>All prices are LIFETIME!</b></p>
             <ul class="plain-list">
                 <li>Complete control over all links</li>
                 <li>Exit Confirmation for traffic &amp; links protection</li>
@@ -78,7 +78,7 @@
 
   <div id="wpel-pro-dialog" style="display: none;" title="WP Links PRO is here!"><span class="ui-helper-hidden-accessible"><input type="text"/></span>
 
-  <div class="center logo"><a href="https://getwplinks.com/?ref=wpel-free-pricing-table" target="_blank"><img src="<?php echo plugins_url('/public/images/logo.png', WPEL_Plugin::get_plugin_file()); ?>" alt="WP Links PRO" title="WP Links PRO"></a><br>
+  <div class="center logo"><a href="https://getwplinks.com/?ref=wpel-free-pricing-table" target="_blank"><img src="<?php echo esc_url(plugins_url('/public/images/logo.png', WPEL_Plugin::get_plugin_file())); ?>" alt="WP Links PRO" title="WP Links PRO"></a><br>
 
   <span>Limited PRO Launch Discount - <b>all prices are LIFETIME</b>! Pay once &amp; use forever!</span>
   </div>

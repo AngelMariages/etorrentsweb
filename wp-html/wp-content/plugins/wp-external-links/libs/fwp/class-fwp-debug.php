@@ -5,7 +5,7 @@
  * @package  FWP
  * @category WordPress Library
  * @version  1.0.0
- 
+
  * @link     https://www.webfactoryltd.com/
  */
 class FWP_Debug_1x0x0 extends WPRun_Base_1x0x0
@@ -50,7 +50,7 @@ class FWP_Debug_1x0x0 extends WPRun_Base_1x0x0
         if ( function_exists( $func ) || !is_callable( $func, true ) ) {
             return;
         }
-        
+
     }
 
     /**
@@ -104,5 +104,3 @@ class FWP_Debug_1x0x0 extends WPRun_Base_1x0x0
     }
 
 }
-
-/*?>*/

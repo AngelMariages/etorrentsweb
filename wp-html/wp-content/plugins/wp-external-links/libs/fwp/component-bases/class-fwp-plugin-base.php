@@ -5,7 +5,7 @@
  * @package  FWP
  * @category WordPress Library
  * @version  1.0.0
- 
+
  * @link     https://www.webfactoryltd.com/
  */
 abstract class FWP_Plugin_Base_1x0x0 extends WPRun_Base_1x0x0
@@ -58,14 +58,16 @@ abstract class FWP_Plugin_Base_1x0x0 extends WPRun_Base_1x0x0
      */
     protected function action_admin_action_wpel_dismiss_notice()
     {
+      check_admin_referer( 'wpel_dismiss_rate' );
+        
       update_option( 'wpel-notice-dismissed-rate', true );
 
       if ( !empty( $_GET['redirect'] ) ) {
-        wp_safe_redirect( $_GET['redirect'] );
+        wp_safe_redirect( sanitize_url($_GET['redirect']) );
       } else {
         wp_safe_redirect( admin_url() );
       }
-  
+
       exit;
     }
 
@@ -103,5 +105,3 @@ abstract class FWP_Plugin_Base_1x0x0 extends WPRun_Base_1x0x0
     }
 
 }
-
-/*?>*/

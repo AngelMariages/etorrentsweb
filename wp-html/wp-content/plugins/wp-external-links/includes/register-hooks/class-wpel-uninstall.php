@@ -46,5 +46,3 @@ final class WPEL_Uninstall extends FWP_Register_Hook_Base_1x0x0
     }
 
 }
-
-/*?>*/

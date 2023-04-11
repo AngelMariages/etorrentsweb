@@ -56,7 +56,7 @@ final class WPEL_Register_Scripts extends WPRun_Base_1x0x0
         // set style font awesome icons
         wp_register_style(
             'wpel-font-awesome',
-            'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css',
+            plugins_url('/public/css/font-awesome.min.css', WPEL_Plugin::get_plugin_file()),
             array(),
             $plugin_version
         );
@@ -94,5 +94,3 @@ final class WPEL_Register_Scripts extends WPRun_Base_1x0x0
         wp_localize_script('wpel-admin-script', 'wpel', $wpel_js);
     }
 }
-
-/*?>*/

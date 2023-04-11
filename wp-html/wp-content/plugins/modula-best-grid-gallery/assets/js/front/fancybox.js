@@ -5215,6 +5215,10 @@
         }
 		var imageCaption = item.opts.caption.replace(/<p>|<\/p>/igm, '');
 
+    var imageCaption = imageCaption.replace(/[\u00A0-\u9999<>\&]/g, function(i) {
+      return '&#'+i.charCodeAt(0)+';';
+    });
+
 		list.push( '<a href="javascript:;" role="button" aria-label="Click to show image titled '+
 		  imageCaption +
 		  '" tabindex="0" data-index="' +
@@ -5437,10 +5441,10 @@
 
         var text = ( undefined != jQuery( current.$image ).attr( 'title' )  ) ? jQuery( current.$image ).attr( 'title' ) : '';
 
-        if ( '' ==  text ) {
+        if ( '' == text && instance.$caption && typeof instance.$caption.text !== "undefined" ) {
           text = instance.$caption.text();
         }
-
+        
         tpl += current.opts.shareBtnTpl[value]
             .replace( /\{\{media\}\}/g, current.type === "image" ? encodeURIComponent( current.src ) : "" )
             .replace( /\{\{modulaShareUrl\}\}/g, encodeURIComponent( url ) )

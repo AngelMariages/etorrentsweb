@@ -90,7 +90,9 @@ final class WPEL_Settings_Page extends WPRun_Base_1x0x0
         }
 
         // get current tab
-        $this->current_tab = filter_input(INPUT_GET, 'tab', FILTER_SANITIZE_STRING);
+        if(isset($_GET['tab'])){
+            $this->current_tab = sanitize_text_field($_GET['tab']);
+        }
 
         // set default tab
         if (!key_exists($this->current_tab, $this->tabs)) {
@@ -114,7 +116,7 @@ final class WPEL_Settings_Page extends WPRun_Base_1x0x0
         $current_screen = get_current_screen();
         if (!empty($current_screen) && $current_screen->id == 'toplevel_page_wpel-settings-page') {
             $plugin_version = get_option('wpel-version');
-            $text = '<i>WP External Links v' . $plugin_version . ' by <a href="https://www.webfactoryltd.com?ref=wp-external-links" title="WebFactory Ltd" target="_blank">WebFactory Ltd</a>. Please <a target="_blank" href="https://wordpress.org/support/plugin/wp-external-links/reviews/#new-post" title="Rate the plugin">rate the plugin <span>★★★★★</span></a> to help us spread the word. Thank you 🙌</i>';
+            $text = '<i>WP External Links v' . esc_attr($plugin_version) . ' by <a href="https://www.webfactoryltd.com?ref=wp-external-links" title="WebFactory Ltd" target="_blank">WebFactory Ltd</a>. Please <a target="_blank" href="https://wordpress.org/support/plugin/wp-external-links/reviews/#new-post" title="Rate the plugin">rate the plugin <span>★★★★★</span></a> to help us spread the word. Thank you 🙌</i>';
         }
 
         return $text;
@@ -172,7 +174,7 @@ final class WPEL_Settings_Page extends WPRun_Base_1x0x0
             return @$option_values[$key];
         }
 
-        trigger_error('Option value "' . $key . '" cannot be found.');
+        trigger_error('Option value "' . esc_html($key) . '" cannot be found.');
     }
 
     /**
@@ -258,8 +260,8 @@ final class WPEL_Settings_Page extends WPRun_Base_1x0x0
             wp_enqueue_style('wp-color-picker');
             wp_enqueue_script('wp-color-picker');
 
-            wp_enqueue_style('jquery-ui-smoothness', 'https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css', false, null);
-            wp_enqueue_style('wpel-admin-font', 'https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&display=swap');
+            wp_enqueue_style('jquery-ui-smoothness', plugins_url('/public/css/jquery-ui.css', WPEL_Plugin::get_plugin_file()), false, null);
+            wp_enqueue_style('wpel-admin-font', plugins_url('/public/css/poppins.css', WPEL_Plugin::get_plugin_file()), false, null);
         }
 
         wp_enqueue_style('wpel-admin-global-style');

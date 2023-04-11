@@ -37,5 +37,3 @@ final class WPEL_Deactivate extends FWP_Register_Hook_Base_1x0x0
     }
 
 }
-
-/*?>*/
