@@ -1,1 +1,0 @@
-Safely namespaced fork of [guzzle/psr7](https://github.com/guzzle/psr7) for use in [WP2Static](https://github.com/leonstafford/wp2static), generated with [AriseByAnyOtherName](https://github.com/leonstafford/AriseByAnyOtherName).
