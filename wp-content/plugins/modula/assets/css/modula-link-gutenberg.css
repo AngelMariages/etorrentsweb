@@ -1,0 +1,20 @@
+body .modula-link-button-small {
+    width: 100px!important;
+    height: 40px;
+}
+
+body .modula-link-button-medium {
+    width: 150px!important;
+    height: 50px;
+}
+
+body .modula-link-button-large {
+    width: 200px!important;
+    height: 60px;
+}
+
+body .modula-link-button-x-large {
+    width: 400px!important;
+    height: 80px;
+}
+

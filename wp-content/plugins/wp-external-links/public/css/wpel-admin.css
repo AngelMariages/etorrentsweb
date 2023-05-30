@@ -1,0 +1,586 @@
+/**
+ * WP External Links Plugin
+ * Admin Style
+ */
+.toplevel_page_wpel-settings-page #wpcontent {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: #1d2328;
+  margin-bottom: 30px;
+}
+
+.toplevel_page_wpel-settings-page .wrap {
+  margin: 0px;
+  padding: 0px;
+}
+
+p {
+  font-size: 14px;
+}
+
+.wpel-body-wrap {
+  background-color: #fff;
+  padding: 40px 60px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 20px;
+  box-sizing: border-box;
+  float: left;
+}
+
+.wpel-container-right {
+  max-width: calc(35% - 40px);
+  float: left;
+}
+
+.sidebar-box {
+  box-shadow: 0 1px 1px rgb(0 0 0 / 4%);
+  background: white;
+  padding: 15px;
+  font-size: 14px;
+  line-height: 1.5;
+  max-width: 450px;
+}
+
+.sidebar-box.pro-ad-box {
+  border: 2px solid #1775a7;
+}
+
+a.button.button-buy {
+  padding: 11px 40px;
+  color: white;
+  background: #1775a7;
+  font-weight: 600;
+  border: none;
+  line-height: 1.5;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+a.button.button-buy:hover,
+a.button.button-buy:active,
+a.button.button-buy:focus {
+  box-shadow: 0px 0px 10px 0px rgb(50 138 210 / 52%);
+  background: #1775a7;
+  color: white;
+  border: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.plain-list {
+  margin-top: 5px;
+  list-style-type: circle;
+  list-style-position: inside;
+}
+
+.plain-list li {
+  text-indent: -18px;
+  padding-left: 23px;
+  line-height: 23px;
+  margin: 0;
+}
+
+.pro-ad-box p b {
+  border-bottom: 3px solid #1775a7;
+}
+
+.pro-ad-box img {
+  max-height: 50px;
+  padding: 0 0 10px 0;
+}
+
+.toplevel_page_wpel-settings-page #wpcontent {
+  margin-left: 140px;
+}
+
+.toplevel_page_wpel-settings-page #wpfooter {
+  background: #fff;
+  padding: 24px 20px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.wpel-body-wrap form h2 {
+  display: none;
+}
+
+#wpfooter a {
+  text-decoration: none;
+}
+
+#wpfooter span {
+  color: #ffb900;
+}
+
+.nav-tab .dashicons {
+  color: #1775a7;
+  font-size: 18px;
+  margin-right: 4px;
+  line-height: 24px;
+}
+
+.toplevel_page_wpel-settings-page .wrap .wpel-logo-wrapper {
+  background: #fff;
+  padding: 18px 20px 14px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.toplevel_page_wpel-settings-page #footer-thankyou {
+  font-style: normal;
+}
+
+.toplevel_page_wpel-settings-page .wrap h1.wpel-logo {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  line-height: 20px;
+}
+
+.wpel-no-label,
+.wpel-no-label th,
+.wpel-no-label td {
+  padding-top: 0;
+}
+.wpel-no-label th:after {
+  content: '\00a0';
+}
+
+.wpel-hidden {
+  display: none;
+}
+
+.toplevel_page_wpel-settings-page table.dataTable thead th,
+.toplevel_page_wpel-settings-page table.dataTable thead td {
+  padding: 10px 8px;
+}
+/**
+ * Tabs
+ */
+
+.wpel-settings-page .nav-tab i,
+.wpel-network-page .nav-tab i {
+  margin-right: 5px;
+}
+
+.wpel-settings-page .nav-tab-pro,
+.wpel-network-page .nav-tab-pro {
+  background-color: #1775a7;
+  color: #fff;
+}
+
+.wpel-settings-page .nav-tab-pro:hover,
+.wpel-network-page .nav-tab-pro:hover {
+  background-color: #1775a7;
+  color: #fff;
+}
+
+.wpel-settings-page form,
+.wpel-network-page form {
+  position: relative;
+}
+
+.js-wpel-apply-child td {
+  padding-left: 30px;
+}
+
+.wpel-icon-type-image-column {
+  min-width: 10em;
+  float: left;
+}
+.wpel-icon-type-image-column:after {
+  clear: both;
+}
+
+::-webkit-input-placeholder {
+  color: #ccc;
+  font-style: italic;
+}
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #ccc;
+  font-style: italic;
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #ccc;
+  font-style: italic;
+}
+:-ms-input-placeholder {
+  color: #ccc;
+  font-style: italic;
+}
+
+.nav-tab,
+.nav-tab:focus,
+.nav-tab-active,
+.nav-tab-active:focus,
+.nav-tab-active:focus:active {
+  background: none;
+  border: none;
+  color: #1d2328;
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom: -3px;
+  border-bottom: 3px solid #eef3f5;
+  font-weight: 400;
+  padding: 10px 15px;
+  outline: none;
+  box-shadow: none;
+  font-weight: 500;
+}
+
+.nav-tab-active,
+.nav-tab-active:hover,
+.nav-tab:hover {
+  color: #1775a7;
+  border-bottom: 3px solid #1775a7;
+  background: none;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.nav-tab-wrapper,
+.wrap h2.nav-tab-wrapper,
+h1.nav-tab-wrapper {
+  border-bottom: 3px solid #eef3f5;
+  margin-bottom: 30px;
+}
+
+.wpel-body-wrap h2 {
+  font-size: 32px;
+  font-weight: 400;
+}
+
+/**
+ * Background Icon
+ */
+
+.wpel-settings-page form:before,
+.wpel-network-page form:before {
+  font-family: FontAwesome;
+  opacity: 0.2;
+  color: #aaa;
+  font-size: 200pt;
+  position: absolute;
+  top: 140px;
+  right: 40px;
+  z-index: -1;
+}
+
+.wrap h2.nav-tab-wrapper {
+  padding-top: 20px;
+}
+
+#rating-notice,
+.notice {
+  display: block;
+  width: 1200px;
+  margin: 10px 20px !important;
+  box-sizing: border-box;
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
+}
+
+#rating-notice {
+  padding: 15px;
+}
+
+.wpel-logo {
+  width: 100%;
+}
+
+.toplevel_page_wpel-settings-page .checkbox-container,
+.toplevel_page_wpel-settings-page .radio-container {
+  display: inline-block;
+  position: relative;
+  padding-left: 15px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 16px;
+  vertical-align: middle;
+}
+
+.toplevel_page_wpel-settings-page .checkbox-container input,
+.toplevel_page_wpel-settings-page .radio-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.toplevel_page_wpel-settings-page .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eef3f5;
+}
+
+.toplevel_page_wpel-settings-page .checkbox-container:hover input ~ .checkmark,
+.toplevel_page_wpel-settings-page .radio-container:hover input ~ .radio {
+  background-color: #ccc;
+}
+
+.toplevel_page_wpel-settings-page .checkbox-container input:checked ~ .checkmark,
+.toplevel_page_wpel-settings-page .radio-container input:checked ~ .radio {
+  background-color: #1775a7;
+}
+
+.toplevel_page_wpel-settings-page .checkmark:after,
+.toplevel_page_wpel-settings-page .radio:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+.toplevel_page_wpel-settings-page .checkbox-container input:checked ~ .checkmark:after,
+.toplevel_page_wpel-settings-page .radio-container input:checked ~ .radio:after {
+  display: block;
+}
+
+.toplevel_page_wpel-settings-page .checkbox-container .checkmark:after {
+  left: 9px;
+  top: 6px;
+  width: 4px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.toplevel_page_wpel-settings-page .radio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.toplevel_page_wpel-settings-page .radio-container .radio:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+.toplevel_page_wpel-settings-page input[type='text'],
+.toplevel_page_wpel-settings-page select {
+  background-color: #eef3f5;
+  padding: 10px;
+  border: none;
+  width: 100%;
+  max-width: 400px;
+}
+
+.toplevel_page_wpel-settings-page textarea {
+  background-color: #eef3f5;
+  padding: 10px;
+  border: none;
+  width: 100%;
+}
+
+.wp-core-ui .button-primary {
+  background: #1775a7;
+  border-color: #1775a7;
+  color: #fff;
+  text-decoration: none;
+  text-shadow: none;
+  padding: 6px 40px;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+code,
+kbd {
+  background-color: #eef3f5;
+}
+
+#wpel-external-link-settings-icon_dashicon,
+#wpel-external-link-settings-icon_fontawesome,
+#wpel-internal-link-settings-icon_dashicon,
+#wpel-internal-link-settings-icon_fontawesome {
+  font-size: 20px;
+  width: 80px;
+  padding: 4px 10px;
+  color: #1d2327;
+}
+
+.notice-box-error {
+  max-width: 700px;
+  padding: 10px 10px 10px 20px;
+  border: thin solid red;
+  border-left-width: 5px;
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.notice-box-info {
+  padding: 10px 10px 10px 20px;
+  border: thin solid #1775a7;
+  border-left-width: 5px;
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.notice-box-error p,
+.notice-box-info p {
+  font-size: 14px;
+}
+
+/* pro dialog */
+.ui-dialog-titlebar {
+  display: none;
+}
+
+.wpel-pro-dialog .logo img {
+  max-height: 55px;
+}
+
+.wpel-pro-dialog .logo {
+  text-align: center;
+  background: #f8f8f8;
+  margin: -16px -16px 0 -16px;
+  padding: 15px;
+}
+
+.wpel-pro-dialog .footer {
+  text-align: center;
+  background: #f8f8f8;
+  margin: 0 -16px -16px -16px;
+  padding: 15px;
+}
+
+.wpel-pro-dialog .logo span {
+  display: block;
+  font-size: 18px;
+  margin: 10px;
+}
+
+.wpel-pro-dialog .logo span b {
+  border-bottom: 3px solid #1775a7;
+}
+
+#wpel-pro-table {
+  width: 100%;
+  margin: 10px auto 10px auto;
+  border-collapse: collapse;
+}
+
+#wpel-pro-table td {
+  padding: 4px 10px 4px 34px;
+  border: none;
+  font-size: 14px;
+}
+
+#wpel-pro-table tr:last-child td {
+  text-align: center;
+}
+
+#wpel-pro-table td:nth-child(2) {
+  background-color: rgb(23 117 167 / 8%);
+}
+
+#wpel-pro-table .dashicons-yes {
+  color: #1775a7;
+}
+
+#wpel-pro-table .dashicons {
+  padding-right: 8px;
+  margin-left: -27px;
+}
+
+.center {
+  text-align: center;
+}
+
+.prices del {
+  color: #00000099;
+}
+
+.prices span {
+  font-weight: 700;
+  font-size: 40px;
+  color: #1775a7;
+  line-height: 1;
+  display: inline-block;
+  padding-bottom: 15px;
+}
+
+#wpel-pro-table tr:first-child td {
+  color: #000;
+  font-size: 18px;
+  font-weight: 800 !important;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.pro-ad-box p b {
+  border-bottom: 3px solid #1775a7;
+}
+
+.pro-ad-box img {
+  max-height: 50px;
+  padding: 0 0 10px 0;
+}
+
+#wpel-pro-table tr:last-child td {
+  padding: 20px 0 20px 0;
+  vertical-align: top;
+}
+
+#wpel-pro-table tr:last-child td span {
+  display: block;
+  padding: 0 0 5px 0;
+}
+
+#wpel-features {
+  width: 100%;
+  padding: 20px 0 0 0;
+}
+
+#wpel-features td {
+  padding: 10px 20px;
+}
+
+.wp-dialog.ui-widget-content {
+  background: #fff !important;
+}
+
+#wpel-pro-dialog {
+  overflow: hidden;
+}
+
+.pro-feature {
+  vertical-align: super;
+  color: #1775a7;
+  font-weight: 600;
+  font-size: 12px;
+  margin-left: 4px;
+  font-style: italic;
+}
+
+.wpel-field-number {
+  width: 80px;
+}
