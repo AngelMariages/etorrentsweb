@@ -700,17 +700,20 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://www.enrictorrents.com/project/gel-de-manos/</loc>
-		<lastmod>2024-01-20T20:21:23+00:00</lastmod>
-		<image:image>
-			<image:loc>https://www.enrictorrents.com/wp-content/uploads/2023/07/Classe-17_Cosmetica_Enric-Torrents_3.jpg</image:loc>
-		</image:image>
-	</url>
-	<url>
 		<loc>https://www.enrictorrents.com/project/raves/</loc>
 		<lastmod>2024-01-20T20:22:29+00:00</lastmod>
 		<image:image>
 			<image:loc>https://www.enrictorrents.com/wp-content/uploads/2020/11/Rave20191124_033.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://www.enrictorrents.com/project/gel-de-manos/</loc>
+		<lastmod>2024-01-20T20:40:25+00:00</lastmod>
+		<image:image>
+			<image:loc>https://www.enrictorrents.com/wp-content/uploads/2023/07/Classe-17_Cosmetica_Enric-Torrents_3.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.enrictorrents.com/wp-content/uploads/2023/07/Classe-17_Cosmetica_Enric-Torrents_3.jpg</image:loc>
 		</image:image>
 	</url>
 </urlset>

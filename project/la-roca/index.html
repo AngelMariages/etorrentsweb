@@ -215,7 +215,29 @@ var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
 
 #post-4491 > div.entry-cover > div.entry-cover-image {
   background-position-y: initial;
-}  		</style>
+}  
+
+@media (max-width: 600px) {
+	.entry-meta {
+		display: initial !important;
+	}
+	
+	.portfolio_item-title a {
+		position: relative;
+	}
+	
+	.portfolio_item-title a:not([title=""])::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left: -20px;
+    top: 2px;
+    width: 12px;
+    height: 12px;
+    background: url(https://www.enrictorrents.com/wp-content/uploads/2024/01/icona-link-blanca.png);
+    background-size: contain;
+}
+}		</style>
 		</head>
 <body class="portfolio_item-template-default single single-portfolio_item postid-6058 wp-custom-logo inspiro--with-page-nav">
 
@@ -993,7 +1015,7 @@ Moltes felicitats germà! ❤️🥳
 @jnavarroc98											</div>
 										
 																					<div class="wpz-insta-date">
-												hace 5 meses											</div>
+												hace 6 meses											</div>
 										
 										<div class="view-post">
 											<a href="https://www.instagram.com/p/Cvsqri2MPaO/" target="_blank" rel="noopener external noreferrer" data-wpel-link="external"><span class="dashicons dashicons-instagram"></span>Ver en Instagram</a>

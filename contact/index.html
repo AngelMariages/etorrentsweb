@@ -219,7 +219,29 @@ var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
 
 #post-4491 > div.entry-cover > div.entry-cover-image {
   background-position-y: initial;
-}  		</style>
+}  
+
+@media (max-width: 600px) {
+	.entry-meta {
+		display: initial !important;
+	}
+	
+	.portfolio_item-title a {
+		position: relative;
+	}
+	
+	.portfolio_item-title a:not([title=""])::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left: -20px;
+    top: 2px;
+    width: 12px;
+    height: 12px;
+    background: url(https://www.enrictorrents.com/wp-content/uploads/2024/01/icona-link-blanca.png);
+    background-size: contain;
+}
+}		</style>
 		</head>
 <body class="page-template-default page page-id-628 wp-custom-logo inspiro--with-page-nav">
 
@@ -353,7 +375,7 @@ var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
     </div><!-- .entry-cover -->
 
     <div class="entry-content">
-        <div class="wpforms-container wpforms-container-full wpforms-block" id="wpforms-6342"><form id="wpforms-form-6342" class="wpforms-validate wpforms-form" data-formid="6342" method="post" enctype="multipart/form-data" action="/contact/" data-token="2b1f91ae72d03d5207df5b2686423429"><noscript class="wpforms-error-noscript">Por favor, activa JavaScript en tu navegador para completar este formulario.</noscript><div class="wpforms-field-container"><div id="wpforms-6342-field_0-container" class="wpforms-field wpforms-field-name" data-field-id="0"><label class="wpforms-field-label" for="wpforms-6342-field_0">Name <span class="wpforms-required-label">*</span></label><div class="wpforms-field-row wpforms-field-medium"><div class="wpforms-field-row-block wpforms-first wpforms-one-half"><input type="text" id="wpforms-6342-field_0" class="wpforms-field-name-first wpforms-field-required" name="wpforms[fields][0][first]" required><label for="wpforms-6342-field_0" class="wpforms-field-sublabel after ">Nombre</label></div><div class="wpforms-field-row-block wpforms-one-half"><input type="text" id="wpforms-6342-field_0-last" class="wpforms-field-name-last wpforms-field-required" name="wpforms[fields][0][last]" required><label for="wpforms-6342-field_0-last" class="wpforms-field-sublabel after ">Apellidos</label></div></div></div><div id="wpforms-6342-field_1-container" class="wpforms-field wpforms-field-email" data-field-id="1"><label class="wpforms-field-label" for="wpforms-6342-field_1">Email <span class="wpforms-required-label">*</span></label><input type="email" id="wpforms-6342-field_1" class="wpforms-field-medium wpforms-field-required" name="wpforms[fields][1]" spellcheck="false" required></div><div id="wpforms-6342-field_2-container" class="wpforms-field wpforms-field-textarea" data-field-id="2"><label class="wpforms-field-label" for="wpforms-6342-field_2">Message <span class="wpforms-required-label">*</span></label><textarea id="wpforms-6342-field_2" class="wpforms-field-medium wpforms-field-required" name="wpforms[fields][2]" required></textarea></div><div id="wpforms-6342-field_3-container" class="wpforms-field wpforms-field-gdpr-checkbox" data-field-id="3"><label class="wpforms-field-label" for="wpforms-6342-field_3">Privacy consent <span class="wpforms-required-label">*</span></label><ul id="wpforms-6342-field_3" class="wpforms-field-required"><li class="choice-1"><input type="checkbox" id="wpforms-6342-field_3_1" name="wpforms[fields][3][]" value="I give my consent for this web store to store the information sent so that it will respond to my requests." required ><label class="wpforms-field-label-inline" for="wpforms-6342-field_3_1">I give my consent for this web store to store the information sent so that it will respond to my requests.</label></li></ul></div></div><!-- .wpforms-field-container --><div class="wpforms-field wpforms-field-hp"><label for="wpforms-6342-field-hp" class="wpforms-field-label">Website</label><input type="text" name="wpforms[hp]" id="wpforms-6342-field-hp" class="wpforms-field-medium"></div><div class="wpforms-submit-container" ><input type="hidden" name="wpforms[id]" value="6342"><input type="hidden" name="wpforms[author]" value="1"><input type="hidden" name="wpforms[post_id]" value="628"><button type="submit" name="wpforms[submit]" id="wpforms-submit-6342" class="wpforms-submit" data-alt-text="Enviando..." data-submit-text="Enviar" aria-live="assertive" value="wpforms-submit">Enviar</button></div></form></div>  <!-- .wpforms-container -->
+        <div class="wpforms-container wpforms-container-full wpforms-block" id="wpforms-6342"><form id="wpforms-form-6342" class="wpforms-validate wpforms-form" data-formid="6342" method="post" enctype="multipart/form-data" action="/contact/" data-token="2b1f91ae72d03d5207df5b2686423429"><noscript class="wpforms-error-noscript">Por favor, activa JavaScript en tu navegador para completar este formulario.</noscript><div class="wpforms-field-container"><div id="wpforms-6342-field_0-container" class="wpforms-field wpforms-field-name" data-field-id="0"><label class="wpforms-field-label" for="wpforms-6342-field_0">Name <span class="wpforms-required-label">*</span></label><div class="wpforms-field-row wpforms-field-medium"><div class="wpforms-field-row-block wpforms-first wpforms-one-half"><input type="text" id="wpforms-6342-field_0" class="wpforms-field-name-first wpforms-field-required" name="wpforms[fields][0][first]" required><label for="wpforms-6342-field_0" class="wpforms-field-sublabel after ">Nombre</label></div><div class="wpforms-field-row-block wpforms-one-half"><input type="text" id="wpforms-6342-field_0-last" class="wpforms-field-name-last wpforms-field-required" name="wpforms[fields][0][last]" required><label for="wpforms-6342-field_0-last" class="wpforms-field-sublabel after ">Apellidos</label></div></div></div><div id="wpforms-6342-field_1-container" class="wpforms-field wpforms-field-email" data-field-id="1"><label class="wpforms-field-label" for="wpforms-6342-field_1">Email <span class="wpforms-required-label">*</span></label><input type="email" id="wpforms-6342-field_1" class="wpforms-field-medium wpforms-field-required" name="wpforms[fields][1]" spellcheck="false" required></div><div id="wpforms-6342-field_2-container" class="wpforms-field wpforms-field-textarea" data-field-id="2"><label class="wpforms-field-label" for="wpforms-6342-field_2">Message <span class="wpforms-required-label">*</span></label><textarea id="wpforms-6342-field_2" class="wpforms-field-medium wpforms-field-required" name="wpforms[fields][2]" required></textarea></div><div id="wpforms-6342-field_3-container" class="wpforms-field wpforms-field-gdpr-checkbox" data-field-id="3"><label class="wpforms-field-label" for="wpforms-6342-field_3">Privacy consent <span class="wpforms-required-label">*</span></label><ul id="wpforms-6342-field_3" class="wpforms-field-required"><li class="choice-1"><input type="checkbox" id="wpforms-6342-field_3_1" name="wpforms[fields][3][]" value="I give my consent for this web store to store the information sent so that it will respond to my requests." required ><label class="wpforms-field-label-inline" for="wpforms-6342-field_3_1">I give my consent for this web store to store the information sent so that it will respond to my requests.</label></li></ul></div></div><!-- .wpforms-field-container --><div class="wpforms-field wpforms-field-hp"><label for="wpforms-6342-field-hp" class="wpforms-field-label">Name</label><input type="text" name="wpforms[hp]" id="wpforms-6342-field-hp" class="wpforms-field-medium"></div><div class="wpforms-submit-container" ><input type="hidden" name="wpforms[id]" value="6342"><input type="hidden" name="wpforms[author]" value="1"><input type="hidden" name="wpforms[post_id]" value="628"><button type="submit" name="wpforms[submit]" id="wpforms-submit-6342" class="wpforms-submit" data-alt-text="Enviando..." data-submit-text="Enviar" aria-live="assertive" value="wpforms-submit">Enviar</button></div></form></div>  <!-- .wpforms-container -->
 
 
 <style>
@@ -937,7 +959,7 @@ Moltes felicitats germà! ❤️🥳
 @jnavarroc98											</div>
 										
 																					<div class="wpz-insta-date">
-												hace 5 meses											</div>
+												hace 6 meses											</div>
 										
 										<div class="view-post">
 											<a href="https://www.instagram.com/p/Cvsqri2MPaO/" target="_blank" rel="noopener external noreferrer" data-wpel-link="external"><span class="dashicons dashicons-instagram"></span>Ver en Instagram</a>
