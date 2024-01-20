@@ -397,13 +397,6 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://www.enrictorrents.com/project/la-muga/</loc>
-		<lastmod>2020-11-07T21:59:32+00:00</lastmod>
-		<image:image>
-			<image:loc>https://www.enrictorrents.com/wp-content/uploads/2020/07/003-Enric-Torrents-LaMuga.jpg</image:loc>
-		</image:image>
-	</url>
-	<url>
 		<loc>https://www.enrictorrents.com/project/6071/</loc>
 		<lastmod>2020-11-07T21:59:33+00:00</lastmod>
 		<image:image>
@@ -424,13 +417,6 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://www.enrictorrents.com/project/munich/</loc>
-		<lastmod>2020-11-07T22:02:41+00:00</lastmod>
-		<image:image>
-			<image:loc>https://www.enrictorrents.com/wp-content/uploads/2020/07/1022197-Enric-Torrents.jpg</image:loc>
-		</image:image>
-	</url>
-	<url>
 		<loc>https://www.enrictorrents.com/project/aguila/</loc>
 		<lastmod>2020-11-07T22:02:41+00:00</lastmod>
 		<image:image>
@@ -438,6 +424,13 @@
 		</image:image>
 		<image:image>
 			<image:loc>https://www.enrictorrents.com/wp-content/uploads/2020/02/1377063_tpunii.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://www.enrictorrents.com/project/munich/</loc>
+		<lastmod>2020-11-07T22:02:41+00:00</lastmod>
+		<image:image>
+			<image:loc>https://www.enrictorrents.com/wp-content/uploads/2020/07/1022197-Enric-Torrents.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
@@ -469,47 +462,6 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://www.enrictorrents.com/project/the-slingshots/</loc>
-		<lastmod>2020-11-07T22:21:16+00:00</lastmod>
-		<image:image>
-			<image:loc>https://www.enrictorrents.com/wp-content/uploads/2020/02/The-Slingshots-3_pzkuqq.jpg</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc>https://www.enrictorrents.com/project/ilegales/</loc>
-		<lastmod>2020-11-07T22:21:16+00:00</lastmod>
-		<image:image>
-			<image:loc>https://www.enrictorrents.com/wp-content/uploads/2020/02/Ilegales-21_g3ijm0.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.enrictorrents.com/wp-content/uploads/2020/02/Ilegales-20_qumcty.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.enrictorrents.com/wp-content/uploads/2020/02/Ilegales-9_aduzew.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.enrictorrents.com/wp-content/uploads/2020/02/Ilegales-21_g3ijm0.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.enrictorrents.com/wp-content/uploads/2020/02/Ilegales-17_u3ipxi.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.enrictorrents.com/wp-content/uploads/2020/02/Ilegales-14_zc4ft8.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.enrictorrents.com/wp-content/uploads/2020/02/Ilegales-27_ngpw2v.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.enrictorrents.com/wp-content/uploads/2020/02/Ilegales-16_hazltl.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.enrictorrents.com/wp-content/uploads/2020/02/Ilegales-22_tnlnmg.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.enrictorrents.com/wp-content/uploads/2020/02/Ilegales-25_tmfm9v.jpg</image:loc>
-		</image:image>
-	</url>
-	<url>
 		<loc>https://www.enrictorrents.com/project/cala-dels-frares/</loc>
 		<lastmod>2020-11-07T22:21:16+00:00</lastmod>
 		<image:image>
@@ -538,15 +490,8 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://www.enrictorrents.com/project/raves/</loc>
-		<lastmod>2020-11-07T22:21:16+00:00</lastmod>
-		<image:image>
-			<image:loc>https://www.enrictorrents.com/wp-content/uploads/2020/11/Rave20191124_033.jpg</image:loc>
-		</image:image>
-	</url>
-	<url>
 		<loc>https://www.enrictorrents.com/project/les-comes-4x4/</loc>
-		<lastmod>2020-11-07T22:50:50+00:00</lastmod>
+		<lastmod>2024-01-20T20:21:23+00:00</lastmod>
 		<image:image>
 			<image:loc>https://www.enrictorrents.com/wp-content/uploads/2020/02/1500827_3_mya69q.jpg</image:loc>
 		</image:image>
@@ -609,108 +554,163 @@
 		</image:image>
 	</url>
 	<url>
+		<loc>https://www.enrictorrents.com/project/the-slingshots/</loc>
+		<lastmod>2024-01-20T20:21:23+00:00</lastmod>
+		<image:image>
+			<image:loc>https://www.enrictorrents.com/wp-content/uploads/2020/02/The-Slingshots-3_pzkuqq.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://www.enrictorrents.com/project/ilegales/</loc>
+		<lastmod>2024-01-20T20:21:23+00:00</lastmod>
+		<image:image>
+			<image:loc>https://www.enrictorrents.com/wp-content/uploads/2020/02/Ilegales-21_g3ijm0.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.enrictorrents.com/wp-content/uploads/2020/02/Ilegales-20_qumcty.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.enrictorrents.com/wp-content/uploads/2020/02/Ilegales-9_aduzew.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.enrictorrents.com/wp-content/uploads/2020/02/Ilegales-21_g3ijm0.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.enrictorrents.com/wp-content/uploads/2020/02/Ilegales-17_u3ipxi.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.enrictorrents.com/wp-content/uploads/2020/02/Ilegales-14_zc4ft8.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.enrictorrents.com/wp-content/uploads/2020/02/Ilegales-27_ngpw2v.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.enrictorrents.com/wp-content/uploads/2020/02/Ilegales-16_hazltl.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.enrictorrents.com/wp-content/uploads/2020/02/Ilegales-22_tnlnmg.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.enrictorrents.com/wp-content/uploads/2020/02/Ilegales-25_tmfm9v.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://www.enrictorrents.com/project/la-muga/</loc>
+		<lastmod>2024-01-20T20:21:23+00:00</lastmod>
+		<image:image>
+			<image:loc>https://www.enrictorrents.com/wp-content/uploads/2020/07/003-Enric-Torrents-LaMuga.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
 		<loc>https://www.enrictorrents.com/project/camins-de-ronda/</loc>
-		<lastmod>2023-07-13T16:40:03+00:00</lastmod>
+		<lastmod>2024-01-20T20:21:23+00:00</lastmod>
 		<image:image>
 			<image:loc>https://www.enrictorrents.com/wp-content/uploads/2023/07/17_Camins-de-Ronda_Enric-Torrents.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
 		<loc>https://www.enrictorrents.com/project/cerveza/</loc>
-		<lastmod>2024-01-17T11:45:09+00:00</lastmod>
+		<lastmod>2024-01-20T20:21:23+00:00</lastmod>
 		<image:image>
 			<image:loc>https://www.enrictorrents.com/wp-content/uploads/2023/07/002_MG_4524.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
 		<loc>https://www.enrictorrents.com/project/collar/</loc>
-		<lastmod>2024-01-17T11:46:45+00:00</lastmod>
+		<lastmod>2024-01-20T20:21:23+00:00</lastmod>
 		<image:image>
 			<image:loc>https://www.enrictorrents.com/wp-content/uploads/2023/07/006_Joyas18530.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
 		<loc>https://www.enrictorrents.com/project/pintalabios/</loc>
-		<lastmod>2024-01-17T11:50:54+00:00</lastmod>
+		<lastmod>2024-01-20T20:21:23+00:00</lastmod>
 		<image:image>
 			<image:loc>https://www.enrictorrents.com/wp-content/uploads/2023/07/014_cosmetica_enric-torrents.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
 		<loc>https://www.enrictorrents.com/project/cosmetica/</loc>
-		<lastmod>2024-01-17T11:53:25+00:00</lastmod>
+		<lastmod>2024-01-20T20:21:23+00:00</lastmod>
 		<image:image>
 			<image:loc>https://www.enrictorrents.com/wp-content/uploads/2023/07/015_cosmetica_enric-torrents.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
 		<loc>https://www.enrictorrents.com/project/cafetera/</loc>
-		<lastmod>2024-01-17T11:55:15+00:00</lastmod>
+		<lastmod>2024-01-20T20:21:23+00:00</lastmod>
 		<image:image>
 			<image:loc>https://www.enrictorrents.com/wp-content/uploads/2023/07/Clase-12_Electrodomesticos_Enric-Torrents.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>https://www.enrictorrents.com/project/galletas-1/</loc>
-		<lastmod>2024-01-17T11:59:25+00:00</lastmod>
-		<image:image>
-			<image:loc>https://www.enrictorrents.com/wp-content/uploads/2023/07/Clase-16_Gastronomia_Enric-Torrents_3.jpg</image:loc>
-		</image:image>
-	</url>
-	<url>
 		<loc>https://www.enrictorrents.com/project/bodegon-de-pasta/</loc>
-		<lastmod>2024-01-17T11:59:56+00:00</lastmod>
+		<lastmod>2024-01-20T20:21:23+00:00</lastmod>
 		<image:image>
 			<image:loc>https://www.enrictorrents.com/wp-content/uploads/2023/07/Clase-16_Gastronomia_Enric-Torrents_2.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
+		<loc>https://www.enrictorrents.com/project/galletas-1/</loc>
+		<lastmod>2024-01-20T20:21:23+00:00</lastmod>
+		<image:image>
+			<image:loc>https://www.enrictorrents.com/wp-content/uploads/2023/07/Clase-16_Gastronomia_Enric-Torrents_3.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
 		<loc>https://www.enrictorrents.com/project/galletas-2/</loc>
-		<lastmod>2024-01-17T12:01:29+00:00</lastmod>
+		<lastmod>2024-01-20T20:21:23+00:00</lastmod>
 		<image:image>
 			<image:loc>https://www.enrictorrents.com/wp-content/uploads/2023/07/Clase-16_Gastronomia_Enric-Torrents_4.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
 		<loc>https://www.enrictorrents.com/project/pasta-2/</loc>
-		<lastmod>2024-01-17T12:02:19+00:00</lastmod>
+		<lastmod>2024-01-20T20:21:23+00:00</lastmod>
 		<image:image>
 			<image:loc>https://www.enrictorrents.com/wp-content/uploads/2023/07/Clase-16_Gastronomia_Enric-Torrents.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
 		<loc>https://www.enrictorrents.com/project/baileys/</loc>
-		<lastmod>2024-01-17T12:03:28+00:00</lastmod>
+		<lastmod>2024-01-20T20:21:23+00:00</lastmod>
 		<image:image>
 			<image:loc>https://www.enrictorrents.com/wp-content/uploads/2023/07/Clase-19_Bebida-Alcoholica_Enric-Torrents_2.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
 		<loc>https://www.enrictorrents.com/project/bombay-sapphire/</loc>
-		<lastmod>2024-01-17T12:05:48+00:00</lastmod>
+		<lastmod>2024-01-20T20:21:23+00:00</lastmod>
 		<image:image>
 			<image:loc>https://www.enrictorrents.com/wp-content/uploads/2023/07/Clase-19_Bebida-Alcoholica_Enric-Torrents.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
 		<loc>https://www.enrictorrents.com/project/donuts/</loc>
-		<lastmod>2024-01-17T12:07:19+00:00</lastmod>
+		<lastmod>2024-01-20T20:21:23+00:00</lastmod>
 		<image:image>
 			<image:loc>https://www.enrictorrents.com/wp-content/uploads/2023/07/Classe-15_Gastronomia_Enric-Torrents_2.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
 		<loc>https://www.enrictorrents.com/project/magdalenas/</loc>
-		<lastmod>2024-01-17T12:08:54+00:00</lastmod>
+		<lastmod>2024-01-20T20:21:23+00:00</lastmod>
 		<image:image>
 			<image:loc>https://www.enrictorrents.com/wp-content/uploads/2023/07/Classe-15_Gastronomia_Enric-Torrents.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
 		<loc>https://www.enrictorrents.com/project/gel-de-manos/</loc>
-		<lastmod>2024-01-17T12:09:45+00:00</lastmod>
+		<lastmod>2024-01-20T20:21:23+00:00</lastmod>
 		<image:image>
 			<image:loc>https://www.enrictorrents.com/wp-content/uploads/2023/07/Classe-17_Cosmetica_Enric-Torrents_3.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://www.enrictorrents.com/project/raves/</loc>
+		<lastmod>2024-01-20T20:22:29+00:00</lastmod>
+		<image:image>
+			<image:loc>https://www.enrictorrents.com/wp-content/uploads/2020/11/Rave20191124_033.jpg</image:loc>
 		</image:image>
 	</url>
 </urlset>

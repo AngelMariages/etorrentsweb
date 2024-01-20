@@ -123,30 +123,82 @@ class WPFormsSelector extends Component {
 	 * @returns {JSX.Element} View for module.
 	 */
 	render() {
-
-		var { error, isLoaded, form } = this.state,
+		const { error, isLoaded, form } = this.state,
 			wrapperClasses = isLoaded ? 'wpforms-divi-form-preview loading' : 'wpforms-divi-form-preview';
 
-		if ( error || ! form ) {
+		if ( typeof this.props.form_id === 'undefined' || this.props.form_id === '' ) {
+			return (
+				<div className="wpforms-divi-empty-block">
+					<img src={ wpforms_divi_builder.block_empty_url } alt="" />
 
+					{ <p dangerouslySetInnerHTML={ { __html: wpforms_divi_builder.block_empty_text } } /> }
+
+					<button type="button" onClick={
+						() => {
+							window.open( wpforms_divi_builder.get_started_url, '_blank' );
+						}
+					}
+					>
+						{ wpforms_divi_builder.get_started_text }
+					</button>
+
+					<p className="wpforms-admin-no-forms-footer">
+						{ wpforms_divi_builder.help_text }&nbsp;
+						<a href={ wpforms_divi_builder.guide_url } onClick={
+							() => {
+								window.open( wpforms_divi_builder.guide_url, '_blank' );
+							}
+						}
+						>
+							{ wpforms_divi_builder.guide_text }.
+						</a>
+					</p>
+				</div>
+			);
+		}
+
+		if ( error || ! form ) {
 			return (
 				<div className="wpforms-divi-form-placeholder">
-					<img src={wpforms_divi_builder.placeholder}/>
-					<h3>{wpforms_divi_builder.placeholder_title}</h3>
+					<img src={ wpforms_divi_builder.placeholder } alt="" />
 				</div>
 			);
 		}
 
 		return (
-			<div className={wrapperClasses}>
-				{<div dangerouslySetInnerHTML={{ __html: form }}/>}
+			<div className={ wrapperClasses }>
+				{ <div dangerouslySetInnerHTML={ { __html: form } } /> }
 			</div>
 		);
 	}
 }
 
-jQuery( window ).on( 'et_builder_api_ready', ( event, API ) => {
+jQuery( window )
 
-	// Register custom modules
-	API.registerModules( [ WPFormsSelector ] );
-} );
+	// Register custom modules.
+	.on( 'et_builder_api_ready', ( event, API ) => {
+		API.registerModules( [ WPFormsSelector ] );
+	} )
+
+	// Re-initialize WPForms frontend.
+	.on( 'wpformsDiviModuleDisplay', ( event ) => {
+		window.wpforms.init();
+	} );
+
+// Make all the modern dropdowns disabled.
+jQuery( document )
+	.on( 'wpformsReady', ( event ) => {
+
+		var $ = jQuery;
+
+		$( '.choicesjs-select' ).each( function() {
+
+			var $instance = $( this ).data( 'choicesjs' );
+
+			if ( ! $instance || typeof $instance.disable !== 'function' ) {
+				return;
+			}
+
+			$instance.disable();
+		} );
+	} );
